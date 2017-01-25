@@ -11754,79 +11754,233 @@ div#notebook {
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Not actually sure which of all these we need...</span>
 <span class="c1"># it&#39;s mostly copied from the importChemkin.py script.</span>
 <span class="c1"># actually, from some old version that was lying around somewhere :-/</span>
-
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">logging</span> <span class="c1"># doesn&#39;t work well in a notebook, without some fu</span>
 <span class="kn">import</span> <span class="nn">rmgpy</span>
 <span class="kn">import</span> <span class="nn">rmgpy.rmg</span>
 <span class="kn">import</span> <span class="nn">rmgpy.rmg.input</span>
 <span class="kn">from</span> <span class="nn">rmgpy.display</span> <span class="kn">import</span> <span class="n">display</span>
+<span class="c1">#from IPython.display import display</span>
 <span class="kn">from</span> <span class="nn">rmgpy.chemkin</span> <span class="kn">import</span> <span class="n">loadChemkinFile</span><span class="p">,</span> <span class="n">readSpeciesBlock</span><span class="p">,</span> <span class="n">readThermoBlock</span><span class="p">,</span> <span class="n">readReactionsBlock</span><span class="p">,</span> <span class="n">removeCommentFromLine</span>
-<span class="kn">from</span> <span class="nn">rmgpy.reaction</span> <span class="kn">import</span> <span class="n">ReactionModel</span>
 <span class="kn">from</span> <span class="nn">rmgpy.data.thermo</span> <span class="kn">import</span> <span class="n">Entry</span><span class="p">,</span> <span class="n">saveEntry</span>
 <span class="kn">from</span> <span class="nn">rmgpy.data.base</span> <span class="kn">import</span> <span class="n">Entry</span> <span class="k">as</span> <span class="n">kinEntry</span>
 <span class="kn">from</span> <span class="nn">rmgpy.data.kinetics.common</span> <span class="kn">import</span> <span class="n">saveEntry</span> <span class="k">as</span> <span class="n">kinSaveEntry</span>
 <span class="kn">from</span> <span class="nn">rmgpy.molecule</span> <span class="kn">import</span> <span class="n">Molecule</span>
 <span class="kn">from</span> <span class="nn">rmgpy.rmg.model</span> <span class="kn">import</span> <span class="n">Species</span>
-
+<span class="kn">from</span> <span class="nn">rmgpy.reaction</span> <span class="kn">import</span> <span class="n">Reaction</span>
+<span class="kn">from</span> <span class="nn">rmgpy.kinetics</span> <span class="kn">import</span> <span class="n">Arrhenius</span>
+<span class="kn">from</span> <span class="nn">rmgpy.cantherm.output</span> <span class="kn">import</span> <span class="n">prettify</span>
 <span class="kn">from</span> <span class="nn">rmgpy.rmg.main</span> <span class="kn">import</span> <span class="n">RMG</span><span class="p">,</span> <span class="n">initializeLog</span>
 <span class="kn">from</span> <span class="nn">rmgpy.molecule.draw</span> <span class="kn">import</span> <span class="n">MoleculeDrawer</span>
 
-<span class="kn">import</span> <span class="nn">time</span>
+<span class="c1">#import time</span>
 <span class="kn">import</span> <span class="nn">sys</span>
-<span class="c1"># Put the RMG-database project at the start of the python path, so we use that importOldDatabase script!</span>
+<span class="c1">## Put the RMG-database project at the start of the python path, so we use that importOldDatabase script?</span>
+<span class="c1">## (is this still needed?)</span>
 <span class="n">databaseDirectory</span> <span class="o">=</span> <span class="n">rmgpy</span><span class="o">.</span><span class="n">settings</span><span class="p">[</span><span class="s1">&#39;database.directory&#39;</span><span class="p">]</span>
 <span class="n">databaseProjectDirectory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">databaseDirectory</span><span class="p">,</span> <span class="s1">&#39;..&#39;</span><span class="p">))</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">databaseProjectDirectory</span><span class="p">)</span>
+</pre></div>
 
-<span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Loading RMG database...&quot;</span><span class="p">)</span>
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Loading RMG database...&quot;</span><span class="p">)</span>
 <span class="n">rmg</span> <span class="o">=</span> <span class="n">RMG</span><span class="p">()</span>
-<span class="n">rmg</span><span class="o">.</span><span class="n">outputDirectory</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">output_directory</span>
-<span class="n">rmg</span><span class="o">.</span><span class="n">scratchDirectory</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">scratch_directory</span>
-<span class="n">rmg</span><span class="o">.</span><span class="n">makeOutputSubdirectory</span><span class="p">(</span><span class="s1">&#39;species&#39;</span><span class="p">)</span>
+<span class="n">rmg</span><span class="o">.</span><span class="n">outputDirectory</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span>
+<span class="n">rmg</span><span class="o">.</span><span class="n">scratchDirectory</span> <span class="o">=</span> <span class="s1">&#39;.&#39;</span>
 <span class="n">rmg</span><span class="o">.</span><span class="n">databaseDirectory</span> <span class="o">=</span> <span class="n">databaseDirectory</span>
-<span class="n">rmg</span><span class="o">.</span><span class="n">thermoLibraries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;primaryThermoLibrary&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;KlippensteinH2O2&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;DFT_QCI_thermo&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;CBS_QB3_1dHR&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;GRI-Mech3.0&#39;</span><span class="p">,</span> <span class="p">]</span>
-<span class="n">rmg</span><span class="o">.</span><span class="n">kineticsFamilies</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;!Substitution_O&#39;</span><span class="p">]</span>
-<span class="n">rmg</span><span class="o">.</span><span class="n">reactionLibraries</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;KlippensteinH2O2&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">),</span>
-                         <span class="p">(</span><span class="s1">&#39;Glarborg/C3&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">),</span>
-                         <span class="p">(</span><span class="s1">&#39;Glarborg/highP&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">),</span>
-                         <span class="p">(</span><span class="s1">&#39;GRI-Mech3.0&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">),</span> <span class="p">]</span>
-
+<span class="n">rmg</span><span class="o">.</span><span class="n">thermoLibraries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;primaryThermoLibrary&#39;</span><span class="p">]</span>
+<span class="n">rmg</span><span class="o">.</span><span class="n">kineticsFamilies</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;H_Abstraction&#39;</span><span class="p">,]</span>
+<span class="n">rmg</span><span class="o">.</span><span class="n">reactionLibraries</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;KlippensteinH2O2&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">),]</span>
 <span class="n">rmgpy</span><span class="o">.</span><span class="n">rmg</span><span class="o">.</span><span class="n">input</span><span class="o">.</span><span class="n">rmg</span> <span class="o">=</span> <span class="n">rmg</span>  <span class="c1"># put it in this scope so these functions can modify it</span>
 <span class="n">rmg</span><span class="o">.</span><span class="n">loadDatabase</span><span class="p">()</span>
 <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Loaded database.&quot;</span><span class="p">)</span>
-<span class="n">rmg</span><span class="o">.</span><span class="n">reactionModel</span> <span class="o">=</span> <span class="n">rmgpy</span><span class="o">.</span><span class="n">rmg</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">CoreEdgeReactionModel</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">rmg</span><span class="o">.</span><span class="n">reactionModel</span> <span class="o">=</span> <span class="n">rmgpy</span><span class="o">.</span><span class="n">rmg</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">CoreEdgeReactionModel</span><span class="p">()</span>
 <span class="n">rmg</span><span class="o">.</span><span class="n">reactionModel</span><span class="o">.</span><span class="n">kineticsEstimator</span> <span class="o">=</span> <span class="s1">&#39;rate rules&#39;</span>
 <span class="n">rmg</span><span class="o">.</span><span class="n">reactionModel</span><span class="o">.</span><span class="n">verboseComments</span> <span class="o">=</span> <span class="bp">True</span>
 <span class="n">rmg</span><span class="o">.</span><span class="n">initialSpecies</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">rmg</span><span class="o">.</span><span class="n">reactionSystems</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="kn">from</span> <span class="nn">rmgpy.cantherm.output</span> <span class="kn">import</span> <span class="n">prettify</span>
+<span class="k">def</span> <span class="nf">makeOrEmptyDirectory</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Either create a directory at `path` or delete everything in it if it exists&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+        <span class="k">assert</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">path</span><span class="p">),</span> <span class="s2">&quot;Path {0} exists but is not a directory&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="c1"># empty it out</span>
+        <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">topdown</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">dirs</span><span class="p">:</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">rmdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        
+</pre></div>
 
-<span class="k">def</span> <span class="nf">saveReactionToKineticsFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chemkinReaction</span><span class="p">):</span>
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">kineticsLibrary</span> <span class="o">=</span> <span class="n">rmgpy</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">kinetics</span><span class="o">.</span><span class="n">KineticsLibrary</span><span class="p">(</span>
+        <span class="n">label</span><span class="o">=</span><span class="s2">&quot;AutoTST-M062X&quot;</span><span class="p">,</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;AutoTST-M062X&quot;</span><span class="p">,</span>
+        <span class="n">solvent</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+        <span class="n">shortDesc</span><span class="o">=</span><span class="s2">&quot;AutoTST using M062X&quot;</span><span class="p">,</span>
+        <span class="n">longDesc</span><span class="o">=</span><span class="s2">&quot;AutoTST calculations using M062X&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+<span class="k">def</span> <span class="nf">addReactionToKineticsLibrary</span><span class="p">(</span><span class="n">reaction</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Add the reaction (once species are identified) to the reactionLibrary</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">entry</span> <span class="o">=</span> <span class="n">kinEntry</span><span class="p">()</span>
-    <span class="n">source</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">args</span><span class="o">.</span><span class="n">reactions</span>
-    <span class="n">entry</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">chemkinReactions</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">chemkinReactionsUnmatched</span><span class="p">)</span>
-    <span class="n">entry</span><span class="o">.</span><span class="n">item</span> <span class="o">=</span> <span class="n">chemkinReaction</span>
-    <span class="n">entry</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">chemkinReaction</span><span class="o">.</span><span class="n">kinetics</span>
-    <span class="n">comment</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">chemkinReaction</span><span class="p">,</span> <span class="s1">&#39;comment&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>  <span class="c1"># This should ideally return the chemkin file comment but currently does not</span>
+    <span class="n">entry</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">kineticsLibrary</span><span class="o">.</span><span class="n">entries</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">entry</span><span class="o">.</span><span class="n">item</span> <span class="o">=</span> <span class="n">reaction</span>
+    <span class="n">entry</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">reaction</span><span class="p">)</span>
+    <span class="n">entry</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">reaction</span><span class="o">.</span><span class="n">kinetics</span>
+    <span class="n">comment</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">reaction</span><span class="p">,</span> <span class="s1">&#39;comment&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">comment</span><span class="p">:</span>
         <span class="n">entry</span><span class="o">.</span><span class="n">longDesc</span> <span class="o">=</span> <span class="n">comment</span> <span class="o">+</span> <span class="s1">&#39;.</span><span class="se">\n</span><span class="s1">&#39;</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">entry</span><span class="o">.</span><span class="n">longDesc</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-    <span class="n">entry</span><span class="o">.</span><span class="n">shortDesc</span> <span class="o">=</span> <span class="s1">&#39;The chemkin file reaction is {0}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">chemkinReaction</span><span class="p">))</span>
-    <span class="n">user</span> <span class="o">=</span> <span class="s1">&#39;Importer&#39;</span>
-    <span class="n">event</span> <span class="o">=</span> <span class="p">[</span><span class="n">time</span><span class="o">.</span><span class="n">asctime</span><span class="p">(),</span> <span class="n">user</span><span class="p">,</span> <span class="s1">&#39;action&#39;</span><span class="p">,</span> <span class="s1">&#39;{user} imported this entry from {source}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">)]</span>
-    <span class="n">entry</span><span class="o">.</span><span class="n">history</span> <span class="o">=</span> <span class="p">[</span><span class="n">event</span><span class="p">]</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">outputKineticsFile</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">kinSaveEntry</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">entry</span><span class="p">)</span>
-        <span class="k">except</span><span class="p">:</span>
-            <span class="n">logging</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="s2">&quot;Couldn&#39;t save reaction {0} to kinetics.py file&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">chemkinReaction</span><span class="p">)))</span>
-            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"># COULD NOT SAVE THE REACTION </span><span class="se">\n</span><span class="s2"> # {0}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">entry</span><span class="o">.</span><span class="n">shortDesc</span><span class="p">))</span>
-            <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="n">f</span><span class="p">)</span>
+    <span class="n">entry</span><span class="o">.</span><span class="n">shortDesc</span> <span class="o">=</span> <span class="s1">&#39;AutoTST M062X for {0}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">reaction</span><span class="p">))</span>
+    <span class="n">kineticsLibrary</span><span class="o">.</span><span class="n">entries</span><span class="p">[</span><span class="n">entry</span><span class="o">.</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">entry</span>
+
+<span class="k">def</span> <span class="nf">savePyKineticsLibrary</span><span class="p">(</span><span class="n">kineticsLibrary</span><span class="p">):</span>
+    <span class="s2">&quot;Save an RMG-Py style kinetics library&quot;</span>
+    <span class="n">library_path</span> <span class="o">=</span> <span class="s1">&#39;RMG-Py-kinetics-library&#39;</span>
+    <span class="n">makeOrEmptyDirectory</span><span class="p">(</span><span class="n">library_path</span><span class="p">)</span>
+    <span class="n">kineticsLibrary</span><span class="o">.</span><span class="n">checkForDuplicates</span><span class="p">(</span><span class="n">markDuplicates</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">kineticsLibrary</span><span class="o">.</span><span class="n">convertDuplicatesToMulti</span><span class="p">()</span>
+    <span class="n">kineticsLibrary</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">library_path</span><span class="p">,</span> <span class="s1">&#39;reactions.py&#39;</span><span class="p">))</span>
+    <span class="n">kineticsLibrary</span><span class="o">.</span><span class="n">saveDictionary</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">library_path</span><span class="p">,</span> <span class="s1">&#39;dictionary.txt&#39;</span><span class="p">))</span>
+
+    <span class="n">savedReactions</span> <span class="o">=</span> <span class="p">[</span><span class="n">kineticsLibrary</span><span class="o">.</span><span class="n">entries</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">item</span> 
+                      <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">kineticsLibrary</span><span class="o">.</span><span class="n">entries</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+                      <span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">species_dict</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">def</span> <span class="nf">kinetics</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">kinetics</span><span class="p">):</span>
+    <span class="n">reactants</span><span class="p">,</span> <span class="n">products</span> <span class="o">=</span> <span class="n">label</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
+    <span class="n">reactants</span> <span class="o">=</span> <span class="n">reactants</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="p">)</span>
+    <span class="n">products</span> <span class="o">=</span> <span class="n">products</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="p">)</span>
+
+    <span class="n">reaction</span> <span class="o">=</span> <span class="n">Reaction</span><span class="p">(</span><span class="n">reactants</span><span class="o">=</span><span class="p">[],</span> <span class="n">products</span><span class="o">=</span><span class="p">[],</span> <span class="n">reversible</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">in_list</span><span class="p">,</span> <span class="n">out_list</span> <span class="ow">in</span> <span class="p">[(</span><span class="n">reactants</span><span class="p">,</span> <span class="n">reaction</span><span class="o">.</span><span class="n">reactants</span><span class="p">),</span> <span class="p">(</span><span class="n">products</span><span class="p">,</span> <span class="n">reaction</span><span class="o">.</span><span class="n">products</span><span class="p">)]:</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">smiles</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">in_list</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">smiles</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">species_dict</span><span class="p">:</span>
+                <span class="n">species</span> <span class="o">=</span> <span class="n">Species</span><span class="p">()</span><span class="o">.</span><span class="n">fromSMILES</span><span class="p">(</span><span class="n">smiles</span><span class="p">)</span>
+                <span class="n">species_dict</span><span class="p">[</span><span class="n">smiles</span><span class="p">]</span> <span class="o">=</span> <span class="n">species</span>
+                <span class="n">species</span><span class="o">.</span><span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;{0}({1})&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">species</span><span class="o">.</span><span class="n">toChemkin</span><span class="p">(),</span> <span class="nb">len</span><span class="p">(</span><span class="n">species_dict</span><span class="p">))</span>
+            <span class="n">out_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">species_dict</span><span class="p">[</span><span class="n">smiles</span><span class="p">])</span>
+    
+    <span class="n">reaction</span><span class="o">.</span><span class="n">kinetics</span> <span class="o">=</span> <span class="n">kinetics</span>
+    <span class="k">print</span> <span class="nb">repr</span><span class="p">(</span><span class="n">reaction</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">reaction</span><span class="p">)</span>
+    
+    <span class="n">addReactionToKineticsLibrary</span><span class="p">(</span><span class="n">reaction</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">reaction</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">kinetics</span><span class="p">(</span>
+    <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;C=CCC=C+[O]O_C=C[CH]C=C+OO&#39;</span><span class="p">,</span>
+    <span class="n">kinetics</span> <span class="o">=</span> <span class="n">Arrhenius</span><span class="p">(</span>
+        <span class="n">A</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.46901e-07</span><span class="p">,</span> <span class="s1">&#39;cm^3/(mol*s)&#39;</span><span class="p">),</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="mf">5.46227</span><span class="p">,</span>
+        <span class="n">Ea</span> <span class="o">=</span> <span class="p">(</span><span class="mf">16.0409</span><span class="p">,</span> <span class="s1">&#39;kJ/mol&#39;</span><span class="p">),</span>
+        <span class="n">T0</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">),</span>
+        <span class="n">Tmin</span> <span class="o">=</span> <span class="p">(</span><span class="mf">303.03</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">),</span>
+        <span class="n">Tmax</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2500</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">),</span>
+        <span class="n">comment</span> <span class="o">=</span> <span class="s1">&#39;Fitted to 59 data points; dA = *|/ 2.40766, dn = +|- 0.115316, dEa = +|- 0.634353 kJ/mol&#39;</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">kineticsLibrary</span><span class="o">.</span><span class="n">entries</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">savePyKineticsLibrary</span><span class="p">(</span><span class="n">kineticsLibrary</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">kineticsLibrary</span><span class="o">.</span><span class="n">entries</span><span class="o">=</span><span class="p">{}</span>
 </pre></div>
 
 </div>
@@ -12768,6 +12922,19 @@ div#notebook {
 
 
 <span class="c1"># ⚠️ CCO+[O]O_CC[O]+OO Gave error &#39;kinetics(\n&#39; is not in list</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">savePyKineticsLibrary</span><span class="p">(</span><span class="n">kineticsLibrary</span><span class="p">)</span>
 </pre></div>
 
 </div>

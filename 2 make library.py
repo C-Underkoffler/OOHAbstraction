@@ -6,79 +6,169 @@
 # Not actually sure which of all these we need...
 # it's mostly copied from the importChemkin.py script.
 # actually, from some old version that was lying around somewhere :-/
-
+import os
+import logging # doesn't work well in a notebook, without some fu
 import rmgpy
 import rmgpy.rmg
 import rmgpy.rmg.input
 from rmgpy.display import display
+#from IPython.display import display
 from rmgpy.chemkin import loadChemkinFile, readSpeciesBlock, readThermoBlock, readReactionsBlock, removeCommentFromLine
-from rmgpy.reaction import ReactionModel
 from rmgpy.data.thermo import Entry, saveEntry
 from rmgpy.data.base import Entry as kinEntry
 from rmgpy.data.kinetics.common import saveEntry as kinSaveEntry
 from rmgpy.molecule import Molecule
 from rmgpy.rmg.model import Species
-
+from rmgpy.reaction import Reaction
+from rmgpy.kinetics import Arrhenius
+from rmgpy.cantherm.output import prettify
 from rmgpy.rmg.main import RMG, initializeLog
 from rmgpy.molecule.draw import MoleculeDrawer
 
-import time
+#import time
 import sys
-# Put the RMG-database project at the start of the python path, so we use that importOldDatabase script!
+## Put the RMG-database project at the start of the python path, so we use that importOldDatabase script?
+## (is this still needed?)
 databaseDirectory = rmgpy.settings['database.directory']
 databaseProjectDirectory = os.path.abspath(os.path.join(databaseDirectory, '..'))
 sys.path.insert(0, databaseProjectDirectory)
 
+
+# In[ ]:
+
 logging.info("Loading RMG database...")
 rmg = RMG()
-rmg.outputDirectory = args.output_directory
-rmg.scratchDirectory = args.scratch_directory
-rmg.makeOutputSubdirectory('species')
+rmg.outputDirectory = '.'
+rmg.scratchDirectory = '.'
 rmg.databaseDirectory = databaseDirectory
-rmg.thermoLibraries = ['primaryThermoLibrary',
-                       'KlippensteinH2O2',
-                       'DFT_QCI_thermo',
-                       'CBS_QB3_1dHR',
-                       'GRI-Mech3.0', ]
-rmg.kineticsFamilies = ['!Substitution_O']
-rmg.reactionLibraries = [('KlippensteinH2O2', False),
-                         ('Glarborg/C3', False),
-                         ('Glarborg/highP', False),
-                         ('GRI-Mech3.0', False), ]
-
+rmg.thermoLibraries = ['primaryThermoLibrary']
+rmg.kineticsFamilies = ['H_Abstraction',]
+rmg.reactionLibraries = [('KlippensteinH2O2', False),]
 rmgpy.rmg.input.rmg = rmg  # put it in this scope so these functions can modify it
 rmg.loadDatabase()
 logging.info("Loaded database.")
+
+
+# In[ ]:
+
 rmg.reactionModel = rmgpy.rmg.model.CoreEdgeReactionModel()
 rmg.reactionModel.kineticsEstimator = 'rate rules'
 rmg.reactionModel.verboseComments = True
 rmg.initialSpecies = []
 rmg.reactionSystems = []
 
-from rmgpy.cantherm.output import prettify
+def makeOrEmptyDirectory(path):
+    """Either create a directory at `path` or delete everything in it if it exists"""
+    if os.path.exists(path):
+        assert os.path.isdir(path), "Path {0} exists but is not a directory".format(path)
+        # empty it out
+        for root, dirs, files in os.walk(path, topdown=False):
+            for name in files:
+                os.remove(os.path.join(root, name))
+            for name in dirs:
+                os.rmdir(os.path.join(root, name))
+    else:
+        os.makedirs(path)
+        
 
-def saveReactionToKineticsFile(self, chemkinReaction):
+
+# In[ ]:
+
+kineticsLibrary = rmgpy.data.kinetics.KineticsLibrary(
+        label="AutoTST-M062X",
+        name="AutoTST-M062X",
+        solvent=None,
+        shortDesc="AutoTST using M062X",
+        longDesc="AutoTST calculations using M062X",
+        )
+def addReactionToKineticsLibrary(reaction):
+    """
+    Add the reaction (once species are identified) to the reactionLibrary
+    """
     entry = kinEntry()
-    source = self.args.reactions
-    entry.index = len(self.chemkinReactions) - len(self.chemkinReactionsUnmatched)
-    entry.item = chemkinReaction
-    entry.data = chemkinReaction.kinetics
-    comment = getattr(chemkinReaction, 'comment', '')  # This should ideally return the chemkin file comment but currently does not
+    entry.index = len(kineticsLibrary.entries) + 1
+    entry.item = reaction
+    entry.label = str(reaction)
+    entry.data = reaction.kinetics
+    comment = getattr(reaction, 'comment', '')
     if comment:
         entry.longDesc = comment + '.\n'
     else:
         entry.longDesc = ''
-    entry.shortDesc = 'The chemkin file reaction is {0}'.format(str(chemkinReaction))
-    user = 'Importer'
-    event = [time.asctime(), user, 'action', '{user} imported this entry from {source}'.format(user=user, source=source)]
-    entry.history = [event]
-    with open(self.outputKineticsFile, 'a') as f:
-        try:
-            kinSaveEntry(f, entry)
-        except:
-            logging.exception("Couldn't save reaction {0} to kinetics.py file".format(str(chemkinReaction)))
-            f.write("\n# COULD NOT SAVE THE REACTION \n # {0}\n".format(entry.shortDesc))
-            traceback.print_exc(file=f)
+    entry.shortDesc = 'AutoTST M062X for {0}'.format(str(reaction))
+    kineticsLibrary.entries[entry.index] = entry
+
+def savePyKineticsLibrary(kineticsLibrary):
+    "Save an RMG-Py style kinetics library"
+    library_path = 'RMG-Py-kinetics-library'
+    makeOrEmptyDirectory(library_path)
+    kineticsLibrary.checkForDuplicates(markDuplicates=True)
+    kineticsLibrary.convertDuplicatesToMulti()
+    kineticsLibrary.save(os.path.join(library_path, 'reactions.py'))
+    kineticsLibrary.saveDictionary(os.path.join(library_path, 'dictionary.txt'))
+
+    savedReactions = [kineticsLibrary.entries[key].item 
+                      for key in sorted(kineticsLibrary.entries.keys())
+                      ]
+
+
+# In[ ]:
+
+species_dict = {}
+
+def kinetics(label, kinetics):
+    reactants, products = label.split('_')
+    reactants = reactants.split('+')
+    products = products.split('+')
+
+    reaction = Reaction(reactants=[], products=[], reversible=True)
+    
+    for in_list, out_list in [(reactants, reaction.reactants), (products, reaction.products)]:
+        for i, smiles in enumerate(in_list):
+            if smiles not in species_dict:
+                species = Species().fromSMILES(smiles)
+                species_dict[smiles] = species
+                species.label = '{0}({1})'.format(species.toChemkin(), len(species_dict))
+            out_list.append(species_dict[smiles])
+    
+    reaction.kinetics = kinetics
+    print repr(reaction)
+    display(reaction)
+    
+    addReactionToKineticsLibrary(reaction)
+    
+    return reaction
+
+
+# In[ ]:
+
+kinetics(
+    label = 'C=CCC=C+[O]O_C=C[CH]C=C+OO',
+    kinetics = Arrhenius(
+        A = (1.46901e-07, 'cm^3/(mol*s)'),
+        n = 5.46227,
+        Ea = (16.0409, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (303.03, 'K'),
+        Tmax = (2500, 'K'),
+        comment = 'Fitted to 59 data points; dA = *|/ 2.40766, dn = +|- 0.115316, dEa = +|- 0.634353 kJ/mol',
+    ),
+)
+
+
+# In[ ]:
+
+kineticsLibrary.entries
+
+
+# In[ ]:
+
+savePyKineticsLibrary(kineticsLibrary)
+
+
+# In[ ]:
+
+kineticsLibrary.entries={}
 
 
 # Next we paste in the results from the previous notebook
@@ -1004,4 +1094,9 @@ kinetics(
 
 
 # ⚠️ CCO+[O]O_CC[O]+OO Gave error 'kinetics(\n' is not in list
+
+
+# In[ ]:
+
+savePyKineticsLibrary(kineticsLibrary)
 
