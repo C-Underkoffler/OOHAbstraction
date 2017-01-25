@@ -11,8 +11,8 @@ import logging # doesn't work well in a notebook, without some fu
 import rmgpy
 import rmgpy.rmg
 import rmgpy.rmg.input
-from rmgpy.display import display
-#from IPython.display import display
+#from rmgpy.display import display
+from IPython.display import display
 from rmgpy.chemkin import loadChemkinFile, readSpeciesBlock, readThermoBlock, readReactionsBlock, removeCommentFromLine
 from rmgpy.data.thermo import Entry, saveEntry
 from rmgpy.data.base import Entry as kinEntry
@@ -34,7 +34,7 @@ databaseProjectDirectory = os.path.abspath(os.path.join(databaseDirectory, '..')
 sys.path.insert(0, databaseProjectDirectory)
 
 
-# In[ ]:
+# In[2]:
 
 logging.info("Loading RMG database...")
 rmg = RMG()
@@ -45,11 +45,11 @@ rmg.thermoLibraries = ['primaryThermoLibrary']
 rmg.kineticsFamilies = ['H_Abstraction',]
 rmg.reactionLibraries = [('KlippensteinH2O2', False),]
 rmgpy.rmg.input.rmg = rmg  # put it in this scope so these functions can modify it
-rmg.loadDatabase()
+#rmg.loadDatabase()  # this seems to hang (forever??) but turns out it's not needed!
 logging.info("Loaded database.")
 
 
-# In[ ]:
+# In[3]:
 
 rmg.reactionModel = rmgpy.rmg.model.CoreEdgeReactionModel()
 rmg.reactionModel.kineticsEstimator = 'rate rules'
@@ -72,7 +72,7 @@ def makeOrEmptyDirectory(path):
         
 
 
-# In[ ]:
+# In[4]:
 
 kineticsLibrary = rmgpy.data.kinetics.KineticsLibrary(
         label="AutoTST-M062X",
@@ -112,7 +112,7 @@ def savePyKineticsLibrary(kineticsLibrary):
                       ]
 
 
-# In[ ]:
+# In[5]:
 
 species_dict = {}
 
@@ -137,10 +137,9 @@ def kinetics(label, kinetics):
     
     addReactionToKineticsLibrary(reaction)
     
-    return reaction
 
 
-# In[ ]:
+# In[6]:
 
 kinetics(
     label = 'C=CCC=C+[O]O_C=C[CH]C=C+OO',
@@ -156,24 +155,24 @@ kinetics(
 )
 
 
-# In[ ]:
+# In[7]:
 
 kineticsLibrary.entries
 
 
-# In[ ]:
+# In[8]:
 
 savePyKineticsLibrary(kineticsLibrary)
 
 
-# In[ ]:
+# In[9]:
 
-kineticsLibrary.entries={}
+kineticsLibrary.entries.clear()
 
 
 # Next we paste in the results from the previous notebook
 
-# In[ ]:
+# In[10]:
 
 #   C=CCC=C+[O]O_C=C[CH]C=C+OO
 kinetics(
@@ -1096,7 +1095,7 @@ kinetics(
 # ⚠️ CCO+[O]O_CC[O]+OO Gave error 'kinetics(\n' is not in list
 
 
-# In[ ]:
+# In[11]:
 
 savePyKineticsLibrary(kineticsLibrary)
 
