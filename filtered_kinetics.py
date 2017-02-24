@@ -1,3 +1,4 @@
+# - *- coding: utf- 8 - *-
 
 #   C=CCC=C+[O]O_C=C[CH]C=C+OO
 kinetics(
