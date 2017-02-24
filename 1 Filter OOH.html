@@ -11748,7 +11748,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -11761,7 +11761,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/&#39;</span>
@@ -11777,7 +11777,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11792,7 +11792,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">ooh_forward</span> <span class="o">=</span> <span class="p">[]</span>
@@ -11826,7 +11826,7 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11912,7 +11912,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">to_try</span> <span class="o">=</span> <span class="p">[]</span>
@@ -11950,7 +11950,7 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11965,20 +11965,37 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">reaction</span> <span class="ow">in</span> <span class="n">to_try</span><span class="p">:</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">reaction</span><span class="p">,</span> <span class="s1">&#39;m062x&#39;</span><span class="p">,</span><span class="s1">&#39;output.py&#39;</span><span class="p">)</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-        <span class="n">start</span> <span class="o">=</span> <span class="n">lines</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;kinetics(</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-        <span class="k">print</span>
-        <span class="k">print</span> <span class="s2">&quot;#  &quot;</span><span class="p">,</span><span class="n">reaction</span>
-        <span class="k">print</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">start</span><span class="p">:])</span>
-    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
-        <span class="k">print</span> <span class="s2">&quot;⚠️&quot;</span><span class="p">,</span> <span class="n">reaction</span><span class="p">,</span> <span class="s2">&quot;Gave error&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">capture</span> cap --no-stderr
+for reaction in to_try:
+    try:
+        path = os.path.join(root_dir, reaction, &#39;m062x&#39;,&#39;output.py&#39;)
+        with open(path) as f:
+            lines = f.readlines()
+        start = lines.index(&#39;kinetics(\n&#39;)
+        print
+        print &quot;#  &quot;,reaction
+        print &#39;&#39;.join(lines[start:])
+    except Exception as err:
+        print &quot;# ⚠️&quot;, reaction, &quot;Gave error&quot;, str(err)
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;filtered_kinetics.py&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;# - *- coding: utf- 8 - *-/n&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">cap</span><span class="o">.</span><span class="n">stdout</span>
 </pre></div>
 
 </div>
@@ -12023,7 +12040,7 @@ kinetics(
 )
 
 
-⚠️ CCCCO+[O]O_CCCC[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ CCCCO+[O]O_CCCC[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
 
 #   CCC=CO+[O]O_C[CH]C=CO+OO
 kinetics(
@@ -12088,7 +12105,7 @@ kinetics(
 )
 
 
-⚠️ [O]O+[O]O_OO+[O][O] Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ [O]O+[O]O_OO+[O][O] Gave error &#39;kinetics(\n&#39; is not in list
 
 #   C=CCC+[O]O_OO+[CH2]CC=C
 kinetics(
@@ -12217,7 +12234,7 @@ kinetics(
 )
 
 
-⚠️ C=C=C+[O]O_OO+[CH]=C=C Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ C=C=C+[O]O_OO+[CH]=C=C Gave error &#39;kinetics(\n&#39; is not in list
 
 #   CC=O+[O]O_C[C]=O+OO
 kinetics(
@@ -12378,7 +12395,7 @@ kinetics(
 )
 
 
-⚠️ CC(C)CO+[O]O_CC(C)C[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ CC(C)CO+[O]O_CC(C)C[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
 
 #   C=CC+[O]O_OO+[CH2]C=C
 kinetics(
@@ -12395,7 +12412,7 @@ kinetics(
 )
 
 
-⚠️ CCC(C)O+[O]O_CCC(C)[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ CCC(C)O+[O]O_CCC(C)[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
 
 #   CCO+[O]O_OO+[CH2]CO
 kinetics(
@@ -12668,7 +12685,7 @@ kinetics(
 )
 
 
-⚠️ CC(C)(C)O+[O]O_CC(C)(C)[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ CC(C)(C)O+[O]O_CC(C)(C)[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
 
 #   COC=O+[O]O_OO+[CH2]OC=O
 kinetics(
@@ -12701,7 +12718,7 @@ kinetics(
 )
 
 
-⚠️ C=CC+[O]O_C=[C]C+OO Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ C=CC+[O]O_C=[C]C+OO Gave error &#39;kinetics(\n&#39; is not in list
 
 #   CC=CC=O+[O]O_CC=C[C]=O+OO
 kinetics(
@@ -12862,7 +12879,7 @@ kinetics(
 )
 
 
-⚠️ C=CC+[O]O_OO+[CH]=CC Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ C=CC+[O]O_OO+[CH]=CC Gave error &#39;kinetics(\n&#39; is not in list
 
 #   C=CC=CC+[O]O_OO+[CH2]C=CC=C
 kinetics(
@@ -12911,8 +12928,433 @@ kinetics(
 )
 
 
-⚠️ CCO+[O]O_CC[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ CCO+[O]O_CC[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+
 </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/gss_gpfs_scratch/westgroup/QMscratch/&#39;</span>
+<span class="n">new_reactions</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span><span class="n">f</span><span class="p">))</span> <span class="p">]</span>
+<span class="k">print</span> <span class="n">new_reactions</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">new_reactions</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;OO+[CH2]O_CO+[O]O&#39;, &#39;C=O+[O]O_OO+[CH]=O&#39;, &#39;C[CH2]+OO_CC+[O]O&#39;, &#39;CO+[O]O_OO+[CH2]O&#39;, &#39;CC=O+[O]O_C[C]=O+OO&#39;, &#39;C=[C]CO+OO_C=CCO+[O]O&#39;, &#39;C#CC+[O]O_C#C[CH2]+OO&#39;, &#39;OO+[CH]=C_C=C+[O]O&#39;, &#39;COO+[O]O_CO[O]+OO&#39;, &#39;OO+[CH2]CC_CCC+[O]O&#39;, &#39;CCC+[O]O_OO+[CH2]CC&#39;, &#39;C[O]+OO_CO+[O]O&#39;, &#39;C=C(C)CO+[O]O_OO+[CH2]C(=C)CO&#39;, &#39;CO[O]+OO_COO+[O]O&#39;, &#39;C[C]=O+OO_CC=O+[O]O&#39;, &#39;CC+[O]O_C[CH2]+OO&#39;, &#39;OO+[CH2]C(=C)CO_C=C(C)CO+[O]O&#39;, &#39;CO+[O]O_C[O]+OO&#39;]
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>18</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">to_try</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">reaction</span> <span class="ow">in</span> <span class="n">new_reactions</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">reaction</span><span class="p">)</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="s1">&#39;output.py&#39;</span> <span class="ow">in</span> <span class="n">files</span><span class="p">,</span> <span class="s2">&quot;Doesn&#39;t have output.py file&quot;</span>
+        <span class="n">to_try</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">reaction</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s2">&quot;# ⚠️&quot;</span><span class="p">,</span> <span class="n">reaction</span><span class="p">,</span> <span class="s2">&quot;Gave error&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">to_try</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>18</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">capture</span> cap --no-stderr
+success = fail = 0
+for reaction in to_try:
+    try:
+        path = os.path.join(root_dir, reaction,&#39;output.py&#39;)
+        with open(path) as f:
+            lines = f.readlines()
+        start = lines.index(&#39;kinetics(\n&#39;)
+        print
+        print &quot;#  &quot;,reaction
+        print &#39;&#39;.join(lines[start:])
+        success += 1
+    except Exception as err:
+        print &quot;# ⚠️&quot;, reaction, &quot;Gave error&quot;, str(err)
+        fail += 1
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">cap</span><span class="o">.</span><span class="n">stdout</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;filtered_kinetics.py&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+#   OO+[CH2]O_CO+[O]O
+kinetics(
+    label = &#39;OO+[CH2]O_CO+[O]O&#39;,
+    kinetics = Arrhenius(
+        A = (0.00355603, &#39;cm^3/(mol*s)&#39;),
+        n = 3.86308,
+        Ea = (-0.675366, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.11474, dn = +|- 0.0142558, dEa = +|- 0.0784211 kJ/mol&#39;,
+    ),
+)
+
+
+
+#   C=O+[O]O_OO+[CH]=O
+kinetics(
+    label = &#39;C=O+[O]O_OO+[CH]=O&#39;,
+    kinetics = Arrhenius(
+        A = (4.25716e-06, &#39;cm^3/(mol*s)&#39;),
+        n = 5.20307,
+        Ea = (21.3304, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.04573, dn = +|- 0.0939363, dEa = +|- 0.516744 kJ/mol&#39;,
+    ),
+)
+
+
+
+#   C[CH2]+OO_CC+[O]O
+kinetics(
+    label = &#39;C[CH2]+OO_CC+[O]O&#39;,
+    kinetics = Arrhenius(
+        A = (0.00263746, &#39;cm^3/(mol*s)&#39;),
+        n = 3.97659,
+        Ea = (-1.62058, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.12702, dn = +|- 0.0156938, dEa = +|- 0.0863314 kJ/mol&#39;,
+    ),
+)
+
+
+
+#   CO+[O]O_OO+[CH2]O
+kinetics(
+    label = &#39;CO+[O]O_OO+[CH2]O&#39;,
+    kinetics = Arrhenius(
+        A = (8.65209e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.75281,
+        Ea = (41.0752, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.49501, dn = +|- 0.0527765, dEa = +|- 0.290324 kJ/mol&#39;,
+    ),
+)
+
+
+
+#   CC=O+[O]O_C[C]=O+OO
+kinetics(
+    label = &#39;CC=O+[O]O_C[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000272263, &#39;cm^3/(mol*s)&#39;),
+        n = 4.67112,
+        Ea = (21.57, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.59886, dn = +|- 0.06159, dEa = +|- 0.338807 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C=[C]CO+OO_C=CCO+[O]O Gave error &#39;kinetics(\n&#39; is not in list
+
+#   C#CC+[O]O_C#C[CH2]+OO
+kinetics(
+    label = &#39;C#CC+[O]O_C#C[CH2]+OO&#39;,
+    kinetics = Arrhenius(
+        A = (9.02065e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.56952,
+        Ea = (34.8886, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.33181, dn = +|- 0.111115, dEa = +|- 0.611241 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ OO+[CH]=C_C=C+[O]O Gave error &#39;kinetics(\n&#39; is not in list
+
+#   COO+[O]O_CO[O]+OO
+kinetics(
+    label = &#39;COO+[O]O_CO[O]+OO&#39;,
+    kinetics = Arrhenius(
+        A = (2.25347e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.61955,
+        Ea = (0.462874, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.41572, dn = +|- 0.045624, dEa = +|- 0.250978 kJ/mol&#39;,
+    ),
+)
+
+
+
+#   OO+[CH2]CC_CCC+[O]O
+kinetics(
+    label = &#39;OO+[CH2]CC_CCC+[O]O&#39;,
+    kinetics = Arrhenius(
+        A = (0.00640782, &#39;cm^3/(mol*s)&#39;),
+        n = 3.87119,
+        Ea = (-2.05191, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.07684, dn = +|- 0.00971556, dEa = +|- 0.0534453 kJ/mol&#39;,
+    ),
+)
+
+
+
+#   CCC+[O]O_OO+[CH2]CC
+kinetics(
+    label = &#39;CCC+[O]O_OO+[CH2]CC&#39;,
+    kinetics = Arrhenius(
+        A = (0.000500778, &#39;cm^3/(mol*s)&#39;),
+        n = 4.59301,
+        Ea = (58.4934, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.3249, dn = +|- 0.0369229, dEa = +|- 0.203113 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C[O]+OO_CO+[O]O Gave error &#39;kinetics(\n&#39; is not in list
+
+#   C=C(C)CO+[O]O_OO+[CH2]C(=C)CO
+kinetics(
+    label = &#39;C=C(C)CO+[O]O_OO+[CH2]C(=C)CO&#39;,
+    kinetics = Arrhenius(
+        A = (8.37166e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 5.75426,
+        Ea = (31.1394, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.74682, dn = +|- 0.132612, dEa = +|- 0.729496 kJ/mol&#39;,
+    ),
+)
+
+
+
+#   CO[O]+OO_COO+[O]O
+kinetics(
+    label = &#39;CO[O]+OO_COO+[O]O&#39;,
+    kinetics = Arrhenius(
+        A = (1.12699e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.6208,
+        Ea = (7.44222, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.40594, dn = +|- 0.0447143, dEa = +|- 0.245974 kJ/mol&#39;,
+    ),
+)
+
+
+
+#   C[C]=O+OO_CC=O+[O]O
+kinetics(
+    label = &#39;C[C]=O+OO_CC=O+[O]O&#39;,
+    kinetics = Arrhenius(
+        A = (0.000356088, &#39;cm^3/(mol*s)&#39;),
+        n = 4.44236,
+        Ea = (7.94843, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.42249, dn = +|- 0.04625, dEa = +|- 0.254422 kJ/mol&#39;,
+    ),
+)
+
+
+
+#   CC+[O]O_C[CH2]+OO
+kinetics(
+    label = &#39;CC+[O]O_C[CH2]+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00110227, &#39;cm^3/(mol*s)&#39;),
+        n = 4.64487,
+        Ea = (58.9253, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.37627, dn = +|- 0.0419155, dEa = +|- 0.230577 kJ/mol&#39;,
+    ),
+)
+
+
+
+#   OO+[CH2]C(=C)CO_C=C(C)CO+[O]O
+kinetics(
+    label = &#39;OO+[CH2]C(=C)CO_C=C(C)CO+[O]O&#39;,
+    kinetics = Arrhenius(
+        A = (9.52481e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 4.88615,
+        Ea = (13.2201, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.95699, dn = +|- 0.088116, dEa = +|- 0.484727 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ CO+[O]O_C[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">success</span><span class="p">,</span> <span class="n">fail</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(14, 4)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">new_reactions</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">r</span><span class="p">,</span>  <span class="n">r</span> <span class="ow">in</span> <span class="n">ooh_forward</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-b355ea1452d6&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">for</span> r <span class="ansi-green-fg">in</span> new_reactions<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span>     <span class="ansi-green-fg">print</span> r<span class="ansi-blue-fg">,</span>  r <span class="ansi-green-fg">in</span> ooh_forward
+
+<span class="ansi-red-fg">NameError</span>: name &#39;new_reactions&#39; is not defined</pre>
 </div>
 </div>
 
