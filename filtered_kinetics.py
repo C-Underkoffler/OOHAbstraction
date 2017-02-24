@@ -1,6 +1,5 @@
-# - *- coding: utf- 8 - *-
-
-#   C=CCC=C+[O]O_C=C[CH]C=C+OO
+# - *- coding: utf- 8 - *-/n
+# C=CCC=C+[O]O_C=C[CH]C=C+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=CCC=C+[O]O_C=C[CH]C=C+OO',
     kinetics = Arrhenius(
@@ -16,7 +15,7 @@ kinetics(
 
 
 
-#   COC=O+[O]O_CO[C]=O+OO
+# COC=O+[O]O_CO[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'COC=O+[O]O_CO[C]=O+OO',
     kinetics = Arrhenius(
@@ -33,7 +32,7 @@ kinetics(
 
 # ⚠️ CCCCO+[O]O_CCCC[O]+OO Gave error 'kinetics(\n' is not in list
 
-#   CCC=CO+[O]O_C[CH]C=CO+OO
+# CCC=CO+[O]O_C[CH]C=CO+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCC=CO+[O]O_C[CH]C=CO+OO',
     kinetics = Arrhenius(
@@ -49,7 +48,7 @@ kinetics(
 
 
 
-#   CC=CC+[O]O_OO+[CH2]C=CC
+# CC=CC+[O]O_OO+[CH2]C=CC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC=CC+[O]O_OO+[CH2]C=CC',
     kinetics = Arrhenius(
@@ -65,7 +64,7 @@ kinetics(
 
 
 
-#   C=C(O)CC+[O]O_C=C(O)[CH]C+OO
+# C=C(O)CC+[O]O_C=C(O)[CH]C+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=C(O)CC+[O]O_C=C(O)[CH]C+OO',
     kinetics = Arrhenius(
@@ -81,7 +80,7 @@ kinetics(
 
 
 
-#   CCCC+[O]O_OO+[CH2]CCC
+# CCCC+[O]O_OO+[CH2]CCC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCCC+[O]O_OO+[CH2]CCC',
     kinetics = Arrhenius(
@@ -98,7 +97,7 @@ kinetics(
 
 # ⚠️ [O]O+[O]O_OO+[O][O] Gave error 'kinetics(\n' is not in list
 
-#   C=CCC+[O]O_OO+[CH2]CC=C
+# C=CCC+[O]O_OO+[CH2]CC=C from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=CCC+[O]O_OO+[CH2]CC=C',
     kinetics = Arrhenius(
@@ -114,7 +113,7 @@ kinetics(
 
 
 
-#   CCCC=O+[O]O_C[CH]CC=O+OO
+# CCCC=O+[O]O_C[CH]CC=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCCC=O+[O]O_C[CH]CC=O+OO',
     kinetics = Arrhenius(
@@ -130,7 +129,7 @@ kinetics(
 
 
 
-#   C=C1C=CCC1+[O]O_C=C1[CH]CC=C1+OO
+# C=C1C=CCC1+[O]O_C=C1[CH]CC=C1+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=C1C=CCC1+[O]O_C=C1[CH]CC=C1+OO',
     kinetics = Arrhenius(
@@ -146,7 +145,7 @@ kinetics(
 
 
 
-#   C=CC=O+[O]O_C=C[C]=O+OO
+# C=CC=O+[O]O_C=C[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=CC=O+[O]O_C=C[C]=O+OO',
     kinetics = Arrhenius(
@@ -162,7 +161,7 @@ kinetics(
 
 
 
-#   CC(C)C+[O]O_C[C](C)C+OO
+# CC(C)C+[O]O_C[C](C)C+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC(C)C+[O]O_C[C](C)C+OO',
     kinetics = Arrhenius(
@@ -178,7 +177,7 @@ kinetics(
 
 
 
-#   CCC+[O]O_C[CH]C+OO
+# CCC+[O]O_C[CH]C+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCC+[O]O_C[CH]C+OO',
     kinetics = Arrhenius(
@@ -194,7 +193,7 @@ kinetics(
 
 
 
-#   O=CCCO+[O]O_O=[C]CCO+OO
+# O=CCCO+[O]O_O=[C]CCO+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'O=CCCO+[O]O_O=[C]CCO+OO',
     kinetics = Arrhenius(
@@ -210,7 +209,7 @@ kinetics(
 
 
 
-#   O=CCO+[O]O_O=[C]CO+OO
+# O=CCO+[O]O_O=[C]CO+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'O=CCO+[O]O_O=[C]CO+OO',
     kinetics = Arrhenius(
@@ -227,7 +226,7 @@ kinetics(
 
 # ⚠️ C=C=C+[O]O_OO+[CH]=C=C Gave error 'kinetics(\n' is not in list
 
-#   CC=O+[O]O_C[C]=O+OO
+# CC=O+[O]O_C[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC=O+[O]O_C[C]=O+OO',
     kinetics = Arrhenius(
@@ -243,7 +242,7 @@ kinetics(
 
 
 
-#   CCC(C)O+[O]O_C[CH]C(C)O+OO
+# CCC(C)O+[O]O_C[CH]C(C)O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCC(C)O+[O]O_C[CH]C(C)O+OO',
     kinetics = Arrhenius(
@@ -259,7 +258,7 @@ kinetics(
 
 
 
-#   CC(C)C=O+[O]O_CC(C)[C]=O+OO
+# CC(C)C=O+[O]O_CC(C)[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC(C)C=O+[O]O_CC(C)[C]=O+OO',
     kinetics = Arrhenius(
@@ -275,7 +274,7 @@ kinetics(
 
 
 
-#   CCC(C)O+[O]O_OO+[CH2]C(O)CC
+# CCC(C)O+[O]O_OO+[CH2]C(O)CC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCC(C)O+[O]O_OO+[CH2]C(O)CC',
     kinetics = Arrhenius(
@@ -291,7 +290,7 @@ kinetics(
 
 
 
-#   C=C(C)C=O+[O]O_C=C(C)[C]=O+OO
+# C=C(C)C=O+[O]O_C=C(C)[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=C(C)C=O+[O]O_C=C(C)[C]=O+OO',
     kinetics = Arrhenius(
@@ -307,7 +306,7 @@ kinetics(
 
 
 
-#   CC(C)C=O+[O]O_OO+[CH2]C(C)C=O
+# CC(C)C=O+[O]O_OO+[CH2]C(C)C=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC(C)C=O+[O]O_OO+[CH2]C(C)C=O',
     kinetics = Arrhenius(
@@ -323,7 +322,7 @@ kinetics(
 
 
 
-#   C=C(C)C+[O]O_OO+[CH2]C(=C)C
+# C=C(C)C+[O]O_OO+[CH2]C(=C)C from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=C(C)C+[O]O_OO+[CH2]C(=C)C',
     kinetics = Arrhenius(
@@ -339,7 +338,7 @@ kinetics(
 
 
 
-#   CCCCO+[O]O_OO+[CH2]CCCO
+# CCCCO+[O]O_OO+[CH2]CCCO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCCCO+[O]O_OO+[CH2]CCCO',
     kinetics = Arrhenius(
@@ -355,7 +354,7 @@ kinetics(
 
 
 
-#   CCCC+[O]O_C[CH]CC+OO
+# CCCC+[O]O_C[CH]CC+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCCC+[O]O_C[CH]CC+OO',
     kinetics = Arrhenius(
@@ -371,7 +370,7 @@ kinetics(
 
 
 
-#   CC=C(C)O+[O]O_OO+[CH2]C(O)=CC
+# CC=C(C)O+[O]O_OO+[CH2]C(O)=CC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC=C(C)O+[O]O_OO+[CH2]C(O)=CC',
     kinetics = Arrhenius(
@@ -388,7 +387,7 @@ kinetics(
 
 # ⚠️ CC(C)CO+[O]O_CC(C)C[O]+OO Gave error 'kinetics(\n' is not in list
 
-#   C=CC+[O]O_OO+[CH2]C=C
+# C=CC+[O]O_OO+[CH2]C=C from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=CC+[O]O_OO+[CH2]C=C',
     kinetics = Arrhenius(
@@ -405,7 +404,7 @@ kinetics(
 
 # ⚠️ CCC(C)O+[O]O_CCC(C)[O]+OO Gave error 'kinetics(\n' is not in list
 
-#   CCO+[O]O_OO+[CH2]CO
+# CCO+[O]O_OO+[CH2]CO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCO+[O]O_OO+[CH2]CO',
     kinetics = Arrhenius(
@@ -421,7 +420,7 @@ kinetics(
 
 
 
-#   CCCC=O+[O]O_OO+[CH2]CCC=O
+# CCCC=O+[O]O_OO+[CH2]CCC=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCCC=O+[O]O_OO+[CH2]CCC=O',
     kinetics = Arrhenius(
@@ -437,7 +436,7 @@ kinetics(
 
 
 
-#   C=CCC+[O]O_C=C[CH]C+OO
+# C=CCC+[O]O_C=C[CH]C+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=CCC+[O]O_C=C[CH]C+OO',
     kinetics = Arrhenius(
@@ -453,7 +452,7 @@ kinetics(
 
 
 
-#   C=C1CC=CC1+[O]O_C=C1[CH]C=CC1+OO
+# C=C1CC=CC1+[O]O_C=C1[CH]C=CC1+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=C1CC=CC1+[O]O_C=C1[CH]C=CC1+OO',
     kinetics = Arrhenius(
@@ -469,7 +468,7 @@ kinetics(
 
 
 
-#   CC(C)(C)O+[O]O_OO+[CH2]C(C)(C)O
+# CC(C)(C)O+[O]O_OO+[CH2]C(C)(C)O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC(C)(C)O+[O]O_OO+[CH2]C(C)(C)O',
     kinetics = Arrhenius(
@@ -485,7 +484,7 @@ kinetics(
 
 
 
-#   C1=CCCC=C1+[O]O_OO+[CH]1C=CC=CC1
+# C1=CCCC=C1+[O]O_OO+[CH]1C=CC=CC1 from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C1=CCCC=C1+[O]O_OO+[CH]1C=CC=CC1',
     kinetics = Arrhenius(
@@ -501,7 +500,7 @@ kinetics(
 
 
 
-#   CCO+[O]O_C[CH]O+OO
+# CCO+[O]O_C[CH]O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCO+[O]O_C[CH]O+OO',
     kinetics = Arrhenius(
@@ -517,7 +516,7 @@ kinetics(
 
 
 
-#   CCC+[O]O_OO+[CH2]CC
+# CCC+[O]O_OO+[CH2]CC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCC+[O]O_OO+[CH2]CC',
     kinetics = Arrhenius(
@@ -533,7 +532,7 @@ kinetics(
 
 
 
-#   CCCCO+[O]O_CCC[CH]O+OO
+# CCCCO+[O]O_CCC[CH]O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCCCO+[O]O_CCC[CH]O+OO',
     kinetics = Arrhenius(
@@ -549,7 +548,7 @@ kinetics(
 
 
 
-#   CCCC=O+[O]O_CCC[C]=O+OO
+# CCCC=O+[O]O_CCC[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCCC=O+[O]O_CCC[C]=O+OO',
     kinetics = Arrhenius(
@@ -565,7 +564,7 @@ kinetics(
 
 
 
-#   CC(C)=O+[O]O_OO+[CH2]C(C)=O
+# CC(C)=O+[O]O_OO+[CH2]C(C)=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC(C)=O+[O]O_OO+[CH2]C(C)=O',
     kinetics = Arrhenius(
@@ -581,7 +580,7 @@ kinetics(
 
 
 
-#   COC+[O]O_OO+[CH2]OC
+# COC+[O]O_OO+[CH2]OC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'COC+[O]O_OO+[CH2]OC',
     kinetics = Arrhenius(
@@ -597,7 +596,7 @@ kinetics(
 
 
 
-#   CCC(C)=O+[O]O_C[CH]C(C)=O+OO
+# CCC(C)=O+[O]O_C[CH]C(C)=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCC(C)=O+[O]O_C[CH]C(C)=O+OO',
     kinetics = Arrhenius(
@@ -613,7 +612,7 @@ kinetics(
 
 
 
-#   C1CO1+[O]O_OO+[CH]1CO1
+# C1CO1+[O]O_OO+[CH]1CO1 from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C1CO1+[O]O_OO+[CH]1CO1',
     kinetics = Arrhenius(
@@ -629,7 +628,7 @@ kinetics(
 
 
 
-#   C1=CCC=C1+[O]O_OO+[CH]1C=CC=C1
+# C1=CCC=C1+[O]O_OO+[CH]1C=CC=C1 from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C1=CCC=C1+[O]O_OO+[CH]1C=CC=C1',
     kinetics = Arrhenius(
@@ -645,7 +644,7 @@ kinetics(
 
 
 
-#   CCCC=O+[O]O_CC[CH]C=O+OO
+# CCCC=O+[O]O_CC[CH]C=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCCC=O+[O]O_CC[CH]C=O+OO',
     kinetics = Arrhenius(
@@ -661,7 +660,7 @@ kinetics(
 
 
 
-#   CC+[O]O_C[CH2]+OO
+# CC+[O]O_C[CH2]+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC+[O]O_C[CH2]+OO',
     kinetics = Arrhenius(
@@ -678,7 +677,7 @@ kinetics(
 
 # ⚠️ CC(C)(C)O+[O]O_CC(C)(C)[O]+OO Gave error 'kinetics(\n' is not in list
 
-#   COC=O+[O]O_OO+[CH2]OC=O
+# COC=O+[O]O_OO+[CH2]OC=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'COC=O+[O]O_OO+[CH2]OC=O',
     kinetics = Arrhenius(
@@ -694,7 +693,7 @@ kinetics(
 
 
 
-#   CCC(C)O+[O]O_OO+[CH2]CC(C)O
+# CCC(C)O+[O]O_OO+[CH2]CC(C)O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCC(C)O+[O]O_OO+[CH2]CC(C)O',
     kinetics = Arrhenius(
@@ -711,7 +710,7 @@ kinetics(
 
 # ⚠️ C=CC+[O]O_C=[C]C+OO Gave error 'kinetics(\n' is not in list
 
-#   CC=CC=O+[O]O_CC=C[C]=O+OO
+# CC=CC=O+[O]O_CC=C[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC=CC=O+[O]O_CC=C[C]=O+OO',
     kinetics = Arrhenius(
@@ -727,7 +726,7 @@ kinetics(
 
 
 
-#   C=C1C=CCC1+[O]O_C=C1C=C[CH]C1+OO
+# C=C1C=CCC1+[O]O_C=C1C=C[CH]C1+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=C1C=CCC1+[O]O_C=C1C=C[CH]C1+OO',
     kinetics = Arrhenius(
@@ -743,7 +742,7 @@ kinetics(
 
 
 
-#   CCC(C)=O+[O]O_OO+[CH2]C(=O)CC
+# CCC(C)=O+[O]O_OO+[CH2]C(=O)CC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCC(C)=O+[O]O_OO+[CH2]C(=O)CC',
     kinetics = Arrhenius(
@@ -759,7 +758,7 @@ kinetics(
 
 
 
-#   CCC=O+[O]O_CC[C]=O+OO
+# CCC=O+[O]O_CC[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCC=O+[O]O_CC[C]=O+OO',
     kinetics = Arrhenius(
@@ -775,7 +774,7 @@ kinetics(
 
 
 
-#   CC(C)C+[O]O_OO+[CH2]C(C)C
+# CC(C)C+[O]O_OO+[CH2]C(C)C from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC(C)C+[O]O_OO+[CH2]C(C)C',
     kinetics = Arrhenius(
@@ -791,7 +790,7 @@ kinetics(
 
 
 
-#   CC(C)CO+[O]O_OO+[CH2]C(C)CO
+# CC(C)CO+[O]O_OO+[CH2]C(C)CO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC(C)CO+[O]O_OO+[CH2]C(C)CO',
     kinetics = Arrhenius(
@@ -807,7 +806,7 @@ kinetics(
 
 
 
-#   CO+[O]O_OO+[CH2]O
+# CO+[O]O_OO+[CH2]O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CO+[O]O_OO+[CH2]O',
     kinetics = Arrhenius(
@@ -823,7 +822,7 @@ kinetics(
 
 
 
-#   CCCCO+[O]O_C[CH]CCO+OO
+# CCCCO+[O]O_C[CH]CCO+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCCCO+[O]O_C[CH]CCO+OO',
     kinetics = Arrhenius(
@@ -839,7 +838,7 @@ kinetics(
 
 
 
-#   CC(C)CO+[O]O_CC(C)[CH]O+OO
+# CC(C)CO+[O]O_CC(C)[CH]O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CC(C)CO+[O]O_CC(C)[CH]O+OO',
     kinetics = Arrhenius(
@@ -855,7 +854,7 @@ kinetics(
 
 
 
-#   CCC(C)=O+[O]O_OO+[CH2]CC(C)=O
+# CCC(C)=O+[O]O_OO+[CH2]CC(C)=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCC(C)=O+[O]O_OO+[CH2]CC(C)=O',
     kinetics = Arrhenius(
@@ -872,7 +871,7 @@ kinetics(
 
 # ⚠️ C=CC+[O]O_OO+[CH]=CC Gave error 'kinetics(\n' is not in list
 
-#   C=CC=CC+[O]O_OO+[CH2]C=CC=C
+# C=CC=CC+[O]O_OO+[CH2]C=CC=C from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=CC=CC+[O]O_OO+[CH2]C=CC=C',
     kinetics = Arrhenius(
@@ -888,7 +887,7 @@ kinetics(
 
 
 
-#   C=O+[O]O_OO+[CH]=O
+# C=O+[O]O_OO+[CH]=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'C=O+[O]O_OO+[CH]=O',
     kinetics = Arrhenius(
@@ -904,7 +903,7 @@ kinetics(
 
 
 
-#   CCCCO+[O]O_CC[CH]CO+OO
+# CCCCO+[O]O_CC[CH]CO+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = 'CCCCO+[O]O_CC[CH]CO+OO',
     kinetics = Arrhenius(
@@ -920,24 +919,10 @@ kinetics(
 
 
 # ⚠️ CCO+[O]O_CC[O]+OO Gave error 'kinetics(\n' is not in list
-
-#   OO+[CH2]O_CO+[O]O
-kinetics(
-    label = 'OO+[CH2]O_CO+[O]O',
-    kinetics = Arrhenius(
-        A = (0.00355603, 'cm^3/(mol*s)'),
-        n = 3.86308,
-        Ea = (-0.675366, 'kJ/mol'),
-        T0 = (1, 'K'),
-        Tmin = (303.03, 'K'),
-        Tmax = (2500, 'K'),
-        comment = 'Fitted to 59 data points; dA = *|/ 1.11474, dn = +|- 0.0142558, dEa = +|- 0.0784211 kJ/mol',
-    ),
-)
-
-
-
-#   C=O+[O]O_OO+[CH]=O
+###### NOW DOING THINGS IN /gss_gpfs_scratch/westgroup/QMscratch/
+# C=O+[O]O_OO+[CH]=O from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+"""
 kinetics(
     label = 'C=O+[O]O_OO+[CH]=O',
     kinetics = Arrhenius(
@@ -952,24 +937,12 @@ kinetics(
 )
 
 
-
-#   C[CH2]+OO_CC+[O]O
-kinetics(
-    label = 'C[CH2]+OO_CC+[O]O',
-    kinetics = Arrhenius(
-        A = (0.00263746, 'cm^3/(mol*s)'),
-        n = 3.97659,
-        Ea = (-1.62058, 'kJ/mol'),
-        T0 = (1, 'K'),
-        Tmin = (303.03, 'K'),
-        Tmax = (2500, 'K'),
-        comment = 'Fitted to 59 data points; dA = *|/ 1.12702, dn = +|- 0.0156938, dEa = +|- 0.0863314 kJ/mol',
-    ),
-)
+"""
 
 
-
-#   CO+[O]O_OO+[CH2]O
+# CO+[O]O_OO+[CH2]O from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+"""
 kinetics(
     label = 'CO+[O]O_OO+[CH2]O',
     kinetics = Arrhenius(
@@ -984,8 +957,12 @@ kinetics(
 )
 
 
+"""
 
-#   CC=O+[O]O_C[C]=O+OO
+
+# CC=O+[O]O_C[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+"""
 kinetics(
     label = 'CC=O+[O]O_C[C]=O+OO',
     kinetics = Arrhenius(
@@ -1000,9 +977,10 @@ kinetics(
 )
 
 
-# ⚠️ C=[C]CO+OO_C=CCO+[O]O Gave error 'kinetics(\n' is not in list
+"""
 
-#   C#CC+[O]O_C#C[CH2]+OO
+
+# C#CC+[O]O_C#C[CH2]+OO from /gss_gpfs_scratch/westgroup/QMscratch/
 kinetics(
     label = 'C#CC+[O]O_C#C[CH2]+OO',
     kinetics = Arrhenius(
@@ -1017,9 +995,8 @@ kinetics(
 )
 
 
-# ⚠️ OO+[CH]=C_C=C+[O]O Gave error 'kinetics(\n' is not in list
 
-#   COO+[O]O_CO[O]+OO
+# COO+[O]O_CO[O]+OO from /gss_gpfs_scratch/westgroup/QMscratch/
 kinetics(
     label = 'COO+[O]O_CO[O]+OO',
     kinetics = Arrhenius(
@@ -1035,23 +1012,9 @@ kinetics(
 
 
 
-#   OO+[CH2]CC_CCC+[O]O
-kinetics(
-    label = 'OO+[CH2]CC_CCC+[O]O',
-    kinetics = Arrhenius(
-        A = (0.00640782, 'cm^3/(mol*s)'),
-        n = 3.87119,
-        Ea = (-2.05191, 'kJ/mol'),
-        T0 = (1, 'K'),
-        Tmin = (303.03, 'K'),
-        Tmax = (2500, 'K'),
-        comment = 'Fitted to 59 data points; dA = *|/ 1.07684, dn = +|- 0.00971556, dEa = +|- 0.0534453 kJ/mol',
-    ),
-)
-
-
-
-#   CCC+[O]O_OO+[CH2]CC
+# CCC+[O]O_OO+[CH2]CC from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+"""
 kinetics(
     label = 'CCC+[O]O_OO+[CH2]CC',
     kinetics = Arrhenius(
@@ -1066,9 +1029,10 @@ kinetics(
 )
 
 
-# ⚠️ C[O]+OO_CO+[O]O Gave error 'kinetics(\n' is not in list
+"""
 
-#   C=C(C)CO+[O]O_OO+[CH2]C(=C)CO
+
+# C=C(C)CO+[O]O_OO+[CH2]C(=C)CO from /gss_gpfs_scratch/westgroup/QMscratch/
 kinetics(
     label = 'C=C(C)CO+[O]O_OO+[CH2]C(=C)CO',
     kinetics = Arrhenius(
@@ -1084,39 +1048,9 @@ kinetics(
 
 
 
-#   CO[O]+OO_COO+[O]O
-kinetics(
-    label = 'CO[O]+OO_COO+[O]O',
-    kinetics = Arrhenius(
-        A = (1.12699e-05, 'cm^3/(mol*s)'),
-        n = 4.6208,
-        Ea = (7.44222, 'kJ/mol'),
-        T0 = (1, 'K'),
-        Tmin = (303.03, 'K'),
-        Tmax = (2500, 'K'),
-        comment = 'Fitted to 59 data points; dA = *|/ 1.40594, dn = +|- 0.0447143, dEa = +|- 0.245974 kJ/mol',
-    ),
-)
-
-
-
-#   C[C]=O+OO_CC=O+[O]O
-kinetics(
-    label = 'C[C]=O+OO_CC=O+[O]O',
-    kinetics = Arrhenius(
-        A = (0.000356088, 'cm^3/(mol*s)'),
-        n = 4.44236,
-        Ea = (7.94843, 'kJ/mol'),
-        T0 = (1, 'K'),
-        Tmin = (303.03, 'K'),
-        Tmax = (2500, 'K'),
-        comment = 'Fitted to 59 data points; dA = *|/ 1.42249, dn = +|- 0.04625, dEa = +|- 0.254422 kJ/mol',
-    ),
-)
-
-
-
-#   CC+[O]O_C[CH2]+OO
+# CC+[O]O_C[CH2]+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+"""
 kinetics(
     label = 'CC+[O]O_C[CH2]+OO',
     kinetics = Arrhenius(
@@ -1131,20 +1065,6 @@ kinetics(
 )
 
 
-
-#   OO+[CH2]C(=C)CO_C=C(C)CO+[O]O
-kinetics(
-    label = 'OO+[CH2]C(=C)CO_C=C(C)CO+[O]O',
-    kinetics = Arrhenius(
-        A = (9.52481e-07, 'cm^3/(mol*s)'),
-        n = 4.88615,
-        Ea = (13.2201, 'kJ/mol'),
-        T0 = (1, 'K'),
-        Tmin = (303.03, 'K'),
-        Tmax = (2500, 'K'),
-        comment = 'Fitted to 59 data points; dA = *|/ 1.95699, dn = +|- 0.088116, dEa = +|- 0.484727 kJ/mol',
-    ),
-)
-
+"""
 
 # ⚠️ CO+[O]O_C[O]+OO Gave error 'kinetics(\n' is not in list

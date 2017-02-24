@@ -918,3 +918,51 @@ entry(
     shortDesc = u"""AutoTST M062X for C4H10O(43) + HO2(2) <=> C4H9O(97) + H2O2(4)""",
 )
 
+entry(
+    index = 58,
+    label = "C3H4(98) + HO2(2) <=> C3H3(99) + H2O2(4)",
+    degeneracy = 1,
+    kinetics = Arrhenius(
+        A = (9.02065e-08, 'cm^3/(mol*s)'),
+        n = 5.56952,
+        Ea = (34.8886, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (303.03, 'K'),
+        Tmax = (2500, 'K'),
+        comment = 'Fitted to 59 data points; dA = *|/ 2.33181, dn = +|- 0.111115, dEa = +|- 0.611241 kJ/mol',
+    ),
+    shortDesc = u"""AutoTST M062X for C3H4(98) + HO2(2) <=> C3H3(99) + H2O2(4)""",
+)
+
+entry(
+    index = 59,
+    label = "CH4O2(100) + HO2(2) <=> CH3O2(101) + H2O2(4)",
+    degeneracy = 1,
+    kinetics = Arrhenius(
+        A = (2.25347e-05, 'cm^3/(mol*s)'),
+        n = 4.61955,
+        Ea = (0.462874, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (303.03, 'K'),
+        Tmax = (2500, 'K'),
+        comment = 'Fitted to 59 data points; dA = *|/ 1.41572, dn = +|- 0.045624, dEa = +|- 0.250978 kJ/mol',
+    ),
+    shortDesc = u"""AutoTST M062X for CH4O2(100) + HO2(2) <=> CH3O2(101) + H2O2(4)""",
+)
+
+entry(
+    index = 60,
+    label = "C4H8O(102) + HO2(2) <=> H2O2(4) + C4H7O(103)",
+    degeneracy = 1,
+    kinetics = Arrhenius(
+        A = (8.37166e-09, 'cm^3/(mol*s)'),
+        n = 5.75426,
+        Ea = (31.1394, 'kJ/mol'),
+        T0 = (1, 'K'),
+        Tmin = (303.03, 'K'),
+        Tmax = (2500, 'K'),
+        comment = 'Fitted to 59 data points; dA = *|/ 2.74682, dn = +|- 0.132612, dEa = +|- 0.729496 kJ/mol',
+    ),
+    shortDesc = u"""AutoTST M062X for C4H8O(102) + HO2(2) <=> H2O2(4) + C4H7O(103)""",
+)
+
