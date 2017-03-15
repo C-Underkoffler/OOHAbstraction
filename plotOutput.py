@@ -33,7 +33,7 @@ expressionSheet = pd.read_excel('output.xls', sheetname='k-expressions', header=
 
 rxnList = kineticsSheet['AutoTST-OOHabstraction'].dropna().index.values
 kinSheet = kineticsSheet.ix[rxnList].sort_values(by='AutoTST-OOHabstraction').set_index('Reaction')
-kSheet = kinSheet.iloc[:,:-2]
+kSheet = kinSheet.iloc[:,:-2] # remove the last column, which is AutoTST-OOHabstraction
 kSheet
 
 
