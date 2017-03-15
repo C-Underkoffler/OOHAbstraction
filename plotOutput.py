@@ -27,9 +27,15 @@ kineticsSheet = pd.read_excel('output.xls', sheetname='k-1000K-100bar', header=4
 expressionSheet = pd.read_excel('output.xls', sheetname='k-expressions', header=4).iloc[:,1:]
 
 
+# In[10]:
+
+kineticsSheet.columns = [n.split('RMG-models/')[-1] for n in kineticsSheet.columns]
+expressionSheet.columns = [n.split('RMG-models/')[-1] for n in expressionSheet.columns]
+
+
 # ## Making the box plot
 
-# In[3]:
+# In[11]:
 
 rxnList = kineticsSheet['AutoTST-OOHabstraction'].dropna().index.values
 kinSheet = kineticsSheet.ix[rxnList].sort_values(by='AutoTST-OOHabstraction').set_index('Reaction')
@@ -37,14 +43,14 @@ kSheet = kinSheet.iloc[:,:-2] # remove the last column, which is AutoTST-OOHabst
 kSheet
 
 
-# In[4]:
+# In[12]:
 
 get_ipython().magic(u'cd plotOutputResults')
 
 
-# In[5]:
+# In[15]:
 
-boxPlot = kSheet.transpose().plot.box(figsize=(12,8), grid=True, rot=90)
+boxPlot = kSheet.transpose().plot.box(figsize=(24,8), grid=True, rot=90)
 boxPlot.plot(range(1,kinSheet.transpose().shape[1]+1),kinSheet.transpose().loc['AutoTST-OOHabstraction'].values, marker='o', color='k', linestyle='')
 boxPlot.set_ylabel('$log_{10}(k)$', fontsize=20)
 boxPlot.set_xlabel('Reaction', fontsize=20)
@@ -55,7 +61,7 @@ fig.tight_layout()
 
 # ## Making the parity plot
 
-# In[6]:
+# In[16]:
 
 plt.plot(range(-2, 20), range(-2, 20), '-g', zorder=-1) # Parity Line
 plt.plot(range(-3, 19), range(-2, 20), ':g', zorder=-1) # 1 order of magnitude
@@ -86,6 +92,137 @@ for j in kinSheet.index:
 
 plt.savefig('parityPlot.pdf')
 
+
+# Trying to debug the `ValueError` on `not pd.isnull(kinSheet[i].loc[j])` which suggests `kinSheet[i].loc[j]` is a Series not a single value
+
+# In[40]:
+
+# See what i,j and the value is:
+print i,j
+kinSheet[i].loc[j]
+
+
+# In[56]:
+
+kinSheet.loc[j]
+
+
+# There are two reactions that look the same!
+# Looking into the `AutoTST-OOHabstraction` Reaction Library it looks like there are two different species being given the same name `IC4H6OH` in the spreadsheet.
+# 
+# ## IC4H7OH + HO2 <=> IC4H6OH + H2O2
+# ```
+# AutoTST-OOHabstraction Arrhenius(A=(8.37166e-09,'cm^3/(mol*s)'), n=5.75426, Ea=(31.1394,'kJ/mol'), T0=(1,'K'), Tmin=(303.03,'K'), Tmax=(2500,'K'), comment="""Fitted to 59 data points; dA = *|/ 2.74682, dn = +|- 0.132612, dEa = +|- 0.729496 kJ/mol""")
+# Gasoline_Surrogate Arrhenius(A=(7644,'cm^3/(mol*s)'), n=2.712, Ea=(13930,'cal/mol'), T0=(1,'K'))
+# n-Heptane Arrhenius(A=(7644,'cm^3/(mol*s)'), n=2.712, Ea=(13930,'cal/mol'), T0=(1,'K'))
+# PCI2013/335-Wang Arrhenius(A=(7644,'cm^3/(mol*s)'), n=2.712, Ea=(13930,'cal/mol'), T0=(1,'K'))
+# MB-Dooley Arrhenius(A=(7644,'cm^3/(mol*s)'), n=2.71, Ea=(13930,'cal/mol'), T0=(1,'K'))
+# CombFlame2013/487-Schenk Arrhenius(A=(792.2,'cm^3/(mol*s)'), n=2.98, Ea=(12300,'cal/mol'), T0=(1,'K'))
+# AramcoMech_2.0 Arrhenius(A=(1.45e-05,'cm^3/(mol*s)'), n=5.26, Ea=(8267.91,'cal/mol'), T0=(1,'K'))
+# CombFlame2013/1541-Zhang Arrhenius(A=(7644,'cm^3/(mol*s)'), n=2.712, Ea=(13930,'cal/mol'), T0=(1,'K'))
+# ```
+# In `AutoTST-OOHabstraction` this is:
+# ```
+# entry(
+#     index = 162,
+#     label = "C4H8O(189) + HO2(2) <=> H2O2(4) + C4H7O(259)",
+#     degeneracy = 1,
+#     kinetics =  Arrhenius(
+#         A = (8.37166e-09, 'cm^3/(mol*s)'),
+#         n = 5.75426,
+#         Ea = (31.1394, 'kJ/mol'),
+#         T0 = (1, 'K'),
+#         Tmin = (303.03, 'K'),
+#         Tmax = (2500, 'K'),
+#         comment = 'Fitted to 59 data points; dA = *|/ 2.74682, dn = +|- 0.132612, dEa = +|- 0.729496 kJ/mol',
+#     ),
+#     shortDesc = u"""AutoTST M062X for C4H8O(189) + HO2(2) <=> H2O2(4) + C4H7O(259)""",
+# )
+# ```
+# and `C4H7O(259)` is 
+# ```
+# C4H7O(259)
+# multiplicity 2
+# 1  C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
+# 2  C u0 p0 c0 {1,S} {3,S} {4,D}
+# 3  C u1 p0 c0 {2,S} {8,S} {9,S}
+# 4  C u0 p0 c0 {2,D} {10,S} {11,S}
+# 5  O u0 p2 c0 {1,S} {12,S}
+# 6  H u0 p0 c0 {1,S}
+# 7  H u0 p0 c0 {1,S}
+# 8  H u0 p0 c0 {3,S}
+# 9  H u0 p0 c0 {3,S}
+# 10 H u0 p0 c0 {4,S}
+# 11 H u0 p0 c0 {4,S}
+# 12 H u0 p0 c0 {5,S}
+# 
+# InChI:	InChI=1S/C4H7O/c1-4(2)3-5/h5H,1-3H2
+# SMILES:	[CH2]C(=C)CO
+# ```
+# 
+# ## IC4H7OH + HO2 <=> IC4H6OH + H2O2
+# ```
+# AutoTST-OOHabstraction Arrhenius(A=(8.04843e-06,'cm^3/(mol*s)'), n=4.79274, Ea=(14.1732,'kJ/mol'), T0=(1,'K'), Tmin=(303.03,'K'), Tmax=(2500,'K'), comment="""Fitted to 59 data points; dA = *|/ 1.74322, dn = +|- 0.0729353, dEa = +|- 0.401217 kJ/mol""")
+# PCI2017/052-Li Arrhenius(A=(1.45e-05,'cm^3/(mol*s)'), n=5.26, Ea=(8267.91,'cal/mol'), T0=(1,'K'))
+# ```
+# In `AutoTST-OOHabstraction` this is:
+# ```
+# entry(
+#     index = 112,
+#     label = "C4H8O(189) + HO2(2) <=> C4H7O(190) + H2O2(4)",
+#     degeneracy = 1,
+#     kinetics =  Arrhenius(
+#         A = (8.04843e-06, 'cm^3/(mol*s)'),
+#         n = 4.79274,
+#         Ea = (14.1732, 'kJ/mol'),
+#         T0 = (1, 'K'),
+#         Tmin = (303.03, 'K'),
+#         Tmax = (2500, 'K'),
+#         comment = 'Fitted to 59 data points; dA = *|/ 1.74322, dn = +|- 0.0729353, dEa = +|- 0.401217 kJ/mol',
+#     ),
+#     shortDesc = u"""AutoTST M062X for C4H8O(189) + HO2(2) <=> C4H7O(190) + H2O2(4)""",
+# )
+# ```
+# and `C4H7O(190)` is 
+# ```
+# C4H7O(190)
+# multiplicity 2
+# 1  C u0 p0 c0 {2,S} {6,S} {7,S} {8,S}
+# 2  C u0 p0 c0 {1,S} {3,S} {4,D}
+# 3  C u1 p0 c0 {2,S} {5,S} {9,S}
+# 4  C u0 p0 c0 {2,D} {10,S} {11,S}
+# 5  O u0 p2 c0 {3,S} {12,S}
+# 6  H u0 p0 c0 {1,S}
+# 7  H u0 p0 c0 {1,S}
+# 8  H u0 p0 c0 {1,S}
+# 9  H u0 p0 c0 {3,S}
+# 10 H u0 p0 c0 {4,S}
+# 11 H u0 p0 c0 {4,S}
+# 12 H u0 p0 c0 {5,S}
+# 
+# InChI:	InChI=1S/C4H7O/c1-4(2)3-5/h3,5H,1H2,2H3
+# SMILES:	C=C(C)[CH]O
+# ```
+# 
+# The InChI codes are different so they're not resonance isomers.  So I think it's a bug that the model comparer is giving them the same name. Let's load the names pickle and see if we can find them
+
+# In[57]:
+
+import cPickle as pickle
+names = pickle.load(open('../names.pkl'))
+names = pd.DataFrame(names)
+names.columns = [n.toSMILES() for n in names.columns]
+names.index = [n.split('RMG-models/')[-1] for n in names.index]
+names
+
+
+# In[58]:
+
+print names.index
+'AutoTST-OOHabstraction' in names.index
+
+
+# Dang!
 
 # ## Making the Arrhenius plots for each reaction
 
