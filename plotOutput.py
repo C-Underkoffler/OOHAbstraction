@@ -63,7 +63,7 @@ for j in kinSheet.index:
     x_list = []
     y_list = []
     for i in list(kinSheet):
-        if i != "AutoTST-OOHabstraction" and pd.isnull(kinSheet[i].loc[j]) == False:
+        if i != "AutoTST-OOHabstraction" and not pd.isnull(kinSheet[i].loc[j]):
             x_list.append(kinSheet[i].loc[j] + 6)
             y_list.append(autoTST)
 
