@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>1 Filter OOH</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>1 Filter OOH</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -13,8 +11,8 @@
 *
 */
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1109,7 +1107,6 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2538,7 +2535,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3029,7 +3025,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -8760,6 +8755,9 @@ body > #header .header-bar {
     margin-left: 10px;
   }
 }
+[dir="rtl"] #ipython_notebook {
+  float: right !important;
+}
 #noscript {
   width: auto;
   padding-top: 16px;
@@ -8962,8 +8960,14 @@ span#login_widget > .button .badge,
  *
  * Author: Jupyter Development Team
  */
+[dir="rtl"] #tabs li {
+  float: right;
+}
 ul#tabs {
   margin-bottom: 4px;
+}
+[dir="rtl"] ul#tabs {
+  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
@@ -8986,6 +8990,16 @@ ul.breadcrumb span {
 }
 .list_toolbar .tree-buttons {
   padding-top: 1px;
+}
+[dir="rtl"] .list_toolbar .tree-buttons {
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-right {
+  padding-top: 1px;
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-left {
+  float: right !important;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9122,6 +9136,9 @@ ul.breadcrumb span {
 #tree-selector {
   padding-right: 0px;
 }
+[dir="rtl"] #tree-selector a {
+  float: right;
+}
 #button-select-all {
   min-width: 50px;
 }
@@ -9211,6 +9228,9 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
+[dir="rtl"] #new-menu {
+  text-align: right;
+}
 .kernel-menu-icon {
   padding-right: 12px;
   width: 24px;
@@ -9255,6 +9275,9 @@ ul#new-menu {
 }
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
+}
+[dir="rtl"] #running .col-sm-8 {
+  float: right !important;
 }
 .delete-button {
   display: none;
@@ -9551,6 +9574,7 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 div.inner_cell {
+  min-width: 0;
   /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -9571,11 +9595,6 @@ div.inner_cell {
   box-flex: 1;
   /* Modern browsers */
   flex: 1;
-}
-@-moz-document url-prefix() {
-  div.inner_cell {
-    overflow-x: hidden;
-  }
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
@@ -11246,7 +11265,7 @@ div#pager .ui-resizable-handle::after {
 }
 .shortcut_key {
   display: inline-block;
-  width: 20ex;
+  width: 21ex;
   text-align: right;
   font-family: monospace;
 }
@@ -11558,6 +11577,7 @@ ul.typeahead-list > li > a {
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 .terminal-app .terminal {
+  width: 100%;
   float: left;
   font-family: monospace;
   color: white;
@@ -11571,6 +11591,9 @@ ul.typeahead-list > li > a {
 .terminal-app .terminal dummy-screen {
   line-height: 1em;
   font-size: 14px;
+}
+.terminal-app .terminal .xterm-rows {
+  padding: 10px;
 }
 .terminal-app .terminal-cursor {
   color: black;
@@ -11631,8 +11654,10 @@ ul.typeahead-list > li > a {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -11643,9 +11668,11 @@ ul.typeahead-list > li > a {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
@@ -11777,7 +11804,9 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[2]:</div>
+
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11818,7 +11847,9 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>(&#39;Forward&#39;, 72)
 (&#39;Reverse&#39;, 61)
@@ -11826,7 +11857,9 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[3]:</div>
+
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11938,7 +11971,9 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre># ⚠️ CC(C)CO+[O]O_C[C](C)CO+OO Gave error Doesn&#39;t have output.py file
 # ⚠️ C+[O]O_OO+[CH3] Gave error Doesn&#39;t have output.py file
@@ -11950,7 +11985,9 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[4]:</div>
+
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11969,6 +12006,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">capture</span> cap --no-stderr
+success = fail = 0
 for reaction in to_try:
     try:
         path = os.path.join(root_dir, reaction, &#39;m062x&#39;,&#39;output.py&#39;)
@@ -11976,10 +12014,12 @@ for reaction in to_try:
             lines = f.readlines()
         start = lines.index(&#39;kinetics(\n&#39;)
         print
-        print &quot;#  &quot;,reaction
+        print &quot;# {} from {}&quot;.format(reaction, root_dir)
         print &#39;&#39;.join(lines[start:])
+        success += 1
     except Exception as err:
         print &quot;# ⚠️&quot;, reaction, &quot;Gave error&quot;, str(err)
+        fail += 1
 </pre></div>
 
 </div>
@@ -12006,10 +12046,12 @@ for reaction in to_try:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-#   C=CCC=C+[O]O_C=C[CH]C=C+OO
+# C=CCC=C+[O]O_C=C[CH]C=C+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=CCC=C+[O]O_C=C[CH]C=C+OO&#39;,
     kinetics = Arrhenius(
@@ -12025,7 +12067,7 @@ kinetics(
 
 
 
-#   COC=O+[O]O_CO[C]=O+OO
+# COC=O+[O]O_CO[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;COC=O+[O]O_CO[C]=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12042,7 +12084,7 @@ kinetics(
 
 # ⚠️ CCCCO+[O]O_CCCC[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
 
-#   CCC=CO+[O]O_C[CH]C=CO+OO
+# CCC=CO+[O]O_C[CH]C=CO+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCC=CO+[O]O_C[CH]C=CO+OO&#39;,
     kinetics = Arrhenius(
@@ -12058,7 +12100,7 @@ kinetics(
 
 
 
-#   CC=CC+[O]O_OO+[CH2]C=CC
+# CC=CC+[O]O_OO+[CH2]C=CC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC=CC+[O]O_OO+[CH2]C=CC&#39;,
     kinetics = Arrhenius(
@@ -12074,7 +12116,7 @@ kinetics(
 
 
 
-#   C=C(O)CC+[O]O_C=C(O)[CH]C+OO
+# C=C(O)CC+[O]O_C=C(O)[CH]C+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=C(O)CC+[O]O_C=C(O)[CH]C+OO&#39;,
     kinetics = Arrhenius(
@@ -12090,7 +12132,7 @@ kinetics(
 
 
 
-#   CCCC+[O]O_OO+[CH2]CCC
+# CCCC+[O]O_OO+[CH2]CCC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCCC+[O]O_OO+[CH2]CCC&#39;,
     kinetics = Arrhenius(
@@ -12107,7 +12149,7 @@ kinetics(
 
 # ⚠️ [O]O+[O]O_OO+[O][O] Gave error &#39;kinetics(\n&#39; is not in list
 
-#   C=CCC+[O]O_OO+[CH2]CC=C
+# C=CCC+[O]O_OO+[CH2]CC=C from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=CCC+[O]O_OO+[CH2]CC=C&#39;,
     kinetics = Arrhenius(
@@ -12123,7 +12165,7 @@ kinetics(
 
 
 
-#   CCCC=O+[O]O_C[CH]CC=O+OO
+# CCCC=O+[O]O_C[CH]CC=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCCC=O+[O]O_C[CH]CC=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12139,7 +12181,7 @@ kinetics(
 
 
 
-#   C=C1C=CCC1+[O]O_C=C1[CH]CC=C1+OO
+# C=C1C=CCC1+[O]O_C=C1[CH]CC=C1+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=C1C=CCC1+[O]O_C=C1[CH]CC=C1+OO&#39;,
     kinetics = Arrhenius(
@@ -12155,7 +12197,7 @@ kinetics(
 
 
 
-#   C=CC=O+[O]O_C=C[C]=O+OO
+# C=CC=O+[O]O_C=C[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=CC=O+[O]O_C=C[C]=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12171,7 +12213,7 @@ kinetics(
 
 
 
-#   CC(C)C+[O]O_C[C](C)C+OO
+# CC(C)C+[O]O_C[C](C)C+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC(C)C+[O]O_C[C](C)C+OO&#39;,
     kinetics = Arrhenius(
@@ -12187,7 +12229,7 @@ kinetics(
 
 
 
-#   CCC+[O]O_C[CH]C+OO
+# CCC+[O]O_C[CH]C+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCC+[O]O_C[CH]C+OO&#39;,
     kinetics = Arrhenius(
@@ -12203,7 +12245,7 @@ kinetics(
 
 
 
-#   O=CCCO+[O]O_O=[C]CCO+OO
+# O=CCCO+[O]O_O=[C]CCO+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;O=CCCO+[O]O_O=[C]CCO+OO&#39;,
     kinetics = Arrhenius(
@@ -12219,7 +12261,7 @@ kinetics(
 
 
 
-#   O=CCO+[O]O_O=[C]CO+OO
+# O=CCO+[O]O_O=[C]CO+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;O=CCO+[O]O_O=[C]CO+OO&#39;,
     kinetics = Arrhenius(
@@ -12236,7 +12278,7 @@ kinetics(
 
 # ⚠️ C=C=C+[O]O_OO+[CH]=C=C Gave error &#39;kinetics(\n&#39; is not in list
 
-#   CC=O+[O]O_C[C]=O+OO
+# CC=O+[O]O_C[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC=O+[O]O_C[C]=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12252,7 +12294,7 @@ kinetics(
 
 
 
-#   CCC(C)O+[O]O_C[CH]C(C)O+OO
+# CCC(C)O+[O]O_C[CH]C(C)O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCC(C)O+[O]O_C[CH]C(C)O+OO&#39;,
     kinetics = Arrhenius(
@@ -12268,7 +12310,7 @@ kinetics(
 
 
 
-#   CC(C)C=O+[O]O_CC(C)[C]=O+OO
+# CC(C)C=O+[O]O_CC(C)[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC(C)C=O+[O]O_CC(C)[C]=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12284,7 +12326,7 @@ kinetics(
 
 
 
-#   CCC(C)O+[O]O_OO+[CH2]C(O)CC
+# CCC(C)O+[O]O_OO+[CH2]C(O)CC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCC(C)O+[O]O_OO+[CH2]C(O)CC&#39;,
     kinetics = Arrhenius(
@@ -12300,7 +12342,7 @@ kinetics(
 
 
 
-#   C=C(C)C=O+[O]O_C=C(C)[C]=O+OO
+# C=C(C)C=O+[O]O_C=C(C)[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=C(C)C=O+[O]O_C=C(C)[C]=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12316,7 +12358,7 @@ kinetics(
 
 
 
-#   CC(C)C=O+[O]O_OO+[CH2]C(C)C=O
+# CC(C)C=O+[O]O_OO+[CH2]C(C)C=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC(C)C=O+[O]O_OO+[CH2]C(C)C=O&#39;,
     kinetics = Arrhenius(
@@ -12332,7 +12374,7 @@ kinetics(
 
 
 
-#   C=C(C)C+[O]O_OO+[CH2]C(=C)C
+# C=C(C)C+[O]O_OO+[CH2]C(=C)C from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=C(C)C+[O]O_OO+[CH2]C(=C)C&#39;,
     kinetics = Arrhenius(
@@ -12348,7 +12390,7 @@ kinetics(
 
 
 
-#   CCCCO+[O]O_OO+[CH2]CCCO
+# CCCCO+[O]O_OO+[CH2]CCCO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCCCO+[O]O_OO+[CH2]CCCO&#39;,
     kinetics = Arrhenius(
@@ -12364,7 +12406,7 @@ kinetics(
 
 
 
-#   CCCC+[O]O_C[CH]CC+OO
+# CCCC+[O]O_C[CH]CC+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCCC+[O]O_C[CH]CC+OO&#39;,
     kinetics = Arrhenius(
@@ -12380,7 +12422,7 @@ kinetics(
 
 
 
-#   CC=C(C)O+[O]O_OO+[CH2]C(O)=CC
+# CC=C(C)O+[O]O_OO+[CH2]C(O)=CC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC=C(C)O+[O]O_OO+[CH2]C(O)=CC&#39;,
     kinetics = Arrhenius(
@@ -12397,7 +12439,7 @@ kinetics(
 
 # ⚠️ CC(C)CO+[O]O_CC(C)C[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
 
-#   C=CC+[O]O_OO+[CH2]C=C
+# C=CC+[O]O_OO+[CH2]C=C from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=CC+[O]O_OO+[CH2]C=C&#39;,
     kinetics = Arrhenius(
@@ -12414,7 +12456,7 @@ kinetics(
 
 # ⚠️ CCC(C)O+[O]O_CCC(C)[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
 
-#   CCO+[O]O_OO+[CH2]CO
+# CCO+[O]O_OO+[CH2]CO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCO+[O]O_OO+[CH2]CO&#39;,
     kinetics = Arrhenius(
@@ -12430,7 +12472,7 @@ kinetics(
 
 
 
-#   CCCC=O+[O]O_OO+[CH2]CCC=O
+# CCCC=O+[O]O_OO+[CH2]CCC=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCCC=O+[O]O_OO+[CH2]CCC=O&#39;,
     kinetics = Arrhenius(
@@ -12446,7 +12488,7 @@ kinetics(
 
 
 
-#   C=CCC+[O]O_C=C[CH]C+OO
+# C=CCC+[O]O_C=C[CH]C+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=CCC+[O]O_C=C[CH]C+OO&#39;,
     kinetics = Arrhenius(
@@ -12462,7 +12504,7 @@ kinetics(
 
 
 
-#   C=C1CC=CC1+[O]O_C=C1[CH]C=CC1+OO
+# C=C1CC=CC1+[O]O_C=C1[CH]C=CC1+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=C1CC=CC1+[O]O_C=C1[CH]C=CC1+OO&#39;,
     kinetics = Arrhenius(
@@ -12478,7 +12520,7 @@ kinetics(
 
 
 
-#   CC(C)(C)O+[O]O_OO+[CH2]C(C)(C)O
+# CC(C)(C)O+[O]O_OO+[CH2]C(C)(C)O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC(C)(C)O+[O]O_OO+[CH2]C(C)(C)O&#39;,
     kinetics = Arrhenius(
@@ -12494,7 +12536,7 @@ kinetics(
 
 
 
-#   C1=CCCC=C1+[O]O_OO+[CH]1C=CC=CC1
+# C1=CCCC=C1+[O]O_OO+[CH]1C=CC=CC1 from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C1=CCCC=C1+[O]O_OO+[CH]1C=CC=CC1&#39;,
     kinetics = Arrhenius(
@@ -12510,7 +12552,7 @@ kinetics(
 
 
 
-#   CCO+[O]O_C[CH]O+OO
+# CCO+[O]O_C[CH]O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCO+[O]O_C[CH]O+OO&#39;,
     kinetics = Arrhenius(
@@ -12526,7 +12568,7 @@ kinetics(
 
 
 
-#   CCC+[O]O_OO+[CH2]CC
+# CCC+[O]O_OO+[CH2]CC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCC+[O]O_OO+[CH2]CC&#39;,
     kinetics = Arrhenius(
@@ -12542,7 +12584,7 @@ kinetics(
 
 
 
-#   CCCCO+[O]O_CCC[CH]O+OO
+# CCCCO+[O]O_CCC[CH]O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCCCO+[O]O_CCC[CH]O+OO&#39;,
     kinetics = Arrhenius(
@@ -12558,7 +12600,7 @@ kinetics(
 
 
 
-#   CCCC=O+[O]O_CCC[C]=O+OO
+# CCCC=O+[O]O_CCC[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCCC=O+[O]O_CCC[C]=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12574,7 +12616,7 @@ kinetics(
 
 
 
-#   CC(C)=O+[O]O_OO+[CH2]C(C)=O
+# CC(C)=O+[O]O_OO+[CH2]C(C)=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC(C)=O+[O]O_OO+[CH2]C(C)=O&#39;,
     kinetics = Arrhenius(
@@ -12590,7 +12632,7 @@ kinetics(
 
 
 
-#   COC+[O]O_OO+[CH2]OC
+# COC+[O]O_OO+[CH2]OC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;COC+[O]O_OO+[CH2]OC&#39;,
     kinetics = Arrhenius(
@@ -12606,7 +12648,7 @@ kinetics(
 
 
 
-#   CCC(C)=O+[O]O_C[CH]C(C)=O+OO
+# CCC(C)=O+[O]O_C[CH]C(C)=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCC(C)=O+[O]O_C[CH]C(C)=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12622,7 +12664,7 @@ kinetics(
 
 
 
-#   C1CO1+[O]O_OO+[CH]1CO1
+# C1CO1+[O]O_OO+[CH]1CO1 from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C1CO1+[O]O_OO+[CH]1CO1&#39;,
     kinetics = Arrhenius(
@@ -12638,7 +12680,7 @@ kinetics(
 
 
 
-#   C1=CCC=C1+[O]O_OO+[CH]1C=CC=C1
+# C1=CCC=C1+[O]O_OO+[CH]1C=CC=C1 from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C1=CCC=C1+[O]O_OO+[CH]1C=CC=C1&#39;,
     kinetics = Arrhenius(
@@ -12654,7 +12696,7 @@ kinetics(
 
 
 
-#   CCCC=O+[O]O_CC[CH]C=O+OO
+# CCCC=O+[O]O_CC[CH]C=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCCC=O+[O]O_CC[CH]C=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12670,7 +12712,7 @@ kinetics(
 
 
 
-#   CC+[O]O_C[CH2]+OO
+# CC+[O]O_C[CH2]+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC+[O]O_C[CH2]+OO&#39;,
     kinetics = Arrhenius(
@@ -12687,7 +12729,7 @@ kinetics(
 
 # ⚠️ CC(C)(C)O+[O]O_CC(C)(C)[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
 
-#   COC=O+[O]O_OO+[CH2]OC=O
+# COC=O+[O]O_OO+[CH2]OC=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;COC=O+[O]O_OO+[CH2]OC=O&#39;,
     kinetics = Arrhenius(
@@ -12703,7 +12745,7 @@ kinetics(
 
 
 
-#   CCC(C)O+[O]O_OO+[CH2]CC(C)O
+# CCC(C)O+[O]O_OO+[CH2]CC(C)O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCC(C)O+[O]O_OO+[CH2]CC(C)O&#39;,
     kinetics = Arrhenius(
@@ -12720,7 +12762,7 @@ kinetics(
 
 # ⚠️ C=CC+[O]O_C=[C]C+OO Gave error &#39;kinetics(\n&#39; is not in list
 
-#   CC=CC=O+[O]O_CC=C[C]=O+OO
+# CC=CC=O+[O]O_CC=C[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC=CC=O+[O]O_CC=C[C]=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12736,7 +12778,7 @@ kinetics(
 
 
 
-#   C=C1C=CCC1+[O]O_C=C1C=C[CH]C1+OO
+# C=C1C=CCC1+[O]O_C=C1C=C[CH]C1+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=C1C=CCC1+[O]O_C=C1C=C[CH]C1+OO&#39;,
     kinetics = Arrhenius(
@@ -12752,7 +12794,7 @@ kinetics(
 
 
 
-#   CCC(C)=O+[O]O_OO+[CH2]C(=O)CC
+# CCC(C)=O+[O]O_OO+[CH2]C(=O)CC from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCC(C)=O+[O]O_OO+[CH2]C(=O)CC&#39;,
     kinetics = Arrhenius(
@@ -12768,7 +12810,7 @@ kinetics(
 
 
 
-#   CCC=O+[O]O_CC[C]=O+OO
+# CCC=O+[O]O_CC[C]=O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCC=O+[O]O_CC[C]=O+OO&#39;,
     kinetics = Arrhenius(
@@ -12784,7 +12826,7 @@ kinetics(
 
 
 
-#   CC(C)C+[O]O_OO+[CH2]C(C)C
+# CC(C)C+[O]O_OO+[CH2]C(C)C from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC(C)C+[O]O_OO+[CH2]C(C)C&#39;,
     kinetics = Arrhenius(
@@ -12800,7 +12842,7 @@ kinetics(
 
 
 
-#   CC(C)CO+[O]O_OO+[CH2]C(C)CO
+# CC(C)CO+[O]O_OO+[CH2]C(C)CO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC(C)CO+[O]O_OO+[CH2]C(C)CO&#39;,
     kinetics = Arrhenius(
@@ -12816,7 +12858,7 @@ kinetics(
 
 
 
-#   CO+[O]O_OO+[CH2]O
+# CO+[O]O_OO+[CH2]O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CO+[O]O_OO+[CH2]O&#39;,
     kinetics = Arrhenius(
@@ -12832,7 +12874,7 @@ kinetics(
 
 
 
-#   CCCCO+[O]O_C[CH]CCO+OO
+# CCCCO+[O]O_C[CH]CCO+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCCCO+[O]O_C[CH]CCO+OO&#39;,
     kinetics = Arrhenius(
@@ -12848,7 +12890,7 @@ kinetics(
 
 
 
-#   CC(C)CO+[O]O_CC(C)[CH]O+OO
+# CC(C)CO+[O]O_CC(C)[CH]O+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CC(C)CO+[O]O_CC(C)[CH]O+OO&#39;,
     kinetics = Arrhenius(
@@ -12864,7 +12906,7 @@ kinetics(
 
 
 
-#   CCC(C)=O+[O]O_OO+[CH2]CC(C)=O
+# CCC(C)=O+[O]O_OO+[CH2]CC(C)=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCC(C)=O+[O]O_OO+[CH2]CC(C)=O&#39;,
     kinetics = Arrhenius(
@@ -12881,7 +12923,7 @@ kinetics(
 
 # ⚠️ C=CC+[O]O_OO+[CH]=CC Gave error &#39;kinetics(\n&#39; is not in list
 
-#   C=CC=CC+[O]O_OO+[CH2]C=CC=C
+# C=CC=CC+[O]O_OO+[CH2]C=CC=C from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=CC=CC+[O]O_OO+[CH2]C=CC=C&#39;,
     kinetics = Arrhenius(
@@ -12897,7 +12939,7 @@ kinetics(
 
 
 
-#   C=O+[O]O_OO+[CH]=O
+# C=O+[O]O_OO+[CH]=O from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;C=O+[O]O_OO+[CH]=O&#39;,
     kinetics = Arrhenius(
@@ -12913,7 +12955,7 @@ kinetics(
 
 
 
-#   CCCCO+[O]O_CC[CH]CO+OO
+# CCCCO+[O]O_CC[CH]CO+OO from /scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/
 kinetics(
     label = &#39;CCCCO+[O]O_CC[CH]CO+OO&#39;,
     kinetics = Arrhenius(
@@ -12943,6 +12985,47 @@ kinetics(
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">success</span><span class="p">,</span> <span class="n">fail</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[7]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(57, 9)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Now-try-the-new-ones">Now try the new ones<a class="anchor-link" href="#Now-try-the-new-ones">&#182;</a></h1><p>These are in <code>/gss_gpfs_scratch/westgroup/QMscratch/</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">root_dir</span> <span class="o">=</span> <span class="s1">&#39;/gss_gpfs_scratch/westgroup/QMscratch/&#39;</span>
 <span class="n">new_reactions</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span><span class="n">f</span><span class="p">))</span> <span class="p">]</span>
 <span class="k">print</span> <span class="n">new_reactions</span>
@@ -12957,18 +13040,22 @@ kinetics(
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;OO+[CH2]O_CO+[O]O&#39;, &#39;C=O+[O]O_OO+[CH]=O&#39;, &#39;C[CH2]+OO_CC+[O]O&#39;, &#39;CO+[O]O_OO+[CH2]O&#39;, &#39;CC=O+[O]O_C[C]=O+OO&#39;, &#39;C=[C]CO+OO_C=CCO+[O]O&#39;, &#39;C#CC+[O]O_C#C[CH2]+OO&#39;, &#39;OO+[CH]=C_C=C+[O]O&#39;, &#39;COO+[O]O_CO[O]+OO&#39;, &#39;OO+[CH2]CC_CCC+[O]O&#39;, &#39;CCC+[O]O_OO+[CH2]CC&#39;, &#39;C[O]+OO_CO+[O]O&#39;, &#39;C=C(C)CO+[O]O_OO+[CH2]C(=C)CO&#39;, &#39;CO[O]+OO_COO+[O]O&#39;, &#39;C[C]=O+OO_CC=O+[O]O&#39;, &#39;CC+[O]O_C[CH2]+OO&#39;, &#39;OO+[CH2]C(=C)CO_C=C(C)CO+[O]O&#39;, &#39;CO+[O]O_C[O]+OO&#39;]
+<pre>[&#39;OC1C=CC=C1+[O]O_OO+O[C]1C=CC=C1&#39;, &#39;C1C=COCC=1+[O]O_OO+[CH]1C=CC=CO1&#39;, &#39;OO+[CH2]O_CO+[O]O&#39;, &#39;C=C(C)C(=O)CC+[O]O_OO+[CH2]C(=C)C(=O)CC&#39;, &#39;CCCCO+[O]O_CCCC[O]+OO&#39;, &#39;C=CCCC+[O]O_C=C[CH]CC+OO&#39;, &#39;C#C[CH2]+[O]O_OO+[CH]C#C&#39;, &#39;C=CC(=O)C(C)C+[O]O_OO+[CH2]C(C)C(=O)C=C&#39;, &#39;O=CCOC=O+[O]O_O=C[CH]OC=O+OO&#39;, &#39;C=O+[O]O_OO+[CH]=O&#39;, &#39;C1CCOCC1+[O]O_OO+[CH]1CCOCC1&#39;, &#39;C=CCC=O+[O]O_C=CC[C]=O+OO&#39;, &#39;CCOCO[O]+OO_CCOCOO+[O]O&#39;, &#39;C=C1C=CC=CC1+[O]O_C=C1[CH]C=CC=C1+OO&#39;, &#39;C=CC(=O)CC+[O]O_OO+[CH2]CC(=O)C=C&#39;, &#39;CC(C)C+[O]O_OO+[CH2]C(C)C&#39;, &#39;CCCC=O+[O]O_CCC[C]=O+OO&#39;, &#39;C=CC(=O)OC+[O]O_OO+[CH]=CC(=O)OC&#39;, &#39;C=CC+[O]O_OO+[CH2]C=C&#39;, &#39;O=CO+[O]O_OO+[O]C=O&#39;, &#39;C=CCCCC+[O]O_C=CC[CH]CC+OO&#39;, &#39;CCC(C)C+[O]O_CC[C](C)C+OO&#39;, &#39;CCCO+[O]O_OO+[CH2]CCO&#39;, &#39;CC=CC(=O)OC+[O]O_OO+[CH2]C=CC(=O)OC&#39;, &#39;CC(C)O+[O]O_OO+[CH2]C(C)O&#39;, &#39;CCC(=O)CC+[O]O_OO+[CH2]CC(=O)CC&#39;, &#39;CC(C)(C)O[O]+OO_CC(C)(C)OO+[O]O&#39;, &#39;COC(=O)C=O+[O]O_COC(=O)[C]=O+OO&#39;, &#39;CCO+[O]O_C[CH]O+OO&#39;, &#39;C=CCCC=O+[O]O_C=CCC[C]=O+OO&#39;, &#39;C=CCCC(=C)C+[O]O_OO+[CH2]C(=C)CCC=C&#39;, &#39;C=C1C=CCC=C1+[O]O_C=C1C=C[CH]C=C1+OO&#39;, &#39;C=CCC=O+[O]O_C=C[CH]C=O+OO&#39;, &#39;CCCCC=O+[O]O_CC[CH]CC=O+OO&#39;, &#39;C1=COCCC1+[O]O_OO+[CH]1C=COCC1&#39;, &#39;CCCO+[O]O_CC[CH]O+OO&#39;, &#39;O=CO+[O]O_O=[C]O+OO&#39;, &#39;CC=CCC+[O]O_C[CH]C=CC+OO&#39;, &#39;CC=CCCCC+[O]O_OO+[CH2]C=CCCCC&#39;, &#39;CC1CCCCC1+[O]O_CC1CC[CH]CC1+OO&#39;, &#39;CC1CCCCC1+[O]O_OO+[CH2]C1CCCCC1&#39;, &#39;O=CCOC=O+[O]O_O=[C]COC=O+OO&#39;, &#39;CC(C)[CH]O+OO_CC(C)CO+[O]O&#39;, &#39;CCCO+[O]O_CCC[O]+OO&#39;, &#39;C=CCCCC+[O]O_C=CCC[CH]C+OO&#39;, &#39;CC1CCCCC1+[O]O_CC1[CH]CCCC1+OO&#39;, &#39;CCCC(=O)CC+[O]O_OO+[CH2]CCC(=O)CC&#39;, &#39;OO+[O][O]_[O]O+[O]O&#39;, &#39;C=C=C+[O]O_OO+[CH]=C=C&#39;, &#39;CC(C)O+[O]O_C[C](C)O+OO&#39;, &#39;C=CC=O+[O]O_C=C[C]=O+OO&#39;, &#39;CCC(C)O+[O]O_C[CH]C(C)O+OO&#39;, &#39;CC1=CC=CCC1+[O]O_OO+[CH2]C1=CC=CCC1&#39;, &#39;C=C(C)C(=O)CC+[O]O_OO+[CH2]CC(=O)C(=C)C&#39;, &#39;O=C=COC=O+[O]O_O=[C]OC=C=O+OO&#39;, &#39;CC(C)C=O+[O]O_C[C](C)C=O+OO&#39;, &#39;CCC=CCCC+[O]O_C[CH]C=CCCC+OO&#39;, &#39;CCCC(=O)CC+[O]O_CC[CH]C(=O)CC+OO&#39;, &#39;CC(C)C[O]+OO_CC(C)CO+[O]O&#39;, &#39;C1C=CCC=1+[O]O_OO+[CH]1C=CC=C1&#39;, &#39;COC+[O]O_OO+[CH2]OC&#39;, &#39;OO+[H]_[H][H]+[O]O&#39;, &#39;C=CC=C=O+[O]O_OO+[CH]=CC=C=O&#39;, &#39;CC(C)CO[O]+OO_CC(C)COO+[O]O&#39;, &#39;CCCCC=O+[O]O_CCCC[C]=O+OO&#39;, &#39;C=C(C)C=O+[O]O_C=C(C)[C]=O+OO&#39;, &#39;CCCCCC=O+[O]O_C[CH]CCCC=O+OO&#39;, &#39;C=CC+[O]O_C=[C]C+OO&#39;, &#39;CCC(C)O+[O]O_CCC(C)[O]+OO&#39;, &#39;CC=CC=O+[O]O_CC=C[C]=O+OO&#39;, &#39;CCC+[O]O_C[CH]C+OO&#39;, &#39;O=COC=O+[O]O_O=[C]OC=O+OO&#39;, &#39;C=C+[O]O_OO+[CH]=C&#39;, &#39;CCO+[O]O_CC[O]+OO&#39;, &#39;CCOCC+[O]O_C[CH]OCC+OO&#39;, &#39;CCCC(C)=O+[O]O_OO+[CH2]C(=O)CCC&#39;, &#39;CCCCC+[O]O_C[CH]CCC+OO&#39;, &#39;C1CCOCC1+[O]O_OO+[CH]1CCCCO1&#39;, &#39;OC1C=CC=C1+[O]O_OO+[O]C1C=CC=C1&#39;, &#39;CCC(C)=O+[O]O_OO+[CH2]C(=O)CC&#39;, &#39;CCC(C)C+[O]O_OO+[CH2]CC(C)C&#39;, &#39;COC=O+[O]O_OO+[CH2]OC=O&#39;, &#39;C1CCOCC1+[O]O_OO+[CH]1CCCOC1&#39;, &#39;C=CO+[O]O_OO+[CH]=CO&#39;, &#39;C=CCCC+[O]O_C=CC[CH]C+OO&#39;, &#39;C=C(C)C(=O)CC+[O]O_C=C(C)C(=O)[CH]C+OO&#39;, &#39;CCC(C)=O+[O]O_OO+[CH2]CC(C)=O&#39;, &#39;C=C(C)CO+[O]O_C=C(C)[CH]O+OO&#39;, &#39;CCCCC+[O]O_CC[CH]CC+OO&#39;, &#39;CCCC+[O]O_C[CH]CC+OO&#39;, &#39;O=COC(=O)C=O+[O]O_O=[C]OC(=O)C=O+OO&#39;, &#39;CCC(C)C+[O]O_OO+[CH2]C(C)CC&#39;, &#39;CC=CCC=O+[O]O_CC=CC[C]=O+OO&#39;, &#39;CCCCCC+[O]O_C[CH]CCCC+OO&#39;, &#39;CCC(C)C+[O]O_C[CH]C(C)C+OO&#39;, &#39;CC=O+[O]O_OO+[CH2]C=O&#39;, &#39;O=CCOC=O+[O]O_O=[C]OCC=O+OO&#39;, &#39;COC=O+[O]O_CO[C]=O+OO&#39;, &#39;C=CCCC+[O]O_OO+[CH2]CCC=C&#39;, &#39;CCOCC+[O]O_OO+[CH2]COCC&#39;, &#39;C[CH2]+OO_CC+[O]O&#39;, &#39;CO+[O]O_OO+[CH2]O&#39;, &#39;COCOC=O+[O]O_OO+[CH2]OCOC=O&#39;, &#39;CCC(C)O[O]+OO_CCC(C)OO+[O]O&#39;, &#39;CCCO+[O]O_C[CH]CO+OO&#39;, &#39;C=C(C=O)CC+[O]O_C=C([C]=O)CC+OO&#39;, &#39;[CH]=O+[O]O_OO+[C]=O&#39;, &#39;CC=O+[O]O_C[C]=O+OO&#39;, &#39;C=[C]CO+OO_C=CCO+[O]O&#39;, &#39;CCCCO+[O]O_C[CH]CCO+OO&#39;, &#39;CC(C)C=O+[O]O_CC(C)[C]=O+OO&#39;, &#39;CC=CCC=O+[O]O_OO+[CH2]C=CCC=O&#39;, &#39;CCCCCC+[O]O_CC[CH]CCC+OO&#39;, &#39;CC(=O)C(C)C+[O]O_OO+[CH2]C(=O)C(C)C&#39;, &#39;C1C=CCCC=1+[O]O_OO+[CH]1C=CC=CC1&#39;, &#39;C#CC+[O]O_C#C[CH2]+OO&#39;, &#39;CCC=O+[O]O_CC[C]=O+OO&#39;, &#39;C=C(C)C(C)=O+[O]O_OO+[CH2]C(=O)C(=C)C&#39;, &#39;OO+[CH]=C_C=C+[O]O&#39;, &#39;C=C(C)C=O+[O]O_OO+[CH2]C(=C)C=O&#39;, &#39;C=CCO+[O]O_C=[C]CO+OO&#39;, &#39;CCC(C)O+[O]O_OO+[CH2]C(O)CC&#39;, &#39;CC1C=CC=CC=1+[O]O_CC1=[C]C=CC=C1+OO&#39;, &#39;C=CCCC=CC+[O]O_OO+[CH2]C=CCCC=C&#39;, &#39;CCC(C)O+[O]O_OO+[CH2]CC(C)O&#39;, &#39;CC(=O)C(C)C+[O]O_C[C](C)C(C)=O+OO&#39;, &#39;CCCCC=O+[O]O_OO+[CH2]CCCC=O&#39;, &#39;COCOC=O+[O]O_COCO[C]=O+OO&#39;, &#39;COCOC+[O]O_CO[CH]OC+OO&#39;, &#39;C=CC(=O)OC+[O]O_OO+[CH2]OC(=O)C=C&#39;, &#39;C=CC(=O)CC+[O]O_C=CC(=O)[CH]C+OO&#39;, &#39;CCCCCC=O+[O]O_CCCC[CH]C=O+OO&#39;, &#39;CCCC=O+[O]O_OO+[CH2]CCC=O&#39;, &#39;COO+[O]O_CO[O]+OO&#39;, &#39;C1=CC=CC=C1+[O]O_OO+[C]1=CC=CC=C1&#39;, &#39;CCC=O+[O]O_C[CH]C=O+OO&#39;, &#39;CCOC=O+[O]O_C[CH]OC=O+OO&#39;, &#39;C=CC(=O)C(C)C+[O]O_C=CC(=O)[C](C)C+OO&#39;, &#39;CCCCO+[O]O_OO+[CH2]CCCO&#39;, &#39;CCCCCC=O+[O]O_CCCCC[C]=O+OO&#39;, &#39;OO+[CH2]CC_CCC+[O]O&#39;, &#39;C=CCC(=O)OC+[O]O_C=C[CH]C(=O)OC+OO&#39;, &#39;C=CO+[O]O_C=[C]O+OO&#39;, &#39;COCOC+[O]O_OO+[CH2]OCOC&#39;, &#39;CC(=O)C=O+[O]O_CC(=O)[C]=O+OO&#39;, &#39;CCCC=O+[O]O_CC[CH]C=O+OO&#39;, &#39;CCCCCC+[O]O_OO+[CH2]CCCCC&#39;, &#39;CC1CCCCC1+[O]O_CC1C[CH]CCC1+OO&#39;, &#39;CCCCO+[O]O_CCC[CH]O+OO&#39;, &#39;C=COCC+[O]O_C=CO[CH]C+OO&#39;, &#39;CCCCC+[O]O_OO+[CH2]CCCC&#39;, &#39;CC1=CCCCC1+[O]O_OO+[CH2]C1=CCCCC1&#39;, &#39;C1=CCOCC1+[O]O_OO+[CH]1C=CCOC1&#39;, &#39;C=CC(C)O+[O]O_C=[C]C(C)O+OO&#39;, &#39;CCC(C)=O+[O]O_C[CH]C(C)=O+OO&#39;, &#39;CC1C=CC=CC=1+[O]O_OO+[CH2]C1C=CC=CC=1&#39;, &#39;CC=CCC+[O]O_OO+[CH2]CC=CC&#39;, &#39;CC=CC=O+[O]O_OO+[CH2]C=CC=O&#39;, &#39;CCC+[O]O_OO+[CH2]CC&#39;, &#39;CCCCCC=O+[O]O_CC[CH]CCC=O+OO&#39;, &#39;C[O]+OO_CO+[O]O&#39;, &#39;C=CCCCC+[O]O_OO+[CH2]CCCC=C&#39;, &#39;CC(=O)C(C)C+[O]O_OO+[CH2]C(C)C(C)=O&#39;, &#39;CCCC(=O)CC+[O]O_OO+[CH2]CC(=O)CCC&#39;, &#39;O+[O]O_OO+[OH]&#39;, &#39;C=C(C)CO+[O]O_OO+[CH2]C(=C)CO&#39;, &#39;CO[O]+OO_COO+[O]O&#39;, &#39;C[C]=O+OO_CC=O+[O]O&#39;, &#39;C=CCCCC+[O]O_C=C[CH]CCC+OO&#39;, &#39;C=CC(=O)CC+[O]O_OO+[CH]=CC(=O)CC&#39;, &#39;CC(=O)C=C(C)C+[O]O_OO+[CH2]C(=O)C=C(C)C&#39;, &#39;CCCC=O+[O]O_C[CH]CC=O+OO&#39;, &#39;CCCC(C)=O+[O]O_C[CH]CC(C)=O+OO&#39;, &#39;C=CCC+[O]O_OO+[CH2]CC=C&#39;, &#39;CC=CCC+[O]O_OO+[CH2]C=CCC&#39;, &#39;C=CC(=O)OC+[O]O_C=[C]C(=O)OC+OO&#39;, &#39;C=CCCC=O+[O]O_C=C[CH]CC=O+OO&#39;, &#39;O=COC(=O)C=O+[O]O_O=[C]C(=O)OC=O+OO&#39;, &#39;C=CC(C)=O+[O]O_C=[C]C(C)=O+OO&#39;, &#39;CC(C)O+[O]O_CC(C)[O]+OO&#39;, &#39;CC1CCCCC1+[O]O_C[C]1CCCCC1+OO&#39;, &#39;CCCC+[O]O_OO+[CH2]CCC&#39;, &#39;CC+[O]O_C[CH2]+OO&#39;, &#39;CCCCO+[O]O_CC[CH]CO+OO&#39;, &#39;OO+[CH2]C(C)CO_CC(C)CO+[O]O&#39;, &#39;CCO+[O]O_OO+[CH2]CO&#39;, &#39;CC(=O)O[O]+OO_CC(=O)OO+[O]O&#39;, &#39;CCCC(C)=O+[O]O_OO+[CH2]CCC(C)=O&#39;, &#39;OO+[CH2]C(=C)CO_C=C(C)CO+[O]O&#39;, &#39;CO+[O]O_C[O]+OO&#39;, &#39;C1CCCCC1+[O]O_OO+[CH]1CCCCC1&#39;, &#39;COCOC=O+[O]O_CO[CH]OC=O+OO&#39;, &#39;C1CO1+[O]O_OO+[CH]1CO1&#39;, &#39;COC(C)=O+[O]O_OO+[CH2]C(=O)OC&#39;, &#39;C=CC(C)=O+[O]O_OO+[CH]=CC(C)=O&#39;, &#39;CCCC(=O)CC+[O]O_C[CH]CC(=O)CC+OO&#39;]
 </pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[8]:</div>
+
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>18</pre>
+<pre>196</pre>
 </div>
 
 </div>
@@ -12979,11 +13066,52 @@ kinetics(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">new_forward</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">new_reverse</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">new_reactions</span><span class="p">:</span>
+    <span class="n">reactants</span><span class="p">,</span> <span class="n">products</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
+    <span class="n">reactants</span> <span class="o">=</span> <span class="n">reactants</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="p">)</span>
+    <span class="n">products</span> <span class="o">=</span> <span class="n">products</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;+&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s1">&#39;[O]O&#39;</span> <span class="ow">in</span> <span class="n">reactants</span> <span class="ow">and</span> <span class="s1">&#39;OO&#39;</span> <span class="ow">in</span> <span class="n">products</span><span class="p">:</span>
+        <span class="n">new_forward</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="s1">&#39;[O]O&#39;</span> <span class="ow">in</span> <span class="n">products</span> <span class="ow">and</span> <span class="s1">&#39;OO&#39;</span> <span class="ow">in</span> <span class="n">reactants</span><span class="p">:</span>
+        <span class="n">new_reverse</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">new_forward</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">new_reverse</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(177, 19)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">to_try</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">reaction</span> <span class="ow">in</span> <span class="n">new_reactions</span><span class="p">:</span>
+<span class="k">for</span> <span class="n">reaction</span> <span class="ow">in</span> <span class="n">new_forward</span><span class="p">:</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">reaction</span><span class="p">)</span>
         <span class="n">files</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
@@ -13002,11 +13130,13 @@ kinetics(
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[10]:</div>
+
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>18</pre>
+<pre>177</pre>
 </div>
 
 </div>
@@ -13017,24 +13147,31 @@ kinetics(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%%</span><span class="k">capture</span> cap --no-stderr
-success = fail = 0
+success = []
+duplicate = []
+fail = []
 for reaction in to_try:
     try:
-        path = os.path.join(root_dir, reaction,&#39;output.py&#39;)
+        path = os.path.join(root_dir, reaction, &#39;output.py&#39;)
         with open(path) as f:
             lines = f.readlines()
         start = lines.index(&#39;kinetics(\n&#39;)
         print
-        print &quot;#  &quot;,reaction
+        print &quot;# {} from {}&quot;.format(reaction, root_dir)
+        if reaction in ooh_forward:
+            print &#39;# This is a duplicate of one above so commenting it out:\n&quot;&quot;&quot;&#39;
+            duplicate.append(reaction)
         print &#39;&#39;.join(lines[start:])
-        success += 1
+        success.append(reaction)
+        if reaction in ooh_forward:
+            print &#39;&quot;&quot;&quot;\n&#39;
     except Exception as err:
         print &quot;# ⚠️&quot;, reaction, &quot;Gave error&quot;, str(err)
-        fail += 1
+        fail.append(reaction)
 </pre></div>
 
 </div>
@@ -13044,11 +13181,12 @@ for reaction in to_try:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">cap</span><span class="o">.</span><span class="n">stdout</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;filtered_kinetics.py&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;###### NOW DOING THINGS IN &quot;</span><span class="o">+</span><span class="n">root_dir</span><span class="p">)</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">cap</span><span class="o">.</span><span class="n">stdout</span><span class="p">)</span>
 </pre></div>
 
@@ -13060,26 +13198,131 @@ for reaction in to_try:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="output_area">
+<div class="prompt"></div>
+
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-#   OO+[CH2]O_CO+[O]O
+# OC1C=CC=C1+[O]O_OO+O[C]1C=CC=C1 from /gss_gpfs_scratch/westgroup/QMscratch/
 kinetics(
-    label = &#39;OO+[CH2]O_CO+[O]O&#39;,
+    label = &#39;OC1C=CC=C1+[O]O_OO+O[C]1C=CC=C1&#39;,
     kinetics = Arrhenius(
-        A = (0.00355603, &#39;cm^3/(mol*s)&#39;),
-        n = 3.86308,
-        Ea = (-0.675366, &#39;kJ/mol&#39;),
+        A = (3.12783e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.72352,
+        Ea = (7.13709, &#39;kJ/mol&#39;),
         T0 = (1, &#39;K&#39;),
         Tmin = (303.03, &#39;K&#39;),
         Tmax = (2500, &#39;K&#39;),
-        comment = &#39;Fitted to 59 data points; dA = *|/ 1.11474, dn = +|- 0.0142558, dEa = +|- 0.0784211 kJ/mol&#39;,
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.59015, dn = +|- 0.0608733, dEa = +|- 0.334864 kJ/mol&#39;,
     ),
 )
 
 
 
-#   C=O+[O]O_OO+[CH]=O
+# C1C=COCC=1+[O]O_OO+[CH]1C=CC=CO1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C1C=COCC=1+[O]O_OO+[CH]1C=CC=CO1&#39;,
+    kinetics = Arrhenius(
+        A = (0.000170319, &#39;cm^3/(mol*s)&#39;),
+        n = 4.61962,
+        Ea = (12.6354, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.60068, dn = +|- 0.0617396, dEa = +|- 0.33963 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=C(C)C(=O)CC+[O]O_OO+[CH2]C(=C)C(=O)CC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=C(C)C(=O)CC+[O]O_OO+[CH2]C(=C)C(=O)CC&#39;,
+    kinetics = Arrhenius(
+        A = (2.55372e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 5.11729,
+        Ea = (14.3227, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.78771, dn = +|- 0.0762425, dEa = +|- 0.41941 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCO+[O]O_CCCC[O]+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCCCO+[O]O_CCCC[O]+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.0574127, &#39;cm^3/(mol*s)&#39;),
+        n = 3.9559,
+        Ea = (67.5659, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.06209, dn = +|- 0.00790624, dEa = +|- 0.0434923 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# C=CCCC+[O]O_C=C[CH]CC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCCC+[O]O_C=C[CH]CC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (2.82936e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.57639,
+        Ea = (21.9866, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.59144, dn = +|- 0.12497, dEa = +|- 0.687458 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C#C[CH2]+[O]O_OO+[CH]C#C Gave error &#39;kinetics(\n&#39; is not in list
+
+# C=CC(=O)C(C)C+[O]O_OO+[CH2]C(C)C(=O)C=C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CC(=O)C(C)C+[O]O_OO+[CH2]C(C)C(=O)C=C&#39;,
+    kinetics = Arrhenius(
+        A = (0.0114732, &#39;cm^3/(mol*s)&#39;),
+        n = 3.89426,
+        Ea = (57.6883, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.07028, dn = +|- 0.00891434, dEa = +|- 0.0490378 kJ/mol&#39;,
+    ),
+)
+
+
+
+# O=CCOC=O+[O]O_O=C[CH]OC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;O=CCOC=O+[O]O_O=C[CH]OC=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (3.46381e-10, &#39;cm^3/(mol*s)&#39;),
+        n = 6.0746,
+        Ea = (20.7976, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 3.18244, dn = +|- 0.151931, dEa = +|- 0.835772 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=O+[O]O_OO+[CH]=O from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
 kinetics(
     label = &#39;C=O+[O]O_OO+[CH]=O&#39;,
     kinetics = Arrhenius(
@@ -13094,24 +13337,1284 @@ kinetics(
 )
 
 
+&#34;&#34;&#34;
 
-#   C[CH2]+OO_CC+[O]O
+
+# C1CCOCC1+[O]O_OO+[CH]1CCOCC1 from /gss_gpfs_scratch/westgroup/QMscratch/
 kinetics(
-    label = &#39;C[CH2]+OO_CC+[O]O&#39;,
+    label = &#39;C1CCOCC1+[O]O_OO+[CH]1CCOCC1&#39;,
     kinetics = Arrhenius(
-        A = (0.00263746, &#39;cm^3/(mol*s)&#39;),
-        n = 3.97659,
-        Ea = (-1.62058, &#39;kJ/mol&#39;),
+        A = (0.000361794, &#39;cm^3/(mol*s)&#39;),
+        n = 4.67589,
+        Ea = (51.9521, &#39;kJ/mol&#39;),
         T0 = (1, &#39;K&#39;),
         Tmin = (303.03, &#39;K&#39;),
         Tmax = (2500, &#39;K&#39;),
-        comment = &#39;Fitted to 59 data points; dA = *|/ 1.12702, dn = +|- 0.0156938, dEa = +|- 0.0863314 kJ/mol&#39;,
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.43309, dn = +|- 0.047225, dEa = +|- 0.259785 kJ/mol&#39;,
     ),
 )
 
 
 
-#   CO+[O]O_OO+[CH2]O
+# C=CCC=O+[O]O_C=CC[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCC=O+[O]O_C=CC[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (2.26288e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.75547,
+        Ea = (17.2215, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.6202, dn = +|- 0.0633302, dEa = +|- 0.34838 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=C1C=CC=CC1+[O]O_C=C1[CH]C=CC=C1+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=C1C=CC=CC1+[O]O_C=C1[CH]C=CC=C1+OO&#39;,
+    kinetics = Arrhenius(
+        A = (3.55735e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 5.09377,
+        Ea = (-2.60251, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.15687, dn = +|- 0.0191237, dEa = +|- 0.1052 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CC(=O)CC+[O]O_OO+[CH2]CC(=O)C=C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CC(=O)CC+[O]O_OO+[CH2]CC(=O)C=C&#39;,
+    kinetics = Arrhenius(
+        A = (0.00802742, &#39;cm^3/(mol*s)&#39;),
+        n = 3.97344,
+        Ea = (51.4742, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.08142, dn = +|- 0.010273, dEa = +|- 0.056512 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC(C)C+[O]O_OO+[CH2]C(C)C from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CC(C)C+[O]O_OO+[CH2]C(C)C&#39;,
+    kinetics = Arrhenius(
+        A = (0.0010578, &#39;cm^3/(mol*s)&#39;),
+        n = 4.48259,
+        Ea = (61.6073, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.29855, dn = +|- 0.0342862, dEa = +|- 0.188609 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCCC=O+[O]O_CCC[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCCC=O+[O]O_CCC[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (7.94452e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.59605,
+        Ea = (16.6056, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.52115, dn = +|- 0.0550515, dEa = +|- 0.302838 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# C=CC(=O)OC+[O]O_OO+[CH]=CC(=O)OC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CC(=O)OC+[O]O_OO+[CH]=CC(=O)OC&#39;,
+    kinetics = Arrhenius(
+        A = (0.228563, &#39;cm^3/(mol*s)&#39;),
+        n = 3.85957,
+        Ea = (100.481, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.06853, dn = +|- 0.00869905, dEa = +|- 0.0478535 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CC+[O]O_OO+[CH2]C=C from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;C=CC+[O]O_OO+[CH2]C=C&#39;,
+    kinetics = Arrhenius(
+        A = (1.23051e-10, &#39;cm^3/(mol*s)&#39;),
+        n = 6.6446,
+        Ea = (19.7727, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.59654, dn = +|- 0.125228, dEa = +|- 0.688878 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# O=CO+[O]O_OO+[O]C=O from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;O=CO+[O]O_OO+[O]C=O&#39;,
+    kinetics = Arrhenius(
+        A = (1.16738, &#39;cm^3/(mol*s)&#39;),
+        n = 3.6382,
+        Ea = (96.8331, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.02165, dn = +|- 0.00281125, dEa = +|- 0.0154647 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CCCCC+[O]O_C=CC[CH]CC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCCCC+[O]O_C=CC[CH]CC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00126402, &#39;cm^3/(mol*s)&#39;),
+        n = 4.35832,
+        Ea = (49.4485, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.26192, dn = +|- 0.0305317, dEa = +|- 0.167955 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCC(C)C+[O]O_CC[C](C)C+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCC(C)C+[O]O_CC[C](C)C+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00483184, &#39;cm^3/(mol*s)&#39;),
+        n = 4.25851,
+        Ea = (39.4875, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.22068, dn = +|- 0.0261707, dEa = +|- 0.143965 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCO+[O]O_OO+[CH2]CCO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCO+[O]O_OO+[CH2]CCO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000461344, &#39;cm^3/(mol*s)&#39;),
+        n = 4.49371,
+        Ea = (61.8638, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.31972, dn = +|- 0.0364087, dEa = +|- 0.200284 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC=CC(=O)OC+[O]O_OO+[CH2]C=CC(=O)OC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC=CC(=O)OC+[O]O_OO+[CH2]C=CC(=O)OC&#39;,
+    kinetics = Arrhenius(
+        A = (6.96075e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 5.81809,
+        Ea = (24.2053, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.9056, dn = +|- 0.139987, dEa = +|- 0.770069 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC(C)O+[O]O_OO+[CH2]C(C)O from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC(C)O+[O]O_OO+[CH2]C(C)O&#39;,
+    kinetics = Arrhenius(
+        A = (0.000348513, &#39;cm^3/(mol*s)&#39;),
+        n = 4.53302,
+        Ea = (66.5864, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.32675, dn = +|- 0.0371059, dEa = +|- 0.20412 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCC(=O)CC+[O]O_OO+[CH2]CC(=O)CC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCC(=O)CC+[O]O_OO+[CH2]CC(=O)CC&#39;,
+    kinetics = Arrhenius(
+        A = (0.0145262, &#39;cm^3/(mol*s)&#39;),
+        n = 3.80511,
+        Ea = (57.7743, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.05418, dn = +|- 0.00692463, dEa = +|- 0.0380924 kJ/mol&#39;,
+    ),
+)
+
+
+
+# COC(=O)C=O+[O]O_COC(=O)[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;COC(=O)C=O+[O]O_COC(=O)[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (1.87971e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 5.45116,
+        Ea = (21.2124, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.11512, dn = +|- 0.0983145, dEa = +|- 0.540828 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCO+[O]O_C[CH]O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCO+[O]O_C[CH]O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000576616, &#39;cm^3/(mol*s)&#39;),
+        n = 4.34126,
+        Ea = (31.9069, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.28209, dn = +|- 0.0326118, dEa = +|- 0.179397 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# C=CCCC=O+[O]O_C=CCC[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCCC=O+[O]O_C=CCC[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000219287, &#39;cm^3/(mol*s)&#39;),
+        n = 4.66965,
+        Ea = (18.4724, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.58821, dn = +|- 0.060713, dEa = +|- 0.333982 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CCCC(=C)C+[O]O_OO+[CH2]C(=C)CCC=C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCCC(=C)C+[O]O_OO+[CH2]C(=C)CCC=C&#39;,
+    kinetics = Arrhenius(
+        A = (3.24649e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.60943,
+        Ea = (27.1191, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.49933, dn = +|- 0.12022, dEa = +|- 0.661328 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=C1C=CCC=C1+[O]O_C=C1C=C[CH]C=C1+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=C1C=CCC=C1+[O]O_C=C1C=C[CH]C=C1+OO&#39;,
+    kinetics = Arrhenius(
+        A = (5.68621e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.6047,
+        Ea = (3.1184, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.45361, dn = +|- 0.049091, dEa = +|- 0.27005 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CCC=O+[O]O_C=C[CH]C=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCC=O+[O]O_C=C[CH]C=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (8.06564e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.3915,
+        Ea = (12.0237, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.24336, dn = +|- 0.10604, dEa = +|- 0.583324 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCC=O+[O]O_CC[CH]CC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCC=O+[O]O_CC[CH]CC=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000465233, &#39;cm^3/(mol*s)&#39;),
+        n = 4.45855,
+        Ea = (47.2106, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.2802, dn = +|- 0.0324186, dEa = +|- 0.178335 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C1=COCCC1+[O]O_OO+[CH]1C=COCC1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C1=COCCC1+[O]O_OO+[CH]1C=COCC1&#39;,
+    kinetics = Arrhenius(
+        A = (2.87713e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.75789,
+        Ea = (26.0319, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.96685, dn = +|- 0.142725, dEa = +|- 0.785129 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCO+[O]O_CC[CH]O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCO+[O]O_CC[CH]O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000358264, &#39;cm^3/(mol*s)&#39;),
+        n = 4.40545,
+        Ea = (36.0846, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.34315, dn = +|- 0.0387185, dEa = +|- 0.21299 kJ/mol&#39;,
+    ),
+)
+
+
+
+# O=CO+[O]O_O=[C]O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;O=CO+[O]O_O=[C]O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00509617, &#39;cm^3/(mol*s)&#39;),
+        n = 4.05194,
+        Ea = (31.2032, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.1489, dn = +|- 0.0182168, dEa = +|- 0.100211 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC=CCC+[O]O_C[CH]C=CC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC=CCC+[O]O_C[CH]C=CC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (1.28196e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 5.39686,
+        Ea = (20.0928, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.32117, dn = +|- 0.110514, dEa = +|- 0.60794 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC=CCCCC+[O]O_OO+[CH2]C=CCCCC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC=CCCCC+[O]O_OO+[CH2]C=CCCCC&#39;,
+    kinetics = Arrhenius(
+        A = (1.21402e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 5.66517,
+        Ea = (24.7896, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.7249, dn = +|- 0.13156, dEa = +|- 0.723714 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC1CCCCC1+[O]O_CC1CC[CH]CC1+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC1CCCCC1+[O]O_CC1CC[CH]CC1+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000120537, &#39;cm^3/(mol*s)&#39;),
+        n = 4.66555,
+        Ea = (52.379, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.46815, dn = +|- 0.0503972, dEa = +|- 0.277235 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC1CCCCC1+[O]O_OO+[CH2]C1CCCCC1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC1CCCCC1+[O]O_OO+[CH2]C1CCCCC1&#39;,
+    kinetics = Arrhenius(
+        A = (5.60398e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.74358,
+        Ea = (63.8521, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.49211, dn = +|- 0.0525215, dEa = +|- 0.288921 kJ/mol&#39;,
+    ),
+)
+
+
+
+# O=CCOC=O+[O]O_O=[C]COC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;O=CCOC=O+[O]O_O=[C]COC=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00062496, &#39;cm^3/(mol*s)&#39;),
+        n = 4.16015,
+        Ea = (10.4933, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.17726, dn = +|- 0.0214174, dEa = +|- 0.117817 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ CCCO+[O]O_CCC[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+# C=CCCCC+[O]O_C=CCC[CH]C+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCCCC+[O]O_C=CCC[CH]C+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00100139, &#39;cm^3/(mol*s)&#39;),
+        n = 4.46378,
+        Ea = (48.8841, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.31767, dn = +|- 0.0362051, dEa = +|- 0.199165 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC1CCCCC1+[O]O_CC1[CH]CCCC1+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC1CCCCC1+[O]O_CC1[CH]CCCC1+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00136098, &#39;cm^3/(mol*s)&#39;),
+        n = 4.39776,
+        Ea = (50.8253, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.28772, dn = +|- 0.0331873, dEa = +|- 0.182563 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCC(=O)CC+[O]O_OO+[CH2]CCC(=O)CC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCC(=O)CC+[O]O_OO+[CH2]CCC(=O)CC&#39;,
+    kinetics = Arrhenius(
+        A = (0.000435069, &#39;cm^3/(mol*s)&#39;),
+        n = 4.40483,
+        Ea = (57.9043, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.22723, dn = +|- 0.0268733, dEa = +|- 0.14783 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C=C=C+[O]O_OO+[CH]=C=C Gave error &#39;kinetics(\n&#39; is not in list
+
+# CC(C)O+[O]O_C[C](C)O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC(C)O+[O]O_C[C](C)O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00161843, &#39;cm^3/(mol*s)&#39;),
+        n = 4.41608,
+        Ea = (31.2187, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.34896, dn = +|- 0.0392853, dEa = +|- 0.216109 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CC=O+[O]O_C=C[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;C=CC=O+[O]O_C=C[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (1.37755e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 5.00271,
+        Ea = (30.7058, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.91111, dn = +|- 0.0850029, dEa = +|- 0.467601 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCC(C)O+[O]O_C[CH]C(C)O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCC(C)O+[O]O_C[CH]C(C)O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000355142, &#39;cm^3/(mol*s)&#39;),
+        n = 4.62015,
+        Ea = (54.1709, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.37775, dn = +|- 0.0420569, dEa = +|- 0.231355 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CC1=CC=CCC1+[O]O_OO+[CH2]C1=CC=CCC1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC1=CC=CCC1+[O]O_OO+[CH2]C1=CC=CCC1&#39;,
+    kinetics = Arrhenius(
+        A = (1.50381e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.67296,
+        Ea = (15.8252, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.65616, dn = +|- 0.128207, dEa = +|- 0.705266 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=C(C)C(=O)CC+[O]O_OO+[CH2]CC(=O)C(=C)C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=C(C)C(=O)CC+[O]O_OO+[CH2]CC(=O)C(=C)C&#39;,
+    kinetics = Arrhenius(
+        A = (0.0221951, &#39;cm^3/(mol*s)&#39;),
+        n = 3.87815,
+        Ea = (52.5291, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.06472, dn = +|- 0.00823067, dEa = +|- 0.0452769 kJ/mol&#39;,
+    ),
+)
+
+
+
+# O=C=COC=O+[O]O_O=[C]OC=C=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;O=C=COC=O+[O]O_O=[C]OC=C=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00288574, &#39;cm^3/(mol*s)&#39;),
+        n = 4.41263,
+        Ea = (60.7819, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.29956, dn = +|- 0.0343888, dEa = +|- 0.189173 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC(C)C=O+[O]O_C[C](C)C=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CC(C)C=O+[O]O_C[C](C)C=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (1.82403e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.57399,
+        Ea = (18.5241, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.58674, dn = +|- 0.124731, dEa = +|- 0.686146 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCC=CCCC+[O]O_C[CH]C=CCCC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCC=CCCC+[O]O_C[CH]C=CCCC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (3.72086e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.32048,
+        Ea = (18.5576, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.29457, dn = +|- 0.109002, dEa = +|- 0.599619 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCC(=O)CC+[O]O_CC[CH]C(=O)CC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCC(=O)CC+[O]O_CC[CH]C(=O)CC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (4.02307e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 5.71222,
+        Ea = (30.2333, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.53715, dn = +|- 0.122191, dEa = +|- 0.672172 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C1C=CCC=1+[O]O_OO+[CH]1C=CC=C1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C1C=CCC=1+[O]O_OO+[CH]1C=CC=C1&#39;,
+    kinetics = Arrhenius(
+        A = (2.7355e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.5772,
+        Ea = (16.9238, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.51468, dn = +|- 0.121024, dEa = +|- 0.665751 kJ/mol&#39;,
+    ),
+)
+
+
+
+# COC+[O]O_OO+[CH2]OC from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;COC+[O]O_OO+[CH2]OC&#39;,
+    kinetics = Arrhenius(
+        A = (0.00106778, &#39;cm^3/(mol*s)&#39;),
+        n = 4.37183,
+        Ea = (38.62, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.26959, dn = +|- 0.0313261, dEa = +|- 0.172325 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+# ⚠️ C=CC=C=O+[O]O_OO+[CH]=CC=C=O Gave error &#39;kinetics(\n&#39; is not in list
+
+# CCCCC=O+[O]O_CCCC[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCC=O+[O]O_CCCC[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00142415, &#39;cm^3/(mol*s)&#39;),
+        n = 4.5134,
+        Ea = (18.0511, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.47877, dn = +|- 0.0513431, dEa = +|- 0.282439 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=C(C)C=O+[O]O_C=C(C)[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;C=C(C)C=O+[O]O_C=C(C)[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (2.24481e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.98538,
+        Ea = (32.7157, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.862, dn = +|- 0.0815861, dEa = +|- 0.448805 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCCCCC=O+[O]O_C[CH]CCCC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCCC=O+[O]O_C[CH]CCCC=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00019002, &#39;cm^3/(mol*s)&#39;),
+        n = 4.26476,
+        Ea = (46.4659, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.20984, dn = +|- 0.0249995, dEa = +|- 0.137522 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C=CC+[O]O_C=[C]C+OO Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ CCC(C)O+[O]O_CCC(C)[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+# CC=CC=O+[O]O_CC=C[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CC=CC=O+[O]O_CC=C[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (1.64056e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.91494,
+        Ea = (23.4707, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.76642, dn = +|- 0.0746702, dEa = +|- 0.410761 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCC+[O]O_C[CH]C+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCC+[O]O_C[CH]C+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000350577, &#39;cm^3/(mol*s)&#39;),
+        n = 4.58335,
+        Ea = (45.0715, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.35079, dn = +|- 0.0394627, dEa = +|- 0.217085 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# O=COC=O+[O]O_O=[C]OC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;O=COC=O+[O]O_O=[C]OC=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000488607, &#39;cm^3/(mol*s)&#39;),
+        n = 4.60737,
+        Ea = (49.748, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.39381, dn = +|- 0.0435772, dEa = +|- 0.239718 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=C+[O]O_OO+[CH]=C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=C+[O]O_OO+[CH]=C&#39;,
+    kinetics = Arrhenius(
+        A = (0.265705, &#39;cm^3/(mol*s)&#39;),
+        n = 3.96021,
+        Ea = (92.4156, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.08257, dn = +|- 0.0104122, dEa = +|- 0.0572774 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ CCO+[O]O_CC[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+# CCOCC+[O]O_C[CH]OCC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCOCC+[O]O_C[CH]OCC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000282731, &#39;cm^3/(mol*s)&#39;),
+        n = 4.50922,
+        Ea = (35.0027, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.37477, dn = +|- 0.0417724, dEa = +|- 0.22979 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCC(C)=O+[O]O_OO+[CH2]C(=O)CCC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCC(C)=O+[O]O_OO+[CH2]C(=O)CCC&#39;,
+    kinetics = Arrhenius(
+        A = (1.01782e-06, &#39;cm^3/(mol*s)&#39;),
+        n = 4.93933,
+        Ea = (43.7026, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.65342, dn = +|- 0.0659939, dEa = +|- 0.363032 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCC+[O]O_C[CH]CCC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCC+[O]O_C[CH]CCC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000190466, &#39;cm^3/(mol*s)&#39;),
+        n = 4.63624,
+        Ea = (44.7453, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.36159, dn = +|- 0.040508, dEa = +|- 0.222835 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C1CCOCC1+[O]O_OO+[CH]1CCCCO1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C1CCOCC1+[O]O_OO+[CH]1CCCCO1&#39;,
+    kinetics = Arrhenius(
+        A = (1.25905e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.94049,
+        Ea = (43.3724, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.65111, dn = +|- 0.0658102, dEa = +|- 0.362022 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ OC1C=CC=C1+[O]O_OO+[O]C1C=CC=C1 Gave error &#39;kinetics(\n&#39; is not in list
+
+# CCC(C)=O+[O]O_OO+[CH2]C(=O)CC from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCC(C)=O+[O]O_OO+[CH2]C(=O)CC&#39;,
+    kinetics = Arrhenius(
+        A = (8.12635e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 5.00574,
+        Ea = (50.7269, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.73214, dn = +|- 0.0720983, dEa = +|- 0.396613 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCC(C)C+[O]O_OO+[CH2]CC(C)C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCC(C)C+[O]O_OO+[CH2]CC(C)C&#39;,
+    kinetics = Arrhenius(
+        A = (9.21803e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.5993,
+        Ea = (57.5134, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.36763, dn = +|- 0.0410888, dEa = +|- 0.226029 kJ/mol&#39;,
+    ),
+)
+
+
+
+# COC=O+[O]O_OO+[CH2]OC=O from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;COC=O+[O]O_OO+[CH2]OC=O&#39;,
+    kinetics = Arrhenius(
+        A = (0.000103691, &#39;cm^3/(mol*s)&#39;),
+        n = 4.50995,
+        Ea = (53.773, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.3151, dn = +|- 0.0359487, dEa = +|- 0.197754 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# C1CCOCC1+[O]O_OO+[CH]1CCCOC1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C1CCOCC1+[O]O_OO+[CH]1CCCOC1&#39;,
+    kinetics = Arrhenius(
+        A = (1.84535e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.81555,
+        Ea = (58.9839, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.57087, dn = +|- 0.0592724, dEa = +|- 0.326057 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C=CO+[O]O_OO+[CH]=CO Gave error &#39;kinetics(\n&#39; is not in list
+
+# C=CCCC+[O]O_C=CC[CH]C+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCCC+[O]O_C=CC[CH]C+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000315487, &#39;cm^3/(mol*s)&#39;),
+        n = 4.50876,
+        Ea = (47.5193, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.30674, dn = +|- 0.0351114, dEa = +|- 0.193148 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=C(C)C(=O)CC+[O]O_C=C(C)C(=O)[CH]C+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=C(C)C(=O)CC+[O]O_C=C(C)C(=O)[CH]C+OO&#39;,
+    kinetics = Arrhenius(
+        A = (8.14443e-06, &#39;cm^3/(mol*s)&#39;),
+        n = 4.81706,
+        Ea = (28.1356, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.54114, dn = +|- 0.0567649, dEa = +|- 0.312264 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCC(C)=O+[O]O_OO+[CH2]CC(C)=O from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCC(C)=O+[O]O_OO+[CH2]CC(C)=O&#39;,
+    kinetics = Arrhenius(
+        A = (0.000829021, &#39;cm^3/(mol*s)&#39;),
+        n = 4.22037,
+        Ea = (60.977, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.1588, dn = +|- 0.0193426, dEa = +|- 0.106403 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# C=C(C)CO+[O]O_C=C(C)[CH]O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=C(C)CO+[O]O_C=C(C)[CH]O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (8.04843e-06, &#39;cm^3/(mol*s)&#39;),
+        n = 4.79274,
+        Ea = (14.1732, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.74322, dn = +|- 0.0729353, dEa = +|- 0.401217 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCC+[O]O_CC[CH]CC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCC+[O]O_CC[CH]CC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000375325, &#39;cm^3/(mol*s)&#39;),
+        n = 4.55086,
+        Ea = (46.0816, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.30718, dn = +|- 0.0351554, dEa = +|- 0.19339 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCC+[O]O_C[CH]CC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCCC+[O]O_C[CH]CC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00207952, &#39;cm^3/(mol*s)&#39;),
+        n = 4.45315,
+        Ea = (49.8172, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.32845, dn = +|- 0.0372742, dEa = +|- 0.205045 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# O=COC(=O)C=O+[O]O_O=[C]OC(=O)C=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;O=COC(=O)C=O+[O]O_O=[C]OC(=O)C=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (1.64583e-06, &#39;cm^3/(mol*s)&#39;),
+        n = 5.84699,
+        Ea = (55.5868, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.55717, dn = +|- 0.0581227, dEa = +|- 0.319733 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCC(C)C+[O]O_OO+[CH2]C(C)CC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCC(C)C+[O]O_OO+[CH2]C(C)CC&#39;,
+    kinetics = Arrhenius(
+        A = (0.000678368, &#39;cm^3/(mol*s)&#39;),
+        n = 4.47401,
+        Ea = (58.974, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.27439, dn = +|- 0.0318216, dEa = +|- 0.175051 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC=CCC=O+[O]O_CC=CC[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC=CCC=O+[O]O_CC=CC[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (4.6226e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.86568,
+        Ea = (22.7711, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.78423, dn = +|- 0.0759867, dEa = +|- 0.418003 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCCC+[O]O_C[CH]CCCC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCCC+[O]O_C[CH]CCCC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000468774, &#39;cm^3/(mol*s)&#39;),
+        n = 4.53367,
+        Ea = (47.5335, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.35032, dn = +|- 0.039417, dEa = +|- 0.216833 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCC(C)C+[O]O_C[CH]C(C)C+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCC(C)C+[O]O_C[CH]C(C)C+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.0024808, &#39;cm^3/(mol*s)&#39;),
+        n = 4.37053,
+        Ea = (46.7402, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.24471, dn = +|- 0.0287286, dEa = +|- 0.158036 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC=O+[O]O_OO+[CH2]C=O from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC=O+[O]O_OO+[CH2]C=O&#39;,
+    kinetics = Arrhenius(
+        A = (1.13215e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 5.33323,
+        Ea = (45.1551, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.08967, dn = +|- 0.0967257, dEa = +|- 0.532088 kJ/mol&#39;,
+    ),
+)
+
+
+
+# O=CCOC=O+[O]O_O=[C]OCC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;O=CCOC=O+[O]O_O=[C]OCC=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000507, &#39;cm^3/(mol*s)&#39;),
+        n = 4.593,
+        Ea = (53.7226, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.36444, dn = +|- 0.040782, dEa = +|- 0.224342 kJ/mol&#39;,
+    ),
+)
+
+
+
+# COC=O+[O]O_CO[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;COC=O+[O]O_CO[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00252625, &#39;cm^3/(mol*s)&#39;),
+        n = 4.35478,
+        Ea = (55.527, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.26307, dn = +|- 0.0306507, dEa = +|- 0.16861 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# C=CCCC+[O]O_OO+[CH2]CCC=C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCCC+[O]O_OO+[CH2]CCC=C&#39;,
+    kinetics = Arrhenius(
+        A = (0.000863445, &#39;cm^3/(mol*s)&#39;),
+        n = 4.46539,
+        Ea = (58.4953, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.25872, dn = +|- 0.0301979, dEa = +|- 0.166119 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCOCC+[O]O_OO+[CH2]COCC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCOCC+[O]O_OO+[CH2]COCC&#39;,
+    kinetics = Arrhenius(
+        A = (2.65424e-06, &#39;cm^3/(mol*s)&#39;),
+        n = 5.31449,
+        Ea = (71.5509, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.89613, dn = +|- 0.0839702, dEa = +|- 0.46192 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CO+[O]O_OO+[CH2]O from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
 kinetics(
     label = &#39;CO+[O]O_OO+[CH2]O&#39;,
     kinetics = Arrhenius(
@@ -13126,8 +14629,61 @@ kinetics(
 )
 
 
+&#34;&#34;&#34;
 
-#   CC=O+[O]O_C[C]=O+OO
+
+# COCOC=O+[O]O_OO+[CH2]OCOC=O from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;COCOC=O+[O]O_OO+[CH2]OCOC=O&#39;,
+    kinetics = Arrhenius(
+        A = (0.0194118, &#39;cm^3/(mol*s)&#39;),
+        n = 3.83268,
+        Ea = (38.5247, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.06373, dn = +|- 0.00810811, dEa = +|- 0.0446027 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCO+[O]O_C[CH]CO+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCO+[O]O_C[CH]CO+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.0139973, &#39;cm^3/(mol*s)&#39;),
+        n = 3.94442,
+        Ea = (47.9109, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.09009, dn = +|- 0.0113214, dEa = +|- 0.0622791 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=C(C=O)CC+[O]O_C=C([C]=O)CC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=C(C=O)CC+[O]O_C=C([C]=O)CC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (5.47687e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.92848,
+        Ea = (29.9282, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.79755, dn = +|- 0.0769631, dEa = +|- 0.423374 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ [CH]=O+[O]O_OO+[C]=O Gave error &#39;kinetics(\n&#39; is not in list
+
+# CC=O+[O]O_C[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
 kinetics(
     label = &#39;CC=O+[O]O_C[C]=O+OO&#39;,
     kinetics = Arrhenius(
@@ -13142,9 +14698,114 @@ kinetics(
 )
 
 
-# ⚠️ C=[C]CO+OO_C=CCO+[O]O Gave error &#39;kinetics(\n&#39; is not in list
+&#34;&#34;&#34;
 
-#   C#CC+[O]O_C#C[CH2]+OO
+
+# CCCCO+[O]O_C[CH]CCO+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCCCO+[O]O_C[CH]CCO+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000214148, &#39;cm^3/(mol*s)&#39;),
+        n = 4.62217,
+        Ea = (47.4964, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.37697, dn = +|- 0.0419824, dEa = +|- 0.230945 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CC(C)C=O+[O]O_CC(C)[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CC(C)C=O+[O]O_CC(C)[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000279799, &#39;cm^3/(mol*s)&#39;),
+        n = 4.58985,
+        Ea = (15.2281, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.5076, dn = +|- 0.053877, dEa = +|- 0.296377 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CC=CCC=O+[O]O_OO+[CH2]C=CCC=O from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC=CCC=O+[O]O_OO+[CH2]C=CCC=O&#39;,
+    kinetics = Arrhenius(
+        A = (9.87226e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 5.75392,
+        Ea = (27.3486, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.79556, dn = +|- 0.13492, dEa = +|- 0.742194 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCCC+[O]O_CC[CH]CCC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCCC+[O]O_CC[CH]CCC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00015669, &#39;cm^3/(mol*s)&#39;),
+        n = 4.4528,
+        Ea = (46.7795, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.29246, dn = +|- 0.0336692, dEa = +|- 0.185214 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC(=O)C(C)C+[O]O_OO+[CH2]C(=O)C(C)C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC(=O)C(C)C+[O]O_OO+[CH2]C(=O)C(C)C&#39;,
+    kinetics = Arrhenius(
+        A = (8.08521e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.84966,
+        Ea = (39.8384, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.55771, dn = +|- 0.0581684, dEa = +|- 0.319985 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C1C=CCCC=1+[O]O_OO+[CH]1C=CC=CC1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C1C=CCCC=1+[O]O_OO+[CH]1C=CC=CC1&#39;,
+    kinetics = Arrhenius(
+        A = (5.60285e-06, &#39;cm^3/(mol*s)&#39;),
+        n = 5.03863,
+        Ea = (17.4408, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.97032, dn = +|- 0.0890069, dEa = +|- 0.489627 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C#CC+[O]O_C#C[CH2]+OO from /gss_gpfs_scratch/westgroup/QMscratch/
 kinetics(
     label = &#39;C#CC+[O]O_C#C[CH2]+OO&#39;,
     kinetics = Arrhenius(
@@ -13159,9 +14820,250 @@ kinetics(
 )
 
 
-# ⚠️ OO+[CH]=C_C=C+[O]O Gave error &#39;kinetics(\n&#39; is not in list
 
-#   COO+[O]O_CO[O]+OO
+# CCC=O+[O]O_CC[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCC=O+[O]O_CC[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000291273, &#39;cm^3/(mol*s)&#39;),
+        n = 4.6729,
+        Ea = (13.2944, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.5004, dn = +|- 0.0532485, dEa = +|- 0.29292 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# C=C(C)C(C)=O+[O]O_OO+[CH2]C(=O)C(=C)C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=C(C)C(C)=O+[O]O_OO+[CH2]C(=O)C(=C)C&#39;,
+    kinetics = Arrhenius(
+        A = (3.70994e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.48408,
+        Ea = (47.9008, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.19788, dn = +|- 0.103351, dEa = +|- 0.568535 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=C(C)C=O+[O]O_OO+[CH2]C(=C)C=O from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=C(C)C=O+[O]O_OO+[CH2]C(=C)C=O&#39;,
+    kinetics = Arrhenius(
+        A = (2.08079e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.53033,
+        Ea = (29.3721, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.27191, dn = +|- 0.107699, dEa = +|- 0.592453 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C=CCO+[O]O_C=[C]CO+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+# CCC(C)O+[O]O_OO+[CH2]C(O)CC from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCC(C)O+[O]O_OO+[CH2]C(O)CC&#39;,
+    kinetics = Arrhenius(
+        A = (0.00539157, &#39;cm^3/(mol*s)&#39;),
+        n = 4.03288,
+        Ea = (59.3115, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.10669, dn = +|- 0.0133043, dEa = +|- 0.073187 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+# ⚠️ CC1C=CC=CC=1+[O]O_CC1=[C]C=CC=C1+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+# C=CCCC=CC+[O]O_OO+[CH2]C=CCCC=C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCCC=CC+[O]O_OO+[CH2]C=CCCC=C&#39;,
+    kinetics = Arrhenius(
+        A = (7.96589e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 5.61724,
+        Ea = (24.0478, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.57726, dn = +|- 0.12425, dEa = +|- 0.683497 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCC(C)O+[O]O_OO+[CH2]CC(C)O from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCC(C)O+[O]O_OO+[CH2]CC(C)O&#39;,
+    kinetics = Arrhenius(
+        A = (7.99218e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.66681,
+        Ea = (61.9057, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.4035, dn = +|- 0.0444862, dEa = +|- 0.244719 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CC(=O)C(C)C+[O]O_C[C](C)C(C)=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC(=O)C(C)C+[O]O_C[C](C)C(C)=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (2.17611e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 6.37963,
+        Ea = (17.6927, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.23777, dn = +|- 0.105712, dEa = +|- 0.581523 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCC=O+[O]O_OO+[CH2]CCCC=O from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCC=O+[O]O_OO+[CH2]CCCC=O&#39;,
+    kinetics = Arrhenius(
+        A = (0.000451636, &#39;cm^3/(mol*s)&#39;),
+        n = 4.31888,
+        Ea = (58.1426, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.20659, dn = +|- 0.0246474, dEa = +|- 0.135585 kJ/mol&#39;,
+    ),
+)
+
+
+
+# COCOC=O+[O]O_COCO[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;COCOC=O+[O]O_COCO[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00484826, &#39;cm^3/(mol*s)&#39;),
+        n = 4.11104,
+        Ea = (51.3067, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.06146, dn = +|- 0.00782834, dEa = +|- 0.0430637 kJ/mol&#39;,
+    ),
+)
+
+
+
+# COCOC+[O]O_CO[CH]OC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;COCOC+[O]O_CO[CH]OC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000405537, &#39;cm^3/(mol*s)&#39;),
+        n = 4.37835,
+        Ea = (23.7318, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.28241, dn = +|- 0.0326449, dEa = +|- 0.17958 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CC(=O)OC+[O]O_OO+[CH2]OC(=O)C=C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CC(=O)OC+[O]O_OO+[CH2]OC(=O)C=C&#39;,
+    kinetics = Arrhenius(
+        A = (0.000408181, &#39;cm^3/(mol*s)&#39;),
+        n = 4.20427,
+        Ea = (48.1227, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.16662, dn = +|- 0.0202255, dEa = +|- 0.111261 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CC(=O)CC+[O]O_C=CC(=O)[CH]C+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CC(=O)CC+[O]O_C=CC(=O)[CH]C+OO&#39;,
+    kinetics = Arrhenius(
+        A = (1.55467e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 5.27471,
+        Ea = (26.5385, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.01526, dn = +|- 0.0919671, dEa = +|- 0.505911 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCCC=O+[O]O_CCCC[CH]C=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCCC=O+[O]O_CCCC[CH]C=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (2.56887e-10, &#39;cm^3/(mol*s)&#39;),
+        n = 5.8952,
+        Ea = (27.996, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.99859, dn = +|- 0.144121, dEa = +|- 0.792811 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCC=O+[O]O_OO+[CH2]CCC=O from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCCC=O+[O]O_OO+[CH2]CCC=O&#39;,
+    kinetics = Arrhenius(
+        A = (0.00596812, &#39;cm^3/(mol*s)&#39;),
+        n = 4.14404,
+        Ea = (57.8882, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.13256, dn = +|- 0.0163371, dEa = +|- 0.0898705 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# COO+[O]O_CO[O]+OO from /gss_gpfs_scratch/westgroup/QMscratch/
 kinetics(
     label = &#39;COO+[O]O_CO[O]+OO&#39;,
     kinetics = Arrhenius(
@@ -13176,24 +15078,349 @@ kinetics(
 )
 
 
+# ⚠️ C1=CC=CC=C1+[O]O_OO+[C]1=CC=CC=C1 Gave error &#39;kinetics(\n&#39; is not in list
 
-#   OO+[CH2]CC_CCC+[O]O
+# CCC=O+[O]O_C[CH]C=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
 kinetics(
-    label = &#39;OO+[CH2]CC_CCC+[O]O&#39;,
+    label = &#39;CCC=O+[O]O_C[CH]C=O+OO&#39;,
     kinetics = Arrhenius(
-        A = (0.00640782, &#39;cm^3/(mol*s)&#39;),
-        n = 3.87119,
-        Ea = (-2.05191, &#39;kJ/mol&#39;),
+        A = (1.5612e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.63323,
+        Ea = (25.7729, &#39;kJ/mol&#39;),
         T0 = (1, &#39;K&#39;),
         Tmin = (303.03, &#39;K&#39;),
         Tmax = (2500, &#39;K&#39;),
-        comment = &#39;Fitted to 59 data points; dA = *|/ 1.07684, dn = +|- 0.00971556, dEa = +|- 0.0534453 kJ/mol&#39;,
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.52069, dn = +|- 0.121336, dEa = +|- 0.667472 kJ/mol&#39;,
     ),
 )
 
 
 
-#   CCC+[O]O_OO+[CH2]CC
+# CCOC=O+[O]O_C[CH]OC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCOC=O+[O]O_C[CH]OC=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (5.61147e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 5.39794,
+        Ea = (53.3084, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.06096, dn = +|- 0.09491, dEa = +|- 0.5221 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CC(=O)C(C)C+[O]O_C=CC(=O)[C](C)C+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CC(=O)C(C)C+[O]O_C=CC(=O)[C](C)C+OO&#39;,
+    kinetics = Arrhenius(
+        A = (5.93324e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.57703,
+        Ea = (24.3886, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.57598, dn = +|- 0.124184, dEa = +|- 0.683136 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCO+[O]O_OO+[CH2]CCCO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCCCO+[O]O_OO+[CH2]CCCO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000314044, &#39;cm^3/(mol*s)&#39;),
+        n = 4.45819,
+        Ea = (58.1917, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.26408, dn = +|- 0.0307559, dEa = +|- 0.169188 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCCCCC=O+[O]O_CCCCC[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCCC=O+[O]O_CCCCC[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (2.38992e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.59948,
+        Ea = (17.9284, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.55725, dn = +|- 0.0581294, dEa = +|- 0.31977 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CCC(=O)OC+[O]O_C=C[CH]C(=O)OC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCC(=O)OC+[O]O_C=C[CH]C(=O)OC+OO&#39;,
+    kinetics = Arrhenius(
+        A = (5.29618e-10, &#39;cm^3/(mol*s)&#39;),
+        n = 5.83949,
+        Ea = (12.045, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.76227, dn = +|- 0.133348, dEa = +|- 0.733546 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CO+[O]O_C=[C]O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CO+[O]O_C=[C]O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.131477, &#39;cm^3/(mol*s)&#39;),
+        n = 3.83204,
+        Ea = (82.1128, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.05819, dn = +|- 0.00742338, dEa = +|- 0.040836 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ COCOC+[O]O_OO+[CH2]OCOC Gave error &#39;kinetics(\n&#39; is not in list
+
+# CC(=O)C=O+[O]O_CC(=O)[C]=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC(=O)C=O+[O]O_CC(=O)[C]=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (9.03096e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.7819,
+        Ea = (1.76206, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.52563, dn = +|- 0.0554372, dEa = +|- 0.30496 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCC=O+[O]O_CC[CH]C=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCCC=O+[O]O_CC[CH]C=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (1.7117e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.5316,
+        Ea = (26.0896, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.42075, dn = +|- 0.116027, dEa = +|- 0.638267 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCCCCC+[O]O_OO+[CH2]CCCCC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCCC+[O]O_OO+[CH2]CCCCC&#39;,
+    kinetics = Arrhenius(
+        A = (0.000218317, &#39;cm^3/(mol*s)&#39;),
+        n = 4.46437,
+        Ea = (58.8852, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.28909, dn = +|- 0.033327, dEa = +|- 0.183332 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC1CCCCC1+[O]O_CC1C[CH]CCC1+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC1CCCCC1+[O]O_CC1C[CH]CCC1+OO&#39;,
+    kinetics = Arrhenius(
+        A = (8.26892e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 5.28799,
+        Ea = (63.0482, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.14314, dn = +|- 0.100041, dEa = +|- 0.550328 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCO+[O]O_CCC[CH]O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCCCO+[O]O_CCC[CH]O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.00016275, &#39;cm^3/(mol*s)&#39;),
+        n = 4.53562,
+        Ea = (32.6905, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.36874, dn = +|- 0.0411954, dEa = +|- 0.226616 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# C=COCC+[O]O_C=CO[CH]C+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=COCC+[O]O_C=CO[CH]C+OO&#39;,
+    kinetics = Arrhenius(
+        A = (7.57284e-06, &#39;cm^3/(mol*s)&#39;),
+        n = 4.76828,
+        Ea = (36.2339, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.50424, dn = +|- 0.0535844, dEa = +|- 0.294768 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCCC+[O]O_OO+[CH2]CCCC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCC+[O]O_OO+[CH2]CCCC&#39;,
+    kinetics = Arrhenius(
+        A = (0.000307602, &#39;cm^3/(mol*s)&#39;),
+        n = 4.59424,
+        Ea = (57.841, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.32304, dn = +|- 0.0367389, dEa = +|- 0.202101 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC1=CCCCC1+[O]O_OO+[CH2]C1=CCCCC1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC1=CCCCC1+[O]O_OO+[CH2]C1=CCCCC1&#39;,
+    kinetics = Arrhenius(
+        A = (3.16788e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 5.27195,
+        Ea = (24.6276, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.09691, dn = +|- 0.0971796, dEa = +|- 0.534585 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C1=CCOCC1+[O]O_OO+[CH]1C=CCOC1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C1=CCOCC1+[O]O_OO+[CH]1C=CCOC1&#39;,
+    kinetics = Arrhenius(
+        A = (2.393e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.74753,
+        Ea = (28.6265, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.91819, dn = +|- 0.140554, dEa = +|- 0.773191 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C=CC(C)O+[O]O_C=[C]C(C)O+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+# CCC(C)=O+[O]O_C[CH]C(C)=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCC(C)=O+[O]O_C[CH]C(C)=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (4.91283e-07, &#39;cm^3/(mol*s)&#39;),
+        n = 5.11915,
+        Ea = (29.9992, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.81353, dn = +|- 0.0781245, dEa = +|- 0.429763 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CC1C=CC=CC=1+[O]O_OO+[CH2]C1C=CC=CC=1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC1C=CC=CC=1+[O]O_OO+[CH2]C1C=CC=CC=1&#39;,
+    kinetics = Arrhenius(
+        A = (2.6588e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 6.18418,
+        Ea = (28.6153, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.97747, dn = +|- 0.0894823, dEa = +|- 0.492243 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC=CCC+[O]O_OO+[CH2]CC=CC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC=CCC+[O]O_OO+[CH2]CC=CC&#39;,
+    kinetics = Arrhenius(
+        A = (0.000834696, &#39;cm^3/(mol*s)&#39;),
+        n = 4.27525,
+        Ea = (57.49, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.18499, dn = +|- 0.0222764, dEa = +|- 0.122542 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC=CC=O+[O]O_OO+[CH2]C=CC=O from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC=CC=O+[O]O_OO+[CH2]C=CC=O&#39;,
+    kinetics = Arrhenius(
+        A = (2.07977e-10, &#39;cm^3/(mol*s)&#39;),
+        n = 6.18894,
+        Ea = (24.1903, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 3.55647, dn = +|- 0.166515, dEa = +|- 0.915997 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCC+[O]O_OO+[CH2]CC from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
 kinetics(
     label = &#39;CCC+[O]O_OO+[CH2]CC&#39;,
     kinetics = Arrhenius(
@@ -13208,9 +15435,75 @@ kinetics(
 )
 
 
-# ⚠️ C[O]+OO_CO+[O]O Gave error &#39;kinetics(\n&#39; is not in list
+&#34;&#34;&#34;
 
-#   C=C(C)CO+[O]O_OO+[CH2]C(=C)CO
+
+# CCCCCC=O+[O]O_CC[CH]CCC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCCCC=O+[O]O_CC[CH]CCC=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (9.95109e-05, &#39;cm^3/(mol*s)&#39;),
+        n = 4.49369,
+        Ea = (51.038, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.33762, dn = +|- 0.0381765, dEa = +|- 0.210009 kJ/mol&#39;,
+    ),
+)
+
+
+
+# C=CCCCC+[O]O_OO+[CH2]CCCC=C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCCCC+[O]O_OO+[CH2]CCCC=C&#39;,
+    kinetics = Arrhenius(
+        A = (0.000430665, &#39;cm^3/(mol*s)&#39;),
+        n = 4.42366,
+        Ea = (60.3346, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.27693, dn = +|- 0.032083, dEa = +|- 0.176488 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CC(=O)C(C)C+[O]O_OO+[CH2]C(C)C(C)=O from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC(=O)C(C)C+[O]O_OO+[CH2]C(C)C(C)=O&#39;,
+    kinetics = Arrhenius(
+        A = (0.000228484, &#39;cm^3/(mol*s)&#39;),
+        n = 4.88886,
+        Ea = (56.047, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.06954, dn = +|- 0.00882341, dEa = +|- 0.0485376 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCC(=O)CC+[O]O_OO+[CH2]CC(=O)CCC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCC(=O)CC+[O]O_OO+[CH2]CC(=O)CCC&#39;,
+    kinetics = Arrhenius(
+        A = (0.000547843, &#39;cm^3/(mol*s)&#39;),
+        n = 4.54687,
+        Ea = (60.3244, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.31524, dn = +|- 0.0359628, dEa = +|- 0.197832 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ O+[O]O_OO+[OH] Gave error &#39;kinetics(\n&#39; is not in list
+
+# C=C(C)CO+[O]O_OO+[CH2]C(=C)CO from /gss_gpfs_scratch/westgroup/QMscratch/
 kinetics(
     label = &#39;C=C(C)CO+[O]O_OO+[CH2]C(=C)CO&#39;,
     kinetics = Arrhenius(
@@ -13226,39 +15519,185 @@ kinetics(
 
 
 
-#   CO[O]+OO_COO+[O]O
+# C=CCCCC+[O]O_C=C[CH]CCC+OO from /gss_gpfs_scratch/westgroup/QMscratch/
 kinetics(
-    label = &#39;CO[O]+OO_COO+[O]O&#39;,
+    label = &#39;C=CCCCC+[O]O_C=C[CH]CCC+OO&#39;,
     kinetics = Arrhenius(
-        A = (1.12699e-05, &#39;cm^3/(mol*s)&#39;),
-        n = 4.6208,
-        Ea = (7.44222, &#39;kJ/mol&#39;),
+        A = (6.89092e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.51764,
+        Ea = (22.004, &#39;kJ/mol&#39;),
         T0 = (1, &#39;K&#39;),
         Tmin = (303.03, &#39;K&#39;),
         Tmax = (2500, &#39;K&#39;),
-        comment = &#39;Fitted to 59 data points; dA = *|/ 1.40594, dn = +|- 0.0447143, dEa = +|- 0.245974 kJ/mol&#39;,
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.53103, dn = +|- 0.121874, dEa = +|- 0.670428 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C=CC(=O)CC+[O]O_OO+[CH]=CC(=O)CC Gave error &#39;kinetics(\n&#39; is not in list
+
+# CC(=O)C=C(C)C+[O]O_OO+[CH2]C(=O)C=C(C)C from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC(=O)C=C(C)C+[O]O_OO+[CH2]C(=O)C=C(C)C&#39;,
+    kinetics = Arrhenius(
+        A = (2.8487e-06, &#39;cm^3/(mol*s)&#39;),
+        n = 4.92965,
+        Ea = (44.8359, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.63671, dn = +|- 0.0646606, dEa = +|- 0.355698 kJ/mol&#39;,
     ),
 )
 
 
 
-#   C[C]=O+OO_CC=O+[O]O
+# CCCC=O+[O]O_C[CH]CC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
 kinetics(
-    label = &#39;C[C]=O+OO_CC=O+[O]O&#39;,
+    label = &#39;CCCC=O+[O]O_C[CH]CC=O+OO&#39;,
     kinetics = Arrhenius(
-        A = (0.000356088, &#39;cm^3/(mol*s)&#39;),
-        n = 4.44236,
-        Ea = (7.94843, &#39;kJ/mol&#39;),
+        A = (0.000579204, &#39;cm^3/(mol*s)&#39;),
+        n = 4.35936,
+        Ea = (44.6765, &#39;kJ/mol&#39;),
         T0 = (1, &#39;K&#39;),
         Tmin = (303.03, &#39;K&#39;),
         Tmax = (2500, &#39;K&#39;),
-        comment = &#39;Fitted to 59 data points; dA = *|/ 1.42249, dn = +|- 0.04625, dEa = +|- 0.254422 kJ/mol&#39;,
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.23418, dn = +|- 0.027614, dEa = +|- 0.151904 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCCC(C)=O+[O]O_C[CH]CC(C)=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCC(C)=O+[O]O_C[CH]CC(C)=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000794784, &#39;cm^3/(mol*s)&#39;),
+        n = 4.26562,
+        Ea = (43.7449, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.19017, dn = +|- 0.0228487, dEa = +|- 0.125691 kJ/mol&#39;,
     ),
 )
 
 
 
-#   CC+[O]O_C[CH2]+OO
+# C=CCC+[O]O_OO+[CH2]CC=C from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;C=CCC+[O]O_OO+[CH2]CC=C&#39;,
+    kinetics = Arrhenius(
+        A = (0.000719559, &#39;cm^3/(mol*s)&#39;),
+        n = 4.37444,
+        Ea = (59.948, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.23486, dn = +|- 0.0276867, dEa = +|- 0.152304 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CC=CCC+[O]O_OO+[CH2]C=CCC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC=CCC+[O]O_OO+[CH2]C=CCC&#39;,
+    kinetics = Arrhenius(
+        A = (3.39024e-08, &#39;cm^3/(mol*s)&#39;),
+        n = 5.5877,
+        Ea = (23.9257, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.51546, dn = +|- 0.121064, dEa = +|- 0.665975 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C=CC(=O)OC+[O]O_C=[C]C(=O)OC+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+# C=CCCC=O+[O]O_C=C[CH]CC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C=CCCC=O+[O]O_C=C[CH]CC=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (9.00839e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 5.77243,
+        Ea = (22.7581, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.87101, dn = +|- 0.138415, dEa = +|- 0.761423 kJ/mol&#39;,
+    ),
+)
+
+
+
+# O=COC(=O)C=O+[O]O_O=[C]C(=O)OC=O+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;O=COC(=O)C=O+[O]O_O=[C]C(=O)OC=O+OO&#39;,
+    kinetics = Arrhenius(
+        A = (1.08431e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 6.34606,
+        Ea = (22.493, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 2.07454, dn = +|- 0.0957718, dEa = +|- 0.526841 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C=CC(C)=O+[O]O_C=[C]C(C)=O+OO Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ CC(C)O+[O]O_CC(C)[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+# CC1CCCCC1+[O]O_C[C]1CCCCC1+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CC1CCCCC1+[O]O_C[C]1CCCCC1+OO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000756205, &#39;cm^3/(mol*s)&#39;),
+        n = 4.41946,
+        Ea = (43.3456, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.34256, dn = +|- 0.0386605, dEa = +|- 0.212672 kJ/mol&#39;,
+    ),
+)
+
+
+
+# CCCC+[O]O_OO+[CH2]CCC from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCCC+[O]O_OO+[CH2]CCC&#39;,
+    kinetics = Arrhenius(
+        A = (0.000941222, &#39;cm^3/(mol*s)&#39;),
+        n = 4.38678,
+        Ea = (61.955, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.2651, dn = +|- 0.0308616, dEa = +|- 0.16977 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CC+[O]O_C[CH2]+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
 kinetics(
     label = &#39;CC+[O]O_C[CH2]+OO&#39;,
     kinetics = Arrhenius(
@@ -13273,23 +15712,120 @@ kinetics(
 )
 
 
+&#34;&#34;&#34;
 
-#   OO+[CH2]C(=C)CO_C=C(C)CO+[O]O
+
+# CCCCO+[O]O_CC[CH]CO+OO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
 kinetics(
-    label = &#39;OO+[CH2]C(=C)CO_C=C(C)CO+[O]O&#39;,
+    label = &#39;CCCCO+[O]O_CC[CH]CO+OO&#39;,
     kinetics = Arrhenius(
-        A = (9.52481e-07, &#39;cm^3/(mol*s)&#39;),
-        n = 4.88615,
-        Ea = (13.2201, &#39;kJ/mol&#39;),
+        A = (0.0197597, &#39;cm^3/(mol*s)&#39;),
+        n = 3.85723,
+        Ea = (45.5094, &#39;kJ/mol&#39;),
         T0 = (1, &#39;K&#39;),
         Tmin = (303.03, &#39;K&#39;),
         Tmax = (2500, &#39;K&#39;),
-        comment = &#39;Fitted to 59 data points; dA = *|/ 1.95699, dn = +|- 0.088116, dEa = +|- 0.484727 kJ/mol&#39;,
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.05911, dn = +|- 0.00753707, dEa = +|- 0.0414614 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCO+[O]O_OO+[CH2]CO from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;CCO+[O]O_OO+[CH2]CO&#39;,
+    kinetics = Arrhenius(
+        A = (0.000674952, &#39;cm^3/(mol*s)&#39;),
+        n = 4.22862,
+        Ea = (61.4586, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.17747, dn = +|- 0.0214404, dEa = +|- 0.117944 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# CCCC(C)=O+[O]O_OO+[CH2]CCC(C)=O from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;CCCC(C)=O+[O]O_OO+[CH2]CCC(C)=O&#39;,
+    kinetics = Arrhenius(
+        A = (0.00162435, &#39;cm^3/(mol*s)&#39;),
+        n = 4.22072,
+        Ea = (52.4572, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.15855, dn = +|- 0.0193142, dEa = +|- 0.106247 kJ/mol&#39;,
     ),
 )
 
 
 # ⚠️ CO+[O]O_C[O]+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+# C1CCCCC1+[O]O_OO+[CH]1CCCCC1 from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;C1CCCCC1+[O]O_OO+[CH]1CCCCC1&#39;,
+    kinetics = Arrhenius(
+        A = (3.91043e-06, &#39;cm^3/(mol*s)&#39;),
+        n = 5.21824,
+        Ea = (61.0254, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.96367, dn = +|- 0.0885635, dEa = +|- 0.487188 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ COCOC=O+[O]O_CO[CH]OC=O+OO Gave error &#39;kinetics(\n&#39; is not in list
+
+# C1CO1+[O]O_OO+[CH]1CO1 from /gss_gpfs_scratch/westgroup/QMscratch/
+# This is a duplicate of one above so commenting it out:
+&#34;&#34;&#34;
+kinetics(
+    label = &#39;C1CO1+[O]O_OO+[CH]1CO1&#39;,
+    kinetics = Arrhenius(
+        A = (0.101906, &#39;cm^3/(mol*s)&#39;),
+        n = 3.87668,
+        Ea = (70.1765, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.07588, dn = +|- 0.00959883, dEa = +|- 0.0528032 kJ/mol&#39;,
+    ),
+)
+
+
+&#34;&#34;&#34;
+
+
+# COC(C)=O+[O]O_OO+[CH2]C(=O)OC from /gss_gpfs_scratch/westgroup/QMscratch/
+kinetics(
+    label = &#39;COC(C)=O+[O]O_OO+[CH2]C(=O)OC&#39;,
+    kinetics = Arrhenius(
+        A = (8.3672e-09, &#39;cm^3/(mol*s)&#39;),
+        n = 6.07812,
+        Ea = (55.5281, &#39;kJ/mol&#39;),
+        T0 = (1, &#39;K&#39;),
+        Tmin = (303.03, &#39;K&#39;),
+        Tmax = (2500, &#39;K&#39;),
+        comment = &#39;Fitted to 59 data points; dA = *|/ 1.78093, dn = +|- 0.0757438, dEa = +|- 0.416667 kJ/mol&#39;,
+    ),
+)
+
+
+# ⚠️ C=CC(C)=O+[O]O_OO+[CH]=CC(C)=O Gave error &#39;kinetics(\n&#39; is not in list
+# ⚠️ CCCC(=O)CC+[O]O_C[CH]CC(=O)CC+OO Gave error &#39;kinetics(\n&#39; is not in list
 
 </pre>
 </div>
@@ -13301,10 +15837,10 @@ kinetics(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">success</span><span class="p">,</span> <span class="n">fail</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">success</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">duplicate</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">fail</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13315,11 +15851,13 @@ kinetics(
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
+<div class="output_area">
+<div class="prompt output_prompt">Out[13]:</div>
+
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(14, 4)</pre>
+<pre>(153, 38, 24)</pre>
 </div>
 
 </div>
@@ -13330,11 +15868,14 @@ kinetics(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">new_reactions</span><span class="p">:</span>
-    <span class="k">print</span> <span class="n">r</span><span class="p">,</span>  <span class="n">r</span> <span class="ow">in</span> <span class="n">ooh_forward</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">success</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">r</span><span class="p">,</span>  
+    <span class="k">if</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">duplicate</span><span class="p">:</span> <span class="k">print</span> <span class="s2">&quot;is a DUPLICATE and&quot;</span><span class="p">,</span>
+    <span class="k">if</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">fail</span><span class="p">:</span> <span class="k">print</span> <span class="s2">&quot;FAILED&quot;</span>
+    <span class="k">if</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">success</span><span class="p">:</span> <span class="k">print</span> <span class="s2">&quot;worked&quot;</span>
 </pre></div>
 
 </div>
@@ -13345,16 +15886,164 @@ kinetics(
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-1-b355ea1452d6&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">for</span> r <span class="ansi-green-fg">in</span> new_reactions<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span>     <span class="ansi-green-fg">print</span> r<span class="ansi-blue-fg">,</span>  r <span class="ansi-green-fg">in</span> ooh_forward
+<div class="output_area">
+<div class="prompt"></div>
 
-<span class="ansi-red-fg">NameError</span>: name &#39;new_reactions&#39; is not defined</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>OC1C=CC=C1+[O]O_OO+O[C]1C=CC=C1 worked
+C1C=COCC=1+[O]O_OO+[CH]1C=CC=CO1 worked
+C=C(C)C(=O)CC+[O]O_OO+[CH2]C(=C)C(=O)CC worked
+CCCCO+[O]O_CCCC[O]+OO is a DUPLICATE and worked
+C=CCCC+[O]O_C=C[CH]CC+OO worked
+C=CC(=O)C(C)C+[O]O_OO+[CH2]C(C)C(=O)C=C worked
+O=CCOC=O+[O]O_O=C[CH]OC=O+OO worked
+C=O+[O]O_OO+[CH]=O is a DUPLICATE and worked
+C1CCOCC1+[O]O_OO+[CH]1CCOCC1 worked
+C=CCC=O+[O]O_C=CC[C]=O+OO worked
+C=C1C=CC=CC1+[O]O_C=C1[CH]C=CC=C1+OO worked
+C=CC(=O)CC+[O]O_OO+[CH2]CC(=O)C=C worked
+CC(C)C+[O]O_OO+[CH2]C(C)C is a DUPLICATE and worked
+CCCC=O+[O]O_CCC[C]=O+OO is a DUPLICATE and worked
+C=CC(=O)OC+[O]O_OO+[CH]=CC(=O)OC worked
+C=CC+[O]O_OO+[CH2]C=C is a DUPLICATE and worked
+O=CO+[O]O_OO+[O]C=O worked
+C=CCCCC+[O]O_C=CC[CH]CC+OO worked
+CCC(C)C+[O]O_CC[C](C)C+OO worked
+CCCO+[O]O_OO+[CH2]CCO worked
+CC=CC(=O)OC+[O]O_OO+[CH2]C=CC(=O)OC worked
+CC(C)O+[O]O_OO+[CH2]C(C)O worked
+CCC(=O)CC+[O]O_OO+[CH2]CC(=O)CC worked
+COC(=O)C=O+[O]O_COC(=O)[C]=O+OO worked
+CCO+[O]O_C[CH]O+OO is a DUPLICATE and worked
+C=CCCC=O+[O]O_C=CCC[C]=O+OO worked
+C=CCCC(=C)C+[O]O_OO+[CH2]C(=C)CCC=C worked
+C=C1C=CCC=C1+[O]O_C=C1C=C[CH]C=C1+OO worked
+C=CCC=O+[O]O_C=C[CH]C=O+OO worked
+CCCCC=O+[O]O_CC[CH]CC=O+OO worked
+C1=COCCC1+[O]O_OO+[CH]1C=COCC1 worked
+CCCO+[O]O_CC[CH]O+OO worked
+O=CO+[O]O_O=[C]O+OO worked
+CC=CCC+[O]O_C[CH]C=CC+OO worked
+CC=CCCCC+[O]O_OO+[CH2]C=CCCCC worked
+CC1CCCCC1+[O]O_CC1CC[CH]CC1+OO worked
+CC1CCCCC1+[O]O_OO+[CH2]C1CCCCC1 worked
+O=CCOC=O+[O]O_O=[C]COC=O+OO worked
+C=CCCCC+[O]O_C=CCC[CH]C+OO worked
+CC1CCCCC1+[O]O_CC1[CH]CCCC1+OO worked
+CCCC(=O)CC+[O]O_OO+[CH2]CCC(=O)CC worked
+CC(C)O+[O]O_C[C](C)O+OO worked
+C=CC=O+[O]O_C=C[C]=O+OO is a DUPLICATE and worked
+CCC(C)O+[O]O_C[CH]C(C)O+OO is a DUPLICATE and worked
+CC1=CC=CCC1+[O]O_OO+[CH2]C1=CC=CCC1 worked
+C=C(C)C(=O)CC+[O]O_OO+[CH2]CC(=O)C(=C)C worked
+O=C=COC=O+[O]O_O=[C]OC=C=O+OO worked
+CC(C)C=O+[O]O_C[C](C)C=O+OO is a DUPLICATE and worked
+CCC=CCCC+[O]O_C[CH]C=CCCC+OO worked
+CCCC(=O)CC+[O]O_CC[CH]C(=O)CC+OO worked
+C1C=CCC=1+[O]O_OO+[CH]1C=CC=C1 worked
+COC+[O]O_OO+[CH2]OC is a DUPLICATE and worked
+CCCCC=O+[O]O_CCCC[C]=O+OO worked
+C=C(C)C=O+[O]O_C=C(C)[C]=O+OO is a DUPLICATE and worked
+CCCCCC=O+[O]O_C[CH]CCCC=O+OO worked
+CC=CC=O+[O]O_CC=C[C]=O+OO is a DUPLICATE and worked
+CCC+[O]O_C[CH]C+OO is a DUPLICATE and worked
+O=COC=O+[O]O_O=[C]OC=O+OO worked
+C=C+[O]O_OO+[CH]=C worked
+CCOCC+[O]O_C[CH]OCC+OO worked
+CCCC(C)=O+[O]O_OO+[CH2]C(=O)CCC worked
+CCCCC+[O]O_C[CH]CCC+OO worked
+C1CCOCC1+[O]O_OO+[CH]1CCCCO1 worked
+CCC(C)=O+[O]O_OO+[CH2]C(=O)CC is a DUPLICATE and worked
+CCC(C)C+[O]O_OO+[CH2]CC(C)C worked
+COC=O+[O]O_OO+[CH2]OC=O is a DUPLICATE and worked
+C1CCOCC1+[O]O_OO+[CH]1CCCOC1 worked
+C=CCCC+[O]O_C=CC[CH]C+OO worked
+C=C(C)C(=O)CC+[O]O_C=C(C)C(=O)[CH]C+OO worked
+CCC(C)=O+[O]O_OO+[CH2]CC(C)=O is a DUPLICATE and worked
+C=C(C)CO+[O]O_C=C(C)[CH]O+OO worked
+CCCCC+[O]O_CC[CH]CC+OO worked
+CCCC+[O]O_C[CH]CC+OO is a DUPLICATE and worked
+O=COC(=O)C=O+[O]O_O=[C]OC(=O)C=O+OO worked
+CCC(C)C+[O]O_OO+[CH2]C(C)CC worked
+CC=CCC=O+[O]O_CC=CC[C]=O+OO worked
+CCCCCC+[O]O_C[CH]CCCC+OO worked
+CCC(C)C+[O]O_C[CH]C(C)C+OO worked
+CC=O+[O]O_OO+[CH2]C=O worked
+O=CCOC=O+[O]O_O=[C]OCC=O+OO worked
+COC=O+[O]O_CO[C]=O+OO is a DUPLICATE and worked
+C=CCCC+[O]O_OO+[CH2]CCC=C worked
+CCOCC+[O]O_OO+[CH2]COCC worked
+CO+[O]O_OO+[CH2]O is a DUPLICATE and worked
+COCOC=O+[O]O_OO+[CH2]OCOC=O worked
+CCCO+[O]O_C[CH]CO+OO worked
+C=C(C=O)CC+[O]O_C=C([C]=O)CC+OO worked
+CC=O+[O]O_C[C]=O+OO is a DUPLICATE and worked
+CCCCO+[O]O_C[CH]CCO+OO is a DUPLICATE and worked
+CC(C)C=O+[O]O_CC(C)[C]=O+OO is a DUPLICATE and worked
+CC=CCC=O+[O]O_OO+[CH2]C=CCC=O worked
+CCCCCC+[O]O_CC[CH]CCC+OO worked
+CC(=O)C(C)C+[O]O_OO+[CH2]C(=O)C(C)C worked
+C1C=CCCC=1+[O]O_OO+[CH]1C=CC=CC1 worked
+C#CC+[O]O_C#C[CH2]+OO worked
+CCC=O+[O]O_CC[C]=O+OO is a DUPLICATE and worked
+C=C(C)C(C)=O+[O]O_OO+[CH2]C(=O)C(=C)C worked
+C=C(C)C=O+[O]O_OO+[CH2]C(=C)C=O worked
+CCC(C)O+[O]O_OO+[CH2]C(O)CC is a DUPLICATE and worked
+C=CCCC=CC+[O]O_OO+[CH2]C=CCCC=C worked
+CCC(C)O+[O]O_OO+[CH2]CC(C)O is a DUPLICATE and worked
+CC(=O)C(C)C+[O]O_C[C](C)C(C)=O+OO worked
+CCCCC=O+[O]O_OO+[CH2]CCCC=O worked
+COCOC=O+[O]O_COCO[C]=O+OO worked
+COCOC+[O]O_CO[CH]OC+OO worked
+C=CC(=O)OC+[O]O_OO+[CH2]OC(=O)C=C worked
+C=CC(=O)CC+[O]O_C=CC(=O)[CH]C+OO worked
+CCCCCC=O+[O]O_CCCC[CH]C=O+OO worked
+CCCC=O+[O]O_OO+[CH2]CCC=O is a DUPLICATE and worked
+COO+[O]O_CO[O]+OO worked
+CCC=O+[O]O_C[CH]C=O+OO worked
+CCOC=O+[O]O_C[CH]OC=O+OO worked
+C=CC(=O)C(C)C+[O]O_C=CC(=O)[C](C)C+OO worked
+CCCCO+[O]O_OO+[CH2]CCCO is a DUPLICATE and worked
+CCCCCC=O+[O]O_CCCCC[C]=O+OO worked
+C=CCC(=O)OC+[O]O_C=C[CH]C(=O)OC+OO worked
+C=CO+[O]O_C=[C]O+OO worked
+CC(=O)C=O+[O]O_CC(=O)[C]=O+OO worked
+CCCC=O+[O]O_CC[CH]C=O+OO is a DUPLICATE and worked
+CCCCCC+[O]O_OO+[CH2]CCCCC worked
+CC1CCCCC1+[O]O_CC1C[CH]CCC1+OO worked
+CCCCO+[O]O_CCC[CH]O+OO is a DUPLICATE and worked
+C=COCC+[O]O_C=CO[CH]C+OO worked
+CCCCC+[O]O_OO+[CH2]CCCC worked
+CC1=CCCCC1+[O]O_OO+[CH2]C1=CCCCC1 worked
+C1=CCOCC1+[O]O_OO+[CH]1C=CCOC1 worked
+CCC(C)=O+[O]O_C[CH]C(C)=O+OO is a DUPLICATE and worked
+CC1C=CC=CC=1+[O]O_OO+[CH2]C1C=CC=CC=1 worked
+CC=CCC+[O]O_OO+[CH2]CC=CC worked
+CC=CC=O+[O]O_OO+[CH2]C=CC=O worked
+CCC+[O]O_OO+[CH2]CC is a DUPLICATE and worked
+CCCCCC=O+[O]O_CC[CH]CCC=O+OO worked
+C=CCCCC+[O]O_OO+[CH2]CCCC=C worked
+CC(=O)C(C)C+[O]O_OO+[CH2]C(C)C(C)=O worked
+CCCC(=O)CC+[O]O_OO+[CH2]CC(=O)CCC worked
+C=C(C)CO+[O]O_OO+[CH2]C(=C)CO worked
+C=CCCCC+[O]O_C=C[CH]CCC+OO worked
+CC(=O)C=C(C)C+[O]O_OO+[CH2]C(=O)C=C(C)C worked
+CCCC=O+[O]O_C[CH]CC=O+OO is a DUPLICATE and worked
+CCCC(C)=O+[O]O_C[CH]CC(C)=O+OO worked
+C=CCC+[O]O_OO+[CH2]CC=C is a DUPLICATE and worked
+CC=CCC+[O]O_OO+[CH2]C=CCC worked
+C=CCCC=O+[O]O_C=C[CH]CC=O+OO worked
+O=COC(=O)C=O+[O]O_O=[C]C(=O)OC=O+OO worked
+CC1CCCCC1+[O]O_C[C]1CCCCC1+OO worked
+CCCC+[O]O_OO+[CH2]CCC is a DUPLICATE and worked
+CC+[O]O_C[CH2]+OO is a DUPLICATE and worked
+CCCCO+[O]O_CC[CH]CO+OO is a DUPLICATE and worked
+CCO+[O]O_OO+[CH2]CO is a DUPLICATE and worked
+CCCC(C)=O+[O]O_OO+[CH2]CCC(C)=O worked
+C1CCCCC1+[O]O_OO+[CH]1CCCCC1 worked
+C1CO1+[O]O_OO+[CH]1CO1 is a DUPLICATE and worked
+COC(C)=O+[O]O_OO+[CH2]C(=O)OC worked
+</pre>
 </div>
 </div>
 
@@ -13364,7 +16053,7 @@ kinetics(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span> 
@@ -13378,4 +16067,8 @@ kinetics(
     </div>
   </div>
 </body>
+
+ 
+
+
 </html>
