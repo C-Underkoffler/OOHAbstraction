@@ -7,7 +7,6 @@ import os, sys
 rmg_path = os.getenv('RMGpy')
 if rmg_path and rmg_path not in sys.path:
     sys.path.insert(1,rmg_path)
-sys.path
 
 
 # In[2]:
@@ -194,7 +193,7 @@ get_ipython().magic(u'run -i filtered_kinetics.py')
 savePyKineticsLibrary(kineticsLibrary)
 
 
-# In[ ]:
+# In[13]:
 
 
 
