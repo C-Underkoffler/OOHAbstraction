@@ -29,7 +29,7 @@ expressionSheet = pd.read_excel('output.xls', sheetname='k-expressions', header=
 
 # ## Making the box plot
 
-# In[4]:
+# In[3]:
 
 rxnList = kineticsSheet['AutoTST-OOHabstraction'].dropna().index.values
 kinSheet = kineticsSheet.ix[rxnList].sort_values(by='AutoTST-OOHabstraction').set_index('Reaction')
@@ -42,7 +42,7 @@ kSheet
 get_ipython().magic(u'cd plotOutputResults')
 
 
-# In[21]:
+# In[5]:
 
 boxPlot = kSheet.transpose().plot.box(figsize=(12,8), grid=True, rot=90)
 boxPlot.plot(range(1,kinSheet.transpose().shape[1]+1),kinSheet.transpose().loc['AutoTST-OOHabstraction'].values, marker='o', color='k', linestyle='')
@@ -55,7 +55,7 @@ fig.tight_layout()
 
 # ## Making the parity plot
 
-# In[ ]:
+# In[6]:
 
 for j in kinSheet.index:
     mean = kSheet.loc[j].mean(axis=0) + 6 # ksheet excludes AutoTST
