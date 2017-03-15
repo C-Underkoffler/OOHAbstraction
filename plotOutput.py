@@ -66,14 +66,15 @@ for j in kinSheet.index:
         if i != "AutoTST-OOHabstraction" and pd.isnull(kinSheet[i].loc[j]) == False:
             x_list.append(kinSheet[i].loc[j] + 6)
             y_list.append(autoTST)
-            
-        
-    plt.plot(x_list, y_list, '-b') # Line for the range for each AutoTST point
-    plt.plot(x_list, y_list, '|b') # Tick marks for each point
-    plt.plot(mean, autoTST, '.k') # Dots for each average data point
-    plt.plot(range(-2, 20), range(-2, 20), '-g') # Parity Line
-    plt.plot(range(-3, 19), range(-2, 20), ':g') # 1 order of magnitude
-    plt.plot(range(-1, 21), range(-2, 20), ':g') # 1 order of magnitude
+
+    plt.plot(range(-2, 20), range(-2, 20), '-g', zorder=-1) # Parity Line
+    plt.plot(range(-3, 19), range(-2, 20), ':g', zorder=-1) # 1 order of magnitude
+    plt.plot(range(-1, 21), range(-2, 20), ':g', zorder=-1) # 1 order of magnitude
+    
+    plt.plot(x_list, y_list, '.-b', alpha=0.2) # Line and dots for the range of literature values
+    #plt.plot(x_list, y_list, '|b') # Tick marks for each point
+    plt.plot(mean, autoTST, '|r') # Red bars for the average
+
     plt.axis('equal')
     plt.ylim([6,11])
     plt.xlim([6,11])
