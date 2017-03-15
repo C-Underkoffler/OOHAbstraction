@@ -44,7 +44,7 @@ get_ipython().magic(u'cd plotOutputResults')
 
 # In[21]:
 
-boxPlot = kSheet.transpose().plot.box(figsize=(10,10), grid=True, rot=90)
+boxPlot = kSheet.transpose().plot.box(figsize=(12,8), grid=True, rot=90)
 boxPlot.plot(range(1,kinSheet.transpose().shape[1]+1),kinSheet.transpose().loc['AutoTST-OOHabstraction'].values, marker='o', color='k', linestyle='')
 boxPlot.set_ylabel('$log_{10}(k)$', fontsize=20)
 boxPlot.set_xlabel('Reaction', fontsize=20)
