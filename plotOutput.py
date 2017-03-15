@@ -89,14 +89,14 @@ plt.savefig('parityPlot.pdf')
 
 # ## Making the Arrhenius plots for each reaction
 
-# In[ ]:
+# In[7]:
 
 rxnList = expressionSheet['AutoTST-OOHabstraction'].dropna(axis=0).index.values
 expSheet = expressionSheet.ix[rxnList].sort_values(by='AutoTST-OOHabstraction').set_index('Reaction')
 expSheet
 
 
-# In[ ]:
+# In[8]:
 
 get_ipython().magic(u'cd arrheniusPlots')
 
@@ -168,15 +168,19 @@ for j in expSheet.index:
     print
 
 
+# In[ ]:
+
+
+
 
 # # My attempt to generate parity plots for $A$ and $E_a$
 
-# In[ ]:
+# In[10]:
 
 get_ipython().magic(u'cd ..')
 
 
-# In[ ]:
+# In[11]:
 
 for j in expSheet.index:
     #mean = kinSheet.loc[j].mean(axis=0) + 6
