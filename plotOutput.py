@@ -27,9 +27,15 @@ kineticsSheet = pd.read_excel('output.xls', sheetname='k-1000K-100bar', header=4
 expressionSheet = pd.read_excel('output.xls', sheetname='k-expressions', header=4).iloc[:,1:]
 
 
+# In[10]:
+
+kineticsSheet.columns = [n.split('gss_gpfs_scratch/westgroup/Importer/RMG-models/')[-1] for n in kineticsSheet.columns]
+expressionSheet.columns = [n.split('gss_gpfs_scratch/westgroup/Importer/RMG-models/')[-1] for n in expressionSheet.columns]
+
+
 # ## Making the box plot
 
-# In[3]:
+# In[11]:
 
 rxnList = kineticsSheet['AutoTST-OOHabstraction'].dropna().index.values
 kinSheet = kineticsSheet.ix[rxnList].sort_values(by='AutoTST-OOHabstraction').set_index('Reaction')
@@ -37,14 +43,14 @@ kSheet = kinSheet.iloc[:,:-2] # remove the last column, which is AutoTST-OOHabst
 kSheet
 
 
-# In[4]:
+# In[12]:
 
 get_ipython().magic(u'cd plotOutputResults')
 
 
-# In[5]:
+# In[15]:
 
-boxPlot = kSheet.transpose().plot.box(figsize=(12,8), grid=True, rot=90)
+boxPlot = kSheet.transpose().plot.box(figsize=(24,8), grid=True, rot=90)
 boxPlot.plot(range(1,kinSheet.transpose().shape[1]+1),kinSheet.transpose().loc['AutoTST-OOHabstraction'].values, marker='o', color='k', linestyle='')
 boxPlot.set_ylabel('$log_{10}(k)$', fontsize=20)
 boxPlot.set_xlabel('Reaction', fontsize=20)
@@ -55,7 +61,7 @@ fig.tight_layout()
 
 # ## Making the parity plot
 
-# In[6]:
+# In[16]:
 
 plt.plot(range(-2, 20), range(-2, 20), '-g', zorder=-1) # Parity Line
 plt.plot(range(-3, 19), range(-2, 20), ':g', zorder=-1) # 1 order of magnitude
