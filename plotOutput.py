@@ -92,7 +92,7 @@ plt.savefig('parityPlot.pdf')
 # In[ ]:
 
 rxnList = expressionSheet['AutoTST-OOHabstraction'].dropna(axis=0).index.values
-expSheet = expressionSheet.ix[rxnList].sort(columns='AutoTST-OOHabstraction').set_index('Reaction')
+expSheet = expressionSheet.ix[rxnList].sort_values(by='AutoTST-OOHabstraction').set_index('Reaction')
 expSheet
 
 
@@ -101,47 +101,72 @@ expSheet
 get_ipython().magic(u'cd arrheniusPlots')
 
 
-# In[ ]:
+# In[9]:
 
 def evalArrhenius(autoTSTExpression):
+    if autoTSTExpression is np.nan:
+        return autoTSTExpression
     try:
-        my_string = str(autoTSTExpression)[1:]
-        result = eval(my_string, {}, {'Arrhenius': rmgpy.kinetics.Arrhenius})
+        my_string = str(autoTSTExpression).strip("'")
+        print my_string
+        result = eval(my_string, {}, {'Arrhenius': rmgpy.kinetics.Arrhenius,
+                                     'MultiArrhenius': rmgpy.kinetics.MultiArrhenius,
+                                     'PDepArrhenius': rmgpy.kinetics.PDepArrhenius,})
     except:
         result = autoTSTExpression
+        raise
     return result
 
-Temps = np.array(range(200,2600,100))
-inverseTemps = 1000./Temps
+# Temps = np.array(range(800,2500,100))
+# inverseTemps = 1000./Temps
 
+inverseTemps = np.linspace(1000./800., 1000./2500., 15)
+Temps = 1000./inverseTemps
+
+comparisonPressure = 1e5 # Pa
+
+# make a copy and leave the original so we can try this cell several times
+kineticsSheet = expSheet.copy() 
 for j in expSheet.index:
+    fig, ax = plt.subplots()
     for i in list(expSheet):
         logk = []
         logkAutoTST = []
-        expSheet[i].loc[j] = evalArrhenius(expSheet[i].loc[j])
-        #print type(expSheet[i].loc[j])
+        kineticsSheet[i].loc[j] = evalArrhenius(expSheet[i].loc[j])
+        #print type(kineticsSheet[i].loc[j])
         
         if i == 'AutoTST-OOHabstraction':
             for Temp in Temps:
-                k = expSheet[i].loc[j].getRateCoefficient(Temp,1000)
+                k = kineticsSheet[i].loc[j].getRateCoefficient(T=Temp,P=comparisonPressure)
                 logkAutoTST.append(np.log10(k) + 6)
-                
+
             plt.plot(inverseTemps, logkAutoTST, '-r', linewidth=2)
-        elif type(expSheet[i].loc[j]) == rmgpy.kinetics.arrhenius.Arrhenius:
-            #expSheet[i].loc[j]
+        elif type(kineticsSheet[i].loc[j]) == rmgpy.kinetics.arrhenius.Arrhenius:
+            #kineticsSheet[i].loc[j]
             for Temp in Temps:
-                k = expSheet[i].loc[j].getRateCoefficient(Temp,1000)
+                k = kineticsSheet[i].loc[j].getRateCoefficient(T=Temp,P=comparisonPressure)
                 logk.append(np.log10(k) + 6)
-            plt.plot(inverseTemps, logk, ':k', linewidth=2)
-    plt.xlabel("$1000/T [K^{-1}]$", fontsize=16)
+            plt.plot(inverseTemps, logk, ':k', linewidth=2, alpha=0.4)
+    plt.xlabel("$1/T [K^{-1}]$", fontsize=16)
     plt.ylabel("$log_{10}(k) [cm^3 / (mole \cdot s)]$", fontsize=16)
+    
+    Tticks = [800, 1000, 1500, 2500]
+    ax.set_xticks([1000./T for T in Tticks])
+    ax.set_xticklabels(['1/{:.0f}'.format(T) for T in Tticks])
     plt.tick_params(axis='x', labelsize=11)
     plt.tick_params(axis='y', labelsize=11)
     #plt.title(j)
-    plt.xlim([0.25,1.5])
+    plt.xlim([0.39,1.26])
+    
+    #plt.ylim([6,13])
+    # the following will EXPAND the limits to at least (6,13) but not shrink them
+    plt.ylim(min(ax.get_ylim()[0], 6), max(ax.get_ylim()[1], 13))
     saveString = str(j) + '.pdf'
     plt.savefig(saveString)
-    plt.show()  
+    print str(j)
+    plt.show() 
+    print
+
 
 
 # # My attempt to generate parity plots for $A$ and $E_a$
