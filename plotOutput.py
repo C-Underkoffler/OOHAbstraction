@@ -58,7 +58,7 @@ fig.tight_layout()
 # In[ ]:
 
 for j in kinSheet.index:
-    mean = kinSheet.loc[j].mean(axis=0) + 6
+    mean = kSheet.loc[j].mean(axis=0) + 6 # ksheet excludes AutoTST
     autoTST = kinSheet['AutoTST-OOHabstraction'].loc[j] + 6
     x_list = []
     y_list = []
