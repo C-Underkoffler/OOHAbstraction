@@ -74,10 +74,12 @@ for j in kinSheet.index:
     plt.plot(range(-2, 20), range(-2, 20), '-g') # Parity Line
     plt.plot(range(-3, 19), range(-2, 20), ':g') # 1 order of magnitude
     plt.plot(range(-1, 21), range(-2, 20), ':g') # 1 order of magnitude
+    plt.axis('equal')
     plt.ylim([6,11])
     plt.xlim([6,11])
-    plt.xlabel('$log_{10}k (T=1000 K, P=100 bar) [cm^3 / (mole \cdot s)]$ by Imported Kinetics', fontsize=10)
-    plt.ylabel('$log_{10}k (T=1000 K, P=100 bar) [cm^3 / (mole \cdot s)]$ by AutoTST', fontsize=10)
+    plt.title("$k(T=1000 K, P=100 bar) \ [cm^3 / (mole \cdot s)]$")
+    plt.xlabel('$log_{10}k$ from literature', fontsize=10)
+    plt.ylabel('$log_{10}k$ by AutoTST', fontsize=10)
     plt.tick_params(axis='x', labelsize=8)
     plt.tick_params(axis='y', labelsize=8)
 
