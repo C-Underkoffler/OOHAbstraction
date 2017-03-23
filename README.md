@@ -1,5 +1,16 @@
 # Instructions for OOHabstraction
 
+## To start new calculations:
+
+On discovery, with $RMGpy pointing to an RMG-Py installation on the OOHAbstraction branch, and having called `export PYTHONPATH=$RMGpy:$PYTHONPATH` to ensure it's at the front of your path,
+1. `$ python $RMGpy/scripts/filterReactions.py /scratch/westgroup/Importer/RMG-models/`
+    This will create updated `kineticsDict.pkl` that we later use.
+2. `$ cp $RMGpy/scripts/autoTST-slurm.sh ./`
+3.  Update it to have the array values you wish to run.
+2. `$ sbatch autTST-slurm.sh`
+
+
+## To postprocess the calculations
 Do this on Discovery:
 
 1. Run `1 Filter OOH.ipynb`. This reads all the files in `'/scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/'` looking for things with OOH reactant and HOOH product, and then those in `'/gss_gpfs_scratch/westgroup/QMscratch/'` looking for the same but removing duplicates. It writes all these to `filtered_kinetics.py`.
