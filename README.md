@@ -11,6 +11,9 @@ On discovery, with $RMGpy pointing to an RMG-Py installation on the OOHAbstracti
 
 
 ## To postprocess the calculations
+
+**See the run_all.sh script**. You can probably just sbatch that and it'll do all this.
+
 Do this on Discovery:
 
 1. Run `1 Filter OOH.ipynb`. This reads all the files in `'/scratch/bhoorasingh.p/QMfiles/Reactions/H_Abstraction/'` looking for things with OOH reactant and HOOH product, and then those in `'/gss_gpfs_scratch/westgroup/QMscratch/'` looking for the same but removing duplicates. It writes all these to `filtered_kinetics.py`.
