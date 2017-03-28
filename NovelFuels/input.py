@@ -1,31 +1,25 @@
 # Data sources for kinetics
 database(
     thermoLibraries = ['KlippensteinH2O2','primaryThermoLibrary','DFT_QCI_thermo','CBS_QB3_1dHR'],
-    reactionLibraries = [],  
+    reactionLibraries = [],
     seedMechanisms = [],
-    kineticsDepositories = 'default', 
+    kineticsDepositories = 'default',
     #this section lists possible reaction families to find reactioons with
-    kineticsFamilies = ['!Intra_Disproportionation','!Substitution_O'],
+    kineticsFamilies = ['H_Abstraction'],
     kineticsEstimator = 'rate rules',
 )
 
 # List all species you want reactions between
 species(
-    label='ethane',
+    label='fuel',
     reactive=True,
-    structure=SMILES("CC"),
+    structure=SMILES("CCC"),
 )
 
 species(
-    label='H',
+    label='OOH',
     reactive=True,
-    structure=SMILES("[H]"),
-)
-
-species(
-    label='butane',
-    reactive=True,
-    structure=SMILES("CCCC"),
+    structure=SMILES("O[O]"),
 )
 
 
@@ -34,15 +28,16 @@ simpleReactor(
     temperature=(650,'K'),
     pressure=(10.0,'bar'),
     initialMoleFractions={
-        "ethane": 1,
+        "fuel": 1,
+        "OOH": 1
     },
     terminationConversion={
-        'butane': .99,
+        'fuel': .5,
     },
     terminationTime=(40,'s'),
 )
 
-#optional module if you want to get pressure dependent kinetics. 
+#optional module if you want to get pressure dependent kinetics.
 
 #pressureDependence(
 #     method='modified strong collision',
@@ -54,7 +49,7 @@ simpleReactor(
 #     maximumAtoms=15,
 #)
 
-#optional module if you want to limit species produced in reactions. 
+#optional module if you want to limit species produced in reactions.
 
 #generatedSpeciesConstraints(
 #    allowed=['input species','seed mechanisms','reaction libraries'],
