@@ -12,8 +12,8 @@ from rmgpy.qm.gaussian import GaussianTSB3LYP
 
 if len(sys.argv)>1:
 	i = int(sys.argv[-1])
-elif os.getenv('LSB_JOBINDEX'):
-	i = int(os.getenv('LSB_JOBINDEX'))
+elif os.getenv('SLURM_ARRAY_TASK_ID'):
+	i = int(os.getenv('SLURM_ARRAY_TASK_ID'))
 else:
 	raise Exception("Specify a TS number!")
 
@@ -26,10 +26,10 @@ print 'Finished loading RMG Database ...'
 
 # Doesn't matter which family, it loads the entire species dict
 loadSpecies = rmgDatabase.kinetics.families[rxnFamiles[0]]
-species_dict_file = 'chemkin/species_dictionary.txt'
+species_dict_file = '../chemkin/species_dictionary.txt'
 species_dict = loadSpecies.getSpecies(species_dict_file)
 
-file_object = open('chemkin/chem_annotated.inp', 'r')
+file_object = open('../chemkin/chem_annotated.inp', 'r')
 mechLines = file_object.readlines()
 
 rxnList = []
