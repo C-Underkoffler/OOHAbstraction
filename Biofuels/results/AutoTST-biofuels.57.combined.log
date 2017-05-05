@@ -1,0 +1,9 @@
+Loading RMG Database ...
+Finished loading RMG Database ...
+Exception TypeError: "Argument 'other' has incorrect type (expected rmgpy.molecule.graph.Graph, got rmgpy.species.Species)" in 'rmgpy.reaction.Reaction.isIsomorphic' ignored
+Exception TypeError: "Argument 'other' has incorrect type (expected rmgpy.molecule.graph.Graph, got rmgpy.species.Species)" in 'rmgpy.reaction.Reaction.isIsomorphic' ignored
+Exception TypeError: "Argument 'other' has incorrect type (expected rmgpy.molecule.graph.Graph, got rmgpy.species.Species)" in 'rmgpy.reaction.Reaction.isIsomorphic' ignored
+Exception TypeError: "Argument 'other' has incorrect type (expected rmgpy.molecule.graph.Graph, got rmgpy.species.Species)" in 'rmgpy.reaction.Reaction.isIsomorphic' ignored
+Exception TypeError: "Argument 'other' has incorrect type (expected rmgpy.molecule.graph.Graph, got rmgpy.species.Species)" in 'rmgpy.reaction.Reaction.isIsomorphic' ignored
+Exception TypeError: "Argument 'other' has incorrect type (expected rmgpy.molecule.graph.Graph, got rmgpy.species.Species)" in 'rmgpy.reaction.Reaction.isIsomorphic' ignored
+No reactions found for reaction 57: [O]O + CC(=O)C(C)CC(C)C = OO + CC([O])=C(C)CC(C)C
