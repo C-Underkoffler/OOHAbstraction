@@ -12,7 +12,7 @@ from rmgpy.qm.gaussian import GaussianTSB3LYP
 
 if len(sys.argv)>1:
 	i = int(sys.argv[-1])
-elif os.getenv('SLURM_ARRAY_TASK_ID'):
+elif os.getenv('SLURM_ARRAY_TASK_ID):
 	i = int(os.getenv('SLURM_ARRAY_TASK_ID'))
 else:
 	raise Exception("Specify a TS number!")
@@ -26,10 +26,11 @@ print 'Finished loading RMG Database ...'
 
 # Doesn't matter which family, it loads the entire species dict
 loadSpecies = rmgDatabase.kinetics.families[rxnFamiles[0]]
-species_dict_file = '../chemkin/species_dictionary.txt'
+species_dict_file = '~/Code/OOHabstraction/Biofuels/chemkin/species_dictionary.txt'
 species_dict = loadSpecies.getSpecies(species_dict_file)
+print type(species_dict)
 
-file_object = open('../chemkin/chem_annotated.inp', 'r')
+file_object = open('~/Code/OOHabstraction/Biofuels/chemkin/chem_annotated.inp', 'r')
 mechLines = file_object.readlines()
 
 rxnList = []
@@ -52,6 +53,7 @@ reactants, products = rxnFormula.split('=')
 if rxnFamily in ['H_Abstraction']:
 	rSpecies1, rSpecies2 = [species_dict[j] for j in reactants.split('+')]
 	pSpecies1, pSpecies2 = [species_dict[j] for j in products.split('+')]
+
 	rSpecies1.generateResonanceIsomers()
 	rSpecies2.generateResonanceIsomers()
 	pSpecies1.generateResonanceIsomers()
@@ -63,11 +65,11 @@ if rxnFamily in ['H_Abstraction']:
 			tempList = rmgDatabase.kinetics.generateReactionsFromFamilies([moleculeA, moleculeB], [], only_families=[rxnFamily])
 			for rxn0 in tempList:
 				reactionList.append(rxn0)
-
+print "Reaction lists made"
 gotOne=False
 for reaction in reactionList:
 	# Check if any of the RMG proposed reactions matches the reaction in the mechanism
-	if reaction.isIsomorphic(testReaction):
+	if testReaction.isIsomorphic(reaction):
 		# Now add the labeled atoms to the Molecule, and check all labels were added
 		atLblsR = dict([(lbl[0], False) for lbl in reaction.labeledAtoms])
 		atLblsP = dict([(lbl[0], False) for lbl in reaction.labeledAtoms])
