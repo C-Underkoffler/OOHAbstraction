@@ -12,7 +12,7 @@ from rmgpy.qm.gaussian import GaussianTSB3LYP
 
 if len(sys.argv)>1:
 	i = int(sys.argv[-1])
-elif os.getenv('SLURM_ARRAY_TASK_ID):
+elif os.getenv('SLURM_ARRAY_TASK_ID'):
 	i = int(os.getenv('SLURM_ARRAY_TASK_ID'))
 else:
 	raise Exception("Specify a TS number!")
