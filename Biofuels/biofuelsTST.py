@@ -75,7 +75,7 @@ for reaction in reactionList:
 		atLblsP = dict([(lbl[0], False) for lbl in reaction.labeledAtoms])
 
 		for reactant in reaction.reactants:
-			reactant = reactant.molecule[0]
+			reactant = reactant[0]
 			reactant.clearLabeledAtoms()
 			for atom in reactant.atoms:
 				for atomLabel in reaction.labeledAtoms:
@@ -83,7 +83,7 @@ for reaction in reactionList:
 						atom.label = atomLabel[0]
 						atLblsR[atomLabel[0]] = True
 		for product in reaction.products:
-			product = product.molecule[0]
+			product = product[0]
 			product.clearLabeledAtoms()
 			for atom in product.atoms:
 				for atomLabel in reaction.labeledAtoms:
