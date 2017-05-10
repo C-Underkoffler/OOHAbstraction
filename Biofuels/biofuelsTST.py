@@ -26,11 +26,11 @@ print 'Finished loading RMG Database ...'
 
 # Doesn't matter which family, it loads the entire species dict
 loadSpecies = rmgDatabase.kinetics.families[rxnFamiles[0]]
-species_dict_file = '~/Code/OOHabstraction/Biofuels/chemkin/species_dictionary.txt'
+species_dict_file = os.path.expanduser('~/Code/OOHabstraction/Biofuels/chemkin/species_dictionary.txt')
 species_dict = loadSpecies.getSpecies(species_dict_file)
 print type(species_dict)
 
-file_object = open('~/Code/OOHabstraction/Biofuels/chemkin/chem_annotated.inp', 'r')
+file_object = open(os.path.expanduser('~/Code/OOHabstraction/Biofuels/chemkin/chem_annotated.inp'), 'r')
 mechLines = file_object.readlines()
 
 rxnList = []
