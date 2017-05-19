@@ -31,20 +31,20 @@ else:
     i = 1
 logging.info("RUNNING WITH JOB NUMBER i = {}".format(i))
 
-file_object = open(os.path.expanduser('~/Code/OOHabstraction/Biofuels/results/AutoTST-biofuels.' + str(i) + '.log'), 'r')
+file_object = open(os.path.expanduser('~/Code/OOHabstraction/Biofuels/results/AutoTST-biofuels.' + str(i) + '.combined.log'), 'r')
 lineList = file_object.readlines()
 logging.info("Previous .combine.log file loaded")
 
 if "Yay" in lineList:
     logging.info("Kinetics successfully calculated for this run.")
-    break
+    sys.exit()
 
 if "WARNING Couldn't calculate kinetics" in lineList:
     logging.info("Kinetics were not calculated for this run.")
-    break
+    sys.exit()
 
 if "Running symmetry on the point group calculation has failed" not in lineList:
-    break
+    sys.exit()
 
 logging.info("A symmetry issue exists. Continuing calculations on it.")
 

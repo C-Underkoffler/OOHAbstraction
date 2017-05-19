@@ -81,18 +81,6 @@ for rxnFamily in rxnFamilies:
 				rxnList.append((rxnFamily, mechLines[k+m]))
 logging.info(rxnList)
 logging.info(type(rxnList))
-"""
-def sorter_key(rxn):
-
-    A key to generate the sort order for reactions.
-    Needs to be consistent across runs, but we want small reactions
-    first, so that it runs faster.
-
-    weight = 0.
-    for r in rxn.reactants:
-        weight += r.molecule[0].getMolecularWeight()
-    return (weight, repr(rxn))
-"""
 
 
 
