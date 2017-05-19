@@ -10,7 +10,7 @@ database(
 )
 
 # List all species you want reactions between
-species(
+species( # 1
         label='OOH',
         reactive=True,
         structure=SMILES("[O]O"),
@@ -49,84 +49,135 @@ species(
 
 # The biofuels of interest
 
-species(
-        label='2,2,4-Trimethylpentane',
+species( # 2
+        label='2,2,4-Trimethylpentane', # iso-otane
         reactive=True,
         structure=SMILES("CC(C)CC(C)(C)C"),
 )
 
-species(
+species( # 3
         label='2,4-Dimethylhexane',
         reactive=True,
         structure=InChI("InChI=1S/C8H18/c1-5-8(4)6-7(2)3/h7-8H,5-6H2,1-4H3"),
 )
 
-species(
+species( # 4
         label='3-Methylheptane',
         reactive=True,
         structure=SMILES("CCCCC(C)CC"),
 )
 
-species(
+species( # 5
         label='2-methyl 2-butanol',
         reactive=True,
         structure=SMILES("CCC(C)(C)O"),
 )
 
-species(
+species( # 6
         label='2-Methyl-1-pentanol',
         reactive=True,
         structure=SMILES("OCC(C)CCC"),
 )
 
-species(
+species( # 7
         label='2,4-dimethyl-2-heptene',
         reactive=True,
         structure=InChI("InChI=1S/C9H18/c1-5-6-9(4)7-8(2)3/h7,9H,5-6H2,1-4H3"),
 )
 
-species(
+species( # 8
         label='methylcyclopentane',
         reactive=True,
         structure=InChI("InChI=1S/C6H12/c1-6-4-2-3-5-6/h6H,2-5H2,1H3"),
 )
 
-species(
+species( # 9
         label='Ocimene',
         reactive=True,
         structure=SMILES("C=C\C(=C\CCC(=C)C)C"),
 )
 
-species(
+species( # 10
         label='Xylene',
         reactive=True,
         structure=SMILES("CC1=CC=C(C)C=C1"),
 )
 
-species(
+species( # 11
         label='Diisobutyl ketone',
         reactive=True,
         structure=SMILES("CC(C)CC(=O)CC(C)C"),
 )
 
-species(
+species( # 12
         label='Methyl 1,3-dimethylbutyl ketone',
         reactive=True,
         structure=SMILES("CC(C)CC(C)C(=O)C"),
 )
 
-species(
+species( # 13
         label='2,3-di-tert-butoxypropanol',
         reactive=True,
         structure=SMILES("CC(C)(C)OCC(CO)OC(C)(C)C"),
 )
 
 
-species(
+species( # 14
         label='2-(1-ethylpropoxy)-propane',
         reactive=True,
         structure=SMILES("CCC(CC)OC(C)C"),
 )
+
+species( # 15
+        label='alpha-pinene',
+        reactive=True,
+        structure=SMILES("CC1=CCC2CC1C2(C)C"),
+)
+
+species( # 16
+        label='isoamyl acetate',
+        reactive=True,
+        structure=SMILES("CC(C)CCOC(C)=O"),
+)
+species( # 17
+        label='ethyl isobutyrate',
+        reactive=True,
+        structure=SMILES("CCOC(=O)C(C)C"),
+)
+species( # 18
+        label='2-methylcyclopent-2-en-1-one',
+        reactive=True,
+        structure=SMILES("CC1=CCCC1=O"),
+)
+species( # 19
+        label='2-methyl-5-pentyl tetrahydrofuran',
+        reactive=True,
+        structure=SMILES("CCCCCC1CCC(C)O1"),
+)
+species( # 20
+        label='2-methylhept-3-ene',
+        reactive=True,
+        structure=SMILES("CCCC=CC(C)C"),
+)
+
+species( # 21
+        label='2-methylhept-4-ene',
+        reactive=True,
+        structure=SMILES("CCC=CCC(C)C"),
+)
+
+species( # 22
+        label='2-methylhept-5-ene',
+        reactive=True,
+        structure=SMILES("CC=CCCC(C)C"),
+)
+
+species( # 23
+        label='2-methylhept-6-ene',
+        reactive=True,
+        structure=SMILES("C=CCCCC(C)C"),
+)
+
 
 # you must list reactor conditions (though this may not effect the output)
 simpleReactor(
