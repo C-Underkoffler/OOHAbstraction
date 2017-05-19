@@ -154,25 +154,32 @@ species( # 19
         reactive=True,
         structure=SMILES("CCCCCC1CCC(C)O1"),
 )
+
 species( # 20
+        label='2-methylhept-2-ene',
+        reactive=True,
+        structure=SMILES("CCCCC=C(C)C"),
+)
+
+species( # 21
         label='2-methylhept-3-ene',
         reactive=True,
         structure=SMILES("CCCC=CC(C)C"),
 )
 
-species( # 21
+species( # 22
         label='2-methylhept-4-ene',
         reactive=True,
         structure=SMILES("CCC=CCC(C)C"),
 )
 
-species( # 22
+species( # 23
         label='2-methylhept-5-ene',
         reactive=True,
         structure=SMILES("CC=CCCC(C)C"),
 )
 
-species( # 23
+species( # 24
         label='2-methylhept-6-ene',
         reactive=True,
         structure=SMILES("C=CCCCC(C)C"),
