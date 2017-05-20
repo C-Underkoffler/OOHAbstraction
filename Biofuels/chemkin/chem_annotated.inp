@@ -34,79 +34,149 @@ SPECIES
     C8H16O(12)          ! Methyl 1,3-dimethylbutyl ketone(12)
     S(13)               ! 2,3-di-tert-butoxypropanol(13)
     C8H18O(14)          ! 2-(1-ethylpropoxy)-propane(14)
-    OO(15)              ! OO(15)
-    O2(16)              ! [O][O](16)
-    C8H17(17)           ! C[C](C)CC(C)(C)C(17)
-    C8H17(18)           ! CC(C)[CH]C(C)(C)C(18)
-    C8H17(19)           ! [CH2]C(C)(C)CC(C)C(19)
-    C8H17(20)           ! [CH2]C(C)CC(C)(C)C(20)
-    C8H17(21)           ! CC[C](C)CC(C)C(21)
-    C8H17(22)           ! CCC(C)C[C](C)C(22)
-    C8H17(23)           ! CCC(C)[CH]C(C)C(23)
-    C8H17(24)           ! C[CH]C(C)CC(C)C(24)
-    C8H17(25)           ! [CH2]C(C)CC(C)CC(25)
-    C8H17(26)           ! [CH2]C(CC)CC(C)C(26)
-    C8H17(27)           ! [CH2]CC(C)CC(C)C(27)
-    C8H17(28)           ! CCCC[C](C)CC(28)
-    C8H17(29)           ! CCC[CH]C(C)CC(29)
-    C8H17(30)           ! CC[CH]CC(C)CC(30)
-    C8H17(31)           ! C[CH]C(C)CCCC(31)
-    C8H17(32)           ! C[CH]CCC(C)CC(32)
-    C8H17(33)           ! [CH2]C(CC)CCCC(33)
-    C8H17(34)           ! [CH2]CCCC(C)CC(34)
-    C8H17(35)           ! [CH2]CC(C)CCCC(35)
-    C5H11O(36)          ! C[CH]C(C)(C)O(36)
-    C5H11O(37)          ! [CH2]C(C)(O)CC(37)
-    C5H11O(38)          ! [CH2]CC(C)(C)O(38)
-    C5H11O(39)          ! CCC(C)(C)[O](39)
-    C6H13O(40)          ! CCC[C](C)CO(40)
-    C6H13O(41)          ! CC[CH]C(C)CO(41)
-    C6H13O(42)          ! C[CH]CC(C)CO(42)
-    C6H13O(43)          ! CCCC(C)[CH]O(43)
-    C6H13O(44)          ! [CH2]C(CO)CCC(44)
-    C6H13O(45)          ! [CH2]CCC(C)CO(45)
-    C6H13O(46)          ! CCCC(C)C[O](46)
-    C9H17(47)           ! CCC[C](C)C=C(C)C(47)
-    C9H17(48)           ! CC[CH]C(C)C=C(C)C(48)
-    C9H17(49)           ! C[CH]CC(C)C=C(C)C(49)
-    C9H17(50)           ! [CH2]C(C=C(C)C)CCC(50)
-    C9H17(51)           ! [CH2]CCC(C)C=C(C)C(51)
-    C9H17(52)           ! [CH2]C(C)=CC(C)CCC(52)
-    C9H17(53)           ! CCCC(C)[C]=C(C)C(53)
-    C6H11(54)           ! C[C]1CCCC1(54)
-    C6H11(55)           ! CC1[CH]CCC1(55)
-    C6H11(56)           ! CC1C[CH]CC1(56)
-    C6H11(57)           ! [CH2]C1CCCC1(57)
-    C10H15(58)          ! C=CC(C)=CC[CH]C(=C)C(58)
-    C10H15(59)          ! C=CC(C)=C[CH]CC(=C)C(59)
-    C10H15(60)          ! [CH2]C(=C)CCC=C(C)C=C(60)
-    C10H15(61)          ! [CH2]C(C=C)=CCCC(=C)C(61)
-    C10H15(62)          ! C=CC(C)=[C]CCC(=C)C(62)
-    C10H15(63)          ! C=[C]C(C)=CCCC(=C)C(63)
-    C10H15(64)          ! [CH]=C(C)CCC=C(C)C=C(64)
-    C10H15(65)          ! [CH]=CC(C)=CCCC(=C)C(65)
-    C8H9(66)            ! [CH2]c1ccc(C)cc1(66)
-    C8H9(67)            ! Cc1[c]cc(C)cc1(67)
-    C9H17O(68)          ! C[C](C)CC(=O)CC(C)C(68)
-    C9H17O(69)          ! CC(C)[CH]C(=O)CC(C)C(69)
-    C9H17O(70)          ! [CH2]C(C)CC(=O)CC(C)C(70)
-    C8H15O(71)          ! C[C](C)CC(C)C(C)=O(71)
-    C8H15O(72)          ! C[C](CC(C)C)C(C)=O(72)
-    C8H15O(73)          ! CC(=O)C(C)[CH]C(C)C(73)
-    C8H15O(74)          ! [CH2]C(C)CC(C)C(C)=O(74)
-    C8H15O(75)          ! [CH2]C(CC(C)C)C(C)=O(75)
-    C8H15O(76)          ! [CH2]C(=O)C(C)CC(C)C(76)
-    S(77)               ! CC(C)(C)OC[C](CO)OC(C)(C)C(77)
-    S(78)               ! CC(C)(C)O[CH]C(CO)OC(C)(C)C(78)
-    S(79)               ! CC(C)(C)OCC([CH]O)OC(C)(C)C(79)
-    S(80)               ! [CH2]C(C)(C)OCC(CO)OC(C)(C)C(80)
-    S(81)               ! [CH2]C(C)(C)OC(CO)COC(C)(C)C(81)
-    S(82)               ! CC(C)(C)OCC(C[O])OC(C)(C)C(82)
-    C8H17O(83)          ! CC[C](CC)OC(C)C(83)
-    C8H17O(84)          ! CCC(CC)O[C](C)C(84)
-    C8H17O(85)          ! C[CH]C(CC)OC(C)C(85)
-    C8H17O(86)          ! [CH2]C(C)OC(CC)CC(86)
-    C8H17O(87)          ! [CH2]CC(CC)OC(C)C(87)
+    C10H16(15)          ! alpha-pinene(15)
+    S(16)               ! isoamyl acetate(16)
+    S(17)               ! ethyl isobutyrate(17)
+    C6H8O(18)           ! 2-methylcyclopent-2-en-1-one(18)
+    S(19)               ! 2-methyl-5-pentyl tetrahydrofuran(19)
+    C8H16(20)           ! 2-methylhept-2-ene(20)
+    C8H16(21)           ! 2-methylhept-3-ene(21)
+    C8H16(22)           ! 2-methylhept-4-ene(22)
+    C8H16(23)           ! 2-methylhept-5-ene(23)
+    C8H16(24)           ! 2-methylhept-6-ene(24)
+    OO(25)              ! OO(25)
+    O2(26)              ! [O][O](26)
+    C8H17(27)           ! C[C](C)CC(C)(C)C(27)
+    C8H17(28)           ! CC(C)[CH]C(C)(C)C(28)
+    C8H17(29)           ! [CH2]C(C)(C)CC(C)C(29)
+    C8H17(30)           ! [CH2]C(C)CC(C)(C)C(30)
+    C8H17(31)           ! CC[C](C)CC(C)C(31)
+    C8H17(32)           ! CCC(C)C[C](C)C(32)
+    C8H17(33)           ! CCC(C)[CH]C(C)C(33)
+    C8H17(34)           ! C[CH]C(C)CC(C)C(34)
+    C8H17(35)           ! [CH2]C(C)CC(C)CC(35)
+    C8H17(36)           ! [CH2]C(CC)CC(C)C(36)
+    C8H17(37)           ! [CH2]CC(C)CC(C)C(37)
+    C8H17(38)           ! CCCC[C](C)CC(38)
+    C8H17(39)           ! CCC[CH]C(C)CC(39)
+    C8H17(40)           ! CC[CH]CC(C)CC(40)
+    C8H17(41)           ! C[CH]C(C)CCCC(41)
+    C8H17(42)           ! C[CH]CCC(C)CC(42)
+    C8H17(43)           ! [CH2]C(CC)CCCC(43)
+    C8H17(44)           ! [CH2]CCCC(C)CC(44)
+    C8H17(45)           ! [CH2]CC(C)CCCC(45)
+    C5H11O(46)          ! C[CH]C(C)(C)O(46)
+    C5H11O(47)          ! [CH2]C(C)(O)CC(47)
+    C5H11O(48)          ! [CH2]CC(C)(C)O(48)
+    C5H11O(49)          ! CCC(C)(C)[O](49)
+    C6H13O(50)          ! CCC[C](C)CO(50)
+    C6H13O(51)          ! CC[CH]C(C)CO(51)
+    C6H13O(52)          ! C[CH]CC(C)CO(52)
+    C6H13O(53)          ! CCCC(C)[CH]O(53)
+    C6H13O(54)          ! [CH2]C(CO)CCC(54)
+    C6H13O(55)          ! [CH2]CCC(C)CO(55)
+    C6H13O(56)          ! CCCC(C)C[O](56)
+    C9H17(57)           ! CCC[C](C)C=C(C)C(57)
+    C9H17(58)           ! CC[CH]C(C)C=C(C)C(58)
+    C9H17(59)           ! C[CH]CC(C)C=C(C)C(59)
+    C9H17(60)           ! [CH2]C(C=C(C)C)CCC(60)
+    C9H17(61)           ! [CH2]CCC(C)C=C(C)C(61)
+    C9H17(62)           ! [CH2]C(C)=CC(C)CCC(62)
+    C9H17(63)           ! CCCC(C)[C]=C(C)C(63)
+    C6H11(64)           ! C[C]1CCCC1(64)
+    C6H11(65)           ! CC1[CH]CCC1(65)
+    C6H11(66)           ! CC1C[CH]CC1(66)
+    C6H11(67)           ! [CH2]C1CCCC1(67)
+    C10H15(68)          ! C=CC(C)=CC[CH]C(=C)C(68)
+    C10H15(69)          ! C=CC(C)=C[CH]CC(=C)C(69)
+    C10H15(70)          ! [CH2]C(=C)CCC=C(C)C=C(70)
+    C10H15(71)          ! [CH2]C(C=C)=CCCC(=C)C(71)
+    C10H15(72)          ! C=CC(C)=[C]CCC(=C)C(72)
+    C10H15(73)          ! C=[C]C(C)=CCCC(=C)C(73)
+    C10H15(74)          ! [CH]=C(C)CCC=C(C)C=C(74)
+    C10H15(75)          ! [CH]=CC(C)=CCCC(=C)C(75)
+    C8H9(76)            ! [CH2]c1ccc(C)cc1(76)
+    C8H9(77)            ! Cc1[c]cc(C)cc1(77)
+    C9H17O(78)          ! C[C](C)CC(=O)CC(C)C(78)
+    C9H17O(79)          ! CC(C)[CH]C(=O)CC(C)C(79)
+    C9H17O(80)          ! [CH2]C(C)CC(=O)CC(C)C(80)
+    C8H15O(81)          ! C[C](C)CC(C)C(C)=O(81)
+    C8H15O(82)          ! C[C](CC(C)C)C(C)=O(82)
+    C8H15O(83)          ! CC(=O)C(C)[CH]C(C)C(83)
+    C8H15O(84)          ! [CH2]C(C)CC(C)C(C)=O(84)
+    C8H15O(85)          ! [CH2]C(CC(C)C)C(C)=O(85)
+    C8H15O(86)          ! [CH2]C(=O)C(C)CC(C)C(86)
+    S(87)               ! CC(C)(C)OC[C](CO)OC(C)(C)C(87)
+    S(88)               ! CC(C)(C)O[CH]C(CO)OC(C)(C)C(88)
+    S(89)               ! CC(C)(C)OCC([CH]O)OC(C)(C)C(89)
+    S(90)               ! [CH2]C(C)(C)OCC(CO)OC(C)(C)C(90)
+    S(91)               ! [CH2]C(C)(C)OC(CO)COC(C)(C)C(91)
+    S(92)               ! CC(C)(C)OCC(C[O])OC(C)(C)C(92)
+    C8H17O(93)          ! CC[C](CC)OC(C)C(93)
+    C8H17O(94)          ! CCC(CC)O[C](C)C(94)
+    C8H17O(95)          ! C[CH]C(CC)OC(C)C(95)
+    C8H17O(96)          ! [CH2]C(C)OC(CC)CC(96)
+    C8H17O(97)          ! [CH2]CC(CC)OC(C)C(97)
+    C10H15(98)          ! CC1=CC[C]2CC1C2(C)C(98)
+    C10H15(99)          ! CC1=CCC2C[C]1C2(C)C(99)
+    S(100)              ! CC1=CCC2[CH]C1C2(C)C(100)
+    S(101)              ! CC1=C[CH]C2CC1C2(C)C(101)
+    S(102)              ! [CH2]C1(C)C2CC=C(C)C1C2(102)
+    S(103)              ! [CH2]C1=CCC2CC1C2(C)C(103)
+    S(104)              ! CC1=[C]CC2CC1C2(C)C(104)
+    S(105)              ! C[C](C)CCOC(C)=O(105)
+    S(106)              ! CC(=O)OC[CH]C(C)C(106)
+    S(107)              ! CC(=O)O[CH]CC(C)C(107)
+    S(108)              ! [CH2]C(C)CCOC(C)=O(108)
+    S(109)              ! [CH2]C(=O)OCCC(C)C(109)
+    S(110)              ! CCOC(=O)[C](C)C(110)
+    S(111)              ! C[CH]OC(=O)C(C)C(111)
+    S(112)              ! [CH2]C(C)C(=O)OCC(112)
+    S(113)              ! [CH2]COC(=O)C(C)C(113)
+    C6H7O(114)          ! CC1=C[CH]CC1=O(114)
+    C6H7O(115)          ! CC1=CC[CH]C1=O(115)
+    C6H7O(116)          ! [CH2]C1=CCCC1=O(116)
+    C6H7O(117)          ! CC1=[C]CCC1=O(117)
+    S(118)              ! CCCCC[C]1CCC(C)O1(118)
+    S(119)              ! CCCCCC1CC[C](C)O1(119)
+    S(120)              ! CCCC[CH]C1CCC(C)O1(120)
+    S(121)              ! CCCCCC1[CH]CC(C)O1(121)
+    S(122)              ! CCCCCC1C[CH]C(C)O1(122)
+    S(123)              ! CC[CH]CCC1CCC(C)O1(123)
+    S(124)              ! CCC[CH]CC1CCC(C)O1(124)
+    S(125)              ! C[CH]CCCC1CCC(C)O1(125)
+    S(126)              ! [CH2]C1CCC(CCCCC)O1(126)
+    S(127)              ! [CH2]CCCCC1CCC(C)O1(127)
+    C8H15(128)          ! CC[CH]CC=C(C)C(128)
+    C8H15(129)          ! C[CH]CCC=C(C)C(129)
+    C8H15(130)          ! CCC[CH]C=C(C)C(130)
+    C8H15(131)          ! [CH2]CCCC=C(C)C(131)
+    C8H15(132)          ! [CH2]C(C)=CCCCC(132)
+    C8H15(133)          ! CCCC[C]=C(C)C(133)
+    C8H15(134)          ! C[CH]CC=CC(C)C(134)
+    C8H15(135)          ! CC[CH]C=CC(C)C(135)
+    C8H15(136)          ! [CH2]C(C)C=CCCC(136)
+    C8H15(137)          ! [CH2]CCC=CC(C)C(137)
+    C8H15(138)          ! CCCC=[C]C(C)C(138)
+    C8H15(139)          ! CCC[C]=CC(C)C(139)
+    C8H15(140)          ! CCC=CC[C](C)C(140)
+    C8H15(141)          ! C[CH]C=CCC(C)C(141)
+    C8H15(142)          ! [CH2]C(C)CC=CCC(142)
+    C8H15(143)          ! [CH2]CC=CCC(C)C(143)
+    C8H15(144)          ! CC[C]=CCC(C)C(144)
+    C8H15(145)          ! CCC=[C]CC(C)C(145)
+    C8H15(146)          ! CC=CCC[C](C)C(146)
+    C8H15(147)          ! CC=CC[CH]C(C)C(147)
+    C8H15(148)          ! [CH2]C(C)CCC=CC(148)
+    C8H15(149)          ! [CH2]C=CCCC(C)C(149)
+    C8H15(150)          ! CC=[C]CCC(C)C(150)
+    C8H15(151)          ! C[C]=CCCC(C)C(151)
+    C8H15(152)          ! C=CCCC[C](C)C(152)
+    C8H15(153)          ! C=CCC[CH]C(C)C(153)
+    C8H15(154)          ! C=CC[CH]CC(C)C(154)
+    C8H15(155)          ! [CH2]C(C)CCCC=C(155)
+    C8H15(156)          ! C=[C]CCCC(C)C(156)
+    C8H15(157)          ! [CH]=CCCCC(C)C(157)
 END
 
 
@@ -257,14 +327,99 @@ C8H18O(14)              H  18C   8O   1     G   100.000  5000.000 1623.76      1
 -5.35383070E+04-7.58593134E+01-1.18612442E+00 1.05955514E-01-7.00483616E-05    3
  2.36976304E-08-3.30720400E-12-4.66647876E+04 3.65116082E+01                   4
 
+! Thermo group additivity estimation: group(Cs-CsCsCsCs) + other(R) + group(Cs-CsCsCsH) + other(R) + group(Cs-(Cds-Cds)CsCsH) + other(R) + group(Cs-
+! CsCsHH) + other(R) + group(Cs-(Cds-Cds)CsHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R)
+! + group(Cds-CdsCsCs) + other(R) + group(Cds-CdsCsH) + other(R) + polycyclic(s3_4_6_ene_1)
+C10H16(15)              H  16C  10          G   100.000  5000.000  992.70      1
+ 2.03886004E+01 5.01260448E-02-1.94985471E-05 3.75044718E-09-2.75815688E-13    2
+-4.59488024E+03-8.95291828E+01-3.87878568E-02 5.87625832E-02 7.87740177E-05    3
+-1.37006651E-07 5.39995972E-11 3.09090941E+03 2.71555755E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Od)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) +
+! gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R)
+S(16)                   H  14C   7O   2     G   100.000  5000.000 2007.25      1
+ 2.36161093E+01 3.82132403E-02-1.49775081E-05 2.56462618E-09-1.63950611E-13    2
+-7.45204714E+04-9.73515684E+01-5.05803988E-01 8.62817791E-02-5.08979239E-05    3
+ 1.44945940E-08-1.64977834E-12-6.48365207E+04 3.58305591E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(CsRRR)) + other(R) + group
+! (Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) +
+! other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R)
+S(17)                   H  12C   6O   2     G   100.000  5000.000 1861.88      1
+ 1.53767933E+01 4.11446125E-02-1.72144963E-05 3.08528744E-09-2.04631063E-13    2
+-6.77247645E+04-5.16391222E+01 6.29655183E-01 7.28268119E-02-4.27388154E-05    3
+ 1.22245360E-08-1.43178228E-12-6.22332750E+04 2.86739449E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsHH) + other(R) + group(Cs-(Cds-Od)CsHH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R) + group
+! (Cd-CdCs(CO)) + other(R) + group(Cds-CdsCsH) + other(R) + group(Cds-Od(Cds-Cds)Cs) + other(R) + group(Od-Cd) + other(R) + ring(Cyclopentane)
+C6H8O(18)               H   8C   6O   1     G   100.000  5000.000 1045.38      1
+ 7.91568261E+00 3.52921417E-02-1.49060157E-05 2.86324644E-09-2.05302034E-13    2
+-1.84713167E+04-1.47804357E+01 2.29162786E+00 2.50053044E-02 4.54929736E-05    3
+-6.47596618E-08 2.29268869E-11-1.55575205E+04 2.09144527E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran)
+S(19)                   H  20C  10O   1     G   100.000  5000.000  963.21      1
+ 1.95426038E+01 6.27168094E-02-2.17982653E-05 3.79403478E-09-2.60471974E-13    2
+-5.03501518E+04-7.39763439E+01-1.41489220E+00 9.70570546E-02 6.78029262E-06    3
+-7.27797770E-08 3.43549244E-11-4.38685641E+04 3.90341673E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) +
+! gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R)
+C8H16(20)               H  16C   8          G   100.000  5000.000 1839.25      1
+ 1.85661009E+01 4.59110277E-02-1.82446430E-05 3.19460064E-09-2.09155895E-13    2
+-2.35107379E+04-6.98983522E+01-2.81410582E-01 8.69015791E-02-5.16752892E-05    3
+ 1.53123862E-08-1.85630542E-12-1.65778487E+04 3.25144191E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(CsCsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R)
+C8H16(21)               H  16C   8          G   100.000  5000.000 1071.89      1
+ 1.48244253E+01 5.01255168E-02-1.99395841E-05 3.66395701E-09-2.54694593E-13    2
+-2.04287663E+04-4.77742653E+01-1.65658128E-01 7.72595232E-02-1.76011099E-05    3
+-2.28614399E-08 1.17793130E-11-1.55604670E+04 3.33037768E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(CsRRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R)
+C8H16(22)               H  16C   8          G   100.000  5000.000 1082.14      1
+ 1.47104730E+01 5.04366715E-02-2.01545406E-05 3.70509924E-09-2.57292757E-13    2
+-2.05413257E+04-4.72171145E+01-1.69398522E-01 7.75705916E-02-1.91371581E-05    3
+-2.07196247E-08 1.08833198E-11-1.56892209E+04 3.32834645E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R)
+C8H16(23)               H  16C   8          G   100.000  5000.000 1180.36      1
+ 1.46969185E+01 5.08370070E-02-2.04984998E-05 3.73459722E-09-2.55757883E-13    2
+-2.03384050E+04-4.75766704E+01-2.87923575E-01 8.18020834E-02-3.46672098E-05    3
+-2.48560123E-09 4.07405701E-12-1.54205142E+04 3.30486492E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) +
+! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsHH) + gauche(CsOsCdSs) + other(R)
+C8H16(24)               H  16C   8          G   100.000  5000.000 1116.01      1
+ 1.50739169E+01 5.02710355E-02-2.01707888E-05 3.69540368E-09-2.55228199E-13    2
+-1.88775053E+04-4.90555689E+01-3.08511804E-01 8.13489942E-02-2.96091645E-05    3
+-9.98092726E-09 7.13513207E-12-1.39460765E+04 3.35557250E+01                   4
+
 ! Thermo library: BurkeH2O2
-OO(15)                  H   2O   2          G   100.000  5000.000  923.27      1
+OO(25)                  H   2O   2          G   100.000  5000.000  923.27      1
  4.95151558E+00 3.54230203E-03-1.01040943E-06 1.61942481E-10-1.10209975E-14    2
 -1.81227931E+04-1.52910591E+00 3.72867109E+00 4.13376247E-03 5.67501797E-06    3
 -1.01866277E-08 4.28614909E-12-1.76963959E+04 5.35911225E+00                   4
 
 ! Thermo library: BurkeH2O2
-O2(16)                  O   2               G   100.000  5000.000 1087.70      1
+O2(26)                  O   2               G   100.000  5000.000 1087.70      1
  3.16426539E+00 1.69454848E-03-8.00342047E-07 1.59031528E-10-1.14892228E-14    2
 -1.04844240E+03 6.08306911E+00 3.53763812E+00-1.22828963E-03 5.36763505E-06    3
 -4.93134110E-09 1.45957514E-12-1.03799031E+03 4.67179354E+00                   4
@@ -273,7 +428,7 @@ O2(16)                  O   2               G   100.000  5000.000 1087.70      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsCs)Cs(CsCsR)RR)) + int15(Cs(Cs(CsCsCs)Cs(CsCsR)RR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsCs)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsCs)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsCs)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + radical(Tertalkyl)
-C8H17(17)               H  17C   8          G   100.000  5000.000 1936.17      1
+C8H17(27)               H  17C   8          G   100.000  5000.000 1936.17      1
  2.04961908E+01 4.68951875E-02-1.89111080E-05 3.31704871E-09-2.16509153E-13    2
 -1.60812427E+04-8.41067640E+01-3.85172475E-01 9.00349762E-02-5.23328011E-05    3
  1.48249561E-08-1.70242954E-12-7.99531836E+03 3.04301785E+01                   4
@@ -282,7 +437,7 @@ C8H17(17)               H  17C   8          G   100.000  5000.000 1936.17      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsCs)Cs(CsCsR)RR)) + int15(Cs(Cs(CsCsCs)Cs(CsCsR)RR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsCs)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsCs)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsCs)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + radical(Cs_S)
-C8H17(18)               H  17C   8          G   100.000  5000.000 1128.40      1
+C8H17(28)               H  17C   8          G   100.000  5000.000 1128.40      1
  1.61451207E+01 5.25534930E-02-2.16766296E-05 4.02987287E-09-2.80536350E-13    2
 -1.23903830E+04-5.77984036E+01-4.97223315E-01 8.40945204E-02-2.71102079E-05    3
 -1.43211402E-08 8.56213425E-12-6.88673745E+03 3.22463034E+01                   4
@@ -291,7 +446,7 @@ C8H17(18)               H  17C   8          G   100.000  5000.000 1128.40      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsCs)Cs(CsCsR)RR)) + int15(Cs(Cs(CsCsCs)Cs(CsCsR)RR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsCs)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsCs)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsCs)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + radical(Neopentyl)
-C8H17(19)               H  17C   8          G   100.000  5000.000 1101.67      1
+C8H17(29)               H  17C   8          G   100.000  5000.000 1101.67      1
  1.70138908E+01 5.07320388E-02-2.03931083E-05 3.75346931E-09-2.60491798E-13    2
 -1.11410557E+04-6.12774496E+01-6.87667376E-01 8.83314491E-02-3.52708281E-05    3
 -9.22019005E-09 7.67078912E-12-5.62223430E+03 3.31823236E+01                   4
@@ -300,7 +455,7 @@ C8H17(19)               H  17C   8          G   100.000  5000.000 1101.67      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsCs)Cs(CsCsR)RR)) + int15(Cs(Cs(CsCsCs)Cs(CsCsR)RR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsCs)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsCs)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsCs)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + radical(Isobutyl)
-C8H17(20)               H  17C   8          G   100.000  5000.000 1042.37      1
+C8H17(30)               H  17C   8          G   100.000  5000.000 1042.37      1
  1.68836700E+01 5.01001685E-02-1.93548621E-05 3.51575390E-09-2.43676124E-13    2
 -1.09273827E+04-6.12592380E+01-6.34921591E-01 8.67357999E-02-2.80542216E-05    3
 -1.90743933E-08 1.19266885E-11-5.61333404E+03 3.19564343E+01                   4
@@ -309,7 +464,7 @@ C8H17(20)               H  17C   8          G   100.000  5000.000 1042.37      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsCsR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsHHH)
 ! + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(Tertalkyl)
-C8H17(21)               H  17C   8          G   100.000  5000.000 1866.42      1
+C8H17(31)               H  17C   8          G   100.000  5000.000 1866.42      1
  1.44078378E+01 5.50455894E-02-2.27208421E-05 4.05298618E-09-2.68379449E-13    2
 -1.26154467E+04-4.52383288E+01 2.52948430E-01 8.53814959E-02-4.71011251E-05    3
  1.27613785E-08-1.43483583E-12-7.33165157E+03 3.18837984E+01                   4
@@ -318,7 +473,7 @@ C8H17(21)               H  17C   8          G   100.000  5000.000 1866.42      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsCsR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsHHH)
 ! + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(Tertalkyl)
-C8H17(22)               H  17C   8          G   100.000  5000.000 1866.42      1
+C8H17(32)               H  17C   8          G   100.000  5000.000 1866.42      1
  1.44078378E+01 5.50455894E-02-2.27208421E-05 4.05298618E-09-2.68379449E-13    2
 -1.26154467E+04-4.59314759E+01 2.52948430E-01 8.53814959E-02-4.71011251E-05    3
  1.27613785E-08-1.43483583E-12-7.33165157E+03 3.11906512E+01                   4
@@ -327,7 +482,7 @@ C8H17(22)               H  17C   8          G   100.000  5000.000 1866.42      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsCsR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsHHH)
 ! + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(Cs_S)
-C8H17(23)               H  17C   8          G   100.000  5000.000 1281.49      1
+C8H17(33)               H  17C   8          G   100.000  5000.000 1281.49      1
  1.54433979E+01 5.27239624E-02-2.13317849E-05 3.85709623E-09-2.61361574E-13    2
 -1.16386650E+04-5.07818503E+01-4.58696644E-01 8.56967551E-02-4.04219984E-05    3
  3.64136539E-09 1.76025888E-12-6.19474168E+03 3.52191681E+01                   4
@@ -336,7 +491,7 @@ C8H17(23)               H  17C   8          G   100.000  5000.000 1281.49      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsCsR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsHHH)
 ! + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(Cs_S)
-C8H17(24)               H  17C   8          G   100.000  5000.000 1281.49      1
+C8H17(34)               H  17C   8          G   100.000  5000.000 1281.49      1
  1.54433979E+01 5.27239624E-02-2.13317849E-05 3.85709623E-09-2.61361574E-13    2
 -1.16386650E+04-5.07818503E+01-4.58696644E-01 8.56967551E-02-4.04219984E-05    3
  3.64136539E-09 1.76025888E-12-6.19474168E+03 3.52191681E+01                   4
@@ -345,7 +500,7 @@ C8H17(24)               H  17C   8          G   100.000  5000.000 1281.49      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsCsR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsHHH)
 ! + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(Isobutyl)
-C8H17(25)               H  17C   8          G   100.000  5000.000 1102.29      1
+C8H17(35)               H  17C   8          G   100.000  5000.000 1102.29      1
  1.49066060E+01 5.22189758E-02-2.00471585E-05 3.57357042E-09-2.42753695E-13    2
 -9.56110106E+03-4.69138813E+01-5.75500737E-01 8.82291826E-02-4.16005119E-05    3
  7.50919295E-12 4.33129462E-12-4.92249689E+03 3.48448031E+01                   4
@@ -354,7 +509,7 @@ C8H17(25)               H  17C   8          G   100.000  5000.000 1102.29      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsCsR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsHHH)
 ! + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(Isobutyl)
-C8H17(26)               H  17C   8          G   100.000  5000.000 1102.29      1
+C8H17(36)               H  17C   8          G   100.000  5000.000 1102.29      1
  1.49066060E+01 5.22189758E-02-2.00471585E-05 3.57357042E-09-2.42753695E-13    2
 -9.56110106E+03-4.69138813E+01-5.75500737E-01 8.82291826E-02-4.16005119E-05    3
  7.50919295E-12 4.33129462E-12-4.92249689E+03 3.48448031E+01                   4
@@ -363,7 +518,7 @@ C8H17(26)               H  17C   8          G   100.000  5000.000 1102.29      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsCsR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsHHH)
 ! + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(RCCJ)
-C8H17(27)               H  17C   8          G   100.000  5000.000 1154.08      1
+C8H17(37)               H  17C   8          G   100.000  5000.000 1154.08      1
  1.55770341E+01 5.22371199E-02-2.08219838E-05 3.77975686E-09-2.58802804E-13    2
 -1.00178485E+04-5.13941700E+01-5.72140281E-01 8.73672985E-02-3.93922632E-05    3
 -1.14170527E-09 4.19720830E-12-4.90237958E+03 3.48438852E+01                   4
@@ -372,7 +527,7 @@ C8H17(27)               H  17C   8          G   100.000  5000.000 1154.08      1
 ! gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) +
 ! gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(Tertalkyl)
-C8H17(28)               H  17C   8          G   100.000  5000.000 1725.11      1
+C8H17(38)               H  17C   8          G   100.000  5000.000 1725.11      1
  1.07060035E+01 6.09857937E-02-2.60440873E-05 4.75325711E-09-3.20408222E-13    2
 -1.01671922E+04-2.27662369E+01 5.47805021E-01 8.45395102E-02-4.65242527E-05    3
  1.26677840E-08-1.46736678E-12-6.66238657E+03 3.17803818E+01                   4
@@ -381,7 +536,7 @@ C8H17(28)               H  17C   8          G   100.000  5000.000 1725.11      1
 ! gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsCsHH) +
 ! gauche(Cs(Cs(CsRR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) +
 ! other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(Cs_S)
-C8H17(29)               H  17C   8          G   100.000  5000.000 2061.39      1
+C8H17(39)               H  17C   8          G   100.000  5000.000 2061.39      1
  2.35047653E+01 4.19182438E-02-1.62015661E-05 2.75237910E-09-1.74937115E-13    2
 -1.54177887E+04-9.68685292E+01-5.33638700E-01 8.85653320E-02-5.01464804E-05    3
  1.37308631E-08-1.50643750E-12-5.50771904E+03 3.64907313E+01                   4
@@ -390,7 +545,7 @@ C8H17(29)               H  17C   8          G   100.000  5000.000 2061.39      1
 ! gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsCsHH) +
 ! gauche(Cs(Cs(CsRR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) +
 ! other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(RCCJCC)
-C8H17(30)               H  17C   8          G   100.000  5000.000 2102.20      1
+C8H17(40)               H  17C   8          G   100.000  5000.000 2102.20      1
  1.92295816E+01 4.80473934E-02-1.90599104E-05 3.28677747E-09-2.11246689E-13    2
 -1.36022310E+04-7.23800616E+01 7.52882425E-02 8.44936908E-02-4.50658150E-05    3
  1.15340053E-08-1.19203502E-12-5.54902440E+03 3.42596147E+01                   4
@@ -399,7 +554,7 @@ C8H17(30)               H  17C   8          G   100.000  5000.000 2102.20      1
 ! gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) +
 ! gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(Cs_S)
-C8H17(31)               H  17C   8          G   100.000  5000.000 2061.39      1
+C8H17(41)               H  17C   8          G   100.000  5000.000 2061.39      1
  2.35047653E+01 4.19182438E-02-1.62015661E-05 2.75237910E-09-1.74937115E-13    2
 -1.54177887E+04-9.68685292E+01-5.33638700E-01 8.85653320E-02-5.01464804E-05    3
  1.37308631E-08-1.50643750E-12-5.50771904E+03 3.64907313E+01                   4
@@ -408,7 +563,7 @@ C8H17(31)               H  17C   8          G   100.000  5000.000 2061.39      1
 ! gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsCsHH) +
 ! gauche(Cs(Cs(CsRR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) +
 ! other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(RCCJC)
-C8H17(32)               H  17C   8          G   100.000  5000.000 1974.85      1
+C8H17(42)               H  17C   8          G   100.000  5000.000 1974.85      1
  1.86590719E+01 4.83052089E-02-1.89050345E-05 3.25801776E-09-2.10245842E-13    2
 -1.29798020E+04-6.83533074E+01-1.83808130E-01 8.64714305E-02-4.78946409E-05    3
  1.30444175E-08-1.44914185E-12-5.53753264E+03 3.53748737E+01                   4
@@ -417,7 +572,7 @@ C8H17(32)               H  17C   8          G   100.000  5000.000 1974.85      1
 ! gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) +
 ! gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(Isobutyl)
-C8H17(33)               H  17C   8          G   100.000  5000.000 1687.05      1
+C8H17(43)               H  17C   8          G   100.000  5000.000 1687.05      1
  1.86802693E+01 4.69209343E-02-1.74521370E-05 2.96777303E-09-1.91952040E-13    2
 -1.08084416E+04-6.75589519E+01-8.20933673E-01 9.31585562E-02-5.85634022E-05    3
  1.92136694E-08-2.59940484E-12-4.22857174E+03 3.67217550E+01                   4
@@ -426,7 +581,7 @@ C8H17(33)               H  17C   8          G   100.000  5000.000 1687.05      1
 ! gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsCsHH) +
 ! gauche(Cs(Cs(CsRR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) +
 ! other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(RCCJ)
-C8H17(34)               H  17C   8          G   100.000  5000.000 1854.25      1
+C8H17(44)               H  17C   8          G   100.000  5000.000 1854.25      1
  2.18281775E+01 4.35104113E-02-1.65399783E-05 2.82176821E-09-1.81506856E-13    2
 -1.26144576E+04-8.65480894E+01-8.42678035E-01 9.24148848E-02-5.61003655E-05    3
  1.70447274E-08-2.09907435E-12-4.20675737E+03 3.68250655E+01                   4
@@ -435,7 +590,7 @@ C8H17(34)               H  17C   8          G   100.000  5000.000 1854.25      1
 ! gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)Cs(CsRR)RR)) + other(R) + group(Cs-CsCsHH) +
 ! gauche(Cs(Cs(CsCsR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + radical(RCCJ)
-C8H17(35)               H  17C   8          G   100.000  5000.000 1854.25      1
+C8H17(45)               H  17C   8          G   100.000  5000.000 1854.25      1
  2.18281775E+01 4.35104113E-02-1.65399783E-05 2.82176821E-09-1.81506856E-13    2
 -1.26144576E+04-8.65480894E+01-8.42678035E-01 9.24148848E-02-5.61003655E-05    3
  1.70447274E-08-2.09907435E-12-4.20675737E+03 3.68250655E+01                   4
@@ -443,7 +598,7 @@ C8H17(35)               H  17C   8          G   100.000  5000.000 1854.25      1
 ! Thermo group additivity estimation: group(Cs-CsCsCsOs) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) +
 ! other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsCsCs)R)) + other(R) + radical(CCJCO)
-C5H11O(36)              H  11C   5O   1     G   100.000  5000.000 1013.06      1
+C5H11O(46)              H  11C   5O   1     G   100.000  5000.000 1013.06      1
  1.36190263E+01 2.94216418E-02-1.08402031E-05 1.92786347E-09-1.32552216E-13    2
 -2.21108311E+04-4.14918763E+01 7.85275066E-01 6.14370594E-02-3.06186049E-05    3
 -3.23600055E-09 5.62800673E-12-1.85531338E+04 2.53154679E+01                   4
@@ -451,7 +606,7 @@ C5H11O(36)              H  11C   5O   1     G   100.000  5000.000 1013.06      1
 ! Thermo group additivity estimation: group(Cs-CsCsCsOs) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) +
 ! other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsCsCs)R)) + other(R) + radical(CJC(C)2O)
-C5H11O(37)              H  11C   5O   1     G   100.000  5000.000 1176.62      1
+C5H11O(47)              H  11C   5O   1     G   100.000  5000.000 1176.62      1
  1.30989861E+01 3.19116122E-02-1.26460402E-05 2.27361432E-09-1.54479891E-13    2
 -2.00596199E+04-3.91698893E+01 4.85292399E-01 7.47929469E-02-6.73130822E-05    3
  3.32478314E-08-6.73569927E-12-1.70913304E+04 2.37353921E+01                   4
@@ -459,7 +614,7 @@ C5H11O(37)              H  11C   5O   1     G   100.000  5000.000 1176.62      1
 ! Thermo group additivity estimation: group(Cs-CsCsCsOs) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) +
 ! other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsCsCs)R)) + other(R) + radical(RCCJ)
-C5H11O(38)              H  11C   5O   1     G   100.000  5000.000 1403.83      1
+C5H11O(48)              H  11C   5O   1     G   100.000  5000.000 1403.83      1
  1.44204592E+01 2.89085308E-02-1.07398662E-05 1.85645962E-09-1.22734935E-13    2
 -2.18042038E+04-4.62069720E+01 5.23606081E-01 6.85058064E-02-5.30500990E-05    3
  2.19493773E-08-3.70099467E-12-1.79024702E+04 2.55510744E+01                   4
@@ -467,7 +622,7 @@ C5H11O(38)              H  11C   5O   1     G   100.000  5000.000 1403.83      1
 ! Thermo group additivity estimation: group(Cs-CsCsCsOs) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) +
 ! other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsCsCs)R)) + other(R) + radical(CC(C)2OJ)
-C5H11O(39)              H  11C   5O   1     G   100.000  5000.000 1229.04      1
+C5H11O(49)              H  11C   5O   1     G   100.000  5000.000 1229.04      1
  1.33724497E+01 3.16978100E-02-1.23299211E-05 2.19713483E-09-1.48310568E-13    2
 -1.88627157E+04-4.33525808E+01 6.90809335E-01 6.39076375E-02-4.05792230E-05    3
  1.15202165E-08-8.24231960E-13-1.50609280E+04 2.32292315E+01                   4
@@ -476,7 +631,7 @@ C5H11O(39)              H  11C   5O   1     G   100.000  5000.000 1229.04      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) +
 ! radical(CCJ(C)CO)
-C6H13O(40)              H  13C   6O   1     G   100.000  5000.000 1818.26      1
+C6H13O(50)              H  13C   6O   1     G   100.000  5000.000 1818.26      1
  1.77456155E+01 3.43043950E-02-1.29525228E-05 2.20501243E-09-1.41859037E-13    2
 -3.08803634E+04-6.48244883E+01 1.59463554E-01 7.29931133E-02-4.48700422E-05    3
  1.39078560E-08-1.75096609E-12-2.44852642E+04 3.05325524E+01                   4
@@ -485,7 +640,7 @@ C6H13O(40)              H  13C   6O   1     G   100.000  5000.000 1818.26      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) +
 ! radical(Cs_S)
-C6H13O(41)              H  13C   6O   1     G   100.000  5000.000 1610.28      1
+C6H13O(51)              H  13C   6O   1     G   100.000  5000.000 1610.28      1
  1.20397572E+01 4.29548128E-02-1.79111483E-05 3.25049190E-09-2.19181987E-13    2
 -2.31012826E+04-2.97868341E+01 7.63992445E-01 7.09642156E-02-4.40022827E-05    3
  1.40523771E-08-1.89619881E-12-1.94698487E+04 2.99840975E+01                   4
@@ -494,7 +649,7 @@ C6H13O(41)              H  13C   6O   1     G   100.000  5000.000 1610.28      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) +
 ! radical(RCCJC)
-C6H13O(42)              H  13C   6O   1     G   100.000  5000.000 1301.34      1
+C6H13O(52)              H  13C   6O   1     G   100.000  5000.000 1301.34      1
  8.04817838E+00 4.86553417E-02-2.04917327E-05 3.76932089E-09-2.57999510E-13    2
 -2.13428484E+04-6.64873501E+00 9.26711731E-01 7.05449851E-02-4.57230076E-05    3
  1.66951135E-08-2.74116946E-12-1.94893586E+04 2.95839797E+01                   4
@@ -503,7 +658,7 @@ C6H13O(42)              H  13C   6O   1     G   100.000  5000.000 1301.34      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) +
 ! radical(CCsJOH)
-C6H13O(43)              H  13C   6O   1     G   100.000  5000.000 1240.56      1
+C6H13O(53)              H  13C   6O   1     G   100.000  5000.000 1240.56      1
  1.19545260E+01 4.32791363E-02-1.79583747E-05 3.29468251E-09-2.25847739E-13    2
 -2.40565262E+04-3.00832918E+01 3.02267374E-01 8.08500583E-02-6.33865046E-05    3
  2.77073563E-08-5.14553055E-12-2.11654579E+04 2.86439276E+01                   4
@@ -512,7 +667,7 @@ C6H13O(43)              H  13C   6O   1     G   100.000  5000.000 1240.56      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) +
 ! radical(Isobutyl)
-C6H13O(44)              H  13C   6O   1     G   100.000  5000.000 1333.35      1
+C6H13O(54)              H  13C   6O   1     G   100.000  5000.000 1333.35      1
  1.23135988E+01 4.11367704E-02-1.58988810E-05 2.80046232E-09-1.87110021E-13    2
 -2.13843719E+04-3.05257398E+01 3.03247809E-01 7.71676309E-02-5.64333825E-05    3
  2.30676048E-08-3.98717892E-12-1.81815945E+04 3.08724881E+01                   4
@@ -521,7 +676,7 @@ C6H13O(44)              H  13C   6O   1     G   100.000  5000.000 1333.35      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) +
 ! radical(RCCJ)
-C6H13O(45)              H  13C   6O   1     G   100.000  5000.000 1491.92      1
+C6H13O(55)              H  13C   6O   1     G   100.000  5000.000 1491.92      1
  1.34094373E+01 4.05149854E-02-1.63360781E-05 2.93197380E-09-1.97266826E-13    2
 -2.20508656E+04-3.74579330E+01 3.87173330E-01 7.54291729E-02-5.14394351E-05    3
  1.86179967E-08-2.82576878E-12-1.81652392E+04 3.05766712E+01                   4
@@ -530,7 +685,7 @@ C6H13O(45)              H  13C   6O   1     G   100.000  5000.000 1491.92      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) +
 ! radical(CCOJ)
-C6H13O(46)              H  13C   6O   1     G   100.000  5000.000 2125.19      1
+C6H13O(56)              H  13C   6O   1     G   100.000  5000.000 2125.19      1
  1.47670724E+01 4.08849622E-02-1.70611111E-05 3.01923101E-09-1.97175355E-13    2
 -2.15028438E+04-4.89477085E+01 1.21807252E+00 6.63866392E-02-3.50606553E-05    3
  8.66563256E-09-8.61397390E-13-1.57439943E+04 2.66324721E+01                   4
@@ -539,7 +694,7 @@ C6H13O(46)              H  13C   6O   1     G   100.000  5000.000 2125.19      1
 ! + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Allyl_T)
-C9H17(47)               H  17C   9          G   100.000  5000.000 1810.02      1
+C9H17(57)               H  17C   9          G   100.000  5000.000 1810.02      1
  2.03681544E+01 4.93982408E-02-1.90487795E-05 3.28313160E-09-2.13059080E-13    2
 -1.21958301E+04-8.02227816E+01-8.98608119E-01 9.63960695E-02-5.79968078E-05    3
  1.76284648E-08-2.19443587E-12-4.49717342E+03 3.49954400E+01                   4
@@ -548,7 +703,7 @@ C9H17(47)               H  17C   9          G   100.000  5000.000 1810.02      1
 ! + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Cs_S)
-C9H17(48)               H  17C   9          G   100.000  5000.000 1787.64      1
+C9H17(58)               H  17C   9          G   100.000  5000.000 1787.64      1
  1.80829087E+01 5.34356859E-02-2.19679018E-05 3.92549102E-09-2.60715665E-13    2
 -3.63015487E+03-6.32566506E+01-4.73866505E-01 9.49580523E-02-5.68090897E-05    3
  1.69188457E-08-2.07782434E-12 3.00441699E+03 3.70486394E+01                   4
@@ -557,7 +712,7 @@ C9H17(48)               H  17C   9          G   100.000  5000.000 1787.64      1
 ! + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(RCCJC)
-C9H17(49)               H  17C   9          G   100.000  5000.000 1621.48      1
+C9H17(59)               H  17C   9          G   100.000  5000.000 1621.48      1
  1.34395657E+01 5.98544381E-02-2.48172796E-05 4.48450907E-09-3.01494141E-13    2
 -1.44395311E+03-3.61669854E+01-1.99325315E-01 9.35000677E-02-5.59422917E-05    3
  1.72815005E-08-2.27454144E-12 2.97907242E+03 3.62249542E+01                   4
@@ -566,7 +721,7 @@ C9H17(49)               H  17C   9          G   100.000  5000.000 1621.48      1
 ! + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Isobutyl)
-C9H17(50)               H  17C   9          G   100.000  5000.000 1493.56      1
+C9H17(60)               H  17C   9          G   100.000  5000.000 1493.56      1
  1.63324101E+01 5.45137450E-02-2.14210062E-05 3.78860725E-09-2.52663767E-13    2
 -8.51504934E+02-5.22106302E+01-8.80344071E-01 1.00612221E-01-6.77181325E-05    3
  2.44537773E-08-3.71170072E-12 4.29016453E+03 3.77361153E+01                   4
@@ -575,7 +730,7 @@ C9H17(50)               H  17C   9          G   100.000  5000.000 1493.56      1
 ! + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(RCCJ)
-C9H17(51)               H  17C   9          G   100.000  5000.000 1643.66      1
+C9H17(61)               H  17C   9          G   100.000  5000.000 1643.66      1
  1.83692484E+01 5.25327920E-02-2.11658241E-05 3.77143318E-09-2.51373994E-13    2
 -2.00496037E+03-6.46103786E+01-8.35948011E-01 9.92705265E-02-6.38186519E-05    3
  2.10714085E-08-2.88269847E-12 4.30838916E+03 3.75871035E+01                   4
@@ -584,7 +739,7 @@ C9H17(51)               H  17C   9          G   100.000  5000.000 1643.66      1
 ! + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Allyl_P)
-C9H17(52)               H  17C   9          G   100.000  5000.000 1195.48      1
+C9H17(62)               H  17C   9          G   100.000  5000.000 1195.48      1
  1.83739732E+01 5.25120064E-02-2.08837643E-05 3.77444274E-09-2.57274471E-13    2
 -8.12589788E+03-6.66900939E+01-1.17603305E+00 9.95290960E-02-5.67952786E-05    3
  1.09287944E-08 9.38404933E-13-2.13702515E+03 3.66159887E+01                   4
@@ -593,35 +748,35 @@ C9H17(52)               H  17C   9          G   100.000  5000.000 1195.48      1
 ! + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Cds_S)
-C9H17(53)               H  17C   9          G   100.000  5000.000 1496.82      1
+C9H17(63)               H  17C   9          G   100.000  5000.000 1496.82      1
  1.46331366E+01 5.85334038E-02-2.44535262E-05 4.46216906E-09-3.02876239E-13    2
  3.67013625E+03-4.41282045E+01-5.40757909E-01 9.90830667E-02-6.50893158E-05    3
  2.25608798E-08-3.32573492E-12 8.21265639E+03 3.51973552E+01                   4
 
 ! Thermo group additivity estimation: group(Cs-CsCsCsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
 ! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) + other(R) + ring(Cyclopentane) + radical(Tertalkyl)
-C6H11(54)               H  11C   6          G   100.000  5000.000  993.54      1
+C6H11(64)               H  11C   6          G   100.000  5000.000  993.54      1
  7.65661321E+00 3.81158868E-02-1.45466928E-05 2.69390545E-09-1.91449769E-13    2
  4.49493265E+03-1.35725118E+01 2.31367470E+00 2.22450622E-02 6.58506958E-05    3
 -8.91213721E-08 3.24402126E-11 7.40164088E+03 2.14545072E+01                   4
 
 ! Thermo group additivity estimation: group(Cs-CsCsCsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
 ! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) + other(R) + ring(Cyclopentane) + radical(Cs_S)
-C6H11(55)               H  11C   6          G   100.000  5000.000  968.61      1
+C6H11(65)               H  11C   6          G   100.000  5000.000  968.61      1
  1.07164704E+01 3.29754488E-02-1.17583486E-05 2.20308035E-09-1.62037692E-13    2
  4.37673525E+03-3.09504708E+01 2.42213123E+00 1.35741778E-02 1.01375454E-04    3
 -1.32851266E-07 4.94559329E-11 8.50044903E+03 2.17928012E+01                   4
 
 ! Thermo group additivity estimation: group(Cs-CsCsCsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
 ! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) + other(R) + ring(Cyclopentane) + radical(cyclopentane)
-C6H11(56)               H  11C   6          G   100.000  5000.000  972.46      1
+C6H11(66)               H  11C   6          G   100.000  5000.000  972.46      1
  8.39025976E+00 3.62666301E-02-1.31619819E-05 2.42350186E-09-1.74072657E-13    2
  4.15981426E+03-1.77728015E+01 2.50121893E+00 1.50670492E-02 8.96019748E-05    3
 -1.16058271E-07 4.26333935E-11 7.45295039E+03 2.15169188E+01                   4
 
 ! Thermo group additivity estimation: group(Cs-CsCsCsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
 ! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) + other(R) + ring(Cyclopentane) + radical(Isobutyl)
-C6H11(57)               H  11C   6          G   100.000  5000.000  941.32      1
+C6H11(67)               H  11C   6          G   100.000  5000.000  941.32      1
  1.24990340E+01 2.88450814E-02-8.50900585E-06 1.47656449E-09-1.07973868E-13    2
  5.36790104E+03-4.03520918E+01 2.25144321E+00 1.64530889E-02 1.00375071E-04    3
 -1.38767490E-07 5.39049849E-11 9.77541242E+03 2.16306871E+01                   4
@@ -631,7 +786,7 @@ C6H11(57)               H  11C   6          G   100.000  5000.000  941.32      1
 ! gauche(Cd(CsCs)) + other(R) + group(Cds-Cds(Cds-Cds)Cs) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-
 ! CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-Cds(Cds-Cds)H) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) +
 ! radical(Allyl_P)
-C10H15(58)              H  15C  10          G   100.000  5000.000 1118.83      1
+C10H15(68)              H  15C  10          G   100.000  5000.000 1118.83      1
  2.12404677E+01 4.62981691E-02-1.80934467E-05 3.27427587E-09-2.24954734E-13    2
  1.54076371E+04-8.00772208E+01-1.55700960E+00 1.07442447E-01-7.27719646E-05    3
  1.95900770E-08-2.36335140E-13 2.17832846E+04 3.81621913E+01                   4
@@ -641,7 +796,7 @@ C10H15(58)              H  15C  10          G   100.000  5000.000 1118.83      1
 ! gauche(Cd(CsCs)) + other(R) + group(Cds-Cds(Cds-Cds)Cs) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-
 ! CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-Cds(Cds-Cds)H) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) +
 ! radical(C=CC=CCJ)
-C10H15(59)              H  15C  10          G   100.000  5000.000 1077.06      1
+C10H15(69)              H  15C  10          G   100.000  5000.000 1077.06      1
  1.92409178E+01 4.89959815E-02-1.89865380E-05 3.42887943E-09-2.35855463E-13    2
  1.19209728E+04-6.86052067E+01-1.23669546E+00 1.00611278E-01-5.68400963E-05    3
  5.79535909E-09 4.10405551E-12 1.77493717E+04 3.82869932E+01                   4
@@ -651,7 +806,7 @@ C10H15(59)              H  15C  10          G   100.000  5000.000 1077.06      1
 ! gauche(Cd(Cs(CsRR)Cs)) + other(R) + group(Cds-Cds(Cds-Cds)Cs) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
 ! (Cds-Cds(Cds-Cds)H) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) +
 ! radical(Allyl_P)
-C10H15(60)              H  15C  10          G   100.000  5000.000 1069.78      1
+C10H15(70)              H  15C  10          G   100.000  5000.000 1069.78      1
  2.17200078E+01 4.56721818E-02-1.77483238E-05 3.22828045E-09-2.23632839E-13    2
  1.66447747E+04-8.22136551E+01-1.56308701E+00 1.06899804E-01-6.73812450E-05    3
  1.15881282E-08 3.09732488E-12 2.31043449E+04 3.85923806E+01                   4
@@ -661,7 +816,7 @@ C10H15(60)              H  15C  10          G   100.000  5000.000 1069.78      1
 ! gauche(Cd(Cs(CsRR)Cs)) + other(R) + group(Cds-Cds(Cds-Cds)Cs) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
 ! (Cds-Cds(Cds-Cds)H) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) +
 ! radical(Allyl_P)
-C10H15(61)              H  15C  10          G   100.000  5000.000 1069.78      1
+C10H15(71)              H  15C  10          G   100.000  5000.000 1069.78      1
  2.17200078E+01 4.56721818E-02-1.77483238E-05 3.22828045E-09-2.23632839E-13    2
  1.66447747E+04-8.22136551E+01-1.56308701E+00 1.06899804E-01-6.73812450E-05    3
  1.15881282E-08 3.09732488E-12 2.31043449E+04 3.85923806E+01                   4
@@ -671,7 +826,7 @@ C10H15(61)              H  15C  10          G   100.000  5000.000 1069.78      1
 ! gauche(Cd(Cs(CsRR)Cs)) + other(R) + group(Cds-Cds(Cds-Cds)Cs) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
 ! (Cds-Cds(Cds-Cds)H) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) +
 ! radical(Cds_S)
-C10H15(62)              H  15C  10          G   100.000  5000.000 1337.72      1
+C10H15(72)              H  15C  10          G   100.000  5000.000 1337.72      1
  1.86945496E+01 5.05178968E-02-2.06591403E-05 3.76388237E-09-2.56847116E-13    2
  2.81276298E+04-6.37073566E+01-1.27293128E+00 1.10223821E-01-8.76079477E-05    3
  3.71284687E-08-6.49218385E-12 3.34698172E+04 3.84340965E+01                   4
@@ -681,7 +836,7 @@ C10H15(62)              H  15C  10          G   100.000  5000.000 1337.72      1
 ! gauche(Cd(Cs(CsRR)Cs)) + other(R) + group(Cds-Cds(Cds-Cds)Cs) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
 ! (Cds-Cds(Cds-Cds)H) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) +
 ! radical(C=CJC=C)
-C10H15(63)              H  15C  10          G   100.000  5000.000 1266.54      1
+C10H15(73)              H  15C  10          G   100.000  5000.000 1266.54      1
  1.76810171E+01 5.21658649E-02-2.09857772E-05 3.79117974E-09-2.57752585E-13    2
  2.39865228E+04-5.84268675E+01-1.31563242E+00 1.12161295E-01-9.20401160E-05    3
  4.11919473E-08-7.64022265E-12 2.87985252E+04 3.77096766E+01                   4
@@ -691,7 +846,7 @@ C10H15(63)              H  15C  10          G   100.000  5000.000 1266.54      1
 ! gauche(Cd(Cs(CsRR)Cs)) + other(R) + group(Cds-Cds(Cds-Cds)Cs) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
 ! (Cds-Cds(Cds-Cds)H) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) +
 ! radical(Cds_P)
-C10H15(64)              H  15C  10          G   100.000  5000.000 1391.63      1
+C10H15(74)              H  15C  10          G   100.000  5000.000 1391.63      1
  2.13119805E+01 4.62859476E-02-1.83006988E-05 3.27703416E-09-2.21325521E-13    2
  2.82292485E+04-7.85157625E+01-1.56874118E+00 1.12053333E-01-8.91903282E-05    3
  3.72373964E-08-6.32221547E-12 3.45974801E+04 3.94317715E+01                   4
@@ -701,21 +856,21 @@ C10H15(64)              H  15C  10          G   100.000  5000.000 1391.63      1
 ! gauche(Cd(Cs(CsRR)Cs)) + other(R) + group(Cds-Cds(Cds-Cds)Cs) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
 ! (Cds-Cds(Cds-Cds)H) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsHH) + gauche(CsOsCdSs) + other(R) +
 ! radical(Cds_P)
-C10H15(65)              H  15C  10          G   100.000  5000.000 1391.63      1
+C10H15(75)              H  15C  10          G   100.000  5000.000 1391.63      1
  2.13119805E+01 4.62859476E-02-1.83006988E-05 3.27703416E-09-2.21325521E-13    2
  2.82292485E+04-7.85157625E+01-1.56874118E+00 1.12053333E-01-8.91903282E-05    3
  3.72373964E-08-6.32221547E-12 3.45974801E+04 3.94317715E+01                   4
 
 ! Thermo group additivity estimation: group(Cs-CbHHH) + other(R) + group(Cs-CbHHH) + other(R) + group(Cb-Cs) + other(R) + group(Cb-Cs) + other(R) +
 ! group(Cb-H) + other(R) + group(Cb-H) + other(R) + group(Cb-H) + other(R) + group(Cb-H) + other(R) + ring(Benzene) + radical(Benzyl_P)
-C8H9(66)                H   9C   8          G   100.000  5000.000  971.32      1
+C8H9(76)                H   9C   8          G   100.000  5000.000  971.32      1
  1.33337579E+01 3.23373221E-02-1.15059818E-05 2.06653510E-09-1.45731677E-13    2
  1.36836970E+04-4.61716999E+01 1.21018710E+00 4.65888610E-02 2.15773111E-05    3
 -5.84524327E-08 2.51628841E-11 1.77217593E+04 2.06276166E+01                   4
 
 ! Thermo group additivity estimation: group(Cs-CbHHH) + other(R) + group(Cs-CbHHH) + other(R) + group(Cb-Cs) + other(R) + group(Cb-Cs) + other(R) +
 ! group(Cb-H) + other(R) + group(Cb-H) + other(R) + group(Cb-H) + other(R) + group(Cb-H) + other(R) + ring(Benzene) + radical(CbJ)
-C8H9(67)                H   9C   8          G   100.000  5000.000 1036.18      1
+C8H9(77)                H   9C   8          G   100.000  5000.000 1036.18      1
  1.10031427E+01 3.57528749E-02-1.42176097E-05 2.64077199E-09-1.85870899E-13    2
  2.66577200E+04-3.08137041E+01 1.36236409E+00 4.61874202E-02 9.44782069E-06    3
 -3.75301841E-08 1.55247341E-11 3.00933777E+04 2.29778526E+01                   4
@@ -724,7 +879,7 @@ C8H9(67)                H   9C   8          G   100.000  5000.000 1036.18      1
 ! -(Cds-Od)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Od)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cds-OdCsCs) + other(R) + group(Od-Cd) + other(R) + radical(Tertalkyl)
-C9H17O(68)              H  17C   9O   1     G   100.000  5000.000  777.13      1
+C9H17O(78)              H  17C   9O   1     G   100.000  5000.000  777.13      1
  4.62173900E+00 8.04183707E-02-3.70478491E-05 7.04896803E-09-4.89621497E-13    2
 -2.57398472E+04 1.51912706E+01-1.15161485E+00 1.23595436E-01-1.46369311E-04    3
  1.23120272E-07-4.49997522E-11-2.52489827E+04 3.89734479E+01                   4
@@ -734,7 +889,7 @@ C9H17O(68)              H  17C   9O   1     G   100.000  5000.000  777.13      1
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
 ! group(Cds-CdsCsOs) + gauche(CsOsCdSs) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Os-(Cds-Cd)H) + gauche(Os(RR)) + other(R) +
 ! radical(C=C(C)OJ)
-C9H17O(69)              H  17C   9O   1     G   100.000  5000.000 1052.20      1
+C9H17O(79)              H  17C   9O   1     G   100.000  5000.000 1052.20      1
  2.02366354E+01 5.15329515E-02-1.97481137E-05 3.56590693E-09-2.46088972E-13    2
 -3.48719772E+04-7.26940241E+01-1.50179931E+00 1.05132972E-01-5.47602574E-05    3
 -4.81128036E-10 6.94782704E-12-2.86898146E+04 4.09263944E+01                   4
@@ -743,7 +898,7 @@ C9H17O(69)              H  17C   9O   1     G   100.000  5000.000 1052.20      1
 ! -(Cds-Od)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Od)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cds-OdCsCs) + other(R) + group(Od-Cd) + other(R) + radical(Isobutyl)
-C9H17O(70)              H  17C   9O   1     G   100.000  5000.000  989.72      1
+C9H17O(80)              H  17C   9O   1     G   100.000  5000.000  989.72      1
  9.80895203E+00 7.05588079E-02-3.06682751E-05 5.75029555E-09-3.99356459E-13    2
 -2.50093537E+04-1.28261041E+01-9.05582751E-01 1.13862087E-01-9.62978396E-05    3
  4.99577736E-08-1.15660147E-11-2.28884750E+04 3.87546215E+01                   4
@@ -752,7 +907,7 @@ C9H17O(70)              H  17C   9O   1     G   100.000  5000.000  989.72      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Od)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-OdCsCs) + other(R) + group(Od-Cd) + other(R) + radical(Tertalkyl)
-C8H15O(71)              H  15C   8O   1     G   100.000  5000.000  478.79      1
+C8H15O(81)              H  15C   8O   1     G   100.000  5000.000  478.79      1
  4.86744381E+00 6.93842943E-02-3.16871622E-05 6.07074130E-09-4.26307471E-13    2
 -2.20829616E+04 1.20327695E+01 7.47202217E-01 8.44375091E-02-1.81671400E-05    3
 -9.72447446E-08 9.76359354E-11-2.14664071E+04 3.11944443E+01                   4
@@ -761,7 +916,7 @@ C8H15O(71)              H  15C   8O   1     G   100.000  5000.000  478.79      1
 ! + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) +
 ! gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsCs) + gauche(Cd(Cs(CsRR)Cs)) + other(R) + group
 ! (Cds-CdsCsOs) + gauche(CsOsCdSs) + other(R) + group(Os-(Cds-Cd)H) + gauche(Os(RR)) + other(R) + radical(C=C(C)OJ)
-C8H15O(72)              H  15C   8O   1     G   100.000  5000.000 1426.39      1
+C8H15O(82)              H  15C   8O   1     G   100.000  5000.000 1426.39      1
  1.80633526E+01 4.63044730E-02-1.80943331E-05 3.20858273E-09-2.15013168E-13    2
 -3.22880343E+04-6.29485278E+01-9.21527739E-01 9.95434007E-02-7.40806634E-05    3
  2.93754774E-08-4.80122003E-12-2.68720622E+04 3.53849764E+01                   4
@@ -770,7 +925,7 @@ C8H15O(72)              H  15C   8O   1     G   100.000  5000.000 1426.39      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Od)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-OdCsCs) + other(R) + group(Od-Cd) + other(R) + radical(CCJCC=O)
-C8H15O(73)              H  15C   8O   1     G   100.000  5000.000 1632.14      1
+C8H15O(83)              H  15C   8O   1     G   100.000  5000.000 1632.14      1
  1.78476898E+01 4.71464112E-02-1.89480438E-05 3.37428580E-09-2.24922747E-13    2
 -2.56613636E+04-6.07550406E+01-5.37482624E-01 9.22040230E-02-6.03575353E-05    3
  2.02883942E-08-2.81569709E-12-1.96598992E+04 3.69496283E+01                   4
@@ -779,7 +934,7 @@ C8H15O(73)              H  15C   8O   1     G   100.000  5000.000 1632.14      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Od)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-OdCsCs) + other(R) + group(Od-Cd) + other(R) + radical(Isobutyl)
-C8H15O(74)              H  15C   8O   1     G   100.000  5000.000 1300.46      1
+C8H15O(84)              H  15C   8O   1     G   100.000  5000.000 1300.46      1
  1.28696236E+01 5.45958905E-02-2.24005121E-05 4.07347591E-09-2.77324995E-13    2
 -2.24931463E+04-3.17405372E+01-3.76223307E-01 9.53375981E-02-6.93931682E-05    3
  2.81635557E-08-4.90835670E-12-1.90479798E+04 3.56430467E+01                   4
@@ -788,7 +943,7 @@ C8H15O(74)              H  15C   8O   1     G   100.000  5000.000 1300.46      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Od)HHH) + gauche(Cs(RRRR)) + other(R) +
 ! group(Cds-OdCsCs) + other(R) + group(Od-Cd) + other(R) + radical(CJC(C)C=O)
-C8H15O(75)              H  15C   8O   1     G   100.000  5000.000 1161.50      1
+C8H15O(85)              H  15C   8O   1     G   100.000  5000.000 1161.50      1
  1.17264634E+01 5.82847153E-02-2.54680067E-05 4.79264497E-09-3.33403026E-13    2
 -2.12097777E+04-2.59764208E+01-3.73907054E-01 9.99563136E-02-7.92841930E-05    3
  3.56815960E-08-6.98191827E-12-1.83988663E+04 3.42124260E+01                   4
@@ -797,7 +952,7 @@ C8H15O(75)              H  15C   8O   1     G   100.000  5000.000 1161.50      1
 ! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-CdsCsOs) + gauche(CsOsCdSs) + other(R) + group
 ! (Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + group(Os-(Cds-Cd)H) + gauche(Os(RR)) + other(R) + radical(C=C(C)OJ)
-C8H15O(76)              H  15C   8O   1     G   100.000  5000.000 1032.71      1
+C8H15O(86)              H  15C   8O   1     G   100.000  5000.000 1032.71      1
  1.87010227E+01 4.45766389E-02-1.68686559E-05 3.03807080E-09-2.09980664E-13    2
 -2.96341468E+04-6.60144405E+01-8.64286306E-01 9.26404789E-02-4.64203245E-05    3
 -3.87481089E-09 7.75513775E-12-2.41149975E+04 3.61629421E+01                   4
@@ -808,7 +963,7 @@ C8H15O(76)              H  15C   8O   1     G   100.000  5000.000 1032.71      1
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsCsR))) + int15(Os(Cs(CsCsCs)Cs(CsCsR))) + other(R) +
 ! group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsRR))) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + radical(C2CsJOCs)
-S(77)                   H  23C  11O   3     G   100.000  5000.000  834.97      1
+S(87)                   H  23C  11O   3     G   100.000  5000.000  834.97      1
  1.83001081E+01 9.26436455E-02-4.15058189E-05 7.83524186E-09-5.43948632E-13    2
 -7.53170154E+04-5.38946733E+01-4.68542633E+00 2.02756402E-01-2.39317499E-04    3
  1.65772178E-07-4.78314923E-11-7.14785152E+04 5.28519069E+01                   4
@@ -819,7 +974,7 @@ S(77)                   H  23C  11O   3     G   100.000  5000.000  834.97      1
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsCsR))) + int15(Os(Cs(CsCsCs)Cs(CsCsR))) + other(R) +
 ! group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsRR))) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + radical(CCsJOCs)
-S(78)                   H  23C  11O   3     G   100.000  5000.000 1020.05      1
+S(88)                   H  23C  11O   3     G   100.000  5000.000 1020.05      1
  2.53743279E+01 8.05414558E-02-3.45564328E-05 6.45069592E-09-4.47478695E-13    2
 -7.76664570E+04-9.42194126E+01-4.88127486E+00 1.99182096E-01-2.09015049E-04    3
  1.20467496E-07-2.83907043E-11-7.14938572E+04 5.23477613E+01                   4
@@ -830,7 +985,7 @@ S(78)                   H  23C  11O   3     G   100.000  5000.000 1020.05      1
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsCsR))) + int15(Os(Cs(CsCsCs)Cs(CsCsR))) + other(R) +
 ! group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsRR))) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + radical(CCsJOH)
-S(79)                   H  23C  11O   3     G   100.000  5000.000  962.51      1
+S(89)                   H  23C  11O   3     G   100.000  5000.000  962.51      1
  2.25127253E+01 8.59628663E-02-3.77807507E-05 7.11777240E-09-4.95657758E-13    2
 -7.67620705E+04-7.84429471E+01-4.70705961E+00 1.99087069E-01-2.14082914E-04    3
  1.29235083E-07-3.22152860E-11-7.15224017E+04 5.18356810E+01                   4
@@ -841,7 +996,7 @@ S(79)                   H  23C  11O   3     G   100.000  5000.000  962.51      1
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsCsR))) + int15(Os(Cs(CsCsCs)Cs(CsCsR))) + other(R) +
 ! group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsRR))) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + radical(CJC(C)OC)
-S(80)                   H  23C  11O   3     G   100.000  5000.000  921.44      1
+S(90)                   H  23C  11O   3     G   100.000  5000.000  921.44      1
  2.22341067E+01 8.64064336E-02-3.80762453E-05 7.16525374E-09-4.97988935E-13    2
 -7.28798302E+04-7.48256271E+01-4.87558557E+00 2.04091667E-01-2.29656447E-04    3
  1.45775955E-07-3.81054629E-11-6.78838904E+04 5.37446389E+01                   4
@@ -852,7 +1007,7 @@ S(80)                   H  23C  11O   3     G   100.000  5000.000  921.44      1
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsCsR))) + int15(Os(Cs(CsCsCs)Cs(CsCsR))) + other(R) +
 ! group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsRR))) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + radical(CJC(C)OC)
-S(81)                   H  23C  11O   3     G   100.000  5000.000  921.44      1
+S(91)                   H  23C  11O   3     G   100.000  5000.000  921.44      1
  2.22341067E+01 8.64064336E-02-3.80762453E-05 7.16525374E-09-4.97988935E-13    2
 -7.28798302E+04-7.48256271E+01-4.87558557E+00 2.04091667E-01-2.29656447E-04    3
  1.45775955E-07-3.81054629E-11-6.78838904E+04 5.37446389E+01                   4
@@ -863,7 +1018,7 @@ S(81)                   H  23C  11O   3     G   100.000  5000.000  921.44      1
 ! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsCsR))) + int15(Os(Cs(CsCsCs)Cs(CsCsR))) + other(R) +
 ! group(Os-CsCs) + gauche(Os(Cs(CsCsCs)Cs(CsRR))) + other(R) + group(Os-CsH) + gauche(Os(Cs(CsRR)R)) + other(R) + radical(CCOJ)
-S(82)                   H  23C  11O   3     G   100.000  5000.000  924.57      1
+S(92)                   H  23C  11O   3     G   100.000  5000.000  924.57      1
  1.68016591E+01 9.63011807E-02-4.35798977E-05 8.32158918E-09-5.83681026E-13    2
 -6.99310371E+04-4.80650484E+01-3.96588870E+00 1.86148131E-01-1.89344720E-04    3
  1.13425675E-07-2.90032664E-11-6.60908084E+04 5.04977377E+01                   4
@@ -872,7 +1027,7 @@ S(82)                   H  23C  11O   3     G   100.000  5000.000  924.57      1
 ! + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsR)Cs(CsCsR))) + other(R) + radical(C2CsJOCs)
-C8H17O(83)              H  17C   8O   1     G   100.000  5000.000  968.41      1
+C8H17O(93)              H  17C   8O   1     G   100.000  5000.000  968.41      1
  8.82643964E+00 6.94466650E-02-3.11600382E-05 5.93800777E-09-4.16297969E-13    2
 -2.67886669E+04-1.07938384E+01-5.90023633E-01 1.08340453E-01-9.14026703E-05    3
  4.74090657E-08-1.11220593E-11-2.49648326E+04 3.43330676E+01                   4
@@ -881,7 +1036,7 @@ C8H17O(83)              H  17C   8O   1     G   100.000  5000.000  968.41      1
 ! + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsR)Cs(CsCsR))) + other(R) + radical(C2CsJOCs)
-C8H17O(84)              H  17C   8O   1     G   100.000  5000.000  968.41      1
+C8H17O(94)              H  17C   8O   1     G   100.000  5000.000  968.41      1
  8.82643964E+00 6.94466650E-02-3.11600382E-05 5.93800777E-09-4.16297969E-13    2
 -2.67886669E+04-1.07938384E+01-5.90023633E-01 1.08340453E-01-9.14026703E-05    3
  4.74090657E-08-1.11220593E-11-2.49648326E+04 3.43330676E+01                   4
@@ -890,7 +1045,7 @@ C8H17O(84)              H  17C   8O   1     G   100.000  5000.000  968.41      1
 ! + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsR)Cs(CsCsR))) + other(R) + radical(CCJCO)
-C8H17O(85)              H  17C   8O   1     G   100.000  5000.000 1639.85      1
+C8H17O(95)              H  17C   8O   1     G   100.000  5000.000 1639.85      1
  2.11365865E+01 4.86332206E-02-1.93630884E-05 3.43206266E-09-2.28089201E-13    2
 -2.99464592E+04-7.97522812E+01-1.20734360E+00 1.03135529E-01-6.92172598E-05    3
  2.36998149E-08-3.31796441E-12-2.26183115E+04 3.90957073E+01                   4
@@ -899,7 +1054,7 @@ C8H17O(85)              H  17C   8O   1     G   100.000  5000.000 1639.85      1
 ! + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsR)Cs(CsCsR))) + other(R) + radical(CJC(C)OC)
-C8H17O(86)              H  17C   8O   1     G   100.000  5000.000 1169.73      1
+C8H17O(96)              H  17C   8O   1     G   100.000  5000.000 1169.73      1
  1.40531645E+01 6.09717979E-02-2.64232030E-05 4.95625929E-09-3.44293281E-13    2
 -2.48812497E+04-3.93802552E+01-9.91187010E-01 1.12416903E-01-9.23931159E-05    3
  4.25543028E-08-8.37984775E-12-2.13616532E+04 3.55587226E+01                   4
@@ -908,10 +1063,525 @@ C8H17O(86)              H  17C   8O   1     G   100.000  5000.000 1169.73      1
 ! + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsHHH) +
 ! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) +
 ! group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Os-CsCs) + gauche(Os(Cs(CsCsR)Cs(CsCsR))) + other(R) + radical(RCCJ)
-C8H17O(87)              H  17C   8O   1     G   100.000  5000.000 1498.22      1
+C8H17O(97)              H  17C   8O   1     G   100.000  5000.000 1498.22      1
  1.73858361E+01 5.51711969E-02-2.30604925E-05 4.21325699E-09-2.86298828E-13    2
 -2.74739517E+04-5.83615517E+01-9.05335006E-01 1.04004911E-01-7.19515316E-05    3
  2.59681154E-08-3.91636484E-12-2.19930343E+04 3.72777481E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsCs) + other(R) + group(Cs-CsCsCsH) + other(R) + group(Cs-(Cds-Cds)CsCsH) + other(R) + group(Cs-
+! CsCsHH) + other(R) + group(Cs-(Cds-Cds)CsHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R)
+! + group(Cds-CdsCsCs) + other(R) + group(Cds-CdsCsH) + other(R) + polycyclic(s3_4_6_ene_1) + radical(Tertalkyl)
+C10H15(98)              H  15C  10          G   100.000  5000.000 1045.29      1
+ 1.57677962E+01 5.53221744E-02-2.30191061E-05 4.39612113E-09-3.14589469E-13    2
+ 1.94012409E+04-6.07477238E+01 2.84919596E-02 6.63232541E-02 3.18373115E-05    3
+-7.56451077E-08 2.96043865E-11 2.53810910E+04 2.87469610E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsCs) + other(R) + group(Cs-CsCsCsH) + other(R) + group(Cs-(Cds-Cds)CsCsH) + other(R) + group(Cs-
+! CsCsHH) + other(R) + group(Cs-(Cds-Cds)CsHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R)
+! + group(Cds-CdsCsCs) + other(R) + group(Cds-CdsCsH) + other(R) + polycyclic(s3_4_6_ene_1) + radical(Allyl_T)
+C10H15(99)              H  15C  10          G   100.000  5000.000  988.78      1
+ 1.91341714E+01 4.91457728E-02-1.89023848E-05 3.61564664E-09-2.65390770E-13    2
+ 1.16865612E+04-8.36933966E+01 2.41510455E-01 5.33390448E-02 8.43185921E-05    3
+-1.39863281E-07 5.46920546E-11 1.89538371E+04 2.50956698E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsCs) + other(R) + group(Cs-CsCsCsH) + other(R) + group(Cs-(Cds-Cds)CsCsH) + other(R) + group(Cs-
+! CsCsHH) + other(R) + group(Cs-(Cds-Cds)CsHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R)
+! + group(Cds-CdsCsCs) + other(R) + group(Cds-CdsCsH) + other(R) + polycyclic(s3_4_6_ene_1) + radical(cyclobutane)
+S(100)                  H  15C  10          G   100.000  5000.000 1011.38      1
+ 1.79423822E+01 5.16099211E-02-2.09019692E-05 4.02581420E-09-2.92997526E-13    2
+ 1.88599404E+04-7.31074686E+01 1.24097603E-01 5.93432475E-02 6.06767918E-05    3
+-1.11082472E-07 4.33213959E-11 2.56728345E+04 2.89200046E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsCs) + other(R) + group(Cs-CsCsCsH) + other(R) + group(Cs-(Cds-Cds)CsCsH) + other(R) + group(Cs
+! -(Cds-Cds)CsCsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-CsHHH) + other(R) +
+! group(Cds-CdsCsH) + other(R) + group(Cds-CdsCsH) + other(R) + polycyclic(s3_4_6_ene_1) + radical(Allyl_T)
+S(101)                  H  15C  10          G   100.000  5000.000  976.35      1
+ 2.05016234E+01 4.62352560E-02-1.70473292E-05 3.26668484E-09-2.43343106E-13    2
+ 1.19644784E+04-9.15989575E+01 4.06371365E-01 4.58697491E-02 1.10559535E-04    3
+-1.70613949E-07 6.64923546E-11 1.98298885E+04 2.50524950E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsCs) + other(R) + group(Cs-CsCsCsH) + other(R) + group(Cs-(Cds-Cds)CsCsH) + other(R) + group(Cs-
+! CsCsHH) + other(R) + group(Cs-(Cds-Cds)CsHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R)
+! + group(Cds-CdsCsCs) + other(R) + group(Cds-CdsCsH) + other(R) + polycyclic(s3_4_6_ene_1) + radical(Neopentyl)
+S(102)                  H  15C  10          G   100.000  5000.000  997.84      1
+ 1.96651882E+01 4.84263481E-02-1.89903959E-05 3.63992503E-09-2.66098603E-13    2
+ 2.05407974E+04-8.25364516E+01-3.86124813E-02 6.17142829E-02 5.97942516E-05    3
+-1.14978893E-07 4.59839380E-11 2.77437786E+04 2.88694200E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsCs) + other(R) + group(Cs-CsCsCsH) + other(R) + group(Cs-(Cds-Cds)CsCsH) + other(R) + group(Cs-
+! CsCsHH) + other(R) + group(Cs-(Cds-Cds)CsHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R)
+! + group(Cds-CdsCsCs) + other(R) + group(Cds-CdsCsH) + other(R) + polycyclic(s3_4_6_ene_1) + radical(Allyl_P)
+S(103)                  H  15C  10          G   100.000  5000.000  981.10      1
+ 2.24752842E+01 4.44165423E-02-1.66784623E-05 3.22332084E-09-2.40778630E-13    2
+ 1.30472141E+04-1.01059051E+02-2.71066618E-02 5.61366210E-02 8.77514400E-05    3
+-1.50875649E-07 6.02111703E-11 2.13139535E+04 2.67002672E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsCs) + other(R) + group(Cs-CsCsCsH) + other(R) + group(Cs-(Cds-Cds)CsCsH) + other(R) + group(Cs-
+! CsCsHH) + other(R) + group(Cs-(Cds-Cds)CsHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-CsHHH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R)
+! + group(Cds-CdsCsCs) + other(R) + group(Cds-CdsCsH) + other(R) + polycyclic(s3_4_6_ene_1) + radical(Cds_S)
+S(104)                  H  15C  10          G   100.000  5000.000 1004.42      1
+ 1.92981020E+01 4.94628891E-02-1.96841344E-05 3.77805720E-09-2.75390572E-13    2
+ 2.46136069E+04-8.16650304E+01-7.58673516E-02 6.33993629E-02 5.39134870E-05    3
+-1.07734408E-07 4.30769438E-11 3.16944484E+04 2.77630623E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Od)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) +
+! gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R) + radical(Tertalkyl)
+S(105)                  H  13C   7O   2     G   100.000  5000.000  845.48      1
+ 3.84475990E+00 6.65543661E-02-3.08732565E-05 5.97802159E-09-4.23138289E-13    2
+-4.31380405E+04 1.78863497E+01 6.25012424E-01 8.17878198E-02-5.79007772E-05    3
+ 2.72903806E-08-6.72527911E-12-4.25936190E+04 3.28791854E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Od)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) +
+! gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R) + radical(CCJCO)
+S(106)                  H  13C   7O   2     G   100.000  5000.000 1278.16      1
+ 1.57328229E+01 4.59349109E-02-1.89841331E-05 3.46973471E-09-2.36653934E-13    2
+-4.61610305E+04-4.85834572E+01-1.75417654E-01 7.99617399E-02-4.04238742E-05    3
+ 5.00684691E-09 1.34928164E-12-4.08071807E+04 3.71041573E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Od)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) +
+! gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R) + radical(CCsJOC(O))
+S(107)                  H  13C   7O   2     G   100.000  5000.000 1526.93      1
+ 1.75256294E+01 4.40246353E-02-1.83439587E-05 3.34254398E-09-2.26617361E-13    2
+-4.70012109E+04-5.92243388E+01-4.15327897E-01 9.10233690E-02-6.45137562E-05    3
+ 2.35005358E-08-3.52702685E-12-4.15222897E+04 3.49240972E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Od)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) +
+! gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R) + radical(Isobutyl)
+S(108)                  H  13C   7O   2     G   100.000  5000.000 1652.72      1
+ 1.59503553E+01 4.54292323E-02-1.81854730E-05 3.21979794E-09-2.13631135E-13    2
+-4.55028061E+04-4.94278118E+01-1.18970217E-01 8.43213276E-02-5.34839772E-05    3
+ 1.74584456E-08-2.36746625E-12-4.01912234E+04 3.61708739E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-CsOsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Od)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) +
+! gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R) + radical(CJCO)
+S(109)                  H  13C   7O   2     G   100.000  5000.000 1661.68      1
+ 1.72756403E+01 4.45765628E-02-1.85454733E-05 3.35074301E-09-2.24898826E-13    2
+-4.52098498E+04-5.78456810E+01-1.85057965E-01 8.66084530E-02-5.64881096E-05    3
+ 1.85735089E-08-2.51519105E-12-3.94070942E+04 3.52589565E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(CsRRR)) + other(R) + group
+! (Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) +
+! other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R) + radical(CCJ(C)CO)
+S(110)                  H  11C   6O   2     G   100.000  5000.000 2126.24      1
+ 1.96152511E+01 3.30095441E-02-1.34587300E-05 2.33579227E-09-1.50004483E-13    2
+-5.19426439E+04-7.69643961E+01 6.56326930E-01 6.86747595E-02-3.86185355E-05    3
+ 1.02241608E-08-1.07747127E-12-4.38800922E+04 2.88039386E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(CsRRR)) + other(R) + group
+! (Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) +
+! other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R) + radical(CCsJOC(O))
+S(111)                  H  11C   6O   2     G   100.000  5000.000 1245.76      1
+ 1.16479769E+01 4.41690392E-02-1.94209200E-05 3.65953139E-09-2.54485498E-13    2
+-4.16970107E+04-2.77054445E+01 4.37958483E-01 8.01627981E-02-6.27599660E-05    3
+ 2.68521065E-08-4.90873719E-12-3.89039817E+04 2.88398910E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(CsRRR)) + other(R) + group
+! (Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) +
+! other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R) + radical(CJC(C)C=O)
+S(112)                  H  11C   6O   2     G   100.000  5000.000 1043.97      1
+ 7.94679523E+00 5.07657620E-02-2.31355076E-05 4.43656137E-09-3.11993972E-13    2
+-3.84368928E+04-6.49481671E+00 6.89290108E-01 7.85732977E-02-6.30903044E-05    3
+ 2.99514002E-08-6.42208950E-12-3.69215804E+04 2.88306930E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsOsHH) + gauche(Cs(CsRRR)) + other(R) + group
+! (Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) +
+! other(R) + group(Cds-OdCsOs) + other(R) + group(Os-Cs(Cds-Od)) + gauche(Os(Cs(CsRR)R)) + other(R) + group(Od-Cd) + other(R) + radical(CJCO)
+S(113)                  H  11C   6O   2     G   100.000  5000.000 1323.52      1
+ 1.02460508E+01 4.63880430E-02-2.04724797E-05 3.85034359E-09-2.66826197E-13    2
+-3.93114992E+04-1.96362942E+01 7.26084303E-01 7.51591701E-02-5.30793862E-05    3
+ 2.02743764E-08-3.36910823E-12-3.67914794E+04 2.89606144E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsCsH) + other(R) + group(Cs-(Cds-Od)(Cds-Cds)HH) + other(R) + group(Cs-CsHHH) + other(R) + group
+! (Cds-OdCsCs) + other(R) + group(Cds-CdsCsH) + other(R) + group(Cds-CdsCsH) + other(R) + group(Od-Cd) + other(R) + ring(Cyclopentane) +
+! radical(C=CCJ(C)C=O)
+C6H7O(114)              H   7C   6O   1     G   100.000  5000.000  979.01      1
+ 1.34360594E+01 2.45050098E-02-9.62176470E-06 1.99761121E-09-1.57547571E-13    2
+-4.68674447E+03-4.93800873E+01 2.77560551E+00 6.65362634E-04 1.30165877E-04    3
+-1.63509455E-07 6.00626407E-11 6.30384975E+02 1.83195246E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)(Cds-Cds)HH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R) + group(Cds-Cds(Cds-Cds)Cs) +
+! other(R) + group(Cds-Cds(Cds-Cds)Os) + other(R) + group(Cds-CdsCsH) + other(R) + group(Cds-CdsCsH) + other(R) + group(Os-(Cds-Cd)H) + other(R) +
+! ring(Cyclopentadiene) + radical(C=C(C)OJ)
+C6H7O(115)              H   7C   6O   1     G   100.000  5000.000  957.94      1
+ 1.52394241E+01 1.99988722E-02-6.49022085E-06 1.17054704E-09-8.57333567E-14    2
+-3.17592398E+03-5.49925222E+01 1.45424485E+00 4.11985949E-02 1.72512982E-05    3
+-5.49765227E-08 2.49082994E-11 1.13354675E+03 1.96288538E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsHH) + other(R) + group(Cs-(Cds-Od)CsHH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R) + group
+! (Cd-CdCs(CO)) + other(R) + group(Cds-CdsCsH) + other(R) + group(Cds-Od(Cds-Cds)Cs) + other(R) + group(Od-Cd) + other(R) + ring(Cyclopentane) +
+! radical(C=C(C=O)CJ)
+C6H7O(116)              H   7C   6O   1     G   100.000  5000.000  997.93      1
+ 1.05793900E+01 2.81007556E-02-1.11708212E-05 2.15229949E-09-1.57599207E-13    2
+-3.18194786E+02-2.98581142E+01 2.24570650E+00 2.32147125E-02 5.37272819E-05    3
+-7.96515369E-08 2.99678609E-11 3.25167624E+03 1.98825037E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Od)CsHH) + other(R) + group(Cs-(Cds-Cds)CsHH) + other(R) + group(Cs-(Cds-Cds)HHH) + other(R) + group
+! (Cd-CdCs(CO)) + other(R) + group(Cds-Od(Cds-Cds)Cs) + other(R) + group(Cds-CdsCsH) + other(R) + group(Od-Cd) + other(R) + ring(Cyclopentane) + radical
+! (cyclopentene-vinyl)
+C6H7O(117)              H   7C   6O   1     G   100.000  5000.000 1114.60      1
+ 7.20022585E+00 3.40336687E-02-1.47652946E-05 2.81665300E-09-1.98898882E-13    2
+ 1.29302931E+04-9.05513811E+00 2.25357575E+00 2.95978786E-02 2.10642511E-05    3
+-3.64736567E-08 1.26196354E-11 1.54112464E+04 2.15289672E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran) + radical(C2CsJOCs)
+S(118)                  H  19C  10O   1     G   100.000  5000.000 1013.65      1
+ 1.64030543E+01 6.53852989E-02-2.38552888E-05 4.14601053E-09-2.78763422E-13    2
+-2.72111057E+04-5.37832523E+01-1.57798803E+00 1.08520494E-01-4.65182189E-05    3
+-8.02486039E-09 9.40081587E-12-2.21365490E+04 4.02587193E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran) + radical(C2CsJOCs)
+S(119)                  H  19C  10O   1     G   100.000  5000.000 1013.65      1
+ 1.64030543E+01 6.53852989E-02-2.38552888E-05 4.14601053E-09-2.78763422E-13    2
+-2.72111057E+04-5.37832523E+01-1.57798803E+00 1.08520494E-01-4.65182189E-05    3
+-8.02486039E-09 9.40081587E-12-2.21365490E+04 4.02587193E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran) + radical(CCJCO)
+S(120)                  H  19C  10O   1     G   100.000  5000.000  954.52      1
+ 2.00232503E+01 5.85623620E-02-1.98238283E-05 3.42466861E-09-2.35585429E-13    2
+-2.64281355E+04-7.39727497E+01-1.21358938E+00 9.17639087E-02 1.56780954E-05    3
+-8.26072304E-08 3.83356077E-11-1.98322407E+04 4.08082020E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran) + radical(CCJCO)
+S(121)                  H  19C  10O   1     G   100.000  5000.000  954.52      1
+ 2.00232503E+01 5.85623620E-02-1.98238283E-05 3.42466861E-09-2.35585429E-13    2
+-2.64281355E+04-7.39727497E+01-1.21358938E+00 9.17639087E-02 1.56780954E-05    3
+-8.26072304E-08 3.83356077E-11-1.98322407E+04 4.08082020E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran) + radical(CCJCO)
+S(122)                  H  19C  10O   1     G   100.000  5000.000  954.52      1
+ 2.00232503E+01 5.85623620E-02-1.98238283E-05 3.42466861E-09-2.35585429E-13    2
+-2.64281355E+04-7.39727497E+01-1.21358938E+00 9.17639087E-02 1.56780954E-05    3
+-8.26072304E-08 3.83356077E-11-1.98322407E+04 4.08082020E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran) + radical(RCCJCC)
+S(123)                  H  19C  10O   1     G   100.000  5000.000  992.88      1
+ 1.53842875E+01 6.64947725E-02-2.41705506E-05 4.22308035E-09-2.86200676E-13    2
+-2.55337386E+04-4.78498092E+01-1.17691931E+00 9.77052230E-02-1.76759664E-05    3
+-3.61580645E-08 1.89511293E-11-2.04947982E+04 4.07442609E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran) + radical(RCCJCC)
+S(124)                  H  19C  10O   1     G   100.000  5000.000  992.88      1
+ 1.53842875E+01 6.64947725E-02-2.41705506E-05 4.22308035E-09-2.86200676E-13    2
+-2.55337386E+04-4.78498092E+01-1.17691931E+00 9.77052230E-02-1.76759664E-05    3
+-3.61580645E-08 1.89511293E-11-2.04947982E+04 4.07442609E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran) + radical(RCCJC)
+S(125)                  H  19C  10O   1     G   100.000  5000.000  976.11      1
+ 1.62986730E+01 6.48425478E-02-2.31315766E-05 4.01897066E-09-2.72568445E-13    2
+-2.57916441E+04-5.26344719E+01-1.19598946E+00 9.70319570E-02-1.18948378E-05    3
+-4.51140193E-08 2.29295085E-11-2.04944303E+04 4.09837440E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran) + radical(CJC(C)OC)
+S(126)                  H  19C  10O   1     G   100.000  5000.000  966.98      1
+ 1.97881385E+01 6.01058232E-02-2.09893485E-05 3.61127269E-09-2.44160494E-13    2
+-2.45513499E+04-7.27420013E+01-1.78253883E+00 1.10012876E-01-3.74094523E-05    3
+-2.71210635E-08 1.85734403E-11-1.85412543E+04 4.01056828E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsOsH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) +
+! other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsCsHH) + other(R) + group(Cs-CsHHH) +
+! other(R) + group(Cs-CsHHH) + other(R) + group(Os-CsCs) + other(R) + ring(Tetrahydrofuran) + radical(RCCJ)
+S(127)                  H  19C  10O   1     G   100.000  5000.000  964.09      1
+ 1.93126476E+01 6.04620827E-02-2.10523599E-05 3.65668154E-09-2.50295059E-13    2
+-2.54305358E+04-7.00699037E+01-1.37512618E+00 9.77612401E-02-3.57246943E-06    3
+-6.06471759E-08 2.99647560E-11-1.91859947E+04 4.06779506E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) +
+! gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(RCCJCC)
+C8H15(128)              H  15C   8          G   100.000  5000.000 1722.97      1
+ 9.16730189E+00 5.75088873E-02-2.47094375E-05 4.52221426E-09-3.05339216E-13    2
+ 3.92348632E+03-1.34934409E+01 9.66921636E-01 7.65466757E-02-4.12835493E-05    3
+ 1.09352184E-08-1.23585564E-12 6.74928666E+03 3.05300624E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) +
+! gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(RCCJC)
+C8H15(129)              H  15C   8          G   100.000  5000.000 1639.53      1
+ 1.00281960E+01 5.59188292E-02-2.36967878E-05 4.32292019E-09-2.92028679E-13    2
+ 3.69900981E+03-1.79587190E+01 6.87641840E-01 7.87071019E-02-4.45456060E-05    3
+ 1.28004428E-08-1.58469889E-12 6.76184665E+03 3.17221550E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(CsCsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Allyl_T)
+C8H15(130)              H  15C   8          G   100.000  5000.000 1062.26      1
+ 1.34676870E+01 4.93106690E-02-1.94353701E-05 3.55028970E-09-2.45986367E-13    2
+-4.10145660E+03-4.20501424E+01 1.20682312E-01 7.17771902E-02-1.19149776E-05    3
+-2.57992289E-08 1.24578693E-11 3.02188611E+02 3.05282800E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) +
+! gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(RCCJ)
+C8H15(131)              H  15C   8          G   100.000  5000.000 1660.67      1
+ 1.49383883E+01 4.86303330E-02-2.00643912E-05 3.61432855E-09-2.42278989E-13    2
+ 3.14606300E+03-4.62925369E+01 4.91618952E-02 8.44935937E-02-5.24579513E-05    3
+ 1.66185713E-08-2.19996360E-12 8.09127008E+03 3.30914702E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) +
+! gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Allyl_P)
+C8H15(132)              H  15C   8          G   100.000  5000.000 1759.09      1
+ 2.07401772E+01 3.99668898E-02-1.52619265E-05 2.62523802E-09-1.70415824E-13    2
+-5.86778519E+03-8.18584141E+01-6.66873398E-01 8.86450497E-02-5.67709712E-05    3
+ 1.83566898E-08-2.40618075E-12 1.66350715E+03 3.35085952E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) +
+! gauche(Cs(RRRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsCs) + gauche(Cd(CsCs)) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Cds_S)
+C8H15(133)              H  15C   8          G   100.000  5000.000 1431.73      1
+ 1.08078972E+01 5.52872046E-02-2.37248386E-05 4.39213871E-09-3.00942666E-13    2
+ 8.99116935E+03-2.35818308E+01 3.08750679E-01 8.46202868E-02-5.44569693E-05    3
+ 1.87023197E-08-2.79972742E-12 1.19975245E+04 3.08383355E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(CsCsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(RCCJC)
+C8H15(134)              H  15C   8          G   100.000  5000.000 1321.83      1
+ 1.40796987E+01 4.83568529E-02-1.91670637E-05 3.41485527E-09-2.28896404E-13    2
+ 2.95360957E+03-4.07412081E+01-5.03070657E-02 7.81872372E-02-3.83470983E-05    3
+ 5.68888157E-09 7.40485681E-13 7.81856027E+03 3.56427444E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(CsRRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Allyl_S)
+C8H15(135)              H  15C   8          G   100.000  5000.000 1060.83      1
+ 1.45313726E+01 4.83122942E-02-1.93399228E-05 3.57670804E-09-2.50015958E-13    2
+-3.53107799E+03-4.75025198E+01 5.39956289E-02 7.20709357E-02-9.34067933E-06    3
+-3.01032191E-08 1.41434340E-11 1.27528018E+03 3.13737642E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(CsCsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Isobutyl)
+C8H15(136)              H  15C   8          G   100.000  5000.000 1057.55      1
+ 1.43668385E+01 4.71521068E-02-1.80357825E-05 3.23345768E-09-2.21472062E-13    2
+ 4.74341580E+03-4.19149768E+01-1.48132819E-01 7.89950898E-02-3.04972709E-05    3
+-9.52685425E-09 7.66847284E-12 9.10286960E+03 3.50196599E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(CsCsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(RCCJ)
+C8H15(137)              H  15C   8          G   100.000  5000.000 1102.79      1
+ 1.48546813E+01 4.74512098E-02-1.89609266E-05 3.47318702E-09-2.40183366E-13    2
+ 4.37371565E+03-4.53476893E+01-1.44951946E-01 7.81603024E-02-2.84985838E-05    3
+-1.02464551E-08 7.28733509E-12 9.12295498E+03 3.50176926E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(CsCsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Cds_S)
+C8H15(138)              H  15C   8          G   100.000  5000.000 1268.98      1
+ 1.56490037E+01 4.64479628E-02-1.84827310E-05 3.31968774E-09-2.24406882E-13    2
+ 7.88993128E+03-5.08535156E+01-3.15073674E-01 8.30241084E-02-4.54705431E-05    3
+ 8.96240465E-09 3.45495010E-13 1.30482231E+04 3.43272674E+01                   4
+
+! Thermo group additivity estimation: group(Cs-(Cds-Cds)CsCsH) + gauche(Cs(CsCsRR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(CsCsRR)) + other(R) +
+! group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Cds_S)
+C8H15(139)              H  15C   8          G   100.000  5000.000 1268.98      1
+ 1.56490037E+01 4.64479628E-02-1.84827310E-05 3.31968774E-09-2.24406882E-13    2
+ 7.88993128E+03-5.08535156E+01-3.15073674E-01 8.30241084E-02-4.54705431E-05    3
+ 8.96240465E-09 3.45495010E-13 1.30482231E+04 3.43272674E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(CsRRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Tertalkyl)
+C8H15(140)              H  15C   8          G   100.000  5000.000 1986.45      1
+ 1.57371848E+01 4.74561876E-02-1.94885642E-05 3.44637402E-09-2.26026429E-13    2
+ 5.28809047E+02-5.19285374E+01 5.26469438E-01 7.80853991E-02-4.26173727E-05    3
+ 1.12086341E-08-1.20293604E-12 6.57182094E+03 3.18940988E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(CsRRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Allyl_S)
+C8H15(141)              H  15C   8          G   100.000  5000.000 1060.83      1
+ 1.45313726E+01 4.83122942E-02-1.93399228E-05 3.57670804E-09-2.50015958E-13    2
+-3.53107799E+03-4.75025198E+01 5.39956289E-02 7.20709357E-02-9.34067933E-06    3
+-3.01032191E-08 1.41434340E-11 1.27528018E+03 3.13737642E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(CsRRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Isobutyl)
+C8H15(142)              H  15C   8          G   100.000  5000.000 1071.17      1
+ 1.42622684E+01 4.74464763E-02-1.82407357E-05 3.27218348E-09-2.23866573E-13    2
+ 4.62720185E+03-4.14101113E+01-1.56037793E-01 7.93564417E-02-3.22139449E-05    3
+-7.14540432E-09 6.66855867E-12 8.97429377E+03 3.50142003E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(CsRRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(RCCJ)
+C8H15(143)              H  15C   8          G   100.000  5000.000 1118.15      1
+ 1.47949176E+01 4.76770322E-02-1.91293886E-05 3.50380400E-09-2.41936545E-13    2
+ 4.23602030E+03-4.51001285E+01-1.51193049E-01 7.84946868E-02-3.00868824E-05    3
+-8.07894207E-09 6.39817373E-12 8.99431803E+03 3.50067588E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(CsRRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Cds_S)
+C8H15(144)              H  15C   8          G   100.000  5000.000 1341.49      1
+ 1.62737489E+01 4.56444168E-02-1.81097299E-05 3.23101101E-09-2.16784332E-13    2
+ 7.41538952E+03-5.45521147E+01-3.43402328E-01 8.35574003E-02-4.74923070E-05    3
+ 1.13674276E-08-5.28167647E-13 1.29206845E+04 3.44000151E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(CsCsCsR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(CsRRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(CsRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group(Cds-
+! CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Cds_S)
+C8H15(145)              H  15C   8          G   100.000  5000.000 1341.49      1
+ 1.62737489E+01 4.56444168E-02-1.81097299E-05 3.23101101E-09-2.16784332E-13    2
+ 7.41538952E+03-5.45521147E+01-3.43402328E-01 8.35574003E-02-4.74923070E-05    3
+ 1.13674276E-08-5.28167647E-13 1.29206845E+04 3.44000151E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Tertalkyl)
+C8H15(146)              H  15C   8          G   100.000  5000.000 1814.82      1
+ 1.08530522E+01 5.50296580E-02-2.35527059E-05 4.28744125E-09-2.87824004E-13    2
+ 3.20833910E+03-2.40775859E+01 9.09885545E-01 7.69450775E-02-4.16663624E-05    3
+ 1.09413976E-08-1.20443494E-12 6.81736196E+03 2.98184676E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Cs_S)
+C8H15(147)              H  15C   8          G   100.000  5000.000 2106.14      1
+ 2.32939074E+01 3.66293631E-02-1.41105165E-05 2.38283553E-09-1.50401758E-13    2
+-1.92502985E+03-9.55227246E+01-2.07069135E-01 8.12627439E-02-4.58986426E-05    3
+ 1.24449106E-08-1.34477880E-12 7.97421393E+03 3.53607058E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Isobutyl)
+C8H15(148)              H  15C   8          G   100.000  5000.000 1700.09      1
+ 1.80544167E+01 4.21252477E-02-1.55720124E-05 2.63695164E-09-1.70005342E-13    2
+ 2.95053709E+03-6.37174043E+01-4.79769927E-01 8.57328090E-02-5.40472521E-05    3
+ 1.77244888E-08-2.38864431E-12 9.25249143E+03 3.55350688E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Allyl_P)
+C8H15(149)              H  15C   8          G   100.000  5000.000 1069.86      1
+ 1.56550856E+01 4.69241007E-02-1.86655854E-05 3.43240308E-09-2.38871275E-13    2
+-2.17989424E+03-5.26726376E+01-2.15373271E-01 7.85863759E-02-2.42570124E-05    3
+-1.72614175E-08 1.02465659E-11 2.79974421E+03 3.23667662E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Cds_S)
+C8H15(150)              H  15C   8          G   100.000  5000.000 1770.47      1
+ 1.72784189E+01 4.47633093E-02-1.78782740E-05 3.15031494E-09-2.07602958E-13    2
+ 7.01175101E+03-6.09659056E+01-1.24558720E-01 8.40820311E-02-5.11907175E-05    3
+ 1.56941712E-08-1.97888173E-12 1.31739784E+04 3.29345893E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)CsRR)) + other(R)
+! + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-(Cds-Cds)HHH) + gauche(Cs(RRRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + radical(Cds_S)
+C8H15(151)              H  15C   8          G   100.000  5000.000 1770.47      1
+ 1.72784189E+01 4.47633093E-02-1.78782740E-05 3.15031494E-09-2.07602958E-13    2
+ 7.01175101E+03-6.09659056E+01-1.24558720E-01 8.40820311E-02-5.11907175E-05    3
+ 1.56941712E-08-1.97888173E-12 1.31739784E+04 3.29345893E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) +
+! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + radical(Tertalkyl)
+C8H15(152)              H  15C   8          G   100.000  5000.000 1743.41      1
+ 1.18590310E+01 5.34448346E-02-2.26601204E-05 4.11889698E-09-2.76826157E-13    2
+ 4.38949813E+03-2.91302479E+01 6.32690502E-01 7.92020078E-02-4.48211256E-05    3
+ 1.25930869E-08-1.49199940E-12 8.30392521E+03 3.12704500E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) +
+! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + radical(Cs_S)
+C8H15(153)              H  15C   8          G   100.000  5000.000 1351.76      1
+ 1.58203516E+01 4.68034688E-02-1.90276326E-05 3.43324117E-09-2.31575226E-13    2
+ 3.88683379E+03-5.09141025E+01-1.93567454E-01 8.07302990E-02-4.17389451E-05    3
+ 7.26788230E-09 4.21565223E-13 9.44597880E+03 3.57192071E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) +
+! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + radical(RCCJCC)
+C8H15(154)              H  15C   8          G   100.000  5000.000 2049.86      1
+ 1.90735971E+01 4.23565706E-02-1.66067377E-05 2.85087909E-09-1.82881776E-13    2
+ 1.65697595E+03-7.04080580E+01 1.42026245E-01 7.92983286E-02-4.36388345E-05    3
+ 1.16423064E-08-1.25506822E-12 9.41847722E+03 3.45145831E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) +
+! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + radical(Isobutyl)
+C8H15(155)              H  15C   8          G   100.000  5000.000 1123.19      1
+ 1.47289126E+01 4.71107837E-02-1.81611281E-05 3.24022432E-09-2.19978922E-13    2
+ 6.24579601E+03-4.38331952E+01-3.13777953E-01 8.33495084E-02-4.34097609E-05    3
+ 4.48722558E-09 2.56057557E-12 1.07182490E+04 3.53535723E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) +
+! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + radical(Cds_S)
+C8H15(156)              H  15C   8          G   100.000  5000.000 1752.63      1
+ 1.88274468E+01 4.23604231E-02-1.65537246E-05 2.88619901E-09-1.89063732E-13    2
+ 7.92469656E+03-6.91499843E+01-3.85819814E-01 8.62099210E-02-5.40820606E-05    3
+ 1.71610464E-08-2.22523783E-12 1.46595443E+04 3.43241012E+01                   4
+
+! Thermo group additivity estimation: group(Cs-CsCsCsH) + gauche(Cs(Cs(CsRR)CsCsR)) + other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsCsR)Cs(CsRR)RR)) +
+! other(R) + group(Cs-CsCsHH) + gauche(Cs(Cs(CsRR)CsRR)) + other(R) + group(Cs-(Cds-Cds)CsHH) + gauche(Cs(Cs(CsRR)RRR)) + other(R) + group(Cs-CsHHH) +
+! gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cs-CsHHH) + gauche(Cs(Cs(CsCsR)RRR)) + other(R) + group(Cds-CdsCsH) + gauche(CsOsCdSs) + other(R) + group
+! (Cds-CdsHH) + gauche(CsOsCdSs) + other(R) + radical(Cds_P)
+C8H15(157)              H  15C   8          G   100.000  5000.000 1218.54      1
+ 1.63206187E+01 4.58462631E-02-1.82662093E-05 3.29897611E-09-2.24453943E-13    2
+ 1.05532014E+04-5.44152276E+01-4.53213811E-01 8.56101861E-02-4.83831793E-05    3
+ 9.47321986E-09 6.22576810E-13 1.57768862E+04 3.44845797E+01                   4
 
 END
 
@@ -921,500 +1591,943 @@ REACTIONS    KCAL/MOLE   MOLES
 
 ! Reaction index: Chemkin #1; RMG #1
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), O2(16); OOH(1), OO(15); 
+! Flux pairs: OOH(1), O2(26); OOH(1), OO(25); 
 ! Exact match found for rate rule [Orad_O_H;O_rad/NonDeO]
 ! Multiplied by reaction path degeneracy 2
-OOH(1)+OOH(1)=O2(16)+OO(15)                         3.500e+10 0.000     -3.275   
+OOH(1)+OOH(1)=OO(25)+O2(26)                         3.500e+10 0.000     -3.275   
 
 ! Reaction index: Chemkin #2; RMG #2
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); C8H18(2), C8H17(17); 
+! Flux pairs: OOH(1), OO(25); C8H18(2), C8H17(27); 
 ! Exact match found for rate rule [C/H/Cs3;O_rad/NonDeO]
-C8H18(2)+OOH(1)=OO(15)+C8H17(17)                    2.800e+12 0.000     16.013   
+OOH(1)+C8H18(2)=OO(25)+C8H17(27)                    2.800e+12 0.000     16.013   
 
 ! Reaction index: Chemkin #3; RMG #3
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(18), C8H18(2); 
+! Flux pairs: OO(25), OOH(1); C8H17(28), C8H18(2); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(18)=C8H18(2)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C8H17(28)=OOH(1)+C8H18(2)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #4; RMG #4
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(19), C8H18(2); 
+! Flux pairs: OO(25), OOH(1); C8H17(29), C8H18(2); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(19)=C8H18(2)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C8H17(29)=OOH(1)+C8H18(2)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #5; RMG #5
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(20), C8H18(2); 
+! Flux pairs: OO(25), OOH(1); C8H17(30), C8H18(2); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(20)=C8H18(2)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C8H17(30)=OOH(1)+C8H18(2)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #6; RMG #6
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); C8H18(3), C8H17(21); 
+! Flux pairs: OOH(1), OO(25); C8H18(3), C8H17(31); 
 ! Exact match found for rate rule [C/H/Cs3;O_rad/NonDeO]
-C8H18(3)+OOH(1)=OO(15)+C8H17(21)                    2.800e+12 0.000     16.013   
+C8H18(3)+OOH(1)=OO(25)+C8H17(31)                    2.800e+12 0.000     16.013   
 
 ! Reaction index: Chemkin #7; RMG #7
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); C8H18(3), C8H17(22); 
+! Flux pairs: OOH(1), OO(25); C8H18(3), C8H17(32); 
 ! Exact match found for rate rule [C/H/Cs3;O_rad/NonDeO]
-C8H18(3)+OOH(1)=OO(15)+C8H17(22)                    2.800e+12 0.000     16.013   
+C8H18(3)+OOH(1)=OO(25)+C8H17(32)                    2.800e+12 0.000     16.013   
 
 ! Reaction index: Chemkin #8; RMG #8
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(23), C8H18(3); 
+! Flux pairs: OO(25), OOH(1); C8H17(33), C8H18(3); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(23)=C8H18(3)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C8H17(33)=C8H18(3)+OOH(1)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #9; RMG #9
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(24), C8H18(3); 
+! Flux pairs: OO(25), OOH(1); C8H17(34), C8H18(3); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(24)=C8H18(3)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C8H17(34)=C8H18(3)+OOH(1)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #10; RMG #10
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(25), C8H18(3); 
+! Flux pairs: OO(25), OOH(1); C8H17(35), C8H18(3); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(25)=C8H18(3)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C8H17(35)=C8H18(3)+OOH(1)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #11; RMG #11
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(26), C8H18(3); 
+! Flux pairs: OO(25), OOH(1); C8H17(36), C8H18(3); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(26)=C8H18(3)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C8H17(36)=C8H18(3)+OOH(1)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #12; RMG #12
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(27), C8H18(3); 
+! Flux pairs: OO(25), OOH(1); C8H17(37), C8H18(3); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(27)=C8H18(3)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C8H17(37)=C8H18(3)+OOH(1)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #13; RMG #13
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); C8H18(4), C8H17(28); 
+! Flux pairs: OOH(1), OO(25); C8H18(4), C8H17(38); 
 ! Exact match found for rate rule [C/H/Cs3;O_rad/NonDeO]
-C8H18(4)+OOH(1)=OO(15)+C8H17(28)                    2.800e+12 0.000     16.013   
+C8H18(4)+OOH(1)=OO(25)+C8H17(38)                    2.800e+12 0.000     16.013   
 
 ! Reaction index: Chemkin #14; RMG #14
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(29), C8H18(4); 
+! Flux pairs: OO(25), OOH(1); C8H17(39), C8H18(4); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(29)=C8H18(4)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C8H17(39)=C8H18(4)+OOH(1)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #15; RMG #15
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(30), C8H18(4); 
+! Flux pairs: OO(25), OOH(1); C8H17(40), C8H18(4); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(30)=C8H18(4)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C8H17(40)=C8H18(4)+OOH(1)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #16; RMG #16
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(31), C8H18(4); 
+! Flux pairs: OO(25), OOH(1); C8H17(41), C8H18(4); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(31)=C8H18(4)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C8H17(41)=C8H18(4)+OOH(1)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #17; RMG #17
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(32), C8H18(4); 
+! Flux pairs: OO(25), OOH(1); C8H17(42), C8H18(4); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(32)=C8H18(4)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C8H17(42)=C8H18(4)+OOH(1)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #18; RMG #18
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(33), C8H18(4); 
+! Flux pairs: OO(25), OOH(1); C8H17(43), C8H18(4); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(33)=C8H18(4)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C8H17(43)=C8H18(4)+OOH(1)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #19; RMG #19
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(34), C8H18(4); 
+! Flux pairs: OO(25), OOH(1); C8H17(44), C8H18(4); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(34)=C8H18(4)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C8H17(44)=C8H18(4)+OOH(1)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #20; RMG #20
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17(35), C8H18(4); 
+! Flux pairs: OO(25), OOH(1); C8H17(45), C8H18(4); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17(35)=C8H18(4)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C8H17(45)=C8H18(4)+OOH(1)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #21; RMG #21
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C5H11O(36), C5H12O(5); 
+! Flux pairs: OO(25), OOH(1); C5H11O(46), C5H12O(5); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C5H11O(36)=C5H12O(5)+OOH(1)                  1.660e-07 5.407     0.040    
+OO(25)+C5H11O(46)=C5H12O(5)+OOH(1)                  1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #22; RMG #22
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C5H11O(37), C5H12O(5); 
+! Flux pairs: OO(25), OOH(1); C5H11O(47), C5H12O(5); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs\Cs2\O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C5H11O(37)=C5H12O(5)+OOH(1)                  4.200e-01 3.530     1.560    
+OO(25)+C5H11O(47)=C5H12O(5)+OOH(1)                  4.200e-01 3.530     1.560    
 
 ! Reaction index: Chemkin #23; RMG #23
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C5H11O(38), C5H12O(5); 
+! Flux pairs: OO(25), OOH(1); C5H11O(48), C5H12O(5); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs\H2\Cs|Cs|O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C5H11O(38)=C5H12O(5)+OOH(1)                  1.150e+01 2.940     0.460    
+OO(25)+C5H11O(48)=C5H12O(5)+OOH(1)                  1.150e+01 2.940     0.460    
 
 ! Reaction index: Chemkin #24; RMG #24
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C5H11O(39), C5H12O(5); 
+! Flux pairs: OO(25), OOH(1); C5H11O(49), C5H12O(5); 
 ! Estimated using template [H2O2;O_sec_rad] for rate rule [H2O2;O_rad/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C5H11O(39)=C5H12O(5)+OOH(1)                  1.134e-01 3.855     8.760    
+OO(25)+C5H11O(49)=C5H12O(5)+OOH(1)                  1.134e-01 3.855     8.760    
 
 ! Reaction index: Chemkin #25; RMG #25
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H13O(40), C6H14O(6); 
+! Flux pairs: OO(25), OOH(1); C6H13O(50), C6H14O(6); 
 ! Exact match found for rate rule [H2O2;C_rad/Cs2/Cs\O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H13O(40)=C6H14O(6)+OOH(1)                  2.910e+00 3.310     1.410    
+OO(25)+C6H13O(50)=OOH(1)+C6H14O(6)                  2.910e+00 3.310     1.410    
 
 ! Reaction index: Chemkin #26; RMG #26
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H13O(41), C6H14O(6); 
+! Flux pairs: OO(25), OOH(1); C6H13O(51), C6H14O(6); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H13O(41)=C6H14O(6)+OOH(1)                  1.660e-07 5.407     0.040    
+OO(25)+C6H13O(51)=OOH(1)+C6H14O(6)                  1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #27; RMG #27
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H13O(42), C6H14O(6); 
+! Flux pairs: OO(25), OOH(1); C6H13O(52), C6H14O(6); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H13O(42)=C6H14O(6)+OOH(1)                  1.660e-07 5.407     0.040    
+OO(25)+C6H13O(52)=OOH(1)+C6H14O(6)                  1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #28; RMG #28
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H13O(43), C6H14O(6); 
+! Flux pairs: OO(25), OOH(1); C6H13O(53), C6H14O(6); 
 ! Estimated using template [H2O2;C_rad/H/CsO] for rate rule [H2O2;C_rad/H/Cs\H\Cs2/O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H13O(43)=C6H14O(6)+OOH(1)                  5.700e+01 3.040     1.210    
+OO(25)+C6H13O(53)=OOH(1)+C6H14O(6)                  5.700e+01 3.040     1.210    
 
 ! Reaction index: Chemkin #29; RMG #29
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H13O(44), C6H14O(6); 
+! Flux pairs: OO(25), OOH(1); C6H13O(54), C6H14O(6); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs\H\Cs\Cs|O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H13O(44)=C6H14O(6)+OOH(1)                  6.110e-01 3.530     1.520    
+OO(25)+C6H13O(54)=OOH(1)+C6H14O(6)                  6.110e-01 3.530     1.520    
 
 ! Reaction index: Chemkin #30; RMG #30
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H13O(45), C6H14O(6); 
+! Flux pairs: OO(25), OOH(1); C6H13O(55), C6H14O(6); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H13O(45)=C6H14O(6)+OOH(1)                  3.000e+00 3.280     1.050    
+OO(25)+C6H13O(55)=OOH(1)+C6H14O(6)                  3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #31; RMG #31
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H13O(46), C6H14O(6); 
+! Flux pairs: OO(25), OOH(1); C6H13O(56), C6H14O(6); 
 ! Estimated using template [H2O2;O_sec_rad] for rate rule [H2O2;O_rad/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H13O(46)=C6H14O(6)+OOH(1)                  1.134e-01 3.855     8.760    
+OO(25)+C6H13O(56)=OOH(1)+C6H14O(6)                  1.134e-01 3.855     8.760    
 
 ! Reaction index: Chemkin #32; RMG #32
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); C9H18(7), C9H17(47); 
+! Flux pairs: OOH(1), OO(25); C9H18(7), C9H17(57); 
 ! Estimated using template [C/H/Cs2;O_rad/NonDeO] for rate rule [C/H/Cs2Cd;O_rad/NonDeO]
-C9H18(7)+OOH(1)=OO(15)+C9H17(47)                    1.330e+11 0.000     11.300   
+C9H18(7)+OOH(1)=OO(25)+C9H17(57)                    1.330e+11 0.000     11.300   
 
 ! Reaction index: Chemkin #33; RMG #33
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C9H17(48), C9H18(7); 
+! Flux pairs: OO(25), OOH(1); C9H17(58), C9H18(7); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C9H17(48)=C9H18(7)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C9H17(58)=C9H18(7)+OOH(1)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #34; RMG #34
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C9H17(49), C9H18(7); 
+! Flux pairs: OO(25), OOH(1); C9H17(59), C9H18(7); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C9H17(49)=C9H18(7)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C9H17(59)=C9H18(7)+OOH(1)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #35; RMG #35
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C9H17(50), C9H18(7); 
+! Flux pairs: OO(25), OOH(1); C9H17(60), C9H18(7); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C9H17(50)=C9H18(7)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C9H17(60)=C9H18(7)+OOH(1)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #36; RMG #36
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C9H17(51), C9H18(7); 
+! Flux pairs: OO(25), OOH(1); C9H17(61), C9H18(7); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C9H17(51)=C9H18(7)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C9H17(61)=C9H18(7)+OOH(1)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #37; RMG #37
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); C9H18(7), C9H17(52); 
+! Flux pairs: OOH(1), OO(25); C9H18(7), C9H17(62); 
 ! Exact match found for rate rule [C/H3/Cd;O_rad/NonDeO]
 ! Multiplied by reaction path degeneracy 6
-C9H18(7)+OOH(1)=OO(15)+C9H17(52)                    3.470e-03 4.650     9.780    
+C9H18(7)+OOH(1)=OO(25)+C9H17(62)                    3.470e-03 4.650     9.780    
 
 ! Reaction index: Chemkin #38; RMG #38
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C9H17(53), C9H18(7); 
+! Flux pairs: OO(25), OOH(1); C9H17(63), C9H18(7); 
 ! Exact match found for rate rule [H2O2;Cd_rad/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C9H17(53)=C9H18(7)+OOH(1)                    8.750e-01 3.590     -4.030   
+OO(25)+C9H17(63)=C9H18(7)+OOH(1)                    8.750e-01 3.590     -4.030   
 
 ! Reaction index: Chemkin #39; RMG #39
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H11(54), C6H12(8); 
+! Flux pairs: OO(25), OOH(1); C6H11(64), C6H12(8); 
 ! Estimated using an average for rate rule [H2O2;C_rad/Cs3]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H11(54)=C6H12(8)+OOH(1)                    2.910e+00 3.310     1.410    
+OO(25)+C6H11(64)=OOH(1)+C6H12(8)                    2.910e+00 3.310     1.410    
 
 ! Reaction index: Chemkin #40; RMG #40
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H11(55), C6H12(8); 
+! Flux pairs: OO(25), OOH(1); C6H11(65), C6H12(8); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H11(55)=C6H12(8)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C6H11(65)=OOH(1)+C6H12(8)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #41; RMG #41
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H11(56), C6H12(8); 
+! Flux pairs: OO(25), OOH(1); C6H11(66), C6H12(8); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H11(56)=C6H12(8)+OOH(1)                    1.660e-07 5.407     0.040    
+OO(25)+C6H11(66)=OOH(1)+C6H12(8)                    1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #42; RMG #42
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C6H11(57), C6H12(8); 
+! Flux pairs: OO(25), OOH(1); C6H11(67), C6H12(8); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C6H11(57)=C6H12(8)+OOH(1)                    3.000e+00 3.280     1.050    
+OO(25)+C6H11(67)=OOH(1)+C6H12(8)                    3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #43; RMG #43
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); Ocimene(9), C10H15(58); 
+! Flux pairs: OOH(1), OO(25); Ocimene(9), C10H15(68); 
 ! Estimated using an average for rate rule [C/H2/CdCs;O_rad/NonDeO]
 ! Multiplied by reaction path degeneracy 2
-Ocimene(9)+OOH(1)=OO(15)+C10H15(58)                 2.744e-03 4.451     7.588    
+Ocimene(9)+OOH(1)=OO(25)+C10H15(68)                 2.744e-03 4.451     7.588    
 
 ! Reaction index: Chemkin #44; RMG #44
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); Ocimene(9), C10H15(59); 
+! Flux pairs: OOH(1), OO(25); Ocimene(9), C10H15(69); 
 ! Estimated using an average for rate rule [C/H2/CdCs;O_rad/NonDeO]
 ! Multiplied by reaction path degeneracy 2
-Ocimene(9)+OOH(1)=OO(15)+C10H15(59)                 2.744e-03 4.451     7.588    
+Ocimene(9)+OOH(1)=OO(25)+C10H15(69)                 2.744e-03 4.451     7.588    
 
 ! Reaction index: Chemkin #45; RMG #45
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C10H15(60), Ocimene(9); 
+! Flux pairs: OO(25), OOH(1); C10H15(70), Ocimene(9); 
 ! Estimated using an average for rate rule [H2O2;C_rad/H2/Cd]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C10H15(60)=Ocimene(9)+OOH(1)                 3.510e-02 4.220     9.860    
+OO(25)+C10H15(70)=Ocimene(9)+OOH(1)                 3.510e-02 4.220     9.860    
 
 ! Reaction index: Chemkin #46; RMG #46
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); Ocimene(9), C10H15(61); 
+! Flux pairs: OOH(1), OO(25); Ocimene(9), C10H15(71); 
 ! Exact match found for rate rule [C/H3/Cd;O_rad/NonDeO]
 ! Multiplied by reaction path degeneracy 3
-Ocimene(9)+OOH(1)=OO(15)+C10H15(61)                 1.735e-03 4.650     9.780    
+Ocimene(9)+OOH(1)=OO(25)+C10H15(71)                 1.735e-03 4.650     9.780    
 
 ! Reaction index: Chemkin #47; RMG #47
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C10H15(62), Ocimene(9); 
+! Flux pairs: OO(25), OOH(1); C10H15(72), Ocimene(9); 
 ! Exact match found for rate rule [H2O2;Cd_rad/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C10H15(62)=Ocimene(9)+OOH(1)                 8.750e-01 3.590     -4.030   
+OO(25)+C10H15(72)=Ocimene(9)+OOH(1)                 8.750e-01 3.590     -4.030   
 
 ! Reaction index: Chemkin #48; RMG #48
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C10H15(63), Ocimene(9); 
+! Flux pairs: OO(25), OOH(1); C10H15(73), Ocimene(9); 
 ! Estimated using template [H2O2;Cd_sec_rad] for rate rule [H2O2;Cd_rad/Cd]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C10H15(63)=Ocimene(9)+OOH(1)                 8.750e-01 3.590     -4.030   
+OO(25)+C10H15(73)=Ocimene(9)+OOH(1)                 8.750e-01 3.590     -4.030   
 
 ! Reaction index: Chemkin #49; RMG #49
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C10H15(64), Ocimene(9); 
+! Flux pairs: OO(25), OOH(1); C10H15(74), Ocimene(9); 
 ! Estimated using template [H2O2;Cd_pri_rad] for rate rule [H2O2;Cd_Cd\Cs2_pri_rad]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C10H15(64)=Ocimene(9)+OOH(1)                 2.000e+00 3.520     -7.480   
+OO(25)+C10H15(74)=Ocimene(9)+OOH(1)                 2.000e+00 3.520     -7.480   
 
 ! Reaction index: Chemkin #50; RMG #50
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C10H15(65), Ocimene(9); 
+! Flux pairs: OO(25), OOH(1); C10H15(75), Ocimene(9); 
 ! Exact match found for rate rule [H2O2;Cd_pri_rad]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C10H15(65)=Ocimene(9)+OOH(1)                 2.000e+00 3.520     -7.480   
+OO(25)+C10H15(75)=Ocimene(9)+OOH(1)                 2.000e+00 3.520     -7.480   
 
 ! Reaction index: Chemkin #51; RMG #51
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); Xylene(10), C8H9(66); 
+! Flux pairs: OOH(1), OO(25); Xylene(10), C8H9(76); 
 ! Exact match found for rate rule [C/H3/Cb;O_rad/NonDeO]
 ! Multiplied by reaction path degeneracy 6
-Xylene(10)+OOH(1)=OO(15)+C8H9(66)                   7.920e+11 0.000     14.080   
+Xylene(10)+OOH(1)=OO(25)+C8H9(76)                   7.920e+11 0.000     14.080   
 
 ! Reaction index: Chemkin #52; RMG #52
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H9(67), Xylene(10); 
+! Flux pairs: OO(25), OOH(1); C8H9(77), Xylene(10); 
 ! Estimated using template [H2O2;Y_rad] for rate rule [H2O2;Cb_rad]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H9(67)=Xylene(10)+OOH(1)                   1.381e-02 4.118     1.722    
+OO(25)+C8H9(77)=Xylene(10)+OOH(1)                   1.381e-02 4.118     1.722    
 
 ! Reaction index: Chemkin #53; RMG #53
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); C9H18O(11), C9H17O(68); 
+! Flux pairs: OOH(1), OO(25); C9H18O(11), C9H17O(78); 
 ! Exact match found for rate rule [C/H/Cs3;O_rad/NonDeO]
 ! Multiplied by reaction path degeneracy 2
-C9H18O(11)+OOH(1)=OO(15)+C9H17O(68)                 5.600e+12 0.000     16.013   
+OOH(1)+C9H18O(11)=OO(25)+C9H17O(78)                 5.600e+12 0.000     16.013   
 
 ! Reaction index: Chemkin #54; RMG #54
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C9H17O(69), C9H18O(11); 
+! Flux pairs: OO(25), OOH(1); C9H17O(79), C9H18O(11); 
 ! Exact match found for rate rule [H2O2;C_rad/H/CO/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C9H17O(69)=C9H18O(11)+OOH(1)                 3.240e-11 6.525     2.900    
+OO(25)+C9H17O(79)=OOH(1)+C9H18O(11)                 3.240e-11 6.525     2.900    
 
 ! Reaction index: Chemkin #55; RMG #55
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C9H17O(70), C9H18O(11); 
+! Flux pairs: OO(25), OOH(1); C9H17O(80), C9H18O(11); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C9H17O(70)=C9H18O(11)+OOH(1)                 3.000e+00 3.280     1.050    
+OO(25)+C9H17O(80)=OOH(1)+C9H18O(11)                 3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #56; RMG #56
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); C8H16O(12), C8H15O(71); 
+! Flux pairs: OOH(1), OO(25); C8H16O(12), C8H15O(81); 
 ! Exact match found for rate rule [C/H/Cs3;O_rad/NonDeO]
-OOH(1)+C8H16O(12)=OO(15)+C8H15O(71)                 2.800e+12 0.000     16.013   
+OOH(1)+C8H16O(12)=OO(25)+C8H15O(81)                 2.800e+12 0.000     16.013   
 
 ! Reaction index: Chemkin #57; RMG #57
 ! Template reaction: H_Abstraction
-! Flux pairs: OOH(1), OO(15); C8H16O(12), C8H15O(72); 
+! Flux pairs: OOH(1), OO(25); C8H16O(12), C8H15O(82); 
 ! Estimated using template [C/H/Cs2;O_rad/NonDeO] for rate rule [C/H/Cs2CO;O_rad/NonDeO]
-OOH(1)+C8H16O(12)=OO(15)+C8H15O(72)                 1.330e+11 0.000     11.300   
+OOH(1)+C8H16O(12)=OO(25)+C8H15O(82)                 1.330e+11 0.000     11.300   
 
 ! Reaction index: Chemkin #58; RMG #58
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H15O(73), C8H16O(12); 
+! Flux pairs: OO(25), OOH(1); C8H15O(83), C8H16O(12); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H15O(73)=OOH(1)+C8H16O(12)                 1.660e-07 5.407     0.040    
+OO(25)+C8H15O(83)=OOH(1)+C8H16O(12)                 1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #59; RMG #59
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H15O(74), C8H16O(12); 
+! Flux pairs: OO(25), OOH(1); C8H15O(84), C8H16O(12); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H15O(74)=OOH(1)+C8H16O(12)                 3.000e+00 3.280     1.050    
+OO(25)+C8H15O(84)=OOH(1)+C8H16O(12)                 3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #60; RMG #60
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H15O(75), C8H16O(12); 
+! Flux pairs: OO(25), OOH(1); C8H15O(85), C8H16O(12); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H15O(75)=OOH(1)+C8H16O(12)                 3.000e+00 3.280     1.050    
+OO(25)+C8H15O(85)=OOH(1)+C8H16O(12)                 3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #61; RMG #61
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H15O(76), C8H16O(12); 
+! Flux pairs: OO(25), OOH(1); C8H15O(86), C8H16O(12); 
 ! Estimated using average of templates [O/H/NonDeO;C_rad/H2/CO] + [H2O2;C_pri_rad] for rate rule [H2O2;C_rad/H2/CO]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H15O(76)=OOH(1)+C8H16O(12)                 1.060e-05 5.025     1.657    
+OO(25)+C8H15O(86)=OOH(1)+C8H16O(12)                 1.060e-05 5.025     1.657    
 
 ! Reaction index: Chemkin #62; RMG #62
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); S(77), S(13); 
+! Flux pairs: OO(25), OOH(1); S(87), S(13); 
 ! Estimated using an average for rate rule [H2O2;C_rad/Cs2O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+S(77)=OOH(1)+S(13)                           3.460e+01 3.050     1.020    
+OO(25)+S(87)=OOH(1)+S(13)                           3.460e+01 3.050     1.020    
 
 ! Reaction index: Chemkin #63; RMG #63
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); S(78), S(13); 
+! Flux pairs: OO(25), OOH(1); S(88), S(13); 
 ! Exact match found for rate rule [H2O2;C_rad/H/CsO]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+S(78)=OOH(1)+S(13)                           5.700e+01 3.040     1.210    
+OO(25)+S(88)=OOH(1)+S(13)                           5.700e+01 3.040     1.210    
 
 ! Reaction index: Chemkin #64; RMG #64
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); S(79), S(13); 
+! Flux pairs: OO(25), OOH(1); S(89), S(13); 
 ! Exact match found for rate rule [H2O2;C_rad/H/CsO]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+S(79)=OOH(1)+S(13)                           5.700e+01 3.040     1.210    
+OO(25)+S(89)=OOH(1)+S(13)                           5.700e+01 3.040     1.210    
 
 ! Reaction index: Chemkin #65; RMG #65
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); S(80), S(13); 
+! Flux pairs: OO(25), OOH(1); S(90), S(13); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs\Cs2\O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+S(80)=OOH(1)+S(13)                           4.200e-01 3.530     1.560    
+OO(25)+S(90)=OOH(1)+S(13)                           4.200e-01 3.530     1.560    
 
 ! Reaction index: Chemkin #66; RMG #66
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); S(81), S(13); 
+! Flux pairs: OO(25), OOH(1); S(91), S(13); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs\Cs2\O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+S(81)=OOH(1)+S(13)                           4.200e-01 3.530     1.560    
+OO(25)+S(91)=OOH(1)+S(13)                           4.200e-01 3.530     1.560    
 
 ! Reaction index: Chemkin #67; RMG #67
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); S(82), S(13); 
+! Flux pairs: OO(25), OOH(1); S(92), S(13); 
 ! Estimated using template [H2O2;O_sec_rad] for rate rule [H2O2;O_rad/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+S(82)=OOH(1)+S(13)                           1.134e-01 3.855     8.760    
+OO(25)+S(92)=OOH(1)+S(13)                           1.134e-01 3.855     8.760    
 
 ! Reaction index: Chemkin #68; RMG #68
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17O(83), C8H18O(14); 
+! Flux pairs: OO(25), OOH(1); C8H17O(93), C8H18O(14); 
 ! Estimated using an average for rate rule [H2O2;C_rad/Cs2O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17O(83)=OOH(1)+C8H18O(14)                 3.460e+01 3.050     1.020    
+OO(25)+C8H17O(93)=OOH(1)+C8H18O(14)                 3.460e+01 3.050     1.020    
 
 ! Reaction index: Chemkin #69; RMG #69
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17O(84), C8H18O(14); 
+! Flux pairs: OO(25), OOH(1); C8H17O(94), C8H18O(14); 
 ! Estimated using an average for rate rule [H2O2;C_rad/Cs2O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17O(84)=OOH(1)+C8H18O(14)                 3.460e+01 3.050     1.020    
+OO(25)+C8H17O(94)=OOH(1)+C8H18O(14)                 3.460e+01 3.050     1.020    
 
 ! Reaction index: Chemkin #70; RMG #70
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17O(85), C8H18O(14); 
+! Flux pairs: OO(25), OOH(1); C8H17O(95), C8H18O(14); 
 ! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17O(85)=OOH(1)+C8H18O(14)                 1.660e-07 5.407     0.040    
+OO(25)+C8H17O(95)=OOH(1)+C8H18O(14)                 1.660e-07 5.407     0.040    
 
 ! Reaction index: Chemkin #71; RMG #71
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17O(86), C8H18O(14); 
+! Flux pairs: OO(25), OOH(1); C8H17O(96), C8H18O(14); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17O(86)=OOH(1)+C8H18O(14)                 3.000e+00 3.280     1.050    
+OO(25)+C8H17O(96)=OOH(1)+C8H18O(14)                 3.000e+00 3.280     1.050    
 
 ! Reaction index: Chemkin #72; RMG #72
 ! Template reaction: H_Abstraction
-! Flux pairs: OO(15), OOH(1); C8H17O(87), C8H18O(14); 
+! Flux pairs: OO(25), OOH(1); C8H17O(97), C8H18O(14); 
 ! Exact match found for rate rule [H2O2;C_rad/H2/Cs\H2\Cs|Cs|O]
 ! Multiplied by reaction path degeneracy 2
-OO(15)+C8H17O(87)=OOH(1)+C8H18O(14)                 1.150e+01 2.940     0.460    
+OO(25)+C8H17O(97)=OOH(1)+C8H18O(14)                 1.150e+01 2.940     0.460    
+
+! Reaction index: Chemkin #73; RMG #73
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C10H16(15), C10H15(98); 
+! Exact match found for rate rule [C/H/Cs3;O_rad/NonDeO]
+OOH(1)+C10H16(15)=OO(25)+C10H15(98)                 2.800e+12 0.000     16.013   
+
+! Reaction index: Chemkin #74; RMG #74
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C10H16(15), C10H15(99); 
+! Estimated using template [C/H/Cs2;O_rad/NonDeO] for rate rule [C/H/Cs2Cd;O_rad/NonDeO]
+OOH(1)+C10H16(15)=OO(25)+C10H15(99)                 1.330e+11 0.000     11.300   
+
+! Reaction index: Chemkin #75; RMG #75
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(100), C10H16(15); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(100)=OOH(1)+C10H16(15)                     1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #76; RMG #76
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C10H16(15), S(101); 
+! Estimated using an average for rate rule [C/H2/CdCs;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 2
+OOH(1)+C10H16(15)=OO(25)+S(101)                     2.744e-03 4.451     7.588    
+
+! Reaction index: Chemkin #77; RMG #77
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(102), C10H16(15); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(102)=OOH(1)+C10H16(15)                     3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #78; RMG #78
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C10H16(15), S(103); 
+! Exact match found for rate rule [C/H3/Cd;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 3
+OOH(1)+C10H16(15)=OO(25)+S(103)                     1.735e-03 4.650     9.780    
+
+! Reaction index: Chemkin #79; RMG #79
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(104), C10H16(15); 
+! Exact match found for rate rule [H2O2;Cd_rad/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(104)=OOH(1)+C10H16(15)                     8.750e-01 3.590     -4.030   
+
+! Reaction index: Chemkin #80; RMG #80
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(105), S(16); 
+! Estimated using an average for rate rule [H2O2;C_rad/Cs3]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(105)=OOH(1)+S(16)                          2.910e+00 3.310     1.410    
+
+! Reaction index: Chemkin #81; RMG #81
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(106), S(16); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(106)=OOH(1)+S(16)                          1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #82; RMG #82
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(107), S(16); 
+! Estimated using an average for rate rule [H2O2;C_rad/H/Cs\H2\Cs/O]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(107)=OOH(1)+S(16)                          2.970e+00 3.390     1.400    
+
+! Reaction index: Chemkin #83; RMG #83
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(108), S(16); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(108)=OOH(1)+S(16)                          3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #84; RMG #84
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(109), S(16); 
+! Estimated using average of templates [O/H/NonDeO;C_rad/H2/CO] + [H2O2;C_pri_rad] for rate rule [H2O2;C_rad/H2/CO]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(109)=OOH(1)+S(16)                          1.060e-05 5.025     1.657    
+
+! Reaction index: Chemkin #85; RMG #85
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(110), S(17); 
+! Estimated using template [H2O2;C_ter_rad] for rate rule [H2O2;C_rad/COCs2]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(110)=OOH(1)+S(17)                          1.003e+01 3.180     1.215    
+
+! Reaction index: Chemkin #86; RMG #86
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(111), S(17); 
+! Exact match found for rate rule [H2O2;C_rad/H/CsO]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(111)=OOH(1)+S(17)                          5.700e+01 3.040     1.210    
+
+! Reaction index: Chemkin #87; RMG #87
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(112), S(17); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs\H\Cs\Cs|O]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(112)=OOH(1)+S(17)                          6.110e-01 3.530     1.520    
+
+! Reaction index: Chemkin #88; RMG #88
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(113), S(17); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(113)=OOH(1)+S(17)                          3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #89; RMG #89
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C6H8O(18), C6H7O(114); 
+! Estimated using an average for rate rule [C/H2/CdCs;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 2
+OOH(1)+C6H8O(18)=OO(25)+C6H7O(114)                  2.744e-03 4.451     7.588    
+
+! Reaction index: Chemkin #90; RMG #90
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C6H7O(115), C6H8O(18); 
+! Exact match found for rate rule [H2O2;C_rad/H/CO/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C6H7O(115)=OOH(1)+C6H8O(18)                  3.240e-11 6.525     2.900    
+
+! Reaction index: Chemkin #91; RMG #91
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C6H8O(18), C6H7O(116); 
+! Exact match found for rate rule [C/H3/Cd;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 3
+OOH(1)+C6H8O(18)=OO(25)+C6H7O(116)                  1.735e-03 4.650     9.780    
+
+! Reaction index: Chemkin #92; RMG #92
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C6H7O(117), C6H8O(18); 
+! Exact match found for rate rule [H2O2;Cd_rad/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C6H7O(117)=OOH(1)+C6H8O(18)                  8.750e-01 3.590     -4.030   
+
+! Reaction index: Chemkin #93; RMG #93
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(118), S(19); 
+! Estimated using an average for rate rule [H2O2;C_rad/Cs2O]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(118)=OOH(1)+S(19)                          3.460e+01 3.050     1.020    
+
+! Reaction index: Chemkin #94; RMG #94
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(119), S(19); 
+! Estimated using an average for rate rule [H2O2;C_rad/Cs2O]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(119)=OOH(1)+S(19)                          3.460e+01 3.050     1.020    
+
+! Reaction index: Chemkin #95; RMG #95
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(120), S(19); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(120)=OOH(1)+S(19)                          1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #96; RMG #96
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(121), S(19); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(121)=OOH(1)+S(19)                          1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #97; RMG #97
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(122), S(19); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(122)=OOH(1)+S(19)                          1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #98; RMG #98
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(123), S(19); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(123)=OOH(1)+S(19)                          1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #99; RMG #99
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(124), S(19); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(124)=OOH(1)+S(19)                          1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #100; RMG #100
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(125), S(19); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(125)=OOH(1)+S(19)                          1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #101; RMG #101
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(126), S(19); 
+! H2O2;C_rad/H2/Cs\H\Cs|Cs\O from training reaction 308
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs\H\Cs|Cs\O]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(126)=OOH(1)+S(19)                          6.110e-01 3.530     1.520    
+
+! Reaction index: Chemkin #102; RMG #102
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); S(127), S(19); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+S(127)=OOH(1)+S(19)                          3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #103; RMG #103
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(128), C8H16(20); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(128)=OOH(1)+C8H16(20)                  1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #104; RMG #104
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(129), C8H16(20); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(129)=OOH(1)+C8H16(20)                  1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #105; RMG #105
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(20), C8H15(130); 
+! Estimated using an average for rate rule [C/H2/CdCs;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 2
+OOH(1)+C8H16(20)=OO(25)+C8H15(130)                  2.744e-03 4.451     7.588    
+
+! Reaction index: Chemkin #106; RMG #106
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(131), C8H16(20); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(131)=OOH(1)+C8H16(20)                  3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #107; RMG #107
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(20), C8H15(132); 
+! Exact match found for rate rule [C/H3/Cd;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 6
+OOH(1)+C8H16(20)=OO(25)+C8H15(132)                  3.470e-03 4.650     9.780    
+
+! Reaction index: Chemkin #108; RMG #108
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(133), C8H16(20); 
+! Exact match found for rate rule [H2O2;Cd_rad/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(133)=OOH(1)+C8H16(20)                  8.750e-01 3.590     -4.030   
+
+! Reaction index: Chemkin #109; RMG #109
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(21), C8H15(130); 
+! Estimated using template [C/H/Cs2;O_rad/NonDeO] for rate rule [C/H/Cs2Cd;O_rad/NonDeO]
+OOH(1)+C8H16(21)=OO(25)+C8H15(130)                  1.330e+11 0.000     11.300   
+
+! Reaction index: Chemkin #110; RMG #110
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(134), C8H16(21); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(134)=OOH(1)+C8H16(21)                  1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #111; RMG #111
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(21), C8H15(135); 
+! Estimated using an average for rate rule [C/H2/CdCs;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 2
+OOH(1)+C8H16(21)=OO(25)+C8H15(135)                  2.744e-03 4.451     7.588    
+
+! Reaction index: Chemkin #112; RMG #112
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(136), C8H16(21); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(136)=OOH(1)+C8H16(21)                  3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #113; RMG #113
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(137), C8H16(21); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(137)=OOH(1)+C8H16(21)                  3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #114; RMG #114
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(138), C8H16(21); 
+! Exact match found for rate rule [H2O2;Cd_rad/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(138)=OOH(1)+C8H16(21)                  8.750e-01 3.590     -4.030   
+
+! Reaction index: Chemkin #115; RMG #115
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(139), C8H16(21); 
+! Exact match found for rate rule [H2O2;Cd_rad/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(139)=OOH(1)+C8H16(21)                  8.750e-01 3.590     -4.030   
+
+! Reaction index: Chemkin #116; RMG #116
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(22), C8H15(140); 
+! Exact match found for rate rule [C/H/Cs3;O_rad/NonDeO]
+OOH(1)+C8H16(22)=OO(25)+C8H15(140)                  2.800e+12 0.000     16.013   
+
+! Reaction index: Chemkin #117; RMG #117
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(22), C8H15(135); 
+! Estimated using an average for rate rule [C/H2/CdCs;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 2
+OOH(1)+C8H16(22)=OO(25)+C8H15(135)                  2.744e-03 4.451     7.588    
+
+! Reaction index: Chemkin #118; RMG #118
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(22), C8H15(141); 
+! Estimated using an average for rate rule [C/H2/CdCs;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 2
+OOH(1)+C8H16(22)=OO(25)+C8H15(141)                  2.744e-03 4.451     7.588    
+
+! Reaction index: Chemkin #119; RMG #119
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(142), C8H16(22); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(142)=OOH(1)+C8H16(22)                  3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #120; RMG #120
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(143), C8H16(22); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(143)=OOH(1)+C8H16(22)                  3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #121; RMG #121
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(144), C8H16(22); 
+! Exact match found for rate rule [H2O2;Cd_rad/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(144)=OOH(1)+C8H16(22)                  8.750e-01 3.590     -4.030   
+
+! Reaction index: Chemkin #122; RMG #122
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(145), C8H16(22); 
+! Exact match found for rate rule [H2O2;Cd_rad/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(145)=OOH(1)+C8H16(22)                  8.750e-01 3.590     -4.030   
+
+! Reaction index: Chemkin #123; RMG #123
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(23), C8H15(146); 
+! Exact match found for rate rule [C/H/Cs3;O_rad/NonDeO]
+OOH(1)+C8H16(23)=OO(25)+C8H15(146)                  2.800e+12 0.000     16.013   
+
+! Reaction index: Chemkin #124; RMG #124
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(147), C8H16(23); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(147)=OOH(1)+C8H16(23)                  1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #125; RMG #125
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(23), C8H15(141); 
+! Estimated using an average for rate rule [C/H2/CdCs;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 2
+OOH(1)+C8H16(23)=OO(25)+C8H15(141)                  2.744e-03 4.451     7.588    
+
+! Reaction index: Chemkin #126; RMG #126
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(148), C8H16(23); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(148)=OOH(1)+C8H16(23)                  3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #127; RMG #127
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(149), C8H16(23); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cd\H_Cd\H2]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(149)=OOH(1)+C8H16(23)                  3.510e-02 4.220     9.860    
+
+! Reaction index: Chemkin #128; RMG #128
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(150), C8H16(23); 
+! Exact match found for rate rule [H2O2;Cd_rad/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(150)=OOH(1)+C8H16(23)                  8.750e-01 3.590     -4.030   
+
+! Reaction index: Chemkin #129; RMG #129
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(151), C8H16(23); 
+! Exact match found for rate rule [H2O2;Cd_Cd\H\Cs_rad/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(151)=OOH(1)+C8H16(23)                  8.750e-01 3.590     -4.030   
+
+! Reaction index: Chemkin #130; RMG #130
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(24), C8H15(152); 
+! Exact match found for rate rule [C/H/Cs3;O_rad/NonDeO]
+OOH(1)+C8H16(24)=OO(25)+C8H15(152)                  2.800e+12 0.000     16.013   
+
+! Reaction index: Chemkin #131; RMG #131
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(153), C8H16(24); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(153)=OOH(1)+C8H16(24)                  1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #132; RMG #132
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(154), C8H16(24); 
+! Exact match found for rate rule [H2O2;C_rad/H/NonDeC]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(154)=OOH(1)+C8H16(24)                  1.660e-07 5.407     0.040    
+
+! Reaction index: Chemkin #133; RMG #133
+! Template reaction: H_Abstraction
+! Flux pairs: OOH(1), OO(25); C8H16(24), C8H15(149); 
+! Estimated using an average for rate rule [C/H2/CdCs;O_rad/NonDeO]
+! Multiplied by reaction path degeneracy 2
+OOH(1)+C8H16(24)=OO(25)+C8H15(149)                  2.744e-03 4.451     7.588    
+
+! Reaction index: Chemkin #134; RMG #134
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(155), C8H16(24); 
+! Exact match found for rate rule [H2O2;C_rad/H2/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(155)=OOH(1)+C8H16(24)                  3.000e+00 3.280     1.050    
+
+! Reaction index: Chemkin #135; RMG #135
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(156), C8H16(24); 
+! Estimated using template [H2O2;Cd_rad/NonDeC] for rate rule [H2O2;Cd_Cd\H2_rad/Cs]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(156)=OOH(1)+C8H16(24)                  8.750e-01 3.590     -4.030   
+
+! Reaction index: Chemkin #136; RMG #136
+! Template reaction: H_Abstraction
+! Flux pairs: OO(25), OOH(1); C8H15(157), C8H16(24); 
+! Exact match found for rate rule [H2O2;Cd_Cd\H\Cs|H2|Cs_pri_rad]
+! Multiplied by reaction path degeneracy 2
+OO(25)+C8H15(157)=OOH(1)+C8H16(24)                  2.000e+00 3.520     -7.480   
 
 END
 
