@@ -56,12 +56,12 @@ rmgDatabase.load(databasePath,
 logging.info('RMG Database Loaded')
 
 loadSpecies = rmgDatabase.kinetics.families[rxnFamilies[0]]
-species_dict_file = os.path.expanduser('~/Code/OOHabstraction/Biofuels/generateReactionsOutput/chemkin/species_dictionary.txt')
+species_dict_file = os.path.expanduser('~/Code/OOHabstraction/THC/generateReactionsOutput/chemkin/species_dictionary.txt')
 species_dict = loadSpecies.getSpecies(species_dict_file)
 logging.info("Species Dictionary loaded")
 print species_dict
 
-file_object = open(os.path.expanduser('~/Code/OOHabstraction/Biofuels/generateReactionsOutput/chemkin/chem_annotated.inp'), 'r')
+file_object = open(os.path.expanduser('~/Code/OOHabstraction/THC/generateReactionsOutput/chemkin/chem_annotated.inp'), 'r')
 mechLines = file_object.readlines()
 logging.info("Chemkin loaded")
 
