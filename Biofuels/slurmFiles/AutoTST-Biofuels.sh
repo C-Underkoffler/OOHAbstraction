@@ -31,14 +31,13 @@
 #####################################################
 
 export RMGpy=~/Code/RMG-Py
-export fafoom=~/Code/fafoom
-export PYTHONPATH=$RMGpy:$fafoom:$PYTHONPATH
+export PYTHONPATH=$RMGpy:$PYTHONPATH
 
 
 #python $RMGpy/scripts/filterReactions.py /scratch/westgroup/Importer/RMG-models/
 ## that creates the kineticsDict files, and doesn't need repeating until the imported models change significantly
 echo $SLURM_ARRAY_TASK_ID
-cd results
+cd /gss_gpfs_scratch/harms.n/bioTST/
 # the "stdbuf -o0 -e0"  and the "-u" are to disable buffering,
 # so that you see output from the script in the log files immediately.
-stdbuf -o0 -e0 python -u ~/Code/OOHabstraction/Biofuels/biofuelsTST.py > AutoTST-biofuels.$SLURM_ARRAY_TASK_ID.combined.log 2>&1
+stdbuf -o0 -e0 python -u ~/Code/OOHabstraction/Biofuels/biofuelsTST.py > /gss_gpfs_scratch/harms.n/bioTST/AutoTST-biofuels.$SLURM_ARRAY_TASK_ID.combined.log 2>&1
