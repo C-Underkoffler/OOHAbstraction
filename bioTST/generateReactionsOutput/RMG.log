@@ -1,0 +1,1641 @@
+RMG execution initiated at Fri Jul 14 13:44:38 2017
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 2.1.0                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+The current git HEAD for RMG-Py is:
+	d8efa928602cd1b3a5d122211099966a49d711d6
+	Thu May 4 12:31:31 2017 -0400
+
+The current git HEAD for RMG-database is:
+	807e84095265da786177dccd931996a97d6e5c99
+	Tue Apr 18 13:51:56 2017 -0400
+
+Reading input file "/Users/nathan/Code/OOHabstraction/Biofuels/generateReactionsOutput/biofuelInput.py"...
+# Data sources for kinetics
+database(
+    thermoLibraries = ['BurkeH2O2','primaryThermoLibrary','DFT_QCI_thermo','CBS_QB3_1dHR'],
+    reactionLibraries = [],
+    seedMechanisms = [],
+    kineticsDepositories = 'default',
+    #this section lists possible reaction families to find reactioons with
+    kineticsFamilies = ['H_Abstraction']
+    #kineticsEstimator = 'rate rules'
+)
+
+# List all species you want reactions between
+species( # 1
+        label='OOH',
+        reactive=True,
+        structure=SMILES("[O]O"),
+)
+
+species(
+        label='OH',
+        reactive=True,
+        structure=SMILES("[OH]"),
+)
+
+species(
+        label='H',
+        reactive=True,
+        structure=SMILES("[H]"),
+)
+
+
+species(
+        label='O',
+        reactive=True,
+        structure=SMILES("[O]"),
+)
+
+species(
+        label='CH3',
+        reactive=True,
+        structure=SMILES("[CH3]"),
+)
+
+species(
+        label='O2',
+        reactive=True,
+        structure=SMILES("OO"),
+)
+
+# The biofuels of interest
+
+species( # 2
+        label='2,2,4-Trimethylpentane', # iso-otane
+        reactive=True,
+        structure=SMILES("CC(C)CC(C)(C)C"),
+)
+
+species( # 3
+        label='2,4-Dimethylhexane',
+        reactive=True,
+        structure=InChI("InChI=1S/C8H18/c1-5-8(4)6-7(2)3/h7-8H,5-6H2,1-4H3"),
+)
+
+species( # 4
+        label='3-Methylheptane',
+        reactive=True,
+        structure=SMILES("CCCCC(C)CC"),
+)
+
+species( # 5
+        label='2-methyl 2-butanol',
+        reactive=True,
+        structure=SMILES("CCC(C)(C)O"),
+)
+
+species( # 6
+        label='2-Methyl-1-pentanol',
+        reactive=True,
+        structure=SMILES("OCC(C)CCC"),
+)
+
+species( # 7
+        label='2,4-dimethyl-2-heptene',
+        reactive=True,
+        structure=InChI("InChI=1S/C9H18/c1-5-6-9(4)7-8(2)3/h7,9H,5-6H2,1-4H3"),
+)
+
+species( # 8
+        label='methylcyclopentane',
+        reactive=True,
+        structure=InChI("InChI=1S/C6H12/c1-6-4-2-3-5-6/h6H,2-5H2,1H3"),
+)
+
+species( # 9
+        label='Ocimene',
+        reactive=True,
+        structure=SMILES("C=C\C(=C\CCC(=C)C)C"),
+)
+
+species( # 10
+        label='Xylene',
+        reactive=True,
+        structure=SMILES("CC1=CC=C(C)C=C1"),
+)
+
+species( # 11
+        label='Diisobutyl ketone',
+        reactive=True,
+        structure=SMILES("CC(C)CC(=O)CC(C)C"),
+)
+
+species( # 12
+        label='Methyl 1,3-dimethylbutyl ketone',
+        reactive=True,
+        structure=SMILES("CC(C)CC(C)C(=O)C"),
+)
+
+species( # 13
+        label='2,3-di-tert-butoxypropanol',
+        reactive=True,
+        structure=SMILES("CC(C)(C)OCC(CO)OC(C)(C)C"),
+)
+
+
+species( # 14
+        label='2-(1-ethylpropoxy)-propane',
+        reactive=True,
+        structure=SMILES("CCC(CC)OC(C)C"),
+)
+
+species( # 15
+        label='alpha-pinene',
+        reactive=True,
+        structure=SMILES("CC1=CCC2CC1C2(C)C"),
+)
+
+species( # 16
+        label='isoamyl acetate',
+        reactive=True,
+        structure=SMILES("CC(C)CCOC(C)=O"),
+)
+species( # 17
+        label='ethyl isobutyrate',
+        reactive=True,
+        structure=SMILES("CCOC(=O)C(C)C"),
+)
+species( # 18
+        label='2-methylcyclopent-2-en-1-one',
+        reactive=True,
+        structure=SMILES("CC1=CCCC1=O"),
+)
+species( # 19
+        label='2-methyl-5-pentyl tetrahydrofuran',
+        reactive=True,
+        structure=SMILES("CCCCCC1CCC(C)O1"),
+)
+
+species( # 20
+        label='2-methylhept-2-ene',
+        reactive=True,
+        structure=SMILES("CCCCC=C(C)C"),
+)
+
+species( # 21
+        label='2-methylhept-3-ene',
+        reactive=True,
+        structure=SMILES("CCCC=CC(C)C"),
+)
+
+species( # 22
+        label='2-methylhept-4-ene',
+        reactive=True,
+        structure=SMILES("CCC=CCC(C)C"),
+)
+
+species( # 23
+        label='2-methylhept-5-ene',
+        reactive=True,
+        structure=SMILES("CC=CCCC(C)C"),
+)
+
+species( # 24
+        label='2-methylhept-6-ene',
+        reactive=True,
+        structure=SMILES("C=CCCCC(C)C"),
+)
+
+
+# you must list reactor conditions (though this may not effect the output)
+simpleReactor(
+    temperature=(650,'K'),
+    pressure=(10.0,'bar'),
+    initialMoleFractions={
+        '2,2,4-Trimethylpentane': 1,
+    },
+    terminationConversion={
+        '2,2,4-Trimethylpentane': .99,
+    },
+#    terminationConversion={
+#        '2,4-Dimethylhexane': .99,
+#    },
+    terminationTime=(120,'s'),
+)
+
+#optional module if you want to get pressure dependent kinetics.
+
+#pressureDependence(
+#     method='modified strong collision',
+#     maximumGrainSize=(0.5,'kcal/mol'),
+#     minimumNumberOfGrains=250,
+#     temperatures=(300,2200,'K',2),
+#     pressures=(0.01,100,'bar',3),
+#     interpolation=('Chebyshev', 6, 4),
+#     maximumAtoms=15,
+#)
+
+#optional module if you want to limit species produced in reactions.
+
+#generatedSpeciesConstraints(
+#    allowed=['input species','seed mechanisms','reaction libraries'],
+#    maximumCarbonAtoms=4,
+#    maximumOxygenAtoms=7,
+#    maximumNitrogenAtoms=0,
+#    maximumSiliconAtoms=0,
+#    maximumSulfurAtoms=0,
+#    maximumHeavyAtoms=20,
+#    maximumRadicalElectrons=1,
+#)
+
+
+Loading thermodynamics library from BurkeH2O2.py in /Users/nathan/Code/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from primaryThermoLibrary.py in /Users/nathan/Code/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from DFT_QCI_thermo.py in /Users/nathan/Code/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from CBS_QB3_1dHR.py in /Users/nathan/Code/RMG-database/input/thermo/libraries...
+Loading thermodynamics group database from /Users/nathan/Code/RMG-database/input/thermo/groups...
+Loading transport library from GRI-Mech.py in /Users/nathan/Code/RMG-database/input/transport/libraries...
+Loading transport library from PrimaryTransportLibrary.py in /Users/nathan/Code/RMG-database/input/transport/libraries...
+Loading transport group database from /Users/nathan/Code/RMG-database/input/transport/groups...
+Loading the user-specified kinetics families from /Users/nathan/Code/RMG-database/input/kinetics/families
+Loading frequencies group database from /Users/nathan/Code/RMG-database/input/statmech/groups...
+Loading Platts additivity group database from /Users/nathan/Code/RMG-database/input/solvation/groups...
+Adding rate rules from training set in kinetics families...
+Filling in rate rules in kinetics families by averaging...
+NOT generating reactions for unreactive species Ar
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    Ar
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 1 species and 0 reactions
+    The model edge has 29 species and 0 reactions
+
+
+NOT generating reactions for unreactive species He
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    He
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 2 species and 0 reactions
+    The model edge has 29 species and 0 reactions
+
+
+NOT generating reactions for unreactive species Ne
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    Ne
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 3 species and 0 reactions
+    The model edge has 29 species and 0 reactions
+
+
+NOT generating reactions for unreactive species N2
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    N2
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 4 species and 0 reactions
+    The model edge has 29 species and 0 reactions
+
+
+Adding species OOH(1) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    OOH(1)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 5 species and 0 reactions
+    The model edge has 28 species and 0 reactions
+
+
+Adding species OH(2) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    OH(2)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 6 species and 0 reactions
+    The model edge has 27 species and 0 reactions
+
+
+Adding species H(3) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    H(3)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 7 species and 0 reactions
+    The model edge has 26 species and 0 reactions
+
+
+Adding species O(4) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    O(4)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 8 species and 0 reactions
+    The model edge has 25 species and 0 reactions
+
+
+Adding species CH3(5) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH3(5)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 9 species and 0 reactions
+    The model edge has 24 species and 0 reactions
+
+
+Adding species O2(6) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    O2(6)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 10 species and 0 reactions
+    The model edge has 23 species and 0 reactions
+
+
+Adding species 2,2,4-Trimethylpentane(7) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2,2,4-Trimethylpentane(7)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 11 species and 0 reactions
+    The model edge has 22 species and 0 reactions
+
+
+Adding species 2,4-Dimethylhexane(8) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2,4-Dimethylhexane(8)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 12 species and 0 reactions
+    The model edge has 21 species and 0 reactions
+
+
+Adding species 3-Methylheptane(9) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    3-Methylheptane(9)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 13 species and 0 reactions
+    The model edge has 20 species and 0 reactions
+
+
+Adding species 2-methyl 2-butanol(10) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2-methyl 2-butanol(10)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 14 species and 0 reactions
+    The model edge has 19 species and 0 reactions
+
+
+Adding species 2-Methyl-1-pentanol(11) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2-Methyl-1-pentanol(11)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 15 species and 0 reactions
+    The model edge has 18 species and 0 reactions
+
+
+Adding species 2,4-dimethyl-2-heptene(12) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2,4-dimethyl-2-heptene(12)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 16 species and 0 reactions
+    The model edge has 17 species and 0 reactions
+
+
+Adding species methylcyclopentane(13) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    methylcyclopentane(13)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 17 species and 0 reactions
+    The model edge has 16 species and 0 reactions
+
+
+Adding species Ocimene(14) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    Ocimene(14)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 18 species and 0 reactions
+    The model edge has 15 species and 0 reactions
+
+
+Adding species Xylene(15) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    Xylene(15)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 19 species and 0 reactions
+    The model edge has 14 species and 0 reactions
+
+
+Adding species Diisobutyl ketone(16) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    Diisobutyl ketone(16)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 20 species and 0 reactions
+    The model edge has 13 species and 0 reactions
+
+
+Adding species Methyl 1,3-dimethylbutyl ketone(17) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    Methyl 1,3-dimethylbutyl ketone(17)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 21 species and 0 reactions
+    The model edge has 12 species and 0 reactions
+
+
+Adding species 2,3-di-tert-butoxypropanol(18) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2,3-di-tert-butoxypropanol(18)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 22 species and 0 reactions
+    The model edge has 11 species and 0 reactions
+
+
+Adding species 2-(1-ethylpropoxy)-propane(19) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2-(1-ethylpropoxy)-propane(19)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 23 species and 0 reactions
+    The model edge has 10 species and 0 reactions
+
+
+Adding species alpha-pinene(20) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    alpha-pinene(20)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 24 species and 0 reactions
+    The model edge has 9 species and 0 reactions
+
+
+Adding species isoamyl acetate(21) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    isoamyl acetate(21)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 25 species and 0 reactions
+    The model edge has 8 species and 0 reactions
+
+
+Adding species ethyl isobutyrate(22) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    ethyl isobutyrate(22)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 26 species and 0 reactions
+    The model edge has 7 species and 0 reactions
+
+
+Adding species 2-methylcyclopent-2-en-1-one(23) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2-methylcyclopent-2-en-1-one(23)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 27 species and 0 reactions
+    The model edge has 6 species and 0 reactions
+
+
+Adding species 2-methyl-5-pentyl tetrahydrofuran(24) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2-methyl-5-pentyl tetrahydrofuran(24)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 28 species and 0 reactions
+    The model edge has 5 species and 0 reactions
+
+
+Adding species 2-methylhept-2-ene(25) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2-methylhept-2-ene(25)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 29 species and 0 reactions
+    The model edge has 4 species and 0 reactions
+
+
+Adding species 2-methylhept-3-ene(26) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2-methylhept-3-ene(26)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 30 species and 0 reactions
+    The model edge has 3 species and 0 reactions
+
+
+Adding species 2-methylhept-4-ene(27) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2-methylhept-4-ene(27)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 31 species and 0 reactions
+    The model edge has 2 species and 0 reactions
+
+
+Adding species 2-methylhept-5-ene(28) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2-methylhept-5-ene(28)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 32 species and 0 reactions
+    The model edge has 1 species and 0 reactions
+
+
+Adding species 2-methylhept-6-ene(29) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    2-methylhept-6-ene(29)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 33 species and 0 reactions
+    The model edge has 0 species and 0 reactions
+
+
+Generating kinetics for new reactions...
+For reaction CH3(5) + 2-methylcyclopent-2-en-1-one(23) <=> C(33) + CC1=[C]CCC1=O(125), Ea raised from 36.1 to 36.5 kJ/mol to match endothermicity of reaction.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 136 new edge species
+    [O][O](30)
+    O(31)
+    [H][H](32)
+    C(33)
+    [CH2](34)
+    C[C](C)CC(C)(C)C(35)
+    CC(C)[CH]C(C)(C)C(36)
+    [CH2]C(C)(C)CC(C)C(37)
+    [CH2]C(C)CC(C)(C)C(38)
+    CC[C](C)CC(C)C(39)
+    CCC(C)C[C](C)C(40)
+    CCC(C)[CH]C(C)C(41)
+    C[CH]C(C)CC(C)C(42)
+    [CH2]C(C)CC(C)CC(43)
+    [CH2]C(CC)CC(C)C(44)
+    [CH2]CC(C)CC(C)C(45)
+    CCCC[C](C)CC(46)
+    CCC[CH]C(C)CC(47)
+    CC[CH]CC(C)CC(48)
+    C[CH]C(C)CCCC(49)
+    C[CH]CCC(C)CC(50)
+    [CH2]C(CC)CCCC(51)
+    [CH2]CCCC(C)CC(52)
+    [CH2]CC(C)CCCC(53)
+    C[CH]C(C)(C)O(54)
+    [CH2]C(C)(O)CC(55)
+    [CH2]CC(C)(C)O(56)
+    CCC(C)(C)[O](57)
+    CCC[C](C)CO(58)
+    CC[CH]C(C)CO(59)
+    C[CH]CC(C)CO(60)
+    CCCC(C)[CH]O(61)
+    [CH2]C(CO)CCC(62)
+    [CH2]CCC(C)CO(63)
+    CCCC(C)C[O](64)
+    CCC[C](C)C=C(C)C(65)
+    CC[CH]C(C)C=C(C)C(66)
+    C[CH]CC(C)C=C(C)C(67)
+    [CH2]C(C=C(C)C)CCC(68)
+    [CH2]CCC(C)C=C(C)C(69)
+    [CH2]C(C)=CC(C)CCC(70)
+    CCCC(C)[C]=C(C)C(71)
+    C[C]1CCCC1(72)
+    CC1[CH]CCC1(73)
+    CC1C[CH]CC1(74)
+    [CH2]C1CCCC1(75)
+    C=CC(C)=CC[CH]C(=C)C(76)
+    C=CC(C)=C[CH]CC(=C)C(77)
+    [CH2]C(=C)CCC=C(C)C=C(78)
+    [CH2]C(C=C)=CCCC(=C)C(79)
+    C=CC(C)=[C]CCC(=C)C(80)
+    C=[C]C(C)=CCCC(=C)C(81)
+    [CH]=C(C)CCC=C(C)C=C(82)
+    [CH]=CC(C)=CCCC(=C)C(83)
+    [CH2]c1ccc(C)cc1(84)
+    Cc1[c]cc(C)cc1(85)
+    C[C](C)CC(=O)CC(C)C(86)
+    CC(C)[CH]C(=O)CC(C)C(87)
+    [CH2]C(C)CC(=O)CC(C)C(88)
+    C[C](C)CC(C)C(C)=O(89)
+    C[C](CC(C)C)C(C)=O(90)
+    CC(=O)C(C)[CH]C(C)C(91)
+    [CH2]C(C)CC(C)C(C)=O(92)
+    [CH2]C(CC(C)C)C(C)=O(93)
+    [CH2]C(=O)C(C)CC(C)C(94)
+    CC(C)(C)OC[C](CO)OC(C)(C)C(95)
+    CC(C)(C)O[CH]C(CO)OC(C)(C)C(96)
+    CC(C)(C)OCC([CH]O)OC(C)(C)C(97)
+    [CH2]C(C)(C)OCC(CO)OC(C)(C)C(98)
+    [CH2]C(C)(C)OC(CO)COC(C)(C)C(99)
+    CC(C)(C)OCC(C[O])OC(C)(C)C(100)
+    CC[C](CC)OC(C)C(101)
+    CCC(CC)O[C](C)C(102)
+    C[CH]C(CC)OC(C)C(103)
+    [CH2]C(C)OC(CC)CC(104)
+    [CH2]CC(CC)OC(C)C(105)
+    CC1=CC[C]2CC1C2(C)C(106)
+    CC1=CCC2C[C]1C2(C)C(107)
+    CC1=CCC2[CH]C1C2(C)C(108)
+    CC1=C[CH]C2CC1C2(C)C(109)
+    [CH2]C1(C)C2CC=C(C)C1C2(110)
+    [CH2]C1=CCC2CC1C2(C)C(111)
+    CC1=[C]CC2CC1C2(C)C(112)
+    C[C](C)CCOC(C)=O(113)
+    CC(=O)OC[CH]C(C)C(114)
+    CC(=O)O[CH]CC(C)C(115)
+    [CH2]C(C)CCOC(C)=O(116)
+    [CH2]C(=O)OCCC(C)C(117)
+    CCOC(=O)[C](C)C(118)
+    C[CH]OC(=O)C(C)C(119)
+    [CH2]C(C)C(=O)OCC(120)
+    [CH2]COC(=O)C(C)C(121)
+    CC1=C[CH]CC1=O(122)
+    CC1=CC[CH]C1=O(123)
+    [CH2]C1=CCCC1=O(124)
+    CC1=[C]CCC1=O(125)
+    CCCCC[C]1CCC(C)O1(126)
+    CCCCCC1CC[C](C)O1(127)
+    CCCC[CH]C1CCC(C)O1(128)
+    CCCCCC1[CH]CC(C)O1(129)
+    CCCCCC1C[CH]C(C)O1(130)
+    CC[CH]CCC1CCC(C)O1(131)
+    CCC[CH]CC1CCC(C)O1(132)
+    C[CH]CCCC1CCC(C)O1(133)
+    [CH2]C1CCC(CCCCC)O1(134)
+    [CH2]CCCCC1CCC(C)O1(135)
+    CC[CH]CC=C(C)C(136)
+    C[CH]CCC=C(C)C(137)
+    CCC[CH]C=C(C)C(138)
+    [CH2]CCCC=C(C)C(139)
+    [CH2]C(C)=CCCCC(140)
+    CCCC[C]=C(C)C(141)
+    C[CH]CC=CC(C)C(142)
+    CC[CH]C=CC(C)C(143)
+    [CH2]C(C)C=CCCC(144)
+    [CH2]CCC=CC(C)C(145)
+    CCCC=[C]C(C)C(146)
+    CCC[C]=CC(C)C(147)
+    CCC=CC[C](C)C(148)
+    C[CH]C=CCC(C)C(149)
+    [CH2]C(C)CC=CCC(150)
+    [CH2]CC=CCC(C)C(151)
+    CC[C]=CCC(C)C(152)
+    CCC=[C]CC(C)C(153)
+    CC=CCC[C](C)C(154)
+    CC=CC[CH]C(C)C(155)
+    [CH2]C(C)CCC=CC(156)
+    [CH2]C=CCCC(C)C(157)
+    CC=[C]CCC(C)C(158)
+    C[C]=CCCC(C)C(159)
+    C=CCCC[C](C)C(160)
+    C=CCC[CH]C(C)C(161)
+    C=CC[CH]CC(C)C(162)
+    [CH2]C(C)CCCC=C(163)
+    C=[C]CCCC(C)C(164)
+    [CH]=CCCCC(C)C(165)
+Added 1 new core reactions
+    O(4) + O2(6) <=> OOH(1) + OH(2)
+Created 691 new edge reactions
+    OOH(1) + OOH(1) <=> O2(6) + [O][O](30)
+    [O][O](30) + O(31) <=> OOH(1) + OH(2)
+    [O][O](30) + [H][H](32) <=> OOH(1) + H(3)
+    OOH(1) + O(4) <=> OH(2) + [O][O](30)
+    [O][O](30) + C(33) <=> OOH(1) + CH3(5)
+    O2(6) + [CH2](34) <=> OOH(1) + CH3(5)
+    OOH(1) + 2,2,4-Trimethylpentane(7) <=> O2(6) + C[C](C)CC(C)(C)C(35)
+    O2(6) + CC(C)[CH]C(C)(C)C(36) <=> OOH(1) + 2,2,4-Trimethylpentane(7)
+    O2(6) + [CH2]C(C)(C)CC(C)C(37) <=> OOH(1) + 2,2,4-Trimethylpentane(7)
+    O2(6) + [CH2]C(C)CC(C)(C)C(38) <=> OOH(1) + 2,2,4-Trimethylpentane(7)
+    OOH(1) + 2,4-Dimethylhexane(8) <=> O2(6) + CC[C](C)CC(C)C(39)
+    OOH(1) + 2,4-Dimethylhexane(8) <=> O2(6) + CCC(C)C[C](C)C(40)
+    O2(6) + CCC(C)[CH]C(C)C(41) <=> OOH(1) + 2,4-Dimethylhexane(8)
+    O2(6) + C[CH]C(C)CC(C)C(42) <=> OOH(1) + 2,4-Dimethylhexane(8)
+    O2(6) + [CH2]C(C)CC(C)CC(43) <=> OOH(1) + 2,4-Dimethylhexane(8)
+    O2(6) + [CH2]C(CC)CC(C)C(44) <=> OOH(1) + 2,4-Dimethylhexane(8)
+    O2(6) + [CH2]CC(C)CC(C)C(45) <=> OOH(1) + 2,4-Dimethylhexane(8)
+    OOH(1) + 3-Methylheptane(9) <=> O2(6) + CCCC[C](C)CC(46)
+    O2(6) + CCC[CH]C(C)CC(47) <=> OOH(1) + 3-Methylheptane(9)
+    O2(6) + CC[CH]CC(C)CC(48) <=> OOH(1) + 3-Methylheptane(9)
+    O2(6) + C[CH]C(C)CCCC(49) <=> OOH(1) + 3-Methylheptane(9)
+    O2(6) + C[CH]CCC(C)CC(50) <=> OOH(1) + 3-Methylheptane(9)
+    O2(6) + [CH2]C(CC)CCCC(51) <=> OOH(1) + 3-Methylheptane(9)
+    O2(6) + [CH2]CCCC(C)CC(52) <=> OOH(1) + 3-Methylheptane(9)
+    O2(6) + [CH2]CC(C)CCCC(53) <=> OOH(1) + 3-Methylheptane(9)
+    O2(6) + C[CH]C(C)(C)O(54) <=> OOH(1) + 2-methyl 2-butanol(10)
+    O2(6) + [CH2]C(C)(O)CC(55) <=> OOH(1) + 2-methyl 2-butanol(10)
+    O2(6) + [CH2]CC(C)(C)O(56) <=> OOH(1) + 2-methyl 2-butanol(10)
+    O2(6) + CCC(C)(C)[O](57) <=> OOH(1) + 2-methyl 2-butanol(10)
+    O2(6) + CCC[C](C)CO(58) <=> 2-Methyl-1-pentanol(11) + OOH(1)
+    O2(6) + CC[CH]C(C)CO(59) <=> 2-Methyl-1-pentanol(11) + OOH(1)
+    O2(6) + C[CH]CC(C)CO(60) <=> 2-Methyl-1-pentanol(11) + OOH(1)
+    O2(6) + CCCC(C)[CH]O(61) <=> 2-Methyl-1-pentanol(11) + OOH(1)
+    O2(6) + [CH2]C(CO)CCC(62) <=> 2-Methyl-1-pentanol(11) + OOH(1)
+    O2(6) + [CH2]CCC(C)CO(63) <=> 2-Methyl-1-pentanol(11) + OOH(1)
+    O2(6) + CCCC(C)C[O](64) <=> 2-Methyl-1-pentanol(11) + OOH(1)
+    OOH(1) + 2,4-dimethyl-2-heptene(12) <=> O2(6) + CCC[C](C)C=C(C)C(65)
+    O2(6) + CC[CH]C(C)C=C(C)C(66) <=> OOH(1) + 2,4-dimethyl-2-heptene(12)
+    O2(6) + C[CH]CC(C)C=C(C)C(67) <=> OOH(1) + 2,4-dimethyl-2-heptene(12)
+    O2(6) + [CH2]C(C=C(C)C)CCC(68) <=> OOH(1) + 2,4-dimethyl-2-heptene(12)
+    O2(6) + [CH2]CCC(C)C=C(C)C(69) <=> OOH(1) + 2,4-dimethyl-2-heptene(12)
+    OOH(1) + 2,4-dimethyl-2-heptene(12) <=> O2(6) + [CH2]C(C)=CC(C)CCC(70)
+    O2(6) + CCCC(C)[C]=C(C)C(71) <=> OOH(1) + 2,4-dimethyl-2-heptene(12)
+    O2(6) + C[C]1CCCC1(72) <=> OOH(1) + methylcyclopentane(13)
+    O2(6) + CC1[CH]CCC1(73) <=> OOH(1) + methylcyclopentane(13)
+    O2(6) + CC1C[CH]CC1(74) <=> OOH(1) + methylcyclopentane(13)
+    O2(6) + [CH2]C1CCCC1(75) <=> OOH(1) + methylcyclopentane(13)
+    OOH(1) + Ocimene(14) <=> O2(6) + C=CC(C)=CC[CH]C(=C)C(76)
+    OOH(1) + Ocimene(14) <=> O2(6) + C=CC(C)=C[CH]CC(=C)C(77)
+    O2(6) + [CH2]C(=C)CCC=C(C)C=C(78) <=> OOH(1) + Ocimene(14)
+    OOH(1) + Ocimene(14) <=> O2(6) + [CH2]C(C=C)=CCCC(=C)C(79)
+    O2(6) + C=CC(C)=[C]CCC(=C)C(80) <=> OOH(1) + Ocimene(14)
+    O2(6) + C=[C]C(C)=CCCC(=C)C(81) <=> OOH(1) + Ocimene(14)
+    O2(6) + [CH]=C(C)CCC=C(C)C=C(82) <=> OOH(1) + Ocimene(14)
+    O2(6) + [CH]=CC(C)=CCCC(=C)C(83) <=> OOH(1) + Ocimene(14)
+    OOH(1) + Xylene(15) <=> O2(6) + [CH2]c1ccc(C)cc1(84)
+    O2(6) + Cc1[c]cc(C)cc1(85) <=> OOH(1) + Xylene(15)
+    OOH(1) + Diisobutyl ketone(16) <=> O2(6) + C[C](C)CC(=O)CC(C)C(86)
+    O2(6) + CC(C)[CH]C(=O)CC(C)C(87) <=> OOH(1) + Diisobutyl ketone(16)
+    O2(6) + [CH2]C(C)CC(=O)CC(C)C(88) <=> OOH(1) + Diisobutyl ketone(16)
+    OOH(1) + Methyl 1,3-dimethylbutyl ketone(17) <=> O2(6) + C[C](C)CC(C)C(C)=O(89)
+    OOH(1) + Methyl 1,3-dimethylbutyl ketone(17) <=> O2(6) + C[C](CC(C)C)C(C)=O(90)
+    O2(6) + CC(=O)C(C)[CH]C(C)C(91) <=> OOH(1) + Methyl 1,3-dimethylbutyl ketone(17)
+    O2(6) + [CH2]C(C)CC(C)C(C)=O(92) <=> OOH(1) + Methyl 1,3-dimethylbutyl ketone(17)
+    O2(6) + [CH2]C(CC(C)C)C(C)=O(93) <=> OOH(1) + Methyl 1,3-dimethylbutyl ketone(17)
+    O2(6) + [CH2]C(=O)C(C)CC(C)C(94) <=> OOH(1) + Methyl 1,3-dimethylbutyl ketone(17)
+    O2(6) + CC(C)(C)OC[C](CO)OC(C)(C)C(95) <=> OOH(1) + 2,3-di-tert-butoxypropanol(18)
+    O2(6) + CC(C)(C)O[CH]C(CO)OC(C)(C)C(96) <=> OOH(1) + 2,3-di-tert-butoxypropanol(18)
+    O2(6) + CC(C)(C)OCC([CH]O)OC(C)(C)C(97) <=> OOH(1) + 2,3-di-tert-butoxypropanol(18)
+    O2(6) + [CH2]C(C)(C)OCC(CO)OC(C)(C)C(98) <=> OOH(1) + 2,3-di-tert-butoxypropanol(18)
+    O2(6) + [CH2]C(C)(C)OC(CO)COC(C)(C)C(99) <=> OOH(1) + 2,3-di-tert-butoxypropanol(18)
+    O2(6) + CC(C)(C)OCC(C[O])OC(C)(C)C(100) <=> OOH(1) + 2,3-di-tert-butoxypropanol(18)
+    O2(6) + CC[C](CC)OC(C)C(101) <=> OOH(1) + 2-(1-ethylpropoxy)-propane(19)
+    O2(6) + CCC(CC)O[C](C)C(102) <=> OOH(1) + 2-(1-ethylpropoxy)-propane(19)
+    O2(6) + C[CH]C(CC)OC(C)C(103) <=> OOH(1) + 2-(1-ethylpropoxy)-propane(19)
+    O2(6) + [CH2]C(C)OC(CC)CC(104) <=> OOH(1) + 2-(1-ethylpropoxy)-propane(19)
+    O2(6) + [CH2]CC(CC)OC(C)C(105) <=> OOH(1) + 2-(1-ethylpropoxy)-propane(19)
+    OOH(1) + alpha-pinene(20) <=> O2(6) + CC1=CC[C]2CC1C2(C)C(106)
+    OOH(1) + alpha-pinene(20) <=> O2(6) + CC1=CCC2C[C]1C2(C)C(107)
+    O2(6) + CC1=CCC2[CH]C1C2(C)C(108) <=> OOH(1) + alpha-pinene(20)
+    OOH(1) + alpha-pinene(20) <=> O2(6) + CC1=C[CH]C2CC1C2(C)C(109)
+    O2(6) + [CH2]C1(C)C2CC=C(C)C1C2(110) <=> OOH(1) + alpha-pinene(20)
+    OOH(1) + alpha-pinene(20) <=> O2(6) + [CH2]C1=CCC2CC1C2(C)C(111)
+    O2(6) + CC1=[C]CC2CC1C2(C)C(112) <=> OOH(1) + alpha-pinene(20)
+    O2(6) + C[C](C)CCOC(C)=O(113) <=> OOH(1) + isoamyl acetate(21)
+    O2(6) + CC(=O)OC[CH]C(C)C(114) <=> OOH(1) + isoamyl acetate(21)
+    O2(6) + CC(=O)O[CH]CC(C)C(115) <=> OOH(1) + isoamyl acetate(21)
+    O2(6) + [CH2]C(C)CCOC(C)=O(116) <=> OOH(1) + isoamyl acetate(21)
+    O2(6) + [CH2]C(=O)OCCC(C)C(117) <=> OOH(1) + isoamyl acetate(21)
+    O2(6) + CCOC(=O)[C](C)C(118) <=> OOH(1) + ethyl isobutyrate(22)
+    O2(6) + C[CH]OC(=O)C(C)C(119) <=> OOH(1) + ethyl isobutyrate(22)
+    O2(6) + [CH2]C(C)C(=O)OCC(120) <=> OOH(1) + ethyl isobutyrate(22)
+    O2(6) + [CH2]COC(=O)C(C)C(121) <=> OOH(1) + ethyl isobutyrate(22)
+    OOH(1) + 2-methylcyclopent-2-en-1-one(23) <=> O2(6) + CC1=C[CH]CC1=O(122)
+    O2(6) + CC1=CC[CH]C1=O(123) <=> OOH(1) + 2-methylcyclopent-2-en-1-one(23)
+    OOH(1) + 2-methylcyclopent-2-en-1-one(23) <=> O2(6) + [CH2]C1=CCCC1=O(124)
+    O2(6) + CC1=[C]CCC1=O(125) <=> OOH(1) + 2-methylcyclopent-2-en-1-one(23)
+    O2(6) + CCCCC[C]1CCC(C)O1(126) <=> OOH(1) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    O2(6) + CCCCCC1CC[C](C)O1(127) <=> OOH(1) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    O2(6) + CCCC[CH]C1CCC(C)O1(128) <=> OOH(1) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    O2(6) + CCCCCC1[CH]CC(C)O1(129) <=> OOH(1) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    O2(6) + CCCCCC1C[CH]C(C)O1(130) <=> OOH(1) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    O2(6) + CC[CH]CCC1CCC(C)O1(131) <=> OOH(1) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    O2(6) + CCC[CH]CC1CCC(C)O1(132) <=> OOH(1) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    O2(6) + C[CH]CCCC1CCC(C)O1(133) <=> OOH(1) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    O2(6) + [CH2]C1CCC(CCCCC)O1(134) <=> OOH(1) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    O2(6) + [CH2]CCCCC1CCC(C)O1(135) <=> OOH(1) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    O2(6) + CC[CH]CC=C(C)C(136) <=> OOH(1) + 2-methylhept-2-ene(25)
+    O2(6) + C[CH]CCC=C(C)C(137) <=> OOH(1) + 2-methylhept-2-ene(25)
+    OOH(1) + 2-methylhept-2-ene(25) <=> O2(6) + CCC[CH]C=C(C)C(138)
+    O2(6) + [CH2]CCCC=C(C)C(139) <=> OOH(1) + 2-methylhept-2-ene(25)
+    OOH(1) + 2-methylhept-2-ene(25) <=> O2(6) + [CH2]C(C)=CCCCC(140)
+    O2(6) + CCCC[C]=C(C)C(141) <=> OOH(1) + 2-methylhept-2-ene(25)
+    OOH(1) + 2-methylhept-3-ene(26) <=> O2(6) + CCC[CH]C=C(C)C(138)
+    O2(6) + C[CH]CC=CC(C)C(142) <=> OOH(1) + 2-methylhept-3-ene(26)
+    OOH(1) + 2-methylhept-3-ene(26) <=> O2(6) + CC[CH]C=CC(C)C(143)
+    O2(6) + [CH2]C(C)C=CCCC(144) <=> OOH(1) + 2-methylhept-3-ene(26)
+    O2(6) + [CH2]CCC=CC(C)C(145) <=> OOH(1) + 2-methylhept-3-ene(26)
+    O2(6) + CCCC=[C]C(C)C(146) <=> OOH(1) + 2-methylhept-3-ene(26)
+    O2(6) + CCC[C]=CC(C)C(147) <=> OOH(1) + 2-methylhept-3-ene(26)
+    OOH(1) + 2-methylhept-4-ene(27) <=> O2(6) + CCC=CC[C](C)C(148)
+    OOH(1) + 2-methylhept-4-ene(27) <=> O2(6) + CC[CH]C=CC(C)C(143)
+    OOH(1) + 2-methylhept-4-ene(27) <=> O2(6) + C[CH]C=CCC(C)C(149)
+    O2(6) + [CH2]C(C)CC=CCC(150) <=> OOH(1) + 2-methylhept-4-ene(27)
+    O2(6) + [CH2]CC=CCC(C)C(151) <=> OOH(1) + 2-methylhept-4-ene(27)
+    O2(6) + CC[C]=CCC(C)C(152) <=> OOH(1) + 2-methylhept-4-ene(27)
+    O2(6) + CCC=[C]CC(C)C(153) <=> OOH(1) + 2-methylhept-4-ene(27)
+    OOH(1) + 2-methylhept-5-ene(28) <=> O2(6) + CC=CCC[C](C)C(154)
+    O2(6) + CC=CC[CH]C(C)C(155) <=> OOH(1) + 2-methylhept-5-ene(28)
+    OOH(1) + 2-methylhept-5-ene(28) <=> O2(6) + C[CH]C=CCC(C)C(149)
+    O2(6) + [CH2]C(C)CCC=CC(156) <=> OOH(1) + 2-methylhept-5-ene(28)
+    O2(6) + [CH2]C=CCCC(C)C(157) <=> OOH(1) + 2-methylhept-5-ene(28)
+    O2(6) + CC=[C]CCC(C)C(158) <=> OOH(1) + 2-methylhept-5-ene(28)
+    O2(6) + C[C]=CCCC(C)C(159) <=> OOH(1) + 2-methylhept-5-ene(28)
+    OOH(1) + 2-methylhept-6-ene(29) <=> O2(6) + C=CCCC[C](C)C(160)
+    O2(6) + C=CCC[CH]C(C)C(161) <=> OOH(1) + 2-methylhept-6-ene(29)
+    O2(6) + C=CC[CH]CC(C)C(162) <=> OOH(1) + 2-methylhept-6-ene(29)
+    OOH(1) + 2-methylhept-6-ene(29) <=> O2(6) + [CH2]C=CCCC(C)C(157)
+    O2(6) + [CH2]C(C)CCCC=C(163) <=> OOH(1) + 2-methylhept-6-ene(29)
+    O2(6) + C=[C]CCCC(C)C(164) <=> OOH(1) + 2-methylhept-6-ene(29)
+    O2(6) + [CH]=CCCCC(C)C(165) <=> OOH(1) + 2-methylhept-6-ene(29)
+    O(4) + O(31) <=> OH(2) + OH(2)
+    OH(2) + H(3) <=> O(4) + [H][H](32)
+    OH(2) + CH3(5) <=> O(4) + C(33)
+    OH(2) + CH3(5) <=> O(31) + [CH2](34)
+    OH(2) + O2(6) <=> OOH(1) + O(31)
+    2,2,4-Trimethylpentane(7) + OH(2) <=> O(31) + C[C](C)CC(C)(C)C(35)
+    2,2,4-Trimethylpentane(7) + OH(2) <=> O(31) + CC(C)[CH]C(C)(C)C(36)
+    2,2,4-Trimethylpentane(7) + OH(2) <=> O(31) + [CH2]C(C)(C)CC(C)C(37)
+    O(31) + [CH2]C(C)CC(C)(C)C(38) <=> 2,2,4-Trimethylpentane(7) + OH(2)
+    2,4-Dimethylhexane(8) + OH(2) <=> O(31) + CC[C](C)CC(C)C(39)
+    2,4-Dimethylhexane(8) + OH(2) <=> O(31) + CCC(C)C[C](C)C(40)
+    2,4-Dimethylhexane(8) + OH(2) <=> O(31) + CCC(C)[CH]C(C)C(41)
+    2,4-Dimethylhexane(8) + OH(2) <=> O(31) + C[CH]C(C)CC(C)C(42)
+    O(31) + [CH2]C(C)CC(C)CC(43) <=> 2,4-Dimethylhexane(8) + OH(2)
+    O(31) + [CH2]C(CC)CC(C)C(44) <=> 2,4-Dimethylhexane(8) + OH(2)
+    O(31) + [CH2]CC(C)CC(C)C(45) <=> 2,4-Dimethylhexane(8) + OH(2)
+    OH(2) + 3-Methylheptane(9) <=> O(31) + CCCC[C](C)CC(46)
+    OH(2) + 3-Methylheptane(9) <=> O(31) + CCC[CH]C(C)CC(47)
+    OH(2) + 3-Methylheptane(9) <=> O(31) + CC[CH]CC(C)CC(48)
+    OH(2) + 3-Methylheptane(9) <=> O(31) + C[CH]C(C)CCCC(49)
+    OH(2) + 3-Methylheptane(9) <=> O(31) + C[CH]CCC(C)CC(50)
+    O(31) + [CH2]C(CC)CCCC(51) <=> OH(2) + 3-Methylheptane(9)
+    O(31) + [CH2]CCCC(C)CC(52) <=> OH(2) + 3-Methylheptane(9)
+    O(31) + [CH2]CC(C)CCCC(53) <=> OH(2) + 3-Methylheptane(9)
+    2-methyl 2-butanol(10) + OH(2) <=> O(31) + C[CH]C(C)(C)O(54)
+    2-methyl 2-butanol(10) + OH(2) <=> O(31) + [CH2]C(C)(O)CC(55)
+    2-methyl 2-butanol(10) + OH(2) <=> O(31) + [CH2]CC(C)(C)O(56)
+    2-methyl 2-butanol(10) + OH(2) <=> O(31) + CCC(C)(C)[O](57)
+    2-Methyl-1-pentanol(11) + OH(2) <=> O(31) + CCC[C](C)CO(58)
+    2-Methyl-1-pentanol(11) + OH(2) <=> O(31) + CC[CH]C(C)CO(59)
+    2-Methyl-1-pentanol(11) + OH(2) <=> O(31) + C[CH]CC(C)CO(60)
+    2-Methyl-1-pentanol(11) + OH(2) <=> O(31) + CCCC(C)[CH]O(61)
+    2-Methyl-1-pentanol(11) + OH(2) <=> O(31) + [CH2]C(CO)CCC(62)
+    O(31) + [CH2]CCC(C)CO(63) <=> 2-Methyl-1-pentanol(11) + OH(2)
+    2-Methyl-1-pentanol(11) + OH(2) <=> O(31) + CCCC(C)C[O](64)
+    2,4-dimethyl-2-heptene(12) + OH(2) <=> O(31) + CCC[C](C)C=C(C)C(65)
+    2,4-dimethyl-2-heptene(12) + OH(2) <=> O(31) + CC[CH]C(C)C=C(C)C(66)
+    2,4-dimethyl-2-heptene(12) + OH(2) <=> O(31) + C[CH]CC(C)C=C(C)C(67)
+    2,4-dimethyl-2-heptene(12) + OH(2) <=> O(31) + [CH2]C(C=C(C)C)CCC(68)
+    O(31) + [CH2]CCC(C)C=C(C)C(69) <=> 2,4-dimethyl-2-heptene(12) + OH(2)
+    2,4-dimethyl-2-heptene(12) + OH(2) <=> O(31) + [CH2]C(C)=CC(C)CCC(70)
+    2,4-dimethyl-2-heptene(12) + OH(2) <=> O(31) + CCCC(C)[C]=C(C)C(71)
+    OH(2) + methylcyclopentane(13) <=> O(31) + C[C]1CCCC1(72)
+    OH(2) + methylcyclopentane(13) <=> O(31) + CC1[CH]CCC1(73)
+    OH(2) + methylcyclopentane(13) <=> O(31) + CC1C[CH]CC1(74)
+    O(31) + [CH2]C1CCCC1(75) <=> OH(2) + methylcyclopentane(13)
+    OH(2) + Ocimene(14) <=> O(31) + C=CC(C)=CC[CH]C(=C)C(76)
+    OH(2) + Ocimene(14) <=> O(31) + C=CC(C)=C[CH]CC(=C)C(77)
+    OH(2) + Ocimene(14) <=> O(31) + [CH2]C(=C)CCC=C(C)C=C(78)
+    OH(2) + Ocimene(14) <=> O(31) + [CH2]C(C=C)=CCCC(=C)C(79)
+    OH(2) + Ocimene(14) <=> O(31) + C=CC(C)=[C]CCC(=C)C(80)
+    OH(2) + Ocimene(14) <=> O(31) + C=[C]C(C)=CCCC(=C)C(81)
+    OH(2) + Ocimene(14) <=> O(31) + [CH]=C(C)CCC=C(C)C=C(82)
+    O(31) + [CH]=CC(C)=CCCC(=C)C(83) <=> OH(2) + Ocimene(14)
+    OH(2) + Xylene(15) <=> O(31) + [CH2]c1ccc(C)cc1(84)
+    OH(2) + Xylene(15) <=> O(31) + Cc1[c]cc(C)cc1(85)
+    OH(2) + Diisobutyl ketone(16) <=> O(31) + C[C](C)CC(=O)CC(C)C(86)
+    OH(2) + Diisobutyl ketone(16) <=> O(31) + CC(C)[CH]C(=O)CC(C)C(87)
+    O(31) + [CH2]C(C)CC(=O)CC(C)C(88) <=> OH(2) + Diisobutyl ketone(16)
+    OH(2) + Methyl 1,3-dimethylbutyl ketone(17) <=> O(31) + C[C](C)CC(C)C(C)=O(89)
+    OH(2) + Methyl 1,3-dimethylbutyl ketone(17) <=> O(31) + C[C](CC(C)C)C(C)=O(90)
+    OH(2) + Methyl 1,3-dimethylbutyl ketone(17) <=> O(31) + CC(=O)C(C)[CH]C(C)C(91)
+    O(31) + [CH2]C(C)CC(C)C(C)=O(92) <=> OH(2) + Methyl 1,3-dimethylbutyl ketone(17)
+    OH(2) + Methyl 1,3-dimethylbutyl ketone(17) <=> O(31) + [CH2]C(CC(C)C)C(C)=O(93)
+    OH(2) + Methyl 1,3-dimethylbutyl ketone(17) <=> O(31) + [CH2]C(=O)C(C)CC(C)C(94)
+    OH(2) + 2,3-di-tert-butoxypropanol(18) <=> O(31) + CC(C)(C)OC[C](CO)OC(C)(C)C(95)
+    OH(2) + 2,3-di-tert-butoxypropanol(18) <=> O(31) + CC(C)(C)O[CH]C(CO)OC(C)(C)C(96)
+    OH(2) + 2,3-di-tert-butoxypropanol(18) <=> O(31) + CC(C)(C)OCC([CH]O)OC(C)(C)C(97)
+    OH(2) + 2,3-di-tert-butoxypropanol(18) <=> O(31) + [CH2]C(C)(C)OCC(CO)OC(C)(C)C(98)
+    OH(2) + 2,3-di-tert-butoxypropanol(18) <=> O(31) + [CH2]C(C)(C)OC(CO)COC(C)(C)C(99)
+    OH(2) + 2,3-di-tert-butoxypropanol(18) <=> O(31) + CC(C)(C)OCC(C[O])OC(C)(C)C(100)
+    OH(2) + 2-(1-ethylpropoxy)-propane(19) <=> O(31) + CC[C](CC)OC(C)C(101)
+    OH(2) + 2-(1-ethylpropoxy)-propane(19) <=> O(31) + CCC(CC)O[C](C)C(102)
+    OH(2) + 2-(1-ethylpropoxy)-propane(19) <=> O(31) + C[CH]C(CC)OC(C)C(103)
+    O(31) + [CH2]C(C)OC(CC)CC(104) <=> OH(2) + 2-(1-ethylpropoxy)-propane(19)
+    OH(2) + 2-(1-ethylpropoxy)-propane(19) <=> O(31) + [CH2]CC(CC)OC(C)C(105)
+    OH(2) + alpha-pinene(20) <=> O(31) + CC1=CC[C]2CC1C2(C)C(106)
+    OH(2) + alpha-pinene(20) <=> O(31) + CC1=CCC2C[C]1C2(C)C(107)
+    OH(2) + alpha-pinene(20) <=> O(31) + CC1=CCC2[CH]C1C2(C)C(108)
+    OH(2) + alpha-pinene(20) <=> O(31) + CC1=C[CH]C2CC1C2(C)C(109)
+    OH(2) + alpha-pinene(20) <=> O(31) + [CH2]C1(C)C2CC=C(C)C1C2(110)
+    OH(2) + alpha-pinene(20) <=> O(31) + [CH2]C1=CCC2CC1C2(C)C(111)
+    OH(2) + alpha-pinene(20) <=> O(31) + CC1=[C]CC2CC1C2(C)C(112)
+    OH(2) + isoamyl acetate(21) <=> O(31) + C[C](C)CCOC(C)=O(113)
+    OH(2) + isoamyl acetate(21) <=> O(31) + CC(=O)OC[CH]C(C)C(114)
+    OH(2) + isoamyl acetate(21) <=> O(31) + CC(=O)O[CH]CC(C)C(115)
+    O(31) + [CH2]C(C)CCOC(C)=O(116) <=> OH(2) + isoamyl acetate(21)
+    OH(2) + isoamyl acetate(21) <=> O(31) + [CH2]C(=O)OCCC(C)C(117)
+    OH(2) + ethyl isobutyrate(22) <=> O(31) + CCOC(=O)[C](C)C(118)
+    OH(2) + ethyl isobutyrate(22) <=> O(31) + C[CH]OC(=O)C(C)C(119)
+    OH(2) + ethyl isobutyrate(22) <=> O(31) + [CH2]C(C)C(=O)OCC(120)
+    O(31) + [CH2]COC(=O)C(C)C(121) <=> OH(2) + ethyl isobutyrate(22)
+    OH(2) + 2-methylcyclopent-2-en-1-one(23) <=> O(31) + CC1=C[CH]CC1=O(122)
+    OH(2) + 2-methylcyclopent-2-en-1-one(23) <=> O(31) + CC1=CC[CH]C1=O(123)
+    OH(2) + 2-methylcyclopent-2-en-1-one(23) <=> O(31) + [CH2]C1=CCCC1=O(124)
+    OH(2) + 2-methylcyclopent-2-en-1-one(23) <=> O(31) + CC1=[C]CCC1=O(125)
+    OH(2) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> O(31) + CCCCC[C]1CCC(C)O1(126)
+    OH(2) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> O(31) + CCCCCC1CC[C](C)O1(127)
+    OH(2) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> O(31) + CCCC[CH]C1CCC(C)O1(128)
+    OH(2) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> O(31) + CCCCCC1[CH]CC(C)O1(129)
+    OH(2) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> O(31) + CCCCCC1C[CH]C(C)O1(130)
+    OH(2) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> O(31) + CC[CH]CCC1CCC(C)O1(131)
+    OH(2) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> O(31) + CCC[CH]CC1CCC(C)O1(132)
+    OH(2) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> O(31) + C[CH]CCCC1CCC(C)O1(133)
+    OH(2) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> O(31) + [CH2]C1CCC(CCCCC)O1(134)
+    O(31) + [CH2]CCCCC1CCC(C)O1(135) <=> OH(2) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    OH(2) + 2-methylhept-2-ene(25) <=> O(31) + CC[CH]CC=C(C)C(136)
+    OH(2) + 2-methylhept-2-ene(25) <=> O(31) + C[CH]CCC=C(C)C(137)
+    OH(2) + 2-methylhept-2-ene(25) <=> O(31) + CCC[CH]C=C(C)C(138)
+    O(31) + [CH2]CCCC=C(C)C(139) <=> OH(2) + 2-methylhept-2-ene(25)
+    OH(2) + 2-methylhept-2-ene(25) <=> O(31) + [CH2]C(C)=CCCCC(140)
+    OH(2) + 2-methylhept-2-ene(25) <=> O(31) + CCCC[C]=C(C)C(141)
+    OH(2) + 2-methylhept-3-ene(26) <=> O(31) + CCC[CH]C=C(C)C(138)
+    OH(2) + 2-methylhept-3-ene(26) <=> O(31) + C[CH]CC=CC(C)C(142)
+    OH(2) + 2-methylhept-3-ene(26) <=> O(31) + CC[CH]C=CC(C)C(143)
+    OH(2) + 2-methylhept-3-ene(26) <=> O(31) + [CH2]C(C)C=CCCC(144)
+    O(31) + [CH2]CCC=CC(C)C(145) <=> OH(2) + 2-methylhept-3-ene(26)
+    OH(2) + 2-methylhept-3-ene(26) <=> O(31) + CCCC=[C]C(C)C(146)
+    OH(2) + 2-methylhept-3-ene(26) <=> O(31) + CCC[C]=CC(C)C(147)
+    OH(2) + 2-methylhept-4-ene(27) <=> O(31) + CCC=CC[C](C)C(148)
+    OH(2) + 2-methylhept-4-ene(27) <=> O(31) + CC[CH]C=CC(C)C(143)
+    OH(2) + 2-methylhept-4-ene(27) <=> O(31) + C[CH]C=CCC(C)C(149)
+    O(31) + [CH2]C(C)CC=CCC(150) <=> OH(2) + 2-methylhept-4-ene(27)
+    OH(2) + 2-methylhept-4-ene(27) <=> O(31) + [CH2]CC=CCC(C)C(151)
+    OH(2) + 2-methylhept-4-ene(27) <=> O(31) + CC[C]=CCC(C)C(152)
+    OH(2) + 2-methylhept-4-ene(27) <=> O(31) + CCC=[C]CC(C)C(153)
+    OH(2) + 2-methylhept-5-ene(28) <=> O(31) + CC=CCC[C](C)C(154)
+    OH(2) + 2-methylhept-5-ene(28) <=> O(31) + CC=CC[CH]C(C)C(155)
+    OH(2) + 2-methylhept-5-ene(28) <=> O(31) + C[CH]C=CCC(C)C(149)
+    O(31) + [CH2]C(C)CCC=CC(156) <=> OH(2) + 2-methylhept-5-ene(28)
+    OH(2) + 2-methylhept-5-ene(28) <=> O(31) + [CH2]C=CCCC(C)C(157)
+    OH(2) + 2-methylhept-5-ene(28) <=> O(31) + CC=[C]CCC(C)C(158)
+    OH(2) + 2-methylhept-5-ene(28) <=> O(31) + C[C]=CCCC(C)C(159)
+    OH(2) + 2-methylhept-6-ene(29) <=> O(31) + C=CCCC[C](C)C(160)
+    OH(2) + 2-methylhept-6-ene(29) <=> O(31) + C=CCC[CH]C(C)C(161)
+    OH(2) + 2-methylhept-6-ene(29) <=> O(31) + C=CC[CH]CC(C)C(162)
+    OH(2) + 2-methylhept-6-ene(29) <=> O(31) + [CH2]C=CCCC(C)C(157)
+    O(31) + [CH2]C(C)CCCC=C(163) <=> OH(2) + 2-methylhept-6-ene(29)
+    OH(2) + 2-methylhept-6-ene(29) <=> O(31) + C=[C]CCCC(C)C(164)
+    OH(2) + 2-methylhept-6-ene(29) <=> O(31) + [CH]=CCCCC(C)C(165)
+    [H][H](32) + [CH2](34) <=> H(3) + CH3(5)
+    H(3) + O2(6) <=> OOH(1) + [H][H](32)
+    2,2,4-Trimethylpentane(7) + H(3) <=> [H][H](32) + C[C](C)CC(C)(C)C(35)
+    2,2,4-Trimethylpentane(7) + H(3) <=> [H][H](32) + CC(C)[CH]C(C)(C)C(36)
+    2,2,4-Trimethylpentane(7) + H(3) <=> [H][H](32) + [CH2]C(C)(C)CC(C)C(37)
+    [H][H](32) + [CH2]C(C)CC(C)(C)C(38) <=> 2,2,4-Trimethylpentane(7) + H(3)
+    2,4-Dimethylhexane(8) + H(3) <=> [H][H](32) + CC[C](C)CC(C)C(39)
+    2,4-Dimethylhexane(8) + H(3) <=> [H][H](32) + CCC(C)C[C](C)C(40)
+    2,4-Dimethylhexane(8) + H(3) <=> [H][H](32) + CCC(C)[CH]C(C)C(41)
+    2,4-Dimethylhexane(8) + H(3) <=> [H][H](32) + C[CH]C(C)CC(C)C(42)
+    [H][H](32) + [CH2]C(C)CC(C)CC(43) <=> 2,4-Dimethylhexane(8) + H(3)
+    [H][H](32) + [CH2]C(CC)CC(C)C(44) <=> 2,4-Dimethylhexane(8) + H(3)
+    [H][H](32) + [CH2]CC(C)CC(C)C(45) <=> 2,4-Dimethylhexane(8) + H(3)
+    H(3) + 3-Methylheptane(9) <=> [H][H](32) + CCCC[C](C)CC(46)
+    H(3) + 3-Methylheptane(9) <=> [H][H](32) + CCC[CH]C(C)CC(47)
+    H(3) + 3-Methylheptane(9) <=> [H][H](32) + CC[CH]CC(C)CC(48)
+    H(3) + 3-Methylheptane(9) <=> [H][H](32) + C[CH]C(C)CCCC(49)
+    H(3) + 3-Methylheptane(9) <=> [H][H](32) + C[CH]CCC(C)CC(50)
+    [H][H](32) + [CH2]C(CC)CCCC(51) <=> H(3) + 3-Methylheptane(9)
+    [H][H](32) + [CH2]CCCC(C)CC(52) <=> H(3) + 3-Methylheptane(9)
+    [H][H](32) + [CH2]CC(C)CCCC(53) <=> H(3) + 3-Methylheptane(9)
+    [H][H](32) + C[CH]C(C)(C)O(54) <=> 2-methyl 2-butanol(10) + H(3)
+    2-methyl 2-butanol(10) + H(3) <=> [H][H](32) + [CH2]C(C)(O)CC(55)
+    2-methyl 2-butanol(10) + H(3) <=> [H][H](32) + [CH2]CC(C)(C)O(56)
+    [H][H](32) + CCC(C)(C)[O](57) <=> 2-methyl 2-butanol(10) + H(3)
+    2-Methyl-1-pentanol(11) + H(3) <=> [H][H](32) + CCC[C](C)CO(58)
+    [H][H](32) + CC[CH]C(C)CO(59) <=> 2-Methyl-1-pentanol(11) + H(3)
+    2-Methyl-1-pentanol(11) + H(3) <=> [H][H](32) + C[CH]CC(C)CO(60)
+    2-Methyl-1-pentanol(11) + H(3) <=> [H][H](32) + CCCC(C)[CH]O(61)
+    2-Methyl-1-pentanol(11) + H(3) <=> [H][H](32) + [CH2]C(CO)CCC(62)
+    [H][H](32) + [CH2]CCC(C)CO(63) <=> 2-Methyl-1-pentanol(11) + H(3)
+    [H][H](32) + CCCC(C)C[O](64) <=> 2-Methyl-1-pentanol(11) + H(3)
+    2,4-dimethyl-2-heptene(12) + H(3) <=> [H][H](32) + CCC[C](C)C=C(C)C(65)
+    2,4-dimethyl-2-heptene(12) + H(3) <=> [H][H](32) + CC[CH]C(C)C=C(C)C(66)
+    2,4-dimethyl-2-heptene(12) + H(3) <=> [H][H](32) + C[CH]CC(C)C=C(C)C(67)
+    2,4-dimethyl-2-heptene(12) + H(3) <=> [H][H](32) + [CH2]C(C=C(C)C)CCC(68)
+    [H][H](32) + [CH2]CCC(C)C=C(C)C(69) <=> 2,4-dimethyl-2-heptene(12) + H(3)
+    2,4-dimethyl-2-heptene(12) + H(3) <=> [H][H](32) + [CH2]C(C)=CC(C)CCC(70)
+    2,4-dimethyl-2-heptene(12) + H(3) <=> [H][H](32) + CCCC(C)[C]=C(C)C(71)
+    [H][H](32) + C[C]1CCCC1(72) <=> H(3) + methylcyclopentane(13)
+    [H][H](32) + CC1[CH]CCC1(73) <=> H(3) + methylcyclopentane(13)
+    [H][H](32) + CC1C[CH]CC1(74) <=> H(3) + methylcyclopentane(13)
+    [H][H](32) + [CH2]C1CCCC1(75) <=> H(3) + methylcyclopentane(13)
+    H(3) + Ocimene(14) <=> [H][H](32) + C=CC(C)=CC[CH]C(=C)C(76)
+    H(3) + Ocimene(14) <=> [H][H](32) + C=CC(C)=C[CH]CC(=C)C(77)
+    H(3) + Ocimene(14) <=> [H][H](32) + [CH2]C(=C)CCC=C(C)C=C(78)
+    H(3) + Ocimene(14) <=> [H][H](32) + [CH2]C(C=C)=CCCC(=C)C(79)
+    H(3) + Ocimene(14) <=> [H][H](32) + C=CC(C)=[C]CCC(=C)C(80)
+    H(3) + Ocimene(14) <=> [H][H](32) + C=[C]C(C)=CCCC(=C)C(81)
+    [H][H](32) + [CH]=C(C)CCC=C(C)C=C(82) <=> H(3) + Ocimene(14)
+    [H][H](32) + [CH]=CC(C)=CCCC(=C)C(83) <=> H(3) + Ocimene(14)
+    H(3) + Xylene(15) <=> [H][H](32) + [CH2]c1ccc(C)cc1(84)
+    [H][H](32) + Cc1[c]cc(C)cc1(85) <=> H(3) + Xylene(15)
+    H(3) + Diisobutyl ketone(16) <=> [H][H](32) + C[C](C)CC(=O)CC(C)C(86)
+    H(3) + Diisobutyl ketone(16) <=> [H][H](32) + CC(C)[CH]C(=O)CC(C)C(87)
+    [H][H](32) + [CH2]C(C)CC(=O)CC(C)C(88) <=> H(3) + Diisobutyl ketone(16)
+    H(3) + Methyl 1,3-dimethylbutyl ketone(17) <=> [H][H](32) + C[C](C)CC(C)C(C)=O(89)
+    H(3) + Methyl 1,3-dimethylbutyl ketone(17) <=> [H][H](32) + C[C](CC(C)C)C(C)=O(90)
+    H(3) + Methyl 1,3-dimethylbutyl ketone(17) <=> [H][H](32) + CC(=O)C(C)[CH]C(C)C(91)
+    [H][H](32) + [CH2]C(C)CC(C)C(C)=O(92) <=> H(3) + Methyl 1,3-dimethylbutyl ketone(17)
+    H(3) + Methyl 1,3-dimethylbutyl ketone(17) <=> [H][H](32) + [CH2]C(CC(C)C)C(C)=O(93)
+    H(3) + Methyl 1,3-dimethylbutyl ketone(17) <=> [H][H](32) + [CH2]C(=O)C(C)CC(C)C(94)
+    H(3) + 2,3-di-tert-butoxypropanol(18) <=> [H][H](32) + CC(C)(C)OC[C](CO)OC(C)(C)C(95)
+    H(3) + 2,3-di-tert-butoxypropanol(18) <=> [H][H](32) + CC(C)(C)O[CH]C(CO)OC(C)(C)C(96)
+    H(3) + 2,3-di-tert-butoxypropanol(18) <=> [H][H](32) + CC(C)(C)OCC([CH]O)OC(C)(C)C(97)
+    H(3) + 2,3-di-tert-butoxypropanol(18) <=> [H][H](32) + [CH2]C(C)(C)OCC(CO)OC(C)(C)C(98)
+    H(3) + 2,3-di-tert-butoxypropanol(18) <=> [H][H](32) + [CH2]C(C)(C)OC(CO)COC(C)(C)C(99)
+    [H][H](32) + CC(C)(C)OCC(C[O])OC(C)(C)C(100) <=> H(3) + 2,3-di-tert-butoxypropanol(18)
+    H(3) + 2-(1-ethylpropoxy)-propane(19) <=> [H][H](32) + CC[C](CC)OC(C)C(101)
+    H(3) + 2-(1-ethylpropoxy)-propane(19) <=> [H][H](32) + CCC(CC)O[C](C)C(102)
+    [H][H](32) + C[CH]C(CC)OC(C)C(103) <=> H(3) + 2-(1-ethylpropoxy)-propane(19)
+    H(3) + 2-(1-ethylpropoxy)-propane(19) <=> [H][H](32) + [CH2]C(C)OC(CC)CC(104)
+    H(3) + 2-(1-ethylpropoxy)-propane(19) <=> [H][H](32) + [CH2]CC(CC)OC(C)C(105)
+    H(3) + alpha-pinene(20) <=> [H][H](32) + CC1=CC[C]2CC1C2(C)C(106)
+    H(3) + alpha-pinene(20) <=> [H][H](32) + CC1=CCC2C[C]1C2(C)C(107)
+    H(3) + alpha-pinene(20) <=> [H][H](32) + CC1=CCC2[CH]C1C2(C)C(108)
+    H(3) + alpha-pinene(20) <=> [H][H](32) + CC1=C[CH]C2CC1C2(C)C(109)
+    H(3) + alpha-pinene(20) <=> [H][H](32) + [CH2]C1(C)C2CC=C(C)C1C2(110)
+    H(3) + alpha-pinene(20) <=> [H][H](32) + [CH2]C1=CCC2CC1C2(C)C(111)
+    H(3) + alpha-pinene(20) <=> [H][H](32) + CC1=[C]CC2CC1C2(C)C(112)
+    [H][H](32) + C[C](C)CCOC(C)=O(113) <=> H(3) + isoamyl acetate(21)
+    [H][H](32) + CC(=O)OC[CH]C(C)C(114) <=> H(3) + isoamyl acetate(21)
+    H(3) + isoamyl acetate(21) <=> [H][H](32) + CC(=O)O[CH]CC(C)C(115)
+    [H][H](32) + [CH2]C(C)CCOC(C)=O(116) <=> H(3) + isoamyl acetate(21)
+    H(3) + isoamyl acetate(21) <=> [H][H](32) + [CH2]C(=O)OCCC(C)C(117)
+    H(3) + ethyl isobutyrate(22) <=> [H][H](32) + CCOC(=O)[C](C)C(118)
+    H(3) + ethyl isobutyrate(22) <=> [H][H](32) + C[CH]OC(=O)C(C)C(119)
+    H(3) + ethyl isobutyrate(22) <=> [H][H](32) + [CH2]C(C)C(=O)OCC(120)
+    [H][H](32) + [CH2]COC(=O)C(C)C(121) <=> H(3) + ethyl isobutyrate(22)
+    H(3) + 2-methylcyclopent-2-en-1-one(23) <=> [H][H](32) + CC1=C[CH]CC1=O(122)
+    H(3) + 2-methylcyclopent-2-en-1-one(23) <=> [H][H](32) + CC1=CC[CH]C1=O(123)
+    H(3) + 2-methylcyclopent-2-en-1-one(23) <=> [H][H](32) + [CH2]C1=CCCC1=O(124)
+    H(3) + 2-methylcyclopent-2-en-1-one(23) <=> [H][H](32) + CC1=[C]CCC1=O(125)
+    H(3) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> [H][H](32) + CCCCC[C]1CCC(C)O1(126)
+    H(3) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> [H][H](32) + CCCCCC1CC[C](C)O1(127)
+    [H][H](32) + CCCC[CH]C1CCC(C)O1(128) <=> H(3) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    [H][H](32) + CCCCCC1[CH]CC(C)O1(129) <=> H(3) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    [H][H](32) + CCCCCC1C[CH]C(C)O1(130) <=> H(3) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    H(3) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> [H][H](32) + CC[CH]CCC1CCC(C)O1(131)
+    [H][H](32) + CCC[CH]CC1CCC(C)O1(132) <=> H(3) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    H(3) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> [H][H](32) + C[CH]CCCC1CCC(C)O1(133)
+    H(3) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> [H][H](32) + [CH2]C1CCC(CCCCC)O1(134)
+    [H][H](32) + [CH2]CCCCC1CCC(C)O1(135) <=> H(3) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    H(3) + 2-methylhept-2-ene(25) <=> [H][H](32) + CC[CH]CC=C(C)C(136)
+    H(3) + 2-methylhept-2-ene(25) <=> [H][H](32) + C[CH]CCC=C(C)C(137)
+    H(3) + 2-methylhept-2-ene(25) <=> [H][H](32) + CCC[CH]C=C(C)C(138)
+    [H][H](32) + [CH2]CCCC=C(C)C(139) <=> H(3) + 2-methylhept-2-ene(25)
+    H(3) + 2-methylhept-2-ene(25) <=> [H][H](32) + [CH2]C(C)=CCCCC(140)
+    H(3) + 2-methylhept-2-ene(25) <=> [H][H](32) + CCCC[C]=C(C)C(141)
+    H(3) + 2-methylhept-3-ene(26) <=> [H][H](32) + CCC[CH]C=C(C)C(138)
+    H(3) + 2-methylhept-3-ene(26) <=> [H][H](32) + C[CH]CC=CC(C)C(142)
+    H(3) + 2-methylhept-3-ene(26) <=> [H][H](32) + CC[CH]C=CC(C)C(143)
+    H(3) + 2-methylhept-3-ene(26) <=> [H][H](32) + [CH2]C(C)C=CCCC(144)
+    [H][H](32) + [CH2]CCC=CC(C)C(145) <=> H(3) + 2-methylhept-3-ene(26)
+    H(3) + 2-methylhept-3-ene(26) <=> [H][H](32) + CCCC=[C]C(C)C(146)
+    H(3) + 2-methylhept-3-ene(26) <=> [H][H](32) + CCC[C]=CC(C)C(147)
+    H(3) + 2-methylhept-4-ene(27) <=> [H][H](32) + CCC=CC[C](C)C(148)
+    H(3) + 2-methylhept-4-ene(27) <=> [H][H](32) + CC[CH]C=CC(C)C(143)
+    H(3) + 2-methylhept-4-ene(27) <=> [H][H](32) + C[CH]C=CCC(C)C(149)
+    [H][H](32) + [CH2]C(C)CC=CCC(150) <=> H(3) + 2-methylhept-4-ene(27)
+    H(3) + 2-methylhept-4-ene(27) <=> [H][H](32) + [CH2]CC=CCC(C)C(151)
+    H(3) + 2-methylhept-4-ene(27) <=> [H][H](32) + CC[C]=CCC(C)C(152)
+    H(3) + 2-methylhept-4-ene(27) <=> [H][H](32) + CCC=[C]CC(C)C(153)
+    H(3) + 2-methylhept-5-ene(28) <=> [H][H](32) + CC=CCC[C](C)C(154)
+    H(3) + 2-methylhept-5-ene(28) <=> [H][H](32) + CC=CC[CH]C(C)C(155)
+    H(3) + 2-methylhept-5-ene(28) <=> [H][H](32) + C[CH]C=CCC(C)C(149)
+    [H][H](32) + [CH2]C(C)CCC=CC(156) <=> H(3) + 2-methylhept-5-ene(28)
+    H(3) + 2-methylhept-5-ene(28) <=> [H][H](32) + [CH2]C=CCCC(C)C(157)
+    H(3) + 2-methylhept-5-ene(28) <=> [H][H](32) + CC=[C]CCC(C)C(158)
+    H(3) + 2-methylhept-5-ene(28) <=> [H][H](32) + C[C]=CCCC(C)C(159)
+    H(3) + 2-methylhept-6-ene(29) <=> [H][H](32) + C=CCCC[C](C)C(160)
+    H(3) + 2-methylhept-6-ene(29) <=> [H][H](32) + C=CCC[CH]C(C)C(161)
+    H(3) + 2-methylhept-6-ene(29) <=> [H][H](32) + C=CC[CH]CC(C)C(162)
+    H(3) + 2-methylhept-6-ene(29) <=> [H][H](32) + [CH2]C=CCCC(C)C(157)
+    [H][H](32) + [CH2]C(C)CCCC=C(163) <=> H(3) + 2-methylhept-6-ene(29)
+    H(3) + 2-methylhept-6-ene(29) <=> [H][H](32) + C=[C]CCCC(C)C(164)
+    [H][H](32) + [CH]=CCCCC(C)C(165) <=> H(3) + 2-methylhept-6-ene(29)
+    OH(2) + [CH2](34) <=> O(4) + CH3(5)
+    2,2,4-Trimethylpentane(7) + O(4) <=> OH(2) + C[C](C)CC(C)(C)C(35)
+    2,2,4-Trimethylpentane(7) + O(4) <=> OH(2) + CC(C)[CH]C(C)(C)C(36)
+    2,2,4-Trimethylpentane(7) + O(4) <=> OH(2) + [CH2]C(C)(C)CC(C)C(37)
+    2,2,4-Trimethylpentane(7) + O(4) <=> OH(2) + [CH2]C(C)CC(C)(C)C(38)
+    2,4-Dimethylhexane(8) + O(4) <=> OH(2) + CC[C](C)CC(C)C(39)
+    2,4-Dimethylhexane(8) + O(4) <=> OH(2) + CCC(C)C[C](C)C(40)
+    2,4-Dimethylhexane(8) + O(4) <=> OH(2) + CCC(C)[CH]C(C)C(41)
+    2,4-Dimethylhexane(8) + O(4) <=> OH(2) + C[CH]C(C)CC(C)C(42)
+    2,4-Dimethylhexane(8) + O(4) <=> OH(2) + [CH2]C(C)CC(C)CC(43)
+    2,4-Dimethylhexane(8) + O(4) <=> OH(2) + [CH2]C(CC)CC(C)C(44)
+    2,4-Dimethylhexane(8) + O(4) <=> OH(2) + [CH2]CC(C)CC(C)C(45)
+    O(4) + 3-Methylheptane(9) <=> OH(2) + CCCC[C](C)CC(46)
+    O(4) + 3-Methylheptane(9) <=> OH(2) + CCC[CH]C(C)CC(47)
+    O(4) + 3-Methylheptane(9) <=> OH(2) + CC[CH]CC(C)CC(48)
+    O(4) + 3-Methylheptane(9) <=> OH(2) + C[CH]C(C)CCCC(49)
+    O(4) + 3-Methylheptane(9) <=> OH(2) + C[CH]CCC(C)CC(50)
+    O(4) + 3-Methylheptane(9) <=> OH(2) + [CH2]C(CC)CCCC(51)
+    O(4) + 3-Methylheptane(9) <=> OH(2) + [CH2]CCCC(C)CC(52)
+    O(4) + 3-Methylheptane(9) <=> OH(2) + [CH2]CC(C)CCCC(53)
+    2-methyl 2-butanol(10) + O(4) <=> OH(2) + C[CH]C(C)(C)O(54)
+    2-methyl 2-butanol(10) + O(4) <=> OH(2) + [CH2]C(C)(O)CC(55)
+    2-methyl 2-butanol(10) + O(4) <=> OH(2) + [CH2]CC(C)(C)O(56)
+    2-methyl 2-butanol(10) + O(4) <=> OH(2) + CCC(C)(C)[O](57)
+    2-Methyl-1-pentanol(11) + O(4) <=> OH(2) + CCC[C](C)CO(58)
+    2-Methyl-1-pentanol(11) + O(4) <=> OH(2) + CC[CH]C(C)CO(59)
+    2-Methyl-1-pentanol(11) + O(4) <=> OH(2) + C[CH]CC(C)CO(60)
+    2-Methyl-1-pentanol(11) + O(4) <=> OH(2) + CCCC(C)[CH]O(61)
+    2-Methyl-1-pentanol(11) + O(4) <=> OH(2) + [CH2]C(CO)CCC(62)
+    2-Methyl-1-pentanol(11) + O(4) <=> OH(2) + [CH2]CCC(C)CO(63)
+    2-Methyl-1-pentanol(11) + O(4) <=> OH(2) + CCCC(C)C[O](64)
+    2,4-dimethyl-2-heptene(12) + O(4) <=> OH(2) + CCC[C](C)C=C(C)C(65)
+    2,4-dimethyl-2-heptene(12) + O(4) <=> OH(2) + CC[CH]C(C)C=C(C)C(66)
+    2,4-dimethyl-2-heptene(12) + O(4) <=> OH(2) + C[CH]CC(C)C=C(C)C(67)
+    2,4-dimethyl-2-heptene(12) + O(4) <=> OH(2) + [CH2]C(C=C(C)C)CCC(68)
+    2,4-dimethyl-2-heptene(12) + O(4) <=> OH(2) + [CH2]CCC(C)C=C(C)C(69)
+    2,4-dimethyl-2-heptene(12) + O(4) <=> OH(2) + [CH2]C(C)=CC(C)CCC(70)
+    2,4-dimethyl-2-heptene(12) + O(4) <=> OH(2) + CCCC(C)[C]=C(C)C(71)
+    O(4) + methylcyclopentane(13) <=> OH(2) + C[C]1CCCC1(72)
+    O(4) + methylcyclopentane(13) <=> OH(2) + CC1[CH]CCC1(73)
+    O(4) + methylcyclopentane(13) <=> OH(2) + CC1C[CH]CC1(74)
+    O(4) + methylcyclopentane(13) <=> OH(2) + [CH2]C1CCCC1(75)
+    O(4) + Ocimene(14) <=> OH(2) + C=CC(C)=CC[CH]C(=C)C(76)
+    O(4) + Ocimene(14) <=> OH(2) + C=CC(C)=C[CH]CC(=C)C(77)
+    O(4) + Ocimene(14) <=> OH(2) + [CH2]C(=C)CCC=C(C)C=C(78)
+    O(4) + Ocimene(14) <=> OH(2) + [CH2]C(C=C)=CCCC(=C)C(79)
+    O(4) + Ocimene(14) <=> OH(2) + C=CC(C)=[C]CCC(=C)C(80)
+    O(4) + Ocimene(14) <=> OH(2) + C=[C]C(C)=CCCC(=C)C(81)
+    OH(2) + [CH]=C(C)CCC=C(C)C=C(82) <=> O(4) + Ocimene(14)
+    OH(2) + [CH]=CC(C)=CCCC(=C)C(83) <=> O(4) + Ocimene(14)
+    O(4) + Xylene(15) <=> OH(2) + [CH2]c1ccc(C)cc1(84)
+    OH(2) + Cc1[c]cc(C)cc1(85) <=> O(4) + Xylene(15)
+    O(4) + Diisobutyl ketone(16) <=> OH(2) + C[C](C)CC(=O)CC(C)C(86)
+    O(4) + Diisobutyl ketone(16) <=> OH(2) + CC(C)[CH]C(=O)CC(C)C(87)
+    O(4) + Diisobutyl ketone(16) <=> OH(2) + [CH2]C(C)CC(=O)CC(C)C(88)
+    O(4) + Methyl 1,3-dimethylbutyl ketone(17) <=> OH(2) + C[C](C)CC(C)C(C)=O(89)
+    O(4) + Methyl 1,3-dimethylbutyl ketone(17) <=> OH(2) + C[C](CC(C)C)C(C)=O(90)
+    O(4) + Methyl 1,3-dimethylbutyl ketone(17) <=> OH(2) + CC(=O)C(C)[CH]C(C)C(91)
+    O(4) + Methyl 1,3-dimethylbutyl ketone(17) <=> OH(2) + [CH2]C(C)CC(C)C(C)=O(92)
+    O(4) + Methyl 1,3-dimethylbutyl ketone(17) <=> OH(2) + [CH2]C(CC(C)C)C(C)=O(93)
+    O(4) + Methyl 1,3-dimethylbutyl ketone(17) <=> OH(2) + [CH2]C(=O)C(C)CC(C)C(94)
+    O(4) + 2,3-di-tert-butoxypropanol(18) <=> OH(2) + CC(C)(C)OC[C](CO)OC(C)(C)C(95)
+    O(4) + 2,3-di-tert-butoxypropanol(18) <=> OH(2) + CC(C)(C)O[CH]C(CO)OC(C)(C)C(96)
+    O(4) + 2,3-di-tert-butoxypropanol(18) <=> OH(2) + CC(C)(C)OCC([CH]O)OC(C)(C)C(97)
+    O(4) + 2,3-di-tert-butoxypropanol(18) <=> OH(2) + [CH2]C(C)(C)OCC(CO)OC(C)(C)C(98)
+    O(4) + 2,3-di-tert-butoxypropanol(18) <=> OH(2) + [CH2]C(C)(C)OC(CO)COC(C)(C)C(99)
+    O(4) + 2,3-di-tert-butoxypropanol(18) <=> OH(2) + CC(C)(C)OCC(C[O])OC(C)(C)C(100)
+    O(4) + 2-(1-ethylpropoxy)-propane(19) <=> OH(2) + CC[C](CC)OC(C)C(101)
+    O(4) + 2-(1-ethylpropoxy)-propane(19) <=> OH(2) + CCC(CC)O[C](C)C(102)
+    O(4) + 2-(1-ethylpropoxy)-propane(19) <=> OH(2) + C[CH]C(CC)OC(C)C(103)
+    O(4) + 2-(1-ethylpropoxy)-propane(19) <=> OH(2) + [CH2]C(C)OC(CC)CC(104)
+    O(4) + 2-(1-ethylpropoxy)-propane(19) <=> OH(2) + [CH2]CC(CC)OC(C)C(105)
+    O(4) + alpha-pinene(20) <=> OH(2) + CC1=CC[C]2CC1C2(C)C(106)
+    O(4) + alpha-pinene(20) <=> OH(2) + CC1=CCC2C[C]1C2(C)C(107)
+    O(4) + alpha-pinene(20) <=> OH(2) + CC1=CCC2[CH]C1C2(C)C(108)
+    O(4) + alpha-pinene(20) <=> OH(2) + CC1=C[CH]C2CC1C2(C)C(109)
+    O(4) + alpha-pinene(20) <=> OH(2) + [CH2]C1(C)C2CC=C(C)C1C2(110)
+    O(4) + alpha-pinene(20) <=> OH(2) + [CH2]C1=CCC2CC1C2(C)C(111)
+    O(4) + alpha-pinene(20) <=> OH(2) + CC1=[C]CC2CC1C2(C)C(112)
+    O(4) + isoamyl acetate(21) <=> OH(2) + C[C](C)CCOC(C)=O(113)
+    O(4) + isoamyl acetate(21) <=> OH(2) + CC(=O)OC[CH]C(C)C(114)
+    O(4) + isoamyl acetate(21) <=> OH(2) + CC(=O)O[CH]CC(C)C(115)
+    O(4) + isoamyl acetate(21) <=> OH(2) + [CH2]C(C)CCOC(C)=O(116)
+    O(4) + isoamyl acetate(21) <=> OH(2) + [CH2]C(=O)OCCC(C)C(117)
+    O(4) + ethyl isobutyrate(22) <=> OH(2) + CCOC(=O)[C](C)C(118)
+    O(4) + ethyl isobutyrate(22) <=> OH(2) + C[CH]OC(=O)C(C)C(119)
+    O(4) + ethyl isobutyrate(22) <=> OH(2) + [CH2]C(C)C(=O)OCC(120)
+    O(4) + ethyl isobutyrate(22) <=> OH(2) + [CH2]COC(=O)C(C)C(121)
+    O(4) + 2-methylcyclopent-2-en-1-one(23) <=> OH(2) + CC1=C[CH]CC1=O(122)
+    O(4) + 2-methylcyclopent-2-en-1-one(23) <=> OH(2) + CC1=CC[CH]C1=O(123)
+    O(4) + 2-methylcyclopent-2-en-1-one(23) <=> OH(2) + [CH2]C1=CCCC1=O(124)
+    O(4) + 2-methylcyclopent-2-en-1-one(23) <=> OH(2) + CC1=[C]CCC1=O(125)
+    O(4) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> OH(2) + CCCCC[C]1CCC(C)O1(126)
+    O(4) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> OH(2) + CCCCCC1CC[C](C)O1(127)
+    O(4) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> OH(2) + CCCC[CH]C1CCC(C)O1(128)
+    O(4) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> OH(2) + CCCCCC1[CH]CC(C)O1(129)
+    O(4) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> OH(2) + CCCCCC1C[CH]C(C)O1(130)
+    O(4) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> OH(2) + CC[CH]CCC1CCC(C)O1(131)
+    O(4) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> OH(2) + CCC[CH]CC1CCC(C)O1(132)
+    O(4) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> OH(2) + C[CH]CCCC1CCC(C)O1(133)
+    O(4) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> OH(2) + [CH2]C1CCC(CCCCC)O1(134)
+    O(4) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> OH(2) + [CH2]CCCCC1CCC(C)O1(135)
+    O(4) + 2-methylhept-2-ene(25) <=> OH(2) + CC[CH]CC=C(C)C(136)
+    O(4) + 2-methylhept-2-ene(25) <=> OH(2) + C[CH]CCC=C(C)C(137)
+    O(4) + 2-methylhept-2-ene(25) <=> OH(2) + CCC[CH]C=C(C)C(138)
+    O(4) + 2-methylhept-2-ene(25) <=> OH(2) + [CH2]CCCC=C(C)C(139)
+    O(4) + 2-methylhept-2-ene(25) <=> OH(2) + [CH2]C(C)=CCCCC(140)
+    O(4) + 2-methylhept-2-ene(25) <=> OH(2) + CCCC[C]=C(C)C(141)
+    O(4) + 2-methylhept-3-ene(26) <=> OH(2) + CCC[CH]C=C(C)C(138)
+    O(4) + 2-methylhept-3-ene(26) <=> OH(2) + C[CH]CC=CC(C)C(142)
+    O(4) + 2-methylhept-3-ene(26) <=> OH(2) + CC[CH]C=CC(C)C(143)
+    O(4) + 2-methylhept-3-ene(26) <=> OH(2) + [CH2]C(C)C=CCCC(144)
+    O(4) + 2-methylhept-3-ene(26) <=> OH(2) + [CH2]CCC=CC(C)C(145)
+    O(4) + 2-methylhept-3-ene(26) <=> OH(2) + CCCC=[C]C(C)C(146)
+    O(4) + 2-methylhept-3-ene(26) <=> OH(2) + CCC[C]=CC(C)C(147)
+    O(4) + 2-methylhept-4-ene(27) <=> OH(2) + CCC=CC[C](C)C(148)
+    O(4) + 2-methylhept-4-ene(27) <=> OH(2) + CC[CH]C=CC(C)C(143)
+    O(4) + 2-methylhept-4-ene(27) <=> OH(2) + C[CH]C=CCC(C)C(149)
+    O(4) + 2-methylhept-4-ene(27) <=> OH(2) + [CH2]C(C)CC=CCC(150)
+    O(4) + 2-methylhept-4-ene(27) <=> OH(2) + [CH2]CC=CCC(C)C(151)
+    O(4) + 2-methylhept-4-ene(27) <=> OH(2) + CC[C]=CCC(C)C(152)
+    O(4) + 2-methylhept-4-ene(27) <=> OH(2) + CCC=[C]CC(C)C(153)
+    O(4) + 2-methylhept-5-ene(28) <=> OH(2) + CC=CCC[C](C)C(154)
+    O(4) + 2-methylhept-5-ene(28) <=> OH(2) + CC=CC[CH]C(C)C(155)
+    O(4) + 2-methylhept-5-ene(28) <=> OH(2) + C[CH]C=CCC(C)C(149)
+    O(4) + 2-methylhept-5-ene(28) <=> OH(2) + [CH2]C(C)CCC=CC(156)
+    O(4) + 2-methylhept-5-ene(28) <=> OH(2) + [CH2]C=CCCC(C)C(157)
+    O(4) + 2-methylhept-5-ene(28) <=> OH(2) + CC=[C]CCC(C)C(158)
+    O(4) + 2-methylhept-5-ene(28) <=> OH(2) + C[C]=CCCC(C)C(159)
+    O(4) + 2-methylhept-6-ene(29) <=> OH(2) + C=CCCC[C](C)C(160)
+    O(4) + 2-methylhept-6-ene(29) <=> OH(2) + C=CCC[CH]C(C)C(161)
+    O(4) + 2-methylhept-6-ene(29) <=> OH(2) + C=CC[CH]CC(C)C(162)
+    O(4) + 2-methylhept-6-ene(29) <=> OH(2) + [CH2]C=CCCC(C)C(157)
+    O(4) + 2-methylhept-6-ene(29) <=> OH(2) + [CH2]C(C)CCCC=C(163)
+    O(4) + 2-methylhept-6-ene(29) <=> OH(2) + C=[C]CCCC(C)C(164)
+    OH(2) + [CH]=CCCCC(C)C(165) <=> O(4) + 2-methylhept-6-ene(29)
+    C(33) + [CH2](34) <=> CH3(5) + CH3(5)
+    OOH(1) + C(33) <=> CH3(5) + O2(6)
+    2,2,4-Trimethylpentane(7) + CH3(5) <=> C(33) + C[C](C)CC(C)(C)C(35)
+    2,2,4-Trimethylpentane(7) + CH3(5) <=> C(33) + CC(C)[CH]C(C)(C)C(36)
+    2,2,4-Trimethylpentane(7) + CH3(5) <=> C(33) + [CH2]C(C)(C)CC(C)C(37)
+    C(33) + [CH2]C(C)CC(C)(C)C(38) <=> 2,2,4-Trimethylpentane(7) + CH3(5)
+    2,4-Dimethylhexane(8) + CH3(5) <=> C(33) + CC[C](C)CC(C)C(39)
+    2,4-Dimethylhexane(8) + CH3(5) <=> C(33) + CCC(C)C[C](C)C(40)
+    2,4-Dimethylhexane(8) + CH3(5) <=> C(33) + CCC(C)[CH]C(C)C(41)
+    2,4-Dimethylhexane(8) + CH3(5) <=> C(33) + C[CH]C(C)CC(C)C(42)
+    C(33) + [CH2]C(C)CC(C)CC(43) <=> 2,4-Dimethylhexane(8) + CH3(5)
+    C(33) + [CH2]C(CC)CC(C)C(44) <=> 2,4-Dimethylhexane(8) + CH3(5)
+    C(33) + [CH2]CC(C)CC(C)C(45) <=> 2,4-Dimethylhexane(8) + CH3(5)
+    CH3(5) + 3-Methylheptane(9) <=> C(33) + CCCC[C](C)CC(46)
+    CH3(5) + 3-Methylheptane(9) <=> C(33) + CCC[CH]C(C)CC(47)
+    CH3(5) + 3-Methylheptane(9) <=> C(33) + CC[CH]CC(C)CC(48)
+    CH3(5) + 3-Methylheptane(9) <=> C[CH]C(C)CCCC(49) + C(33)
+    CH3(5) + 3-Methylheptane(9) <=> C(33) + C[CH]CCC(C)CC(50)
+    C(33) + [CH2]C(CC)CCCC(51) <=> CH3(5) + 3-Methylheptane(9)
+    C(33) + [CH2]CCCC(C)CC(52) <=> CH3(5) + 3-Methylheptane(9)
+    C(33) + [CH2]CC(C)CCCC(53) <=> CH3(5) + 3-Methylheptane(9)
+    C(33) + C[CH]C(C)(C)O(54) <=> 2-methyl 2-butanol(10) + CH3(5)
+    2-methyl 2-butanol(10) + CH3(5) <=> C(33) + [CH2]C(C)(O)CC(55)
+    2-methyl 2-butanol(10) + CH3(5) <=> C(33) + [CH2]CC(C)(C)O(56)
+    C(33) + CCC(C)(C)[O](57) <=> 2-methyl 2-butanol(10) + CH3(5)
+    2-Methyl-1-pentanol(11) + CH3(5) <=> C(33) + CCC[C](C)CO(58)
+    C(33) + CC[CH]C(C)CO(59) <=> 2-Methyl-1-pentanol(11) + CH3(5)
+    2-Methyl-1-pentanol(11) + CH3(5) <=> C(33) + C[CH]CC(C)CO(60)
+    2-Methyl-1-pentanol(11) + CH3(5) <=> C(33) + CCCC(C)[CH]O(61)
+    2-Methyl-1-pentanol(11) + CH3(5) <=> C(33) + [CH2]C(CO)CCC(62)
+    C(33) + [CH2]CCC(C)CO(63) <=> 2-Methyl-1-pentanol(11) + CH3(5)
+    C(33) + CCCC(C)C[O](64) <=> 2-Methyl-1-pentanol(11) + CH3(5)
+    2,4-dimethyl-2-heptene(12) + CH3(5) <=> C(33) + CCC[C](C)C=C(C)C(65)
+    2,4-dimethyl-2-heptene(12) + CH3(5) <=> C(33) + CC[CH]C(C)C=C(C)C(66)
+    2,4-dimethyl-2-heptene(12) + CH3(5) <=> C(33) + C[CH]CC(C)C=C(C)C(67)
+    2,4-dimethyl-2-heptene(12) + CH3(5) <=> C(33) + [CH2]C(C=C(C)C)CCC(68)
+    C(33) + [CH2]CCC(C)C=C(C)C(69) <=> 2,4-dimethyl-2-heptene(12) + CH3(5)
+    2,4-dimethyl-2-heptene(12) + CH3(5) <=> C(33) + [CH2]C(C)=CC(C)CCC(70)
+    2,4-dimethyl-2-heptene(12) + CH3(5) <=> C(33) + CCCC(C)[C]=C(C)C(71)
+    C(33) + C[C]1CCCC1(72) <=> CH3(5) + methylcyclopentane(13)
+    C(33) + CC1[CH]CCC1(73) <=> CH3(5) + methylcyclopentane(13)
+    C(33) + CC1C[CH]CC1(74) <=> CH3(5) + methylcyclopentane(13)
+    C(33) + [CH2]C1CCCC1(75) <=> CH3(5) + methylcyclopentane(13)
+    CH3(5) + Ocimene(14) <=> C(33) + C=CC(C)=CC[CH]C(=C)C(76)
+    CH3(5) + Ocimene(14) <=> C(33) + C=CC(C)=C[CH]CC(=C)C(77)
+    CH3(5) + Ocimene(14) <=> C(33) + [CH2]C(=C)CCC=C(C)C=C(78)
+    CH3(5) + Ocimene(14) <=> C(33) + [CH2]C(C=C)=CCCC(=C)C(79)
+    CH3(5) + Ocimene(14) <=> C(33) + C=CC(C)=[C]CCC(=C)C(80)
+    CH3(5) + Ocimene(14) <=> C(33) + C=[C]C(C)=CCCC(=C)C(81)
+    C(33) + [CH]=C(C)CCC=C(C)C=C(82) <=> CH3(5) + Ocimene(14)
+    C(33) + [CH]=CC(C)=CCCC(=C)C(83) <=> CH3(5) + Ocimene(14)
+    CH3(5) + Xylene(15) <=> C(33) + [CH2]c1ccc(C)cc1(84)
+    C(33) + Cc1[c]cc(C)cc1(85) <=> CH3(5) + Xylene(15)
+    CH3(5) + Diisobutyl ketone(16) <=> C(33) + C[C](C)CC(=O)CC(C)C(86)
+    CH3(5) + Diisobutyl ketone(16) <=> C(33) + CC(C)[CH]C(=O)CC(C)C(87)
+    C(33) + [CH2]C(C)CC(=O)CC(C)C(88) <=> CH3(5) + Diisobutyl ketone(16)
+    CH3(5) + Methyl 1,3-dimethylbutyl ketone(17) <=> C(33) + C[C](C)CC(C)C(C)=O(89)
+    CH3(5) + Methyl 1,3-dimethylbutyl ketone(17) <=> C(33) + C[C](CC(C)C)C(C)=O(90)
+    CH3(5) + Methyl 1,3-dimethylbutyl ketone(17) <=> C(33) + CC(=O)C(C)[CH]C(C)C(91)
+    C(33) + [CH2]C(C)CC(C)C(C)=O(92) <=> CH3(5) + Methyl 1,3-dimethylbutyl ketone(17)
+    CH3(5) + Methyl 1,3-dimethylbutyl ketone(17) <=> C(33) + [CH2]C(CC(C)C)C(C)=O(93)
+    CH3(5) + Methyl 1,3-dimethylbutyl ketone(17) <=> C(33) + [CH2]C(=O)C(C)CC(C)C(94)
+    CH3(5) + 2,3-di-tert-butoxypropanol(18) <=> C(33) + CC(C)(C)OC[C](CO)OC(C)(C)C(95)
+    CH3(5) + 2,3-di-tert-butoxypropanol(18) <=> C(33) + CC(C)(C)O[CH]C(CO)OC(C)(C)C(96)
+    CH3(5) + 2,3-di-tert-butoxypropanol(18) <=> C(33) + CC(C)(C)OCC([CH]O)OC(C)(C)C(97)
+    CH3(5) + 2,3-di-tert-butoxypropanol(18) <=> C(33) + [CH2]C(C)(C)OCC(CO)OC(C)(C)C(98)
+    CH3(5) + 2,3-di-tert-butoxypropanol(18) <=> C(33) + [CH2]C(C)(C)OC(CO)COC(C)(C)C(99)
+    C(33) + CC(C)(C)OCC(C[O])OC(C)(C)C(100) <=> CH3(5) + 2,3-di-tert-butoxypropanol(18)
+    CH3(5) + 2-(1-ethylpropoxy)-propane(19) <=> C(33) + CC[C](CC)OC(C)C(101)
+    CH3(5) + 2-(1-ethylpropoxy)-propane(19) <=> C(33) + CCC(CC)O[C](C)C(102)
+    C(33) + C[CH]C(CC)OC(C)C(103) <=> CH3(5) + 2-(1-ethylpropoxy)-propane(19)
+    CH3(5) + 2-(1-ethylpropoxy)-propane(19) <=> C(33) + [CH2]C(C)OC(CC)CC(104)
+    CH3(5) + 2-(1-ethylpropoxy)-propane(19) <=> C(33) + [CH2]CC(CC)OC(C)C(105)
+    CH3(5) + alpha-pinene(20) <=> C(33) + CC1=CC[C]2CC1C2(C)C(106)
+    CH3(5) + alpha-pinene(20) <=> C(33) + CC1=CCC2C[C]1C2(C)C(107)
+    CH3(5) + alpha-pinene(20) <=> C(33) + CC1=CCC2[CH]C1C2(C)C(108)
+    CH3(5) + alpha-pinene(20) <=> C(33) + CC1=C[CH]C2CC1C2(C)C(109)
+    CH3(5) + alpha-pinene(20) <=> C(33) + [CH2]C1(C)C2CC=C(C)C1C2(110)
+    CH3(5) + alpha-pinene(20) <=> C(33) + [CH2]C1=CCC2CC1C2(C)C(111)
+    CH3(5) + alpha-pinene(20) <=> C(33) + CC1=[C]CC2CC1C2(C)C(112)
+    CH3(5) + isoamyl acetate(21) <=> C(33) + C[C](C)CCOC(C)=O(113)
+    C(33) + CC(=O)OC[CH]C(C)C(114) <=> CH3(5) + isoamyl acetate(21)
+    CH3(5) + isoamyl acetate(21) <=> C(33) + CC(=O)O[CH]CC(C)C(115)
+    C(33) + [CH2]C(C)CCOC(C)=O(116) <=> CH3(5) + isoamyl acetate(21)
+    CH3(5) + isoamyl acetate(21) <=> C(33) + [CH2]C(=O)OCCC(C)C(117)
+    CH3(5) + ethyl isobutyrate(22) <=> C(33) + CCOC(=O)[C](C)C(118)
+    CH3(5) + ethyl isobutyrate(22) <=> C(33) + C[CH]OC(=O)C(C)C(119)
+    CH3(5) + ethyl isobutyrate(22) <=> C(33) + [CH2]C(C)C(=O)OCC(120)
+    C(33) + [CH2]COC(=O)C(C)C(121) <=> CH3(5) + ethyl isobutyrate(22)
+    CH3(5) + 2-methylcyclopent-2-en-1-one(23) <=> C(33) + CC1=C[CH]CC1=O(122)
+    CH3(5) + 2-methylcyclopent-2-en-1-one(23) <=> C(33) + CC1=CC[CH]C1=O(123)
+    CH3(5) + 2-methylcyclopent-2-en-1-one(23) <=> C(33) + [CH2]C1=CCCC1=O(124)
+    CH3(5) + 2-methylcyclopent-2-en-1-one(23) <=> C(33) + CC1=[C]CCC1=O(125)
+    CH3(5) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> C(33) + CCCCC[C]1CCC(C)O1(126)
+    CH3(5) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> C(33) + CCCCCC1CC[C](C)O1(127)
+    C(33) + CCCC[CH]C1CCC(C)O1(128) <=> CH3(5) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    C(33) + CCCCCC1[CH]CC(C)O1(129) <=> CH3(5) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    C(33) + CCCCCC1C[CH]C(C)O1(130) <=> CH3(5) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    CH3(5) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> C(33) + CC[CH]CCC1CCC(C)O1(131)
+    C(33) + CCC[CH]CC1CCC(C)O1(132) <=> CH3(5) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    CH3(5) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> C(33) + C[CH]CCCC1CCC(C)O1(133)
+    CH3(5) + 2-methyl-5-pentyl tetrahydrofuran(24) <=> C(33) + [CH2]C1CCC(CCCCC)O1(134)
+    C(33) + [CH2]CCCCC1CCC(C)O1(135) <=> CH3(5) + 2-methyl-5-pentyl tetrahydrofuran(24)
+    CH3(5) + 2-methylhept-2-ene(25) <=> C(33) + CC[CH]CC=C(C)C(136)
+    CH3(5) + 2-methylhept-2-ene(25) <=> C(33) + C[CH]CCC=C(C)C(137)
+    CH3(5) + 2-methylhept-2-ene(25) <=> C(33) + CCC[CH]C=C(C)C(138)
+    C(33) + [CH2]CCCC=C(C)C(139) <=> CH3(5) + 2-methylhept-2-ene(25)
+    CH3(5) + 2-methylhept-2-ene(25) <=> C(33) + [CH2]C(C)=CCCCC(140)
+    CH3(5) + 2-methylhept-2-ene(25) <=> C(33) + CCCC[C]=C(C)C(141)
+    CH3(5) + 2-methylhept-3-ene(26) <=> C(33) + CCC[CH]C=C(C)C(138)
+    CH3(5) + 2-methylhept-3-ene(26) <=> C(33) + C[CH]CC=CC(C)C(142)
+    CH3(5) + 2-methylhept-3-ene(26) <=> C(33) + CC[CH]C=CC(C)C(143)
+    CH3(5) + 2-methylhept-3-ene(26) <=> C(33) + [CH2]C(C)C=CCCC(144)
+    C(33) + [CH2]CCC=CC(C)C(145) <=> CH3(5) + 2-methylhept-3-ene(26)
+    CH3(5) + 2-methylhept-3-ene(26) <=> C(33) + CCCC=[C]C(C)C(146)
+    CH3(5) + 2-methylhept-3-ene(26) <=> C(33) + CCC[C]=CC(C)C(147)
+    CH3(5) + 2-methylhept-4-ene(27) <=> C(33) + CCC=CC[C](C)C(148)
+    CH3(5) + 2-methylhept-4-ene(27) <=> C(33) + CC[CH]C=CC(C)C(143)
+    CH3(5) + 2-methylhept-4-ene(27) <=> C(33) + C[CH]C=CCC(C)C(149)
+    C(33) + [CH2]C(C)CC=CCC(150) <=> CH3(5) + 2-methylhept-4-ene(27)
+    CH3(5) + 2-methylhept-4-ene(27) <=> C(33) + [CH2]CC=CCC(C)C(151)
+    CH3(5) + 2-methylhept-4-ene(27) <=> C(33) + CC[C]=CCC(C)C(152)
+    CH3(5) + 2-methylhept-4-ene(27) <=> C(33) + CCC=[C]CC(C)C(153)
+    CH3(5) + 2-methylhept-5-ene(28) <=> C(33) + CC=CCC[C](C)C(154)
+    CH3(5) + 2-methylhept-5-ene(28) <=> C(33) + CC=CC[CH]C(C)C(155)
+    CH3(5) + 2-methylhept-5-ene(28) <=> C(33) + C[CH]C=CCC(C)C(149)
+    C(33) + [CH2]C(C)CCC=CC(156) <=> CH3(5) + 2-methylhept-5-ene(28)
+    CH3(5) + 2-methylhept-5-ene(28) <=> C(33) + [CH2]C=CCCC(C)C(157)
+    CH3(5) + 2-methylhept-5-ene(28) <=> C(33) + CC=[C]CCC(C)C(158)
+    CH3(5) + 2-methylhept-5-ene(28) <=> C(33) + C[C]=CCCC(C)C(159)
+    CH3(5) + 2-methylhept-6-ene(29) <=> C(33) + C=CCCC[C](C)C(160)
+    CH3(5) + 2-methylhept-6-ene(29) <=> C(33) + C=CCC[CH]C(C)C(161)
+    CH3(5) + 2-methylhept-6-ene(29) <=> C(33) + C=CC[CH]CC(C)C(162)
+    CH3(5) + 2-methylhept-6-ene(29) <=> C(33) + [CH2]C=CCCC(C)C(157)
+    C(33) + [CH2]C(C)CCCC=C(163) <=> CH3(5) + 2-methylhept-6-ene(29)
+    CH3(5) + 2-methylhept-6-ene(29) <=> C(33) + C=[C]CCCC(C)C(164)
+    C(33) + [CH]=CCCCC(C)C(165) <=> CH3(5) + 2-methylhept-6-ene(29)
+
+After model enlargement:
+    The model core has 33 species and 1 reactions
+    The model edge has 136 species and 691 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 692 reactions.
+Saving current model to verbose Chemkin file...
+Chemkin file contains 692 reactions.
+Saving current model core to HTML file...
+
+RMG execution terminated at Fri Jul 14 13:45:05 2017

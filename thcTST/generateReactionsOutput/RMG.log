@@ -1,0 +1,462 @@
+RMG execution initiated at Mon Jul 17 13:43:59 2017
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 2.1.0                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+The current git HEAD for RMG-Py is:
+	75c6795eb0e32706a51fa9b9315d989fc9e815d9
+	Sat Jul 15 09:05:01 2017 -0400
+
+The current git HEAD for RMG-database is:
+	add1b3adda28d590aceead0ca57f4d9fb89c35af
+	Fri Jun 23 15:17:12 2017 -0400
+
+Reading input file "/Users/nathan/Code/OOHabstraction/THC/generateReactionsOutput/thcInput.py"...
+# Data sources for kinetics
+database(
+    thermoLibraries = ['BurkeH2O2','primaryThermoLibrary','DFT_QCI_thermo','CBS_QB3_1dHR'],
+    reactionLibraries = [],
+    seedMechanisms = [],
+    kineticsDepositories = 'default',
+    #this section lists possible reaction families to find reactions with
+    kineticsFamilies = ['H_Abstraction']
+    #kineticsEstimator = 'rate rules'
+)
+
+# List all species you want reactions between
+species( # 1
+        label='OOH',
+        reactive=True,
+        structure=SMILES("[O]O"),
+)
+
+species(
+        label='OH',
+        reactive=True,
+        structure=SMILES("[OH]"),
+)
+
+species(
+        label='H',
+        reactive=True,
+        structure=SMILES("[H]"),
+)
+
+
+species(
+        label='O',
+        reactive=True,
+        structure=SMILES("[O]"),
+)
+
+species(
+        label='CH3',
+        reactive=True,
+        structure=SMILES("[CH3]"),
+)
+
+species(
+        label='O2',
+        reactive=True,
+        structure=SMILES("OO"),
+)
+
+# THC lol
+
+species( # 2
+        label='THC', # iso-otane
+        reactive=True,
+        structure=SMILES("CCCCCc1cc(c2c(c1)OC([C@H]3[C@H]2C=C(CC3)C)(C)C)O"),
+)
+
+# you must list reactor conditions (though this may not effect the output)
+simpleReactor(
+    temperature=(650,'K'),
+    pressure=(10.0,'bar'),
+    initialMoleFractions={
+        'THC': 1,
+    },
+    terminationConversion={
+        'THC': .99,
+    },
+    terminationTime=(120,'s'),
+)
+
+#optional module if you want to get pressure dependent kinetics.
+
+#pressureDependence(
+#     method='modified strong collision',
+#     maximumGrainSize=(0.5,'kcal/mol'),
+#     minimumNumberOfGrains=250,
+#     temperatures=(300,2200,'K',2),
+#     pressures=(0.01,100,'bar',3),
+#     interpolation=('Chebyshev', 6, 4),
+#     maximumAtoms=15,
+#)
+
+#optional module if you want to limit species produced in reactions.
+
+#generatedSpeciesConstraints(
+#    allowed=['input species','seed mechanisms','reaction libraries'],
+#    maximumCarbonAtoms=4,
+#    maximumOxygenAtoms=7,
+#    maximumNitrogenAtoms=0,
+#    maximumSiliconAtoms=0,
+#    maximumSulfurAtoms=0,
+#    maximumHeavyAtoms=20,
+#    maximumRadicalElectrons=1,
+#)
+
+
+Loading thermodynamics library from BurkeH2O2.py in /Users/nathan/Code/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from primaryThermoLibrary.py in /Users/nathan/Code/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from DFT_QCI_thermo.py in /Users/nathan/Code/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from CBS_QB3_1dHR.py in /Users/nathan/Code/RMG-database/input/thermo/libraries...
+Loading thermodynamics group database from /Users/nathan/Code/RMG-database/input/thermo/groups...
+Loading transport library from GRI-Mech.py in /Users/nathan/Code/RMG-database/input/transport/libraries...
+Loading transport library from PrimaryTransportLibrary.py in /Users/nathan/Code/RMG-database/input/transport/libraries...
+Loading transport group database from /Users/nathan/Code/RMG-database/input/transport/groups...
+Loading the user-specified kinetics families from /Users/nathan/Code/RMG-database/input/kinetics/families
+Loading frequencies group database from /Users/nathan/Code/RMG-database/input/statmech/groups...
+Loading Platts additivity group database from /Users/nathan/Code/RMG-database/input/solvation/groups...
+Adding rate rules from training set in kinetics families...
+Filling in rate rules in kinetics families by averaging...
+NOT generating reactions for unreactive species Ar
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    Ar
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 1 species and 0 reactions
+    The model edge has 7 species and 0 reactions
+
+
+NOT generating reactions for unreactive species He
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    He
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 2 species and 0 reactions
+    The model edge has 7 species and 0 reactions
+
+
+NOT generating reactions for unreactive species Ne
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    Ne
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 3 species and 0 reactions
+    The model edge has 7 species and 0 reactions
+
+
+NOT generating reactions for unreactive species N2
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    N2
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 4 species and 0 reactions
+    The model edge has 7 species and 0 reactions
+
+
+Adding species OOH(1) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    OOH(1)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 5 species and 0 reactions
+    The model edge has 6 species and 0 reactions
+
+
+Adding species OH(2) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    OH(2)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 6 species and 0 reactions
+    The model edge has 5 species and 0 reactions
+
+
+Adding species H(3) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    H(3)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 7 species and 0 reactions
+    The model edge has 4 species and 0 reactions
+
+
+Adding species O(4) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    O(4)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 8 species and 0 reactions
+    The model edge has 3 species and 0 reactions
+
+
+Adding species CH3(5) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH3(5)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 9 species and 0 reactions
+    The model edge has 2 species and 0 reactions
+
+
+Adding species O2(6) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    O2(6)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 10 species and 0 reactions
+    The model edge has 1 species and 0 reactions
+
+
+Adding species THC(7) to model core
+Generating kinetics for new reactions...
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    THC(7)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 11 species and 0 reactions
+    The model edge has 0 species and 0 reactions
+
+
+Generating kinetics for new reactions...
+For reaction O2(6) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=[C]C3C=2C(O)=C1(24) <=> OOH(1) + THC(7) Ea raised from -16.9 to -16.9 kJ/mol.
+For reaction O2(6) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25) <=> OOH(1) + THC(7) Ea raised from -16.9 to -16.9 kJ/mol.
+For reaction O2(6) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26) <=> OOH(1) + THC(7) Ea raised from -16.9 to -16.9 kJ/mol.
+For reaction OH(2) + THC(7) <=> O(9) + CCCCCC1=CC2OC(C)(C)[C]3CCC(C)=CC3C=2C(O)=C1(13) Ea raised from -6.1 to -6.1 kJ/mol.
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 20 new edge species
+    [O][O](8)
+    O(9)
+    [H][H](10)
+    C(11)
+    [CH2](12)
+    CCCCCC1=CC2OC(C)(C)[C]3CCC(C)=CC3C=2C(O)=C1(13)
+    CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    CCCCCC1=CC2OC(C)(C)C3[CH]CC(C)=CC3C=2C(O)=C1(15)
+    CC[CH]CCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(16)
+    CCC[CH]CC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(17)
+    C[CH]CCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(18)
+    CCCCCC1=CC2OC(C)(C)C3C[CH]C(C)=CC3C=2C(O)=C1(19)
+    CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    [CH2]C1(C)OC2C=C(C=C(O)C=2C2C=C(C)CCC21)CCCCC(21)
+    [CH2]CCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(22)
+    [CH2]C1=CC2C3C(O)=CC(=CC=3OC(C)(C)C2CC1)CCCCC(23)
+    CCCCCC1=CC2OC(C)(C)C3CCC(C)=[C]C3C=2C(O)=C1(24)
+    CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25)
+    CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26)
+    CCCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C([O])=C1(27)
+Added 1 new core reactions
+    O(4) + O2(6) <=> OOH(1) + OH(2)
+Created 111 new edge reactions
+    OOH(1) + OOH(1) <=> O2(6) + [O][O](8)
+    [O][O](8) + O(9) <=> OOH(1) + OH(2)
+    [O][O](8) + [H][H](10) <=> OOH(1) + H(3)
+    OOH(1) + O(4) <=> OH(2) + [O][O](8)
+    [O][O](8) + C(11) <=> OOH(1) + CH3(5)
+    O2(6) + [CH2](12) <=> OOH(1) + CH3(5)
+    O2(6) + CCCCCC1=CC2OC(C)(C)[C]3CCC(C)=CC3C=2C(O)=C1(13) <=> OOH(1) + THC(7)
+    OOH(1) + THC(7) <=> O2(6) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    O2(6) + CCCCCC1=CC2OC(C)(C)C3[CH]CC(C)=CC3C=2C(O)=C1(15) <=> OOH(1) + THC(7)
+    O2(6) + CC[CH]CCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(16) <=> OOH(1) + THC(7)
+    O2(6) + CCC[CH]CC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(17) <=> OOH(1) + THC(7)
+    O2(6) + C[CH]CCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(18) <=> OOH(1) + THC(7)
+    OOH(1) + THC(7) <=> O2(6) + CCCCCC1=CC2OC(C)(C)C3C[CH]C(C)=CC3C=2C(O)=C1(19)
+    OOH(1) + THC(7) <=> O2(6) + CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    O2(6) + [CH2]C1(C)OC2C=C(C=C(O)C=2C2C=C(C)CCC21)CCCCC(21) <=> OOH(1) + THC(7)
+    O2(6) + [CH2]CCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(22) <=> OOH(1) + THC(7)
+    OOH(1) + THC(7) <=> O2(6) + [CH2]C1=CC2C3C(O)=CC(=CC=3OC(C)(C)C2CC1)CCCCC(23)
+    O2(6) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=[C]C3C=2C(O)=C1(24) <=> OOH(1) + THC(7)
+    O2(6) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25) <=> OOH(1) + THC(7)
+    O2(6) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26) <=> OOH(1) + THC(7)
+    OOH(1) + THC(7) <=> O2(6) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C([O])=C1(27)
+    OOH(1) + THC(7) <=> O2(6) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    OOH(1) + THC(7) <=> O2(6) + CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    O2(6) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25) <=> OOH(1) + THC(7)
+    O2(6) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26) <=> OOH(1) + THC(7)
+    O(4) + O(9) <=> OH(2) + OH(2)
+    OH(2) + H(3) <=> O(4) + [H][H](10)
+    OH(2) + CH3(5) <=> O(4) + C(11)
+    OH(2) + CH3(5) <=> O(9) + [CH2](12)
+    OH(2) + O2(6) <=> OOH(1) + O(9)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1=CC2OC(C)(C)[C]3CCC(C)=CC3C=2C(O)=C1(13)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1=CC2OC(C)(C)C3[CH]CC(C)=CC3C=2C(O)=C1(15)
+    OH(2) + THC(7) <=> O(9) + CC[CH]CCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(16)
+    OH(2) + THC(7) <=> O(9) + CCC[CH]CC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(17)
+    OH(2) + THC(7) <=> O(9) + C[CH]CCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(18)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1=CC2OC(C)(C)C3C[CH]C(C)=CC3C=2C(O)=C1(19)
+    OH(2) + THC(7) <=> O(9) + CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    OH(2) + THC(7) <=> O(9) + [CH2]C1(C)OC2C=C(C=C(O)C=2C2C=C(C)CCC21)CCCCC(21)
+    O(9) + [CH2]CCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(22) <=> OH(2) + THC(7)
+    OH(2) + THC(7) <=> O(9) + [CH2]C1=CC2C3C(O)=CC(=CC=3OC(C)(C)C2CC1)CCCCC(23)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=[C]C3C=2C(O)=C1(24)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C([O])=C1(27)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    OH(2) + THC(7) <=> O(9) + CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25)
+    OH(2) + THC(7) <=> O(9) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26)
+    [H][H](10) + [CH2](12) <=> H(3) + CH3(5)
+    H(3) + O2(6) <=> OOH(1) + [H][H](10)
+    H(3) + THC(7) <=> [H][H](10) + CCCCCC1=CC2OC(C)(C)[C]3CCC(C)=CC3C=2C(O)=C1(13)
+    H(3) + THC(7) <=> [H][H](10) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    [H][H](10) + CCCCCC1=CC2OC(C)(C)C3[CH]CC(C)=CC3C=2C(O)=C1(15) <=> H(3) + THC(7)
+    H(3) + THC(7) <=> [H][H](10) + CC[CH]CCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(16)
+    H(3) + THC(7) <=> [H][H](10) + CCC[CH]CC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(17)
+    H(3) + THC(7) <=> [H][H](10) + C[CH]CCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(18)
+    H(3) + THC(7) <=> [H][H](10) + CCCCCC1=CC2OC(C)(C)C3C[CH]C(C)=CC3C=2C(O)=C1(19)
+    H(3) + THC(7) <=> [H][H](10) + CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    H(3) + THC(7) <=> [H][H](10) + [CH2]C1(C)OC2C=C(C=C(O)C=2C2C=C(C)CCC21)CCCCC(21)
+    [H][H](10) + [CH2]CCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(22) <=> H(3) + THC(7)
+    H(3) + THC(7) <=> [H][H](10) + [CH2]C1=CC2C3C(O)=CC(=CC=3OC(C)(C)C2CC1)CCCCC(23)
+    H(3) + THC(7) <=> [H][H](10) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=[C]C3C=2C(O)=C1(24)
+    H(3) + THC(7) <=> [H][H](10) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25)
+    H(3) + THC(7) <=> [H][H](10) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26)
+    H(3) + THC(7) <=> [H][H](10) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C([O])=C1(27)
+    H(3) + THC(7) <=> [H][H](10) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    H(3) + THC(7) <=> [H][H](10) + CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    [H][H](10) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25) <=> H(3) + THC(7)
+    [H][H](10) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26) <=> H(3) + THC(7)
+    OH(2) + [CH2](12) <=> O(4) + CH3(5)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1=CC2OC(C)(C)[C]3CCC(C)=CC3C=2C(O)=C1(13)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1=CC2OC(C)(C)C3[CH]CC(C)=CC3C=2C(O)=C1(15)
+    O(4) + THC(7) <=> OH(2) + CC[CH]CCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(16)
+    O(4) + THC(7) <=> OH(2) + CCC[CH]CC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(17)
+    O(4) + THC(7) <=> OH(2) + C[CH]CCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(18)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1=CC2OC(C)(C)C3C[CH]C(C)=CC3C=2C(O)=C1(19)
+    O(4) + THC(7) <=> OH(2) + CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    O(4) + THC(7) <=> OH(2) + [CH2]C1(C)OC2C=C(C=C(O)C=2C2C=C(C)CCC21)CCCCC(21)
+    O(4) + THC(7) <=> OH(2) + [CH2]CCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(22)
+    O(4) + THC(7) <=> OH(2) + [CH2]C1=CC2C3C(O)=CC(=CC=3OC(C)(C)C2CC1)CCCCC(23)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=[C]C3C=2C(O)=C1(24)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C([O])=C1(27)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    O(4) + THC(7) <=> OH(2) + CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25)
+    O(4) + THC(7) <=> OH(2) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26)
+    C(11) + [CH2](12) <=> CH3(5) + CH3(5)
+    OOH(1) + C(11) <=> CH3(5) + O2(6)
+    CH3(5) + THC(7) <=> C(11) + CCCCCC1=CC2OC(C)(C)[C]3CCC(C)=CC3C=2C(O)=C1(13)
+    CH3(5) + THC(7) <=> C(11) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    C(11) + CCCCCC1=CC2OC(C)(C)C3[CH]CC(C)=CC3C=2C(O)=C1(15) <=> CH3(5) + THC(7)
+    CH3(5) + THC(7) <=> C(11) + CC[CH]CCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(16)
+    CH3(5) + THC(7) <=> C(11) + CCC[CH]CC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(17)
+    CH3(5) + THC(7) <=> C(11) + C[CH]CCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(18)
+    CH3(5) + THC(7) <=> C(11) + CCCCCC1=CC2OC(C)(C)C3C[CH]C(C)=CC3C=2C(O)=C1(19)
+    CH3(5) + THC(7) <=> C(11) + CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    CH3(5) + THC(7) <=> C(11) + [CH2]C1(C)OC2C=C(C=C(O)C=2C2C=C(C)CCC21)CCCCC(21)
+    C(11) + [CH2]CCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(22) <=> CH3(5) + THC(7)
+    CH3(5) + THC(7) <=> C(11) + [CH2]C1=CC2C3C(O)=CC(=CC=3OC(C)(C)C2CC1)CCCCC(23)
+    CH3(5) + THC(7) <=> C(11) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=[C]C3C=2C(O)=C1(24)
+    CH3(5) + THC(7) <=> C(11) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25)
+    CH3(5) + THC(7) <=> C(11) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26)
+    CH3(5) + THC(7) <=> C(11) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=CC3C=2C([O])=C1(27)
+    CH3(5) + THC(7) <=> C(11) + CCCCCC1=CC2OC(C)(C)C3CCC(C)=C[C]3C=2C(O)=C1(14)
+    CH3(5) + THC(7) <=> C(11) + CCCC[CH]C1=CC2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(20)
+    C(11) + CCCCCC1[C]=C(O)C2=C(C=1)OC(C)(C)C1CCC(C)=CC21(25) <=> CH3(5) + THC(7)
+    C(11) + CCCCCC1=[C]C2OC(C)(C)C3CCC(C)=CC3C=2C(O)=C1(26) <=> CH3(5) + THC(7)
+
+After model enlargement:
+    The model core has 11 species and 1 reactions
+    The model edge has 20 species and 111 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 112 reactions.
+Saving current model to verbose Chemkin file...
+Chemkin file contains 112 reactions.
+Saving current model core to HTML file...
+
+RMG execution terminated at Mon Jul 17 13:45:14 2017
