@@ -3,7 +3,7 @@
 
 # # Progress Metering for OOH abstraction
 
-# This is a notebook designed to go through each output file in rwest-autotst-1 and determine the progress of each run.
+# This is a notebook designed to go through each output file in comparerTST and determine the progress of each run.
 
 # In[1]:
 
@@ -15,7 +15,7 @@ import pandas as pd
 
 # In[2]:
 
-directory = '/gss_gpfs_scratch/westgroup/rwest-autotst-1'
+directory = '/gss_gpfs_scratch/harms.n/comparerTST'
 results = defaultdict(OrderedDict)
 for i in range(1,408):
     r = results[i]
