@@ -62,6 +62,51 @@ with open("comparisonOOHRxns.py", "r") as f:
     lines = f.readlines()
 
 oohReaction = eval(lines[i].split('\n')[0])
+rxnFamily = "H_Abstraction"
+rSpecies1, rSpecies2 = oohReaction.reactants
+pSpecies1, pSpecies2 = oohReaction.products
+
+rSpecies1.generateResonanceIsomers()
+rSpecies2.generateResonanceIsomers()
+pSpecies1.generateResonanceIsomers()
+pSpecies2.generateResonanceIsomers()
+
+testReaction = Reaction(reactants=[rSpecies1, rSpecies2], products=[pSpecies1, pSpecies2], reversible=True)
+reactionList = []
+for moleculeA in rSpecies1.molecule:
+    for moleculeB in rSpecies2.molecule:
+        tempList = rmgDatabase.kinetics.generateReactionsFromFamilies([moleculeA, moleculeB], [], only_families=[rxnFamily])
+        for rxn0 in tempList:
+            reactionList.append(rxn0)
+logging.info("generateReactionsFromFamilies successfuly performed")
+gotOne=False
+for reaction in reactionList:
+    # Check if any of the RMG proposed reactions matches the reaction in the mechanism
+    if testReaction.isIsomorphic(reaction):
+        # Now add the labeled atoms to the Molecule, and check all labels were added
+        atLblsR = dict([(lbl[0], False) for lbl in reaction.labeledAtoms])
+        atLblsP = dict([(lbl[0], False) for lbl in reaction.labeledAtoms])
+
+        for reactant in reaction.reactants:
+
+            reactant.clearLabeledAtoms()
+            for atom in reactant.atoms:
+                for atomLabel in reaction.labeledAtoms:
+                    if atom==atomLabel[1]:
+                        atom.label = atomLabel[0]
+                        atLblsR[atomLabel[0]] = True
+        for product in reaction.products:
+
+            product.clearLabeledAtoms()
+            for atom in product.atoms:
+                for atomLabel in reaction.labeledAtoms:
+                    if atom==atomLabel[1]:
+                        atom.label = atomLabel[0]
+                        atLblsP[atomLabel[0]] = True
+        if all( atLblsR.values() ) and all( atLblsP.values() ):
+            gotOne=True
+            break
+
 
 qmCalc = QMCalculator(
                         software='gaussian',
@@ -91,37 +136,39 @@ def calculate(reaction):
         logging.info("Boo, reaction kinetics not calculated!!!")
     return reaction
 
-def performCalcs(rmgRxn):
+def performCalcs(chemkinRxn):
 
-    logging.info("rmgRxn: {!r}".format(rmgRxn))
+    logging.info("chemkinRxn: {!r}".format(chemkinRxn))
     # Ensure all resonance isomers have been generated
+    logging.info('Ensuring resonance isomers have been generated')
+    for species in itertools.chain(chemkinRxn.reactants, chemkinRxn.products):
+        print(type(species))
+        species = species.generateResonanceIsomers()
 
-    #testReaction = rmgRxn
+    testReaction = Reaction(reactants=chemkinRxn.reactants, products=chemkinRxn.products, reversible=True)
 
-    reactants = [species for species in rmgRxn.reactants]
+    reactants = [species for species in chemkinRxn.reactants]
     # reactant_molecules is a list of lists of resonance isomers,
     # eg. a bimolecular reaction where the second reactant has 2 isomers is: [[r1],[r2i1,r2i2]]
 
-    products = [species for species in rmgRxn.products]
+    products = [species for species in chemkinRxn.products]
     # products is a list of molecule objects (only one resonance form of each product), eg [p1, p2]
     print reactants
     #print type(reactant_molecules[0])
     print products
 
-    """checkRxn = rmgDatabase.kinetics.generateReactionsFromFamilies(reactants, products, only_families=rxnFamilies)
-                if len(checkRxn) == 1:
-                    logging.info("Generated one reaction:")
-                    logging.info(checkRxn)
-                    reaction = checkRxn[0]
-                else:  # didn't break from for loop
-                    for reaction in checkRxn:
-                        logging.info("Generated these reactions:")
-                        logging.info(reaction)
-                        reaction = checkRxn[0]
-                    raise Exception("Couldn't generate exactly one reaction matching {} in family {}".format(chemkinRxn, rxnFamilies))
-            """
+    checkRxn = rmgDatabase.kinetics.generateReactionsFromFamilies(reactants, products, only_families=rxnFamilies)
+    if len(checkRxn) == 1:
+        logging.info("Generated one reaction:")
+        logging.info(checkRxn)
+        reaction = checkRxn[0]
+    else:  # didn't break from for loop
+        for reaction in checkRxn:
+            logging.info("Generated these reactions:")
+            logging.info(reaction)
+            reaction = checkRxn[0]
+        raise Exception("Couldn't generate exactly one reaction matching {} in family {}".format(chemkinRxn, rxnFamilies))
 
-    reaction = rmgRxn
     logging.info("The reaction of interest is as follows: ")
     logging.info(reaction)
 
@@ -253,7 +300,8 @@ def performCalcs(rmgRxn):
 
 
 
-performCalcs(oohReaction)
+rxn = reactionList[0]
+performCalcs(rxn)
 
 
 
