@@ -61,7 +61,12 @@ logging.info('RMG Database Loaded')
 with open("comparisonOOHRxns.py", "r") as f:
     lines = f.readlines()
 
-oohReaction = eval(lines[i].split('\n')[0])
+#oohReaction = eval(lines[i].split('\n')[0])
+logging.info(len(lines))
+a = lines[i]
+b = a.split('\n')
+c = b[0]
+oohReaction = eval(c)
 rxnFamily = "H_Abstraction"
 rSpecies1, rSpecies2 = oohReaction.reactants
 pSpecies1, pSpecies2 = oohReaction.products

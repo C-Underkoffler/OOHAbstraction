@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>progressMetering</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>progressMetering</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11,8 +13,8 @@
 *
 */
 /*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -1107,6 +1109,7 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2535,6 +2538,7 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3025,6 +3029,7 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
+  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -8755,9 +8760,6 @@ body > #header .header-bar {
     margin-left: 10px;
   }
 }
-[dir="rtl"] #ipython_notebook {
-  float: right !important;
-}
 #noscript {
   width: auto;
   padding-top: 16px;
@@ -8960,14 +8962,8 @@ span#login_widget > .button .badge,
  *
  * Author: Jupyter Development Team
  */
-[dir="rtl"] #tabs li {
-  float: right;
-}
 ul#tabs {
   margin-bottom: 4px;
-}
-[dir="rtl"] ul#tabs {
-  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
@@ -8990,16 +8986,6 @@ ul.breadcrumb span {
 }
 .list_toolbar .tree-buttons {
   padding-top: 1px;
-}
-[dir="rtl"] .list_toolbar .tree-buttons {
-  float: left !important;
-}
-[dir="rtl"] .list_toolbar .pull-right {
-  padding-top: 1px;
-  float: left !important;
-}
-[dir="rtl"] .list_toolbar .pull-left {
-  float: right !important;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9136,9 +9122,6 @@ ul.breadcrumb span {
 #tree-selector {
   padding-right: 0px;
 }
-[dir="rtl"] #tree-selector a {
-  float: right;
-}
 #button-select-all {
   min-width: 50px;
 }
@@ -9228,9 +9211,6 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
-[dir="rtl"] #new-menu {
-  text-align: right;
-}
 .kernel-menu-icon {
   padding-right: 12px;
   width: 24px;
@@ -9275,9 +9255,6 @@ ul#new-menu {
 }
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
-}
-[dir="rtl"] #running .col-sm-8 {
-  float: right !important;
 }
 .delete-button {
   display: none;
@@ -9574,7 +9551,6 @@ div.cell.selected.jupyter-soft-selected {
   }
 }
 div.inner_cell {
-  min-width: 0;
   /* Old browsers */
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -9595,6 +9571,11 @@ div.inner_cell {
   box-flex: 1;
   /* Modern browsers */
   flex: 1;
+}
+@-moz-document url-prefix() {
+  div.inner_cell {
+    overflow-x: hidden;
+  }
 }
 /* input_area and input_prompt must match in top border and margin for alignment */
 div.input_area {
@@ -11265,7 +11246,7 @@ div#pager .ui-resizable-handle::after {
 }
 .shortcut_key {
   display: inline-block;
-  width: 21ex;
+  width: 20ex;
   text-align: right;
   font-family: monospace;
 }
@@ -11577,7 +11558,6 @@ ul.typeahead-list > li > a {
   box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
 }
 .terminal-app .terminal {
-  width: 100%;
   float: left;
   font-family: monospace;
   color: white;
@@ -11591,9 +11571,6 @@ ul.typeahead-list > li > a {
 .terminal-app .terminal dummy-screen {
   line-height: 1em;
   font-size: 14px;
-}
-.terminal-app .terminal .xterm-rows {
-  padding: 10px;
 }
 .terminal-app .terminal-cursor {
   color: black;
@@ -11654,10 +11631,8 @@ ul.typeahead-list > li > a {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
-.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
-.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -11668,11 +11643,9 @@ ul.typeahead-list > li > a {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
-.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
@@ -11797,10 +11770,19 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="n">rmg_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;RMGpy&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rmg_path</span> <span class="ow">and</span> <span class="n">rmg_path</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">rmg_path</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span><span class="p">,</span> <span class="n">OrderedDict</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">rmgpy.molecule</span> <span class="kn">import</span> <span class="n">Molecule</span>
+<span class="kn">from</span> <span class="nn">rmgpy.reaction</span> <span class="kn">import</span> <span class="n">Reaction</span>
+<span class="kn">import</span> <span class="nn">IPython</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span>
+<span class="k">def</span> <span class="nf">mprint</span><span class="p">(</span><span class="n">s</span><span class="p">):</span> <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -11813,11 +11795,18 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">directory</span> <span class="o">=</span> <span class="s1">&#39;/gss_gpfs_scratch/westgroup/rwest-autotst-1&#39;</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">directory</span> <span class="o">=</span> <span class="s1">&#39;/gss_gpfs_scratch/harms.n/comparerTST&#39;</span>
 <span class="n">results</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="n">OrderedDict</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">408</span><span class="p">):</span>
+<span class="n">comparerFiles</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">directory</span><span class="p">)</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span> <span class="n">f</span><span class="p">))]</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">fil</span> <span class="ow">in</span> <span class="n">comparerFiles</span><span class="p">:</span>
+    <span class="k">if</span> <span class="s2">&quot;.log&quot;</span> <span class="ow">in</span> <span class="n">fil</span><span class="p">:</span>
+        <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="n">OrderedDict</span><span class="p">)</span>
+<span class="n">not_ooh_abstraction</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
     <span class="n">r</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;AutoTST.{0:d}.combined.log&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;AutoTST-comparer.{0:d}.combined.log&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="n">filepath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">directory</span><span class="p">,</span><span class="n">filename</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">filepath</span><span class="p">):</span>
         <span class="n">r</span><span class="p">[</span><span class="s1">&#39;1 log file exists&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
@@ -11826,43 +11815,97 @@ div#notebook {
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
     <span class="k">for</span> <span class="n">j</span><span class="p">,</span><span class="n">l</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
-        <span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">&#39;autoTST-OOH.py:62 &lt;module&gt; INFO (.*)&#39;</span><span class="p">,</span> <span class="n">l</span><span class="p">)</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">&#39;comparerTST.py:141 performCalcs INFO chemkinRxn: (.*)&#39;</span><span class="p">,</span> <span class="n">l</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
-            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;0 reaction&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">rxn</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="s1">&#39;SMILES=&quot;[O]O&quot;&#39;</span>  <span class="ow">in</span> <span class="n">rxn</span> <span class="ow">and</span> <span class="s1">&#39;SMILES=&quot;OO&quot;&#39;</span>  <span class="ow">in</span> <span class="n">rxn</span><span class="p">):</span>
+                <span class="n">not_ooh_abstraction</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                <span class="k">break</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;0 reaction&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">rxn</span><span class="p">)</span>
+            
+        
         <span class="k">if</span> <span class="s1">&#39;We have generated a H_Abstraction reaction that matches, and used it to label the atoms&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
             <span class="n">r</span><span class="p">[</span><span class="s1">&#39;2 matched H-abstraction&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+          
+        
+        <span class="k">if</span> <span class="s1">&#39;Reading existing kinetics file&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;XX using existing kinetics data file&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># Reading in existing .kinetics file</span>
+            
+        
+           
+        
         <span class="k">if</span> <span class="s1">&#39;Generating a TS geometry via the direct guess method&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
-            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;3 started making TS geometry&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="s1">&#39;Reading existing ts file&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
-            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;4 using existing TS data file&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;3A started making TS geometry&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="s2">&quot;Reading existing ts file&quot;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;3B using existing ts data file&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># If reading in existing .ts file, this bypasses 4, 5 and 6</span>
+        <span class="k">if</span> <span class="s1">&#39;optimizeTS INFO Output file&#39;</span> <span class="ow">and</span> <span class="s1">&#39;exists and looks complete. Trying that.&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;3C Previous TS optimization complete&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#If reading in existing .log, this then checks if there is an existing IRC clac</span>
+            
+            
+            
+        <span class="k">if</span> <span class="s1">&#39;Running loose optimization of TS with frozen center&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;4A TS opt w frozen center&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>    
+        <span class="k">if</span> <span class="s1">&#39;Optimization of TS reaction center distances&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;4B TS opt of rxn center&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>  
+        <span class="k">if</span> <span class="s1">&#39;Optimizing TS attempt&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;4C TS optimization started&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        
+        
+        <span class="k">if</span> <span class="s1">&#39;verifyOutputFile INFO Verifying output file&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;5A New TS optimization complete&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        
+        
+            
+        <span class="k">if</span> <span class="s1">&#39;Creating IRC file&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;6A IRC file created&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="s2">&quot;Verifying the IRC output file&quot;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;6B New IRC calc complete&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="s2">&quot;saveTSData INFO Saving TS result file&quot;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;6C New IRC calc successful&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            
+            
+            
         <span class="k">if</span> <span class="s1">&#39;Symmetry input file written to&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
-            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;5 starting Symmetry calculation&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;7A starting Symmetry calculation&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="s1">&#39;Point group:&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
-            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;6 Symmetry calc successful&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="s1">&#39;line 295, in saveCoordinatesFromRDMol&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
-            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;7 saveCoordinatesFromRDMol bug&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-            <span class="k">print</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">30</span><span class="p">:])</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;7B Symmetry calc successful&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+         
+        
         <span class="k">if</span> <span class="s1">&#39;CanTherm execution initiated&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
-            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;9 CanTherm started&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;8 CanTherm started&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
         <span class="k">if</span> <span class="s1">&#39;One or both of the barrier heights of&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
-            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;9a CanTherm barrier height problem&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-        <span class="k">if</span> <span class="s2">&quot;Reading existing kinetics file&quot;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
-            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;A using prior calculation result&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;8A CanTherm barrier height problem&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+         
+        
         <span class="k">if</span> <span class="s1">&#39;Yay, reaction kinetics calculated!!!&#39;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
-            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;B overall success&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-</pre></div>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;ZZ overall success&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            
+        <span class="k">if</span> <span class="s2">&quot;gaussian.py:880 verifyIRCOutputFile ERROR Not all of the required keywords for success were found in the IRC output file!&quot;</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+            <span class="n">r</span><span class="p">[</span><span class="s1">&#39;ZZZ IRC success keywords not found&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 
-</div>
-</div>
-</div>
+    
+    <span class="k">if</span> <span class="s1">&#39;XX using existing TS data file&#39;</span> <span class="ow">and</span> <span class="s1">&#39;ZZ overall success&#39;</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">r</span><span class="p">[</span><span class="s1">&#39;YY successful prior calculation&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        
+    <span class="k">if</span> <span class="s1">&#39;5A New TS optimization complete&#39;</span> <span class="ow">and</span> <span class="s1">&#39;6A IRC file created&#39;</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">r</span><span class="p">[</span><span class="s1">&#39;5B TS successfully optimized&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    
+    <span class="k">if</span> <span class="s1">&#39;6B New IRC calc complete&#39;</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="ow">and</span> <span class="s2">&quot;6A IRC file created&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">r</span><span class="p">[</span><span class="s1">&#39;6D IRC calc from previous calculation&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="c1">#print &quot;deleting 6B&quot;</span>
+        <span class="k">del</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;6B New IRC calc complete&#39;</span><span class="p">])</span>
+        
+    <span class="k">if</span> <span class="s1">&#39;5A New TS optimization complete&#39;</span> <span class="ow">and</span> <span class="s1">&#39;5C Previous TS optimization complete&#39;</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="k">del</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;5A New TS optimization complete&#39;</span><span class="p">])</span>
+        
+        
+        
+          
+        
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">not_ooh_abstraction</span><span class="p">:</span>
+    <span class="k">del</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -11874,9 +11917,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area">
-<div class="prompt output_prompt">Out[3]:</div>
-
+<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -11884,42 +11925,42 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
       <th>5</th>
-      <th>6</th>
       <th>7</th>
       <th>8</th>
-      <th>9</th>
-      <th>10</th>
+      <th>12</th>
+      <th>13</th>
+      <th>14</th>
+      <th>16</th>
+      <th>17</th>
+      <th>21</th>
+      <th>22</th>
       <th>...</th>
-      <th>398</th>
-      <th>399</th>
-      <th>400</th>
-      <th>401</th>
-      <th>402</th>
-      <th>403</th>
-      <th>404</th>
-      <th>405</th>
-      <th>406</th>
-      <th>407</th>
+      <th>990</th>
+      <th>991</th>
+      <th>992</th>
+      <th>993</th>
+      <th>994</th>
+      <th>995</th>
+      <th>996</th>
+      <th>997</th>
+      <th>998</th>
+      <th>999</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0 reaction</th>
-      <td>H2O2 + H &lt;=&gt; H2 + HO2</td>
-      <td>CH3 + H2O2 &lt;=&gt; CH4 + HO2</td>
-      <td>CH4 + HO2 &lt;=&gt; CH3 + H2O2</td>
-      <td>H2O2 + O &lt;=&gt; OH + HO2</td>
-      <td>nh3 + ho2 &lt;=&gt; nh2 + h2o2</td>
-      <td>H2O2 + OH &lt;=&gt; H2O + HO2</td>
-      <td>HO2 + H2O =&gt; H2O2 + OH</td>
-      <td>HO2 + C2H2 =&gt; H2O2 + C2H</td>
-      <td>C2H3 + HO2 &lt;=&gt; C2H2 + H2O2</td>
-      <td>C2H3 + H2O2 &lt;=&gt; C2H4 + HO2</td>
+      <td>&lt;Molecule "OO"&gt; + &lt;Molecule "[H]"&gt; &lt;=&gt; &lt;Molecu...</td>
+      <td>&lt;Molecule "[CH3]"&gt; + &lt;Molecule "[O]O"&gt; &lt;=&gt; &lt;Mo...</td>
+      <td>&lt;Molecule "[CH3]"&gt; + &lt;Molecule "[O]O"&gt; &lt;=&gt; &lt;Mo...</td>
+      <td>&lt;Molecule "[CH3]"&gt; + &lt;Molecule "OO"&gt; &lt;=&gt; &lt;Mole...</td>
+      <td>&lt;Molecule "C"&gt; + &lt;Molecule "[O]O"&gt; &lt;=&gt; &lt;Molecu...</td>
+      <td>&lt;Molecule "OO"&gt; + &lt;Molecule "[O]"&gt; &lt;=&gt; &lt;Molecu...</td>
+      <td>&lt;Molecule "[O]O"&gt; + &lt;Molecule "O"&gt; &lt;=&gt; &lt;Molecu...</td>
+      <td>&lt;Molecule "OO"&gt; + &lt;Molecule "[OH]"&gt; &lt;=&gt; &lt;Molec...</td>
+      <td>&lt;Molecule "C#C"&gt; + &lt;Molecule "[O]O"&gt; &lt;=&gt; &lt;Mole...</td>
+      <td>&lt;Molecule "[O]O"&gt; + &lt;Molecule "C#C"&gt; &lt;=&gt; &lt;Mole...</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -11945,16 +11986,16 @@ div#notebook {
       <td>1</td>
       <td>1</td>
       <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <th>2 matched H-abstraction</th>
@@ -11962,11 +12003,11 @@ div#notebook {
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>NaN</td>
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>NaN</td>
+      <td>1</td>
+      <td>1</td>
       <td>1</td>
       <td>...</td>
       <td>NaN</td>
@@ -11981,16 +12022,16 @@ div#notebook {
       <td>NaN</td>
     </tr>
     <tr>
-      <th>3 started making TS geometry</th>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
+      <th>3A started making TS geometry</th>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>NaN</td>
       <td>1</td>
       <td>1</td>
       <td>1</td>
-      <td>NaN</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
       <td>1</td>
       <td>...</td>
       <td>NaN</td>
@@ -12005,16 +12046,40 @@ div#notebook {
       <td>NaN</td>
     </tr>
     <tr>
-      <th>4 using existing TS data file</th>
+      <th>3B using existing ts data file</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>1</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3C Previous TS optimization complete</th>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>1</td>
+      <td>1</td>
+      <td>1</td>
       <td>NaN</td>
-      <td>NaN</td>
+      <td>1</td>
+      <td>1</td>
       <td>1</td>
       <td>...</td>
       <td>NaN</td>
@@ -12029,16 +12094,88 @@ div#notebook {
       <td>NaN</td>
     </tr>
     <tr>
-      <th>5 starting Symmetry calculation</th>
+      <th>4A TS opt w frozen center</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4B TS opt of rxn center</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4C TS optimization started</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>5A New TS optimization complete</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>1</td>
       <td>1</td>
       <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>1</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>1</td>
       <td>1</td>
       <td>...</td>
       <td>NaN</td>
@@ -12053,17 +12190,17 @@ div#notebook {
       <td>NaN</td>
     </tr>
     <tr>
-      <th>6 Symmetry calc successful</th>
-      <td>1</td>
+      <th>5B TS successfully optimized</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -12077,17 +12214,17 @@ div#notebook {
       <td>NaN</td>
     </tr>
     <tr>
-      <th>9 CanTherm started</th>
-      <td>1</td>
+      <th>6A IRC file created</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -12101,7 +12238,151 @@ div#notebook {
       <td>NaN</td>
     </tr>
     <tr>
-      <th>9a CanTherm barrier height problem</th>
+      <th>6B New IRC calc complete</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>6C New IRC calc successful</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>6D IRC calc from previous calculation</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7A starting Symmetry calculation</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7B Symmetry calc successful</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8 CanTherm started</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>8A CanTherm barrier height problem</th>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -12111,30 +12392,6 @@ div#notebook {
       <td>-1</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>-1</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>A using prior calculation result</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>NaN</td>
       <td>...</td>
       <td>NaN</td>
@@ -12149,8 +12406,80 @@ div#notebook {
       <td>NaN</td>
     </tr>
     <tr>
-      <th>B overall success</th>
+      <th>XX using existing kinetics data file</th>
       <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>YY successful prior calculation</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>ZZ overall success</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>ZZZ IRC success keywords not found</th>
+      <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -12174,7 +12503,7 @@ div#notebook {
     </tr>
   </tbody>
 </table>
-<p>11 rows × 407 columns</p>
+<p>23 rows × 812 columns</p>
 </div>
 </div>
 
@@ -12186,49 +12515,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[4]:</div>
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0 reaction                           NaN
-1 log file exists                    NaN
-2 matched H-abstraction              NaN
-3 started making TS geometry         NaN
-4 using existing TS data file        NaN
-5 starting Symmetry calculation      NaN
-6 Symmetry calc successful           NaN
-9 CanTherm started                   NaN
-9a CanTherm barrier height problem   NaN
-A using prior calculation result     NaN
-B overall success                    NaN
-dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -12242,23 +12529,33 @@ dtype: float64</pre>
 <div class="output">
 
 
-<div class="output_area">
-<div class="prompt output_prompt">Out[5]:</div>
-
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0 reaction                            349
-1 log file exists                     349
-2 matched H-abstraction               280
-3 started making TS geometry          265
-4 using existing TS data file         105
-5 starting Symmetry calculation       186
-6 Symmetry calc successful            186
-9 CanTherm started                    184
-9a CanTherm barrier height problem     28
-A using prior calculation result       15
-B overall success                     169
+<pre>0 reaction                               273
+1 log file exists                        812
+2 matched H-abstraction                  558
+3A started making TS geometry            333
+3B using existing ts data file            78
+3C Previous TS optimization complete     123
+4A TS opt w frozen center                132
+4B TS opt of rxn center                  131
+4C TS optimization started               129
+5A New TS optimization complete          249
+5B TS successfully optimized             110
+6A IRC file created                      110
+6B New IRC calc complete                 108
+6C New IRC calc successful                90
+6D IRC calc from previous calculation     35
+7A starting Symmetry calculation         163
+7B Symmetry calc successful              163
+8 CanTherm started                       162
+8A CanTherm barrier height problem        88
+XX using existing kinetics data file     225
+YY successful prior calculation          277
+ZZ overall success                       277
+ZZZ IRC success keywords not found        33
 dtype: int64</pre>
 </div>
 
@@ -12268,9 +12565,74 @@ dtype: int64</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>finished_but_failed_irc = (df.T["6B New IRC calc complete"]==1) &amp; (df.T["6C New IRC calc successful"]!=1)
+df.T[finished_but_failed_irc]['0 reaction']
+mprint("# Finished IRC but failed it ({})".format(sum(finished_but_failed_irc)))
+for r in df.T[finished_but_failed_irc]['0 reaction']:
+    display(r)
+    print df.T[finished_but_failed_irc]</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>analysis = defaultdict(OrderedDict)</p>
+<p>for i in range(df.shape[1]):
+    i= i+1
+    r = {}
+    testRxn = str(df.loc['0 reaction'][i])
+    success = df.loc['B overall success'][i]
+    spec = testRxn.split('&lt;=&gt;')
+    for d in spec:
+        if """<Molecule "[O]O">""" in d:
+            r1, r2 = d.split('+')
+            if """<Molecule "[O]O">""" in r1:
+                important = str(r2)
+            else:
+                important = str(r1)
+    smiles = important.split("\"")[1]</p>
+
+<pre><code>mol = Molecule(SMILES=smiles)
+r['Molar Mass'] = mol.getMolecularWeight()
+r['Radical Count'] = mol.getRadicalCount()
+r['Is Linear'] = mol.isLinear()
+r['Is Aromatic'] = mol.isAromatic()
+r['Is Rotor'] = mol.countInternalRotors()
+
+mol.getBonds
+if success == 1:
+    r['Has Kinetics'] = True
+else:
+    r['Has Kinetics'] = False
+analysis[smiles] = r</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>ana = pd.DataFrame(analysis).transpose()
+ana.sort('Has Kinetics')</p>
+<p>ana[ana['Has Kinetics']]</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span> 
@@ -12281,24 +12643,90 @@ dtype: int64</pre>
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span> 
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>directory = "/Users/nathan/Code/scratch_test/bioTST/"
+bioFiles = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+k = 0
+for fil in bioFiles:
+    if ".log" in fil:
+        k += 1
+results = defaultdict(OrderedDict)
+for i in range(k):
+    i = i + 1
+    r = results[i]
+    filename = 'AutoTST-biofuels.{0:d}.combined.log'.format(i)
+    filepath = os.path.join(directory,filename)
+    if os.path.exists(filepath):
+        r['1 log file exists'] = 1
+    else:
+        continue
+    with open(filepath) as f:
+        lines = f.readlines()
+    for j,l in enumerate(lines):
+        m = re.match('autoTST-OOH.py:62 <module> INFO (.*)', l)
+        if m:
+            r['0 reaction'] = m.group(1)
+        if 'We have generated a H_Abstraction reaction that matches, and used it to label the atoms' in l:
+            r['2 matched H-abstraction'] = 1
+        if 'Generating a TS geometry via the direct guess method' in l:
+            r['3 started making TS geometry'] = 1
+        if 'Reading existing ts file' in l:
+            r['4 using existing TS data file'] = 1
+        if 'Symmetry input file written to' in l:
+            r['5 starting Symmetry calculation'] = 1
+        if 'Point group:' in l:
+            r['6 Symmetry calc successful'] = 1
+        if 'line 295, in saveCoordinatesFromRDMol' in l:
+            r['7 saveCoordinatesFromRDMol bug'] = -1
+            print ''.join(lines[j-30:])
+        if 'CanTherm execution initiated' in l:
+            r['9 CanTherm started'] = 1
+        if 'One or both of the barrier heights of' in l:
+            r['9a CanTherm barrier height problem'] = -1
+        if "Reading existing kinetics file" in l:
+            r['A using prior calculation result'] = 1
+        if 'Yay, reaction kinetics calculated!!!' in l:
+            r['B overall success'] = 1</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>df = pd.DataFrame(results)
+df</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>df.sum(axis=1)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>df.count(axis=1)</p>
+
+</div>
+</div>
 </div>
     </div>
   </div>
 </body>
-
- 
-
-
 </html>
