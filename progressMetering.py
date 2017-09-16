@@ -33,6 +33,8 @@ for fil in comparerFiles:
         k += 1
 results = defaultdict(OrderedDict)
 not_ooh_abstraction = []
+sucessKey = 'Normal termination of Gaussian'
+failKey = "Error termination"
 for i in range(1,k+1):
     r = results[i]
     filename = 'AutoTST-comparer.{0:d}.combined.log'.format(i)
@@ -51,6 +53,12 @@ for i in range(1,k+1):
                 not_ooh_abstraction.append(i)
                 break
             r['0 reaction'] = eval(rxn)
+            
+            
+                
+                
+                
+                
             
         
         if 'We have generated a H_Abstraction reaction that matches, and used it to label the atoms' in l:
@@ -126,7 +134,79 @@ for i in range(1,k+1):
         
     if '5A New TS optimization complete' and '5C Previous TS optimization complete' in r.keys():
         del(r['5A New TS optimization complete'])
+    
+    if '3C Previous TS optimization complete' in r.keys():
+            
+        qmScratchDir = '/gss_gpfs_scratch/harms.n/QMscratch/'
+
+        fileNames = [f for f in os.listdir(qmScratchDir) if os.path.isfile(os.path.join(qmScratchDir, f))]
+
+        r1, r2 = rxn.reactants
+        p1, p2 = rxn.products
+
+        r1SMILES = r1[0].molecule.SMILES
+        r2SMILES = r2[0].molecule.SMILES
+        p1SMILES = p1[0].molecule.SMILES
+        p2SMILES = p2[0].molecule.SMILES
         
+        r1Augmented = r1[0].molecule.toInChiKey()
+        r2Augmented = r2[0].molecule.toInChiKey()
+        p1Augmented = p1[0].molecule.toInChiKey()
+        p2Augmented = p2[0].molecule.toInChiKey()
+
+        for fileName in fileNames:
+            if r1Augmented or r2Augmented or p1Augmented or p2Augmented in fileName:
+                f = open(qmScratchDir + fileName, "r")
+                    lastLines = f.readlines()[-4:]
+                    
+                    """if sucessKey or failKey in lastLines:
+                        r['WW.0 Complete Reactants / Products Estimate'] = 1"""
+                    if failKey in lastLine:
+                        r['WW.1 Fail Reactants / Products Estimate'] = 1 
+                
+            if r1SMILES and r2SMILES and p1SMILES and p2SMILES and ".log" in fileName:
+                if "Est" in fileName:
+                    f = open(qmScratchDir + fileName, "r")
+                    lastLines = f.readlines()[-4:]
+                    
+                    if sucessKey or failKey in lastLines:
+                        r['WW.A Complete TS Estimate'] = 1
+                    if sucessKey in lastLine:
+                        r['WW.B Successful TS Estimate'] = 1
+                             
+                    # check complete
+                elif "RxnC" in fileName:
+                    f = open(qmScratchDir + fileName, "r")
+                    lastLines = f.readlines()[-4:]
+                    
+                    if sucessKey or failKey in lastLines:
+                        r['WW.C Complete Rxn Center'] = 1
+                    if sucessKey in lastLine:
+                        r['WW.D Successful Rxn Center'] = 1
+                    # check complete
+                    
+                elif "IRC" in fileName:
+                    f = open(qmScratchDir + fileName, "r")
+                    lastLines = f.readlines()[-4:]
+                    
+                    if sucessKey or failKey in lastLines:
+                        r['WW.G Complete IRC log'] = 1
+                    if sucessKey in lastLine:
+                        r['WW.H Successful IRC log'] = 1
+                    # check complete
+                    
+                else:
+                    f = open(qmScratchDir + fileName, "r")
+                    lastLines = f.readlines()[-4:]
+                    
+                    if sucessKey or failKey in lastLines:
+                        r['WW.E Complete overall TS log'] = 1
+                    if sucessKey in lastLine:
+                        r['WW.F Successful overall TS log'] = 1
+                    # check complete
+                    
+                    
+
         
         
           
