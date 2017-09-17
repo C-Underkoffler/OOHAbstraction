@@ -25,7 +25,7 @@
 #SBATCH -N 1
 
 #an array job
-#SBATCH --array=464-999
+#SBATCH --array=1-999
 
 
 #####################################################
@@ -40,4 +40,4 @@ echo $SLURM_ARRAY_TASK_ID
 cd /gss_gpfs_scratch/harms.n/comparerTST/
 # the "stdbuf -o0 -e0"  and the "-u" are to disable buffering,
 # so that you see output from the script in the log files immediately.
-stdbuf -o0 -e0 python -u ~/Code/OOHabstraction/ComparerTST/comparerTST.py > /gss_gpfs_scratch/harms.n/comparerTST/AutoTST-comparer.$SLURM_ARRAY_TASK_ID.combined.log 2>&1
+stdbuf -o0 -e0 python -u ~/Code/OOHabstraction/ComparerTST/comparerTST.py > /gss_gpfs_scratch/harms.n/comparerTST/AutoTST-comparer.updated.$SLURM_ARRAY_TASK_ID.combined.log 2>&1
