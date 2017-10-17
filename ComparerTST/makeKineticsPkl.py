@@ -1,3 +1,14 @@
+
+"""
+Reads in a pickle file from the importer project contating
+a dictionaly of dictionaries of RMG kinetics (eg Arrhenius)
+objects, one for each reaction for each model.
+
+Makes a Pandas DataFrame containing log10(k) evaluated
+at 1000 K and 1 bar.
+Saves that Pandas DataFrame to a pickle
+"""
+
 import os, sys
 rmg_path = os.getenv('RMGpy')
 if rmg_path and rmg_path not in sys.path:
@@ -19,6 +30,9 @@ with open("./ComparerTST/kinetics.pkl", "r") as f:
     importerKinetics = pickle.load(f)
 
 def evalArrhenius(autoTSTExpression):
+    """
+    Converts a string to an Arrhenius object
+    """
     if autoTSTExpression is np.nan:
         return autoTSTExpression
     try:
@@ -33,9 +47,12 @@ def evalArrhenius(autoTSTExpression):
     return result
 
 def RateCoefficients(arrhenius):
+    """
+    Takes an Arrhenius object, evaluates k at 1000K 1bar, and returns log10(k)
+    """
     rate = np.nan
     try:
-        rate = np.log(arrhenius.getRateCoefficient(T=1000, P=1e5))
+        rate = np.log10(arrhenius.getRateCoefficient(T=1000, P=1e5))
         print "Rate Calculated"
     except:
         print "No rate to calculate"
@@ -49,8 +66,8 @@ for key in importerKinetics:
     except:
         pass
 
-arrhenius = pd.DataFrame(importerKinetics)
-df = arrhenius
+df = pd.DataFrame(importerKinetics)
+
 rateCoefficients = df.applymap(RateCoefficients)
 
 rateCoefficients.to_pickle("rateCoefficients.plk")

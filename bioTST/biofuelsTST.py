@@ -137,7 +137,12 @@ for reaction in reactionList:
 						atLblsP[atomLabel[0]] = True
 		if all( atLblsR.values() ) and all( atLblsP.values() ):
 			gotOne=True
+            logging.info("Generated a reaction that matches and transferred the atom labels")
 			break
+else: # didn't break
+    logging.error("Didn't generate the corresponding reaction")
+
+assert gotOne
 
 def sorter_key(rxn):
     """
@@ -342,5 +347,5 @@ def performCalcs(chemkinRxn):
         input_string = ','.join(row)
         with open(os.path.join(folderPath, smiles_dict[entry] + '_kinetics.txt'), 'w') as kinTxt:
                 kinTxt.write(input_string)
-rxn = reactionList[0]
-performCalcs(rxn)
+
+performCalcs(reaction)
