@@ -40,4 +40,4 @@ echo $SLURM_ARRAY_TASK_ID
 cd /gss_gpfs_scratch/harms.n/bioTST/biofuels_rerun
 # the "stdbuf -o0 -e0"  and the "-u" are to disable buffering,
 # so that you see output from the script in the log files immediately.
-stdbuf -o0 -e0 python -u ~/Code/OOHabstraction/bioTST/biofuelsTST.py > /gss_gpfs_scratch/harms.n/bioTST/AutoTST-biofuels.$SLURM_ARRAY_TASK_ID.combined.log 2>&1
+stdbuf -o0 -e0 python -u ~/Code/OOHabstraction/bioTST/biofuelsTST.py > /gss_gpfs_scratch/harms.n/bioTST/biofuels_rerun/AutoTST-biofuels.$SLURM_ARRAY_TASK_ID.combined.log 2>&1

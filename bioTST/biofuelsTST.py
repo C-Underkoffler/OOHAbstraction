@@ -137,7 +137,7 @@ for reaction in reactionList:
 						atLblsP[atomLabel[0]] = True
 		if all( atLblsR.values() ) and all( atLblsP.values() ):
 			gotOne=True
-            logging.info("Generated a reaction that matches and transferred the atom labels")
+            #logging.info("Generated a reaction that matches and transferred the atom labels")
 			break
 else: # didn't break
     logging.error("Didn't generate the corresponding reaction")
