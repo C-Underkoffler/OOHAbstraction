@@ -10,7 +10,7 @@
 
 #time you think you need; default is one day
 # d-hh:mm:ss
-#SBATCH --time=0-00:01:00
+#SBATCH --time=0
 
 #number of tasks you are requesting
 #SBATCH -N 1
@@ -19,7 +19,7 @@
 ##SBATCH --exclusive
 
 #partition to use
-#SBATCH --partition=par-gpu-2
+#SBATCH --partition=west
 
 #number of nodes to distribute n tasks across
 #SBATCH -N 1
@@ -40,4 +40,4 @@ echo $SLURM_ARRAY_TASK_ID
 cd /gss_gpfs_scratch/harms.n/bioTST/biofuels_rerun
 # the "stdbuf -o0 -e0"  and the "-u" are to disable buffering,
 # so that you see output from the script in the log files immediately.
-stdbuf -o0 -e0 python -u ~/Code/OOHabstraction/bioTST/biofuelsTST.py > /gss_gpfs_scratch/harms.n/bioTST/biofuels_rerun/AutoTST-biofuels.$SLURM_ARRAY_TASK_ID.combined.log 2>&1
+stdbuf -o0 -e0 python -u ~/Code/OOHabstraction/bioTST/biofuelsTST.py > /gss_gpfs_scratch/harms.n/bioTST/biofuels_rerun_Nov2/AutoTST-biofuels.$SLURM_ARRAY_TASK_ID.combined.log 2>&1
