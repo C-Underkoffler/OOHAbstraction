@@ -111,10 +111,13 @@ def checkReactionFile(filename):
         for line in lines:
             if successKey or failKey in line:
                 r['WW.E Complete overall TS log'] = 1
+            else:
+                ThreeCStatus = False;
+
             if successKey in line:
                 r['WW.F Successful overall TS log'] = 1
 
-    return
+    return ThreeCStatus
 
 # TODO make into list of products and reactants
 def possibleNames(r1SMILES, r2SMILES, p1SMILES, p2SMILES):
@@ -123,15 +126,10 @@ def possibleNames(r1SMILES, r2SMILES, p1SMILES, p2SMILES):
 
     joinedReactOrders = []
     joinedProdOrders = []
-# TODO check list comprehension method
 
-#    joinedReactOrders = ['+'.join(order) for order in itertools.permutations(reactants)]
-    for order in itertools.permutations(reactants):
-        joinedReactOrders.append('+'.join(order))
+    joinedReactOrders = ['+'.join(order) for order in itertools.permutations(reactants)]
 
-    for order in itertools.permutations(products):
-        joinedProdOrders.append('+'.join(order))
-#    joinedProdOrders ['+'.join(order) for order in itertools.permutations(products)]
+    joinedProdOrders = ['+'.join(order) for order in itertools.permutations(products)]
 
     fileNames = ['_'.join((rJO, pJO)) for rJO in joinedReactOrders for pJO in joinedProdOrders]
 
@@ -244,7 +242,7 @@ for i in range(1,1050):
             #augFileNames = {}
 
             allSuccesful = True
-            allComplete = False
+            allComplete = True
             sucComp = allSuccesful, allComplete
 
             for fileName in fileNames:
@@ -263,6 +261,12 @@ for i in range(1,1050):
 
             if allComplete:
                 r['WW.4 ALL Complete Reactants / Products Estimate'] = 1
+
+                if 'WW.A Complete TS Estimate' and 'WW.C Complete Rxn Center' and 'WW.G Complete IRC log' and 'WW.E Complete overall TS log' in r.keys():
+                    r['WW.Z 3C has been verified'] = 1
+
+
+
             if allSuccesful and allComplete:
                 r['WW.5 ALL Successful Reactants / Products Estimate'] = 1
 
@@ -321,6 +325,7 @@ for i in range(1,1050):
 
     if '5A New TS optimization complete' and '5C Previous TS optimization complete' in r.keys():
         del(r['5A New TS optimization complete'])
+
 
 
 # removing non OOH absraction reactions
