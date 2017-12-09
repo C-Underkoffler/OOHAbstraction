@@ -1,0 +1,145 @@
+digraph G {
+  node  [ color = cornflowerblue,
+          fontcolor = white,
+          shape = rectangle,
+          style = filled];
+
+  start [ color = darkgoldenrod2,
+          fontcolor = navy,
+          label = "Log File Exists",
+          shape = box];
+
+  matchH  [ label = "Check H Abstraction\ncomparisonTST.py:215"
+            color = goldenrod2];
+
+  checkKin  [ label = "Check if Kinetics File Exists\ncomparisonTST.py:129 or reaction.py:96"
+              shape = ellipse
+              color = goldenrod2];
+
+  checkKin_Exists [ label = "Yay! Kinetics Exists\ncomparisonTST.py:139"
+                    color = goldenrod2];
+  checkKin_DNE  [ label = "Kinetics Does Not Exist\nreaction.py:621"];
+  checkKin_Bad  [ label = "Kinetics File Does Not Match Method or Reaction\nreaction.py:625 or 630"];
+
+  TSdirect  [ label = "TS Geometry Direct Guess - Estimate\nreaction.py:522",
+              shape = ellipse
+              color = goldenrod2];
+  TSdirect_exists [ label = "Found Existing TS File\nreaction.py:539"];
+  TSdirect_generated  [ label = "Direct Guess Generated\nreaction.py:561"];
+
+  tsSearch  [ label = "Begin TS Search\n'tsSearch()'"];
+  tsSearch_overallSuccess [ label = "tsSearch Overall Success"];
+  tsSearch_overallFail  [ label = "tsSearch Overall Fail"];
+
+  validateTS  [ label = "Validate TS\n'validateTS()'",
+                shape = ellipse];
+  validateTS_valid  [ label = "Valid TS"];
+  validateTS_invalid  [ label = "Invalid TS"];
+  validateTS_valid_writeAndSave [ label = "Writes and Saves Valid TS"];
+
+  TSdirect_overallFalse [ label = "TS Direct Guess Overall False"];
+  TSdirect_overallTrue  [ label = "TS Direct Guess Overall True"];
+
+  Updates_TSdist_training_database [ label = "Should Update TS Dist. Training Database\nNo examples of it doing so",
+                                      color = red];
+#####
+  optimizeTS  [ label = "Starts TS Optimization Search\nreaction.py:426",
+                shape = ellipse];
+  optimizeTS_outputAlreadyExists  [ label = "Output Already Exists\nreaction.py:428\n'checkComplete()'",
+                                    shape = ellipse];
+  optimizeTS_outputAlreadyExists_complete [ label = "Output File Exists and is Complete\nreaction.py:438"];
+  optimizeTS_outputAlreadyExists_complete_verify  [ label = "Verify Output File\nTODO add location\n'verifyOutputFile()'"];
+  optimizeTS_outputAlreadyExists_incomplete [ label = "Output is Incomplete. Removes Output\nreaction.py:432"];
+  optimizeTS_outputDNE [ label = "Output File Does Not Exist"];
+  optimizeTS_outputDNE_newInput  [ label = "Create and Run New Input\nTS Attempt 1\nreaction.py:444\n'createInputFile()' & 'self.run()'"];
+  optimizeTS_outputDNE_newInput_VOF [ label = "Verify Output File\nTODO add location\n'verifyOutputFile()'"];
+  optimizeTS_checkIntCoord  [ label = "Check Internal Coordinates && Convergence",
+                              shape = ellipse];
+  optimizeTS_checkIntCoord_Conv [ label ="Internal Coordinates Failed or TS Converged"];
+  optimizeTS_checkIntCoord_DNC  [ label = "Internal Coord. Success but Diverged\nTS Attempt 2\nreaction.py:453\n'createInputFile()' & 'self.run()'"];
+  optimizeTS_checkIntCoord_DNC_VOF  [ label = "Verify Output File\nTODO add location\n'verifyOutputFile()'"];
+  optimizeTS_checkConv  [ label = "Check Convergence",
+                          shape = ellipse];
+  optimizeTS_checkConv_converged  [ label = "Converged"];
+  optimizeTS_checkConv_DNC  [ label = "Not Converged. Check for Convergence Failures\n'checkComplete()'"];
+  optimizeTS_checkConv_DNC_convFailure  [ label = "Convergence Failure\nreaction.py:464\nAttempt 1 but with Quadratic SCF\n'createInputFile()' & 'self.run()'"];
+  optimizeTS_checkConv_DNC_convFailure_VOF  [ label = "Verify Output File\nTODO add location\n'verifyOutputFile()'"];
+  optimizeTS_checkConv_DNC_convFailure_checkIntCoord  [ label = "Checks Internal Coordinates",
+                                                        shape = ellipse];
+  optimizeTS_checkConv_DNC_convSuccess  [ label = "No Convergence Failures"];
+  optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICsucc [ label = "Internal Coordinates Success\nreaction.py.468\nAttempt 2 but with Quadratic SCF\n'createInputFile()' & 'self.run()'"];
+  optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICsucc_VOF [ label = "Verify Output File\nTODO add location\n'verifyOutputFile()'"]
+  optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICfail [ label = "Internal Coordinates Failure"];
+
+  optimizeTS_overallSuccess [ label = "optimizeTS Overall Success"];
+  optimizeTS_overallFail  [ label = "optimizeTS overall Failure"];
+#####
+
+  canTherm  [ label = "Starts CanTherm"];
+  canTherm_fail [ label = "CanTherm Fail"];
+  canTherm_success [ label = "CanTherm Success\nreaction.py:879"];
+
+  overallFail [ label = "Overall Fail"];
+  overallSuccess  [ label = "Overall Success"];
+
+###########################################################################################################################################################################################
+
+  start -> matchH -> checkKin
+
+  checkKin -> checkKin_Exists
+  checkKin -> checkKin_DNE -> TSdirect
+  checkKin -> checkKin_Bad -> TSdirect
+
+  TSdirect -> TSdirect_exists -> TSdirect_overallTrue
+  TSdirect -> TSdirect_generated
+  TSdirect_generated -> tsSearch -> optimizeTS
+
+  optimizeTS -> optimizeTS_outputAlreadyExists
+  optimizeTS -> optimizeTS_outputDNE -> optimizeTS_outputDNE_newInput -> optimizeTS_outputDNE_newInput_VOF -> optimizeTS_checkIntCoord
+  optimizeTS_outputAlreadyExists -> optimizeTS_outputAlreadyExists_incomplete -> optimizeTS_outputDNE
+  optimizeTS_outputAlreadyExists -> optimizeTS_outputAlreadyExists_complete -> optimizeTS_outputAlreadyExists_complete_verify
+  optimizeTS_outputAlreadyExists_complete_verify -> optimizeTS_checkIntCoord
+  optimizeTS_checkIntCoord -> optimizeTS_checkIntCoord_DNC -> optimizeTS_checkIntCoord_DNC_VOF
+  optimizeTS_checkIntCoord_DNC_VOF -> optimizeTS_checkConv
+  optimizeTS_checkIntCoord -> optimizeTS_checkIntCoord_Conv -> optimizeTS_checkConv
+  optimizeTS_checkConv -> optimizeTS_checkConv_converged
+  optimizeTS_checkConv -> optimizeTS_checkConv_DNC
+  optimizeTS_checkConv_DNC -> optimizeTS_checkConv_DNC_convFailure -> optimizeTS_checkConv_DNC_convFailure_VOF
+  optimizeTS_checkConv_DNC -> optimizeTS_checkConv_DNC_convSuccess
+  optimizeTS_checkConv_DNC_convFailure_VOF -> optimizeTS_checkConv_DNC_convFailure_checkIntCoord
+  optimizeTS_checkConv_DNC_convFailure_checkIntCoord -> optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICsucc
+  optimizeTS_checkConv_DNC_convFailure_checkIntCoord -> optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICfail
+  optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICsucc -> optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICsucc_VOF
+
+  optimizeTS_checkConv_converged -> optimizeTS_overallSuccess
+  optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICsucc_VOF -> optimizeTS_overallSuccess
+  optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICsucc_VOF -> optimizeTS_overallFail
+  optimizeTS_checkConv_DNC_convSuccess -> optimizeTS_overallFail
+  optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICfail -> optimizeTS_overallFail
+
+  optimizeTS_overallFail -> tsSearch_overallFail
+  optimizeTS_overallSuccess -> validateTS
+
+  validateTS -> validateTS_checkForIRC
+  validateTS_checkForIRC -> validateTS_IRCexists
+  validateTS_IRCexists -> validateTS_rightTStrue
+  validateTS_IRCexists -> validateTS_rightTSfalse
+  validateTS_checkForIRC -> validateTS_IRCDNE
+  validateTS_IRCDNE -> validateTS_IRCDNE_ConvFail -> validateTS_rightTSfalse
+  validateTS_IRCDNE -> validateTS_IRCDNE_ConvSucc -> validateTS_IRCDNE_ConvSucc_VIOF
+  validateTS_IRCDNE_ConvSucc_VIOF -> validateTS_rightTStrue -> validateTS_valid
+  validateTS_IRCDNE_ConvSucc_VIOF -> validateTS_rightTSfalse
+  validateTS_rightTSfalse -> validateTS_rightTSfalse_ConvFail
+  validateTS_rightTSfalse -> validateTS_rightTSfalse_ConvSuc
+  validateTS_rightTSfalse_ConvSuc -> validateTS_valid
+  validateTS_rightTSfalse_ConvSuc -> validateTS_invalid
+  validateTS_rightTSfalse_ConvFail -> validateTS_valid
+  validateTS_rightTSfalse_ConvFail -> validateTS_invalid
+  validateTS_valid -> validateTS_valid_writeAndSave -> tsSearch_overallSuccess -> TSdirect_overallTrue -> canTherm
+  validateTS_invalid -> tsSearch_overallFail -> TSdirect_overallFalse -> overallFail
+  validateTS_valid_writeAndSave -> Updates_TSdist_training_database -> tsSearch_overallSuccess
+
+  canTherm -> canTherm_success -> overallSuccess
+  canTherm -> canTherm_fail -> overallFail
+
+}
