@@ -15,6 +15,234 @@ LLNL-MI-536371
 
 """
 
+####################################################
+##  Reaction 4346 has been replaced with option  1  ##
+####################################################
+units(length='cm', time='s', quantity='mol', act_energy='cal/mol')
+
+ideal_gas(name='gas',
+          elements="C H N O Ar He",
+          species="""H               H2              O
+                     O2              OH              H2O
+                     N2              HO2             H2O2
+                     AR              CO              CO2
+                     CH2O            HCO             HO2CHO
+                     O2CHO           HOCHO           OCHO
+                     HOCH2O2H        HOCH2O2         OCH2O2H
+                     HOCH2O          CH3OH           CH2OH
+                     CH3O            CH3O2H          CH3O2
+                     CH4             CH3             CH2
+                     CH2(S)          C               CH
+                     C2H6            C2H5            C2H4
+                     C2H3            C2H2            C2H
+                     CH3CHO          CH3CO           CH2CHO
+                     CH2CO           HCCO            HCCOH
+                     CH3CO3H         CH3CO3          CH3CO2
+                     C2H5OH          C2H5O           PC2H4OH
+                     SC2H4OH         O2C2H4OH        C2H5O2H
+                     C2H5O2          C2H4O2H         C2H4O1-2
+                     C2H3O1-2        CH3COCH3        CH3COCH2
+                     CH3COCH2O2      CH3COCH2O2H     CH3COCH2O
+                     C2H3CHO         C2H3CO          C2H5CHO
+                     C2H5CO          CH3OCH3         CH3OCH2
+                     CH3OCH2O2       CH2OCH2O2H      CH3OCH2O2H
+                     CH3OCH2O        O2CH2OCH2O2H    HO2CH2OCHO
+                     OCH2OCHO        HOCH2OCO        CH3OCHO
+                     CH3OCO          CH2OCHO         HE
+                     C3H8            IC3H7           NC3H7
+                     C3H6            C3H5-A          C3H5-S
+                     C3H5-T          C3H4-P          C3H4-A
+                     C3H3            C3H2            C3H5O
+                     C3H6OOH1-2      C3H6OOH1-3      C3H6OOH2-1
+                     C3H6OOH1-2O2    C3H6OOH1-3O2    C3H6OOH2-1O2
+                     C3H6OOH2-2      NC3H7O2H        IC3H7O2H
+                     NC3H7O2         IC3H7O2         NC3H7O
+                     IC3H7O          C3H6O1-2        C3H6O1-3
+                     C3KET12         C3KET13         C3KET21
+                     C3H51-2,3OOH    C3H52-1,3OOH    C3H6OH
+                     HOC3H6O2        CH3CHCO         AC3H5OOH
+                     C2H3OOH         C4H10           C4H8-1
+                     C4H8-2          PC4H9           SC4H9
+                     C4H71-1         C4H71-2         C4H71-3
+                     C4H71-4         C4H72-2         C4H6
+                     PC4H9O2H        SC4H9O2H        PC4H9O2
+                     SC4H9O2         PC4H9O          SC4H9O
+                     C4H7O           C4H8O1-2        C4H8O1-3
+                     C4H8O1-4        C4H8O2-3        PC4H8OH
+                     SC4H8OH         C4H8OH-1O2      C4H8OH-2O2
+                     C4H8OOH1-1      C4H8OOH1-2      C4H8OOH1-3
+                     C4H8OOH1-4      C4H8OOH2-1      C4H8OOH2-2
+                     C4H8OOH2-3      C4H8OOH2-4      C4H8OOH1-2O2
+                     C4H8OOH1-3O2    C4H8OOH1-4O2    C4H8OOH2-1O2
+                     C4H8OOH2-3O2    C4H8OOH2-4O2    NC4KET12
+                     NC4KET13        NC4KET14        NC4KET21
+                     NC4KET23        NC4KET24        C2H5COCH3
+                     C2H5COCH2       CH2CH2COCH3     CH3CHCOCH3
+                     C2H3COCH3       CH3CHOOCOCH3    CH2CHOOHCOCH3
+                     NC3H7CHO        NC3H7CO         C3H6CHO-1
+                     C3H6CHO-2       C3H6CHO-3       C2H5CHCO
+                     SC3H5CHO        SC3H5CO         CH2CH2CHO
+                     IC4H10          IC4H9           TC4H9
+                     IC4H8           IC4H7           TC4H9O2
+                     IC4H9O2         TC4H8O2H-I      IC4H8O2H-I
+                     IC4H8O2H-T      IC4H8O          CC4H8O
+                     IC4H9O          TC4H9O          IC4H9O2H
+                     TC4H9O2H        IC4H7O          IC4H8OH
+                     IO2C4H8OH       IC3H7CHO        TC3H6CHO
+                     IC3H7CO         IC3H6CHO        TC4H8OOH-IO2
+                     IC4H8OOH-IO2    IC4H8OOH-TO2    IC4KETII
+                     IC4KETIT        IC4H7OH         IC4H6OH
+                     IC3H5CHO        IC3H5CO         TC3H6OCHO
+                     IC3H6CO         IC4H7OOH        TC3H6OHCHO
+                     TC3H6OH         IC3H5OH         TC3H6O2CHO
+                     TC3H6O2HCO      IC3H5O2HCHO     CH2CCH2OH
+                     TC4H8CHO        O2C4H8CHO       O2HC4H8CO
+                     C3H5OH          TIC4H7Q2-I      IIC4H7Q2-T
+                     IIC4H7Q2-I      CH2O2H          NC5H12
+                     C5H11-1         C5H11-2         C5H11-3
+                     C5H10-1         C5H10-2         C5H81-3
+                     C5H91-3         C5H91-4         C5H91-5
+                     C5H92-4         C5H92-5         C5H9O1-3
+                     C5H9O2-4        C5H11O2H-1      C5H11O2H-2
+                     C5H11O2H-3      C5H11O2-1       C5H11O2-2
+                     C5H11O2-3       C5H11O-1        C5H11O-2
+                     C5H11O-3        C5H10OOH1-2     C5H10OOH1-3
+                     C5H10OOH1-4     C5H10OOH1-5     C5H10OOH2-1
+                     C5H10OOH2-3     C5H10OOH2-4     C5H10OOH2-5
+                     C5H10OOH3-2     C5H10OOH3-1     C5H10O1-2
+                     C5H10O1-3       C5H10O1-4       C5H10O1-5
+                     C5H10O2-3       C5H10O2-4       C5H10OOH1-2O2
+                     C5H10OOH1-3O2   C5H10OOH1-4O2   C5H10OOH1-5O2
+                     C5H10OOH2-1O2   C5H10OOH2-3O2   C5H10OOH2-4O2
+                     C5H10OOH2-5O2   C5H10OOH3-1O2   C5H10OOH3-2O2
+                     NC5KET12        NC5KET13        NC5KET14
+                     NC5KET15        NC5KET21        NC5KET23
+                     NC5KET24        NC5KET25        NC5KET31
+                     NC5KET32        C5H10OH-1       C5H10OH-2
+                     O2C5H10OH-1     O2C5H10OH-2     NC6H14
+                     C6H13-1         C6H13-2         C6H13-3
+                     C6H12-1         C6H12-2         C6H12-3
+                     C6H111-3        C6H111-4        C6H111-5
+                     C6H111-6        C6H112-4        C6H112-5
+                     C6H112-6        C6H113-1        C6H11O1-3
+                     C6H11O2-4       C6H12O1-2       C6H12O1-3
+                     C6H12O1-4       C6H12O1-5       C6H12O2-3
+                     C6H12O2-4       C6H12O2-5       C6H12O3-4
+                     C6H13O2H-1      C6H13O2H-2      C6H13O2H-3
+                     C6H13O2-1       C6H13O2-2       C6H13O2-3
+                     C6H12OOH1-2     C6H12OOH1-3     C6H12OOH1-4
+                     C6H12OOH1-5     C6H12OOH2-1     C6H12OOH2-3
+                     C6H12OOH2-4     C6H12OOH2-5     C6H12OOH2-6
+                     C6H12OOH3-1     C6H12OOH3-2     C6H12OOH3-4
+                     C6H12OOH3-5     C6H12OOH3-6     C6H12OOH1-2O2
+                     C6H12OOH1-3O2   C6H12OOH1-4O2   C6H12OOH1-5O2
+                     C6H12OOH2-1O2   C6H12OOH2-3O2   C6H12OOH2-4O2
+                     C6H12OOH2-5O2   C6H12OOH2-6O2   C6H12OOH3-1O2
+                     C6H12OOH3-2O2   C6H12OOH3-4O2   C6H12OOH3-5O2
+                     C6H12OOH3-6O2   NC6KET12        NC6KET13
+                     NC6KET14        NC6KET15        NC6KET21
+                     NC6KET23        NC6KET24        NC6KET25
+                     NC6KET26        NC6KET31        NC6KET32
+                     NC6KET34        NC6KET35        NC6KET36
+                     C6H13O-1        C6H13O-2        C6H13O-3
+                     C6H12OH-1       C6H12OH-2       C6H12OH-3
+                     O2C6H12OH-1     O2C6H12OH-2     O2C6H12OH-3
+                     NC4H9CHO        NC4H9CO         C4H8CHO-1
+                     C4H8CHO-2       C4H8CHO-3       C4H8CHO-4
+                     AC3H5CHO        AC3H5CO         C2H3CHCHO
+                     NC3H7COCH3      NC3H7COCH2      C3H6COCH3-1
+                     C3H6COCH3-2     C3H6COCH3-3     C2H5COC2H5
+                     C2H5COC2H4P     C2H5COC2H4S     C2H5COC2H3
+                     PC2H4COC2H3     SC2H4COC2H3     NC7H16
+                     C7H15-1         C7H15-2         C7H15-3
+                     C7H15-4         C7H14-1         C7H14-2
+                     C7H14-3         C7H131-3        C7H131-4
+                     C7H131-5        C7H131-6        C7H131-7
+                     C7H132-4        C7H132-5        C7H132-6
+                     C7H132-7        C7H133-1        C7H133-5
+                     C7H133-6        C7H133-7        C7H13O1-3
+                     C7H13O2-4       C7H13O3-5       C7H15O2-1
+                     C7H15O2-2       C7H15O2-3       C7H15O2-4
+                     C7H15O2H-1      C7H15O2H-2      C7H15O2H-3
+                     C7H15O2H-4      C7H15O-1        C7H15O-2
+                     C7H15O-3        C7H15O-4        C7H14OOH1-2
+                     C7H14OOH1-3     C7H14OOH1-4     C7H14OOH1-5
+                     C7H14OOH2-1     C7H14OOH2-3     C7H14OOH2-4
+                     C7H14OOH2-5     C7H14OOH2-6     C7H14OOH3-1
+                     C7H14OOH3-2     C7H14OOH3-4     C7H14OOH3-5
+                     C7H14OOH3-6     C7H14OOH3-7     C7H14OOH4-1
+                     C7H14OOH4-2     C7H14OOH4-3     C7H14OOH1-2O2
+                     C7H14OOH1-3O2   C7H14OOH1-4O2   C7H14OOH1-5O2
+                     C7H14OOH2-1O2   C7H14OOH2-3O2   C7H14OOH2-4O2
+                     C7H14OOH2-5O2   C7H14OOH2-6O2   C7H14OOH3-1O2
+                     C7H14OOH3-2O2   C7H14OOH3-4O2   C7H14OOH3-5O2
+                     C7H14OOH3-6O2   C7H14OOH3-7O2   C7H14OOH4-1O2
+                     C7H14OOH4-2O2   C7H14OOH4-3O2   C7H14O1-2
+                     C7H14O1-3       C7H14O1-4       C7H14O1-5
+                     C7H14O2-3       C7H14O2-4       C7H14O2-5
+                     C7H14O2-6       C7H14O3-4       C7H14O3-5
+                     NC7KET12        NC7KET13        NC7KET14
+                     NC7KET15        NC7KET21        NC7KET23
+                     NC7KET24        NC7KET25        NC7KET26
+                     NC7KET31        NC7KET32        NC7KET34
+                     NC7KET35        NC7KET36        NC7KET37
+                     NC7KET41        NC7KET42        NC7KET43
+                     C7H14OH-1       C7H14OH-2       C7H14OH-3
+                     O2C7H14OH-1     O2C7H14OH-2     O2C7H14OH-3
+                     NC5H11CHO       NC5H11CO        C5H10CHO-1
+                     C5H10CHO-2      C5H10CHO-3      C5H10CHO-4
+                     C5H10CHO-5      C4H7CHO1-4      C4H7CO1-4
+                     C4H6CHO1-43     C4H6CHO1-44     NC4H9COCH3
+                     NC4H9COCH2      C4H8COCH3-1     C4H8COCH3-2
+                     C4H8COCH3-3     C4H8COCH3-4     C4H7OOH1-4
+                     C4H7O1-4        C5H9OOH1-4      C5H9O1-4
+                     C5H9OOH1-5      C5H9O1-5        C6H11OOH1-4
+                     C6H11O1-4       C6H11OOH1-5     C6H11O1-5
+                     C5H91-1         C4H7CHO1-1      C4H7CO1-1
+                     C4H6CHO1-14     C4H6CHO1-13     NC3H7COC2H5
+                     C3H6COC2H5-1    C3H6COC2H5-2    C3H6COC2H5-3
+                     NC3H7COC2H4P    NC3H7COC2H4S    CHCHCHO
+                     C6H101-3        C6H101-4        C6H101-5
+                     C6H102-4        ETES1           MVOX
+                     VTHF            EDHF            ETC6
+                     KES1            C6H111O2H-3     C6H111O2H-4
+                     C6H111O2H-5     C6H111O2H-6     C6H112O2H-4
+                     C6H112O2H-5     C6H112O2H-6     C6H113O2H-2
+                     C6H113O2H-1     NC6D1KET34      NC6D1KET35
+                     NC6D1KET36      NC6D1KET43      NC6D1KET45
+                     NC6D1KET46      NC6D1KET53      NC6D1KET54
+                     NC6D1KET56      NC6D1KET63      NC6D1KET64
+                     NC6D1KET65      NC6D2KET45      NC6D2KET46
+                     NC6D2KET54      NC6D2KET56      NC6D2KET64
+                     NC6D2KET65      NC6D3KET12      NC6D3KET21
+                     C6H112O2-1      C6H111O2-3      C6H111O2-4
+                     C6H111O2-5      C6H111O2-6      C6H112O2-4
+                     C6H112O2-5      C6H112O2-6      C6H113O2-1
+                     C6H113O2-2      C6H101OOH3-4    C6H101OOH3-5
+                     C6H101OOH3-6    C6H101OOH4-3    C6H101OOH4-5
+                     C6H101OOH4-6    C6H101OOH5-3    C6H101OOH5-4
+                     C6H101OOH5-6    C6H101OOH6-3    C6H101OOH6-4
+                     C6H101OOH6-5    C6H101OOH3-4O2  C6H101OOH3-5O2
+                     C6H101OOH3-6O2  C6H101OOH4-3O2  C6H101OOH4-5O2
+                     C6H101OOH4-6O2  C6H101OOH5-3O2  C6H101OOH5-4O2
+                     C6H101OOH5-6O2  C6H101OOH6-3O2  C6H101OOH6-4O2
+                     C6H101OOH6-5O2  C6H102OOH5-4    C6H103OOH1-2
+                     C6H102OOH4-5    C6H102OOH4-6    C6H102OOH5-6
+                     C6H102OOH6-4    C6H102OOH6-5    C6H103OOH2-1
+                     C6H102OOH4-5O2  C6H102OOH4-6O2  C6H102OOH5-4O2
+                     C6H102OOH5-6O2  C6H102OOH6-4O2  C6H102OOH6-5O2
+                     C6H103OOH2-1O2  C6H103OOH1-2O2  C2H3COC3H7
+                     C5H81-4         C5H91O2-3       C5H91O2-4
+                     C5H91O2-5       C5H81OOH3-4     C5H81OOH3-5
+                     C5H81OOH4-3     C5H81OOH4-5     C5H81OOH5-4
+                     C5H81OOH5-3     C5H92O2-1       C5H81OOH3-4O2
+                     C5H81OOH3-5O2   C5H81OOH4-3O2   C5H81OOH4-5O2
+                     C5H81OOH5-3O2   C5H81OOH5-4O2   NC5D1KET34
+                     NC5D1KET35      NC5D1KET43      NC5D1KET45
+                     NC5D1KET53      NC5D1KET54      CY3C5H8O""",
+          reactions='all',
+          initial_state=state(temperature=300.0, pressure=OneAtm))
+
 #-------------------------------------------------------------------------------
 # Species data
 #-------------------------------------------------------------------------------
@@ -7857,8 +8085,10 @@ reaction('HO2 + H => OH + OH', [7.079000e+13, 0.0, 295.0])
 # Reaction 21
 reaction('OH + OH => HO2 + H', [2.028000e+10, 0.72, 36840.0])
 
+# ref: ellingson j. phys. chem. (2007) 111, (51), 13554-13566
+
 # Reaction 22
-reaction('HO2 + O => OH + O2', [3.250000e+13, 0.0, 0.0])
+reaction('h2o2 + h <=> h2 + ho2', [2.150000e+10, 1.0, 6000.0])
 
 # Reaction 23
 reaction('OH + O2 => HO2 + O', [3.217000e+12, 0.329, 53280.0])
@@ -8049,15 +8279,13 @@ falloff_reaction('HCO + H (+ M) <=> CH2O (+ M)',
                  efficiencies='CO2:2.0 CO:1.5 H2:2.0 H2O:6.0 AR:0.7 CH4:2.0 C2H6:3.0 HE:0.7',
                  falloff=Troe(A=0.7824, T3=271.0, T1=2755.0, T2=6570.0))
 
-# REV/ 7.377E+13 0.469 8.811E+04 /
-# Troe Fall-off reaction
+# wkm 01/11/10
+# !ref:Fit to Hidaka et al. and Jemi-Alade,A.A.
+# ch2o+ho2<=>hco+h2o2 7.100e-03 4.517 6.580e+03
+# ref:J. Phys. Chem. A 109, 12027-12035, 2005
 
 # Reaction 77
-falloff_reaction('CO + H2 (+ M) <=> CH2O (+ M)',
-                 kf=[4.300000e+07, 1.5, 79600.0],
-                 kf0=[5.070000e+27, -3.42, 84348.0],
-                 efficiencies='CO2:2.0 CO:1.5 H2:2.0 H2O:6.0 AR:0.7 CH4:2.0 C2H6:3.0 HE:0.7',
-                 falloff=Troe(A=0.932, T3=197.0, T1=1540.0, T2=10300.0))
+reaction('ch2o + ho2 <=> hco + h2o2', [1.880000e+04, 2.7, 11520.0])
 
 # REV/ 9.656E+10 0.833 7.974E+04 /
 # Troe Fall-off reaction
@@ -8207,12 +8435,10 @@ reaction('CH3O + HO2 => CH2O + H2O2', [3.010000e+11, 0.0, 0.0])
 # Reaction 123
 reaction('CH2O + H2O2 => CH3O + HO2', [1.074000e+12, -0.031, 65270.0])
 
+# ref:curran estimate
+
 # Reaction 124
-falloff_reaction('CH2O + H (+ M) <=> CH2OH (+ M)',
-                 kf=[5.400000e+11, 0.454, 3600.0],
-                 kf0=[1.270000e+32, -4.82, 6530.0],
-                 efficiencies='CO2:2.0 CO:1.5 H2:2.0 H2O:6.0 CH4:2.0 C2H6:3.0',
-                 falloff=Troe(A=0.7187, T3=103.0, T1=1291.0, T2=4160.0))
+reaction('ch3oh + ho2 <=> ch2oh + h2o2', [1.080000e+04, 2.55, 10530.0])
 
 # REV/ 8.653E+12 -0.038 3.241E+04 /
 # Troe Fall-off reaction
@@ -8453,8 +8679,13 @@ reaction('CH3 + OH => CH2OH + H', [3.090000e+07, 1.596, 4506.0])
 # Reaction 195
 reaction('CH2OH + H => CH3 + OH', [1.650000e+11, 0.65, -284.0])
 
+# ref:J. Aguilera-Iparraguirre et al. J Phys Chem A (2008) 112(30): 7047-7054.
+# !ref:x2.0
+# c2h6+ho2<=>c2h5+h2o2 6.920e+01 3.610 1.692e+04
+# Returned to original value
+
 # Reaction 196
-reaction('CH3 + OH => CH2 + H2O', [5.600000e+07, 1.6, 5420.0])
+reaction('c2h6 + ho2 <=> c2h5 + h2o2', [3.460000e+01, 3.61, 16920.0])
 
 # Reaction 197
 reaction('CH2 + H2O => CH3 + OH', [9.224000e+05, 2.072, 14060.0])
@@ -8582,8 +8813,11 @@ reaction('CH3 + H => CH2(S) + H2', [2.022000e+16, -0.591, 15270.0])
 # Reaction 236
 reaction('CH2(S) + H => CH2 + H', [3.000000e+13, 0.0, 0.0])
 
+# rev/ 5.710e+09 0.799 1.592e+04 /
+# ref:analogy with ethene
+
 # Reaction 237
-reaction('CH2 + H => CH2(S) + H', [1.346000e+13, -0.013, 9020.0])
+reaction('c2h4o1-2 + ho2 <=> c2h3o1-2 + h2o2', [1.130000e+13, 0.0, 30430.0])
 
 # Reaction 238
 reaction('CH2(S) + H => CH + H2', [3.000000e+13, 0.0, 0.0])
@@ -8635,9 +8869,10 @@ reaction('CH2 + O => CO + H + H', [5.000000e+13, 0.0, 0.0])
 reaction('CH2 + H => CH + H2', [1.000000e+18, -1.56, 0.0],
          options='duplicate')
 
+# ref:baulch et al., j. phys. chem. ref data, 21:411 (1992)
+
 # Reaction 252
-reaction('CH + H2 => CH2 + H', [5.160000e+18, -1.8, 3460.0],
-         options='duplicate')
+reaction('ch3cho + ho2 <=> ch3co + h2o2', [3.010000e+12, 0.0, 11920.0])
 
 # Reaction 253
 reaction('CH2 + OH => CH + H2O', [1.130000e+07, 2.0, 3000.0])
@@ -8670,7 +8905,7 @@ reaction('CH + H => C + H2', [5.000000e+13, 0.0, 0.0])
 reaction('C + H2 => CH + H', [2.043000e+14, 0.0, 23820.0])
 
 # Reaction 263
-reaction('CH + O => CO + H', [5.700000e+13, 0.0, 0.0])
+reaction('h2o2 + ch3co3 <=> ho2 + ch3co3h', [2.410000e+12, 0.0, 9936.0])
 
 # Reaction 264
 reaction('CO + H => CH + O', [2.774000e+15, 0.0, 176000.0])
@@ -9014,11 +9249,18 @@ reaction('C2H3O1-2 + H2O2 => C2H4O1-2 + HO2', [4.666000e+11, 0.104, 20670.0])
 # Reaction 368
 reaction('C2H4O1-2 + CH3O2 => C2H3O1-2 + CH3O2H', [1.130000e+13, 0.0, 30430.0])
 
+# !HENRY ref??
+# !ref:
+# c2h5oh+ho2<=>pc2h4oh+h2o2 2.379e+04 2.550 1.649e+04
+# c2h5oh+ho2<=>sc2h4oh+h2o2 6.000e+12 0.000 1.600e+04
+# c2h5oh+ho2<=>c2h5o+h2o2 2.500e+12 0.000 2.400e+04
+# ref:Estimated from CW Zhou butanol+oh
+
 # Reaction 369
-reaction('C2H3O1-2 + CH3O2H => C2H4O1-2 + CH3O2', [9.078000e+12, -0.341, 19070.0])
+reaction('c2h5oh + ho2 <=> sc2h4oh + h2o2', [2.800000e-02, 4.32, 8530.0])
 
 # Reaction 370
-reaction('C2H4O1-2 + C2H5O2 => C2H3O1-2 + C2H5O2H', [1.130000e+13, 0.0, 30430.0])
+reaction('c2h5oh + ho2 <=> pc2h4oh + h2o2', [9.040000e-03, 4.54, 11967.9])
 
 # Reaction 371
 reaction('C2H3O1-2 + C2H5O2H => C2H4O1-2 + C2H5O2', [9.093000e+12, -0.341, 19080.0])
@@ -9142,8 +9384,10 @@ reaction('CH2CO + CH4 => CH3CO + CH3', [2.364000e+16, -0.245, 62100.0])
 # Reaction 409
 reaction('CH3CO3 => CH3CO + O2', [6.863000e+19, -1.949, 38530.0])
 
+# ref:Based on ch3cho+ho2
+
 # Reaction 410
-reaction('CH3CO + O2 => CH3CO3', [1.200000e+11, 0.0, -1100.0])
+reaction('c2h3cho + ho2 <=> c2h3co + h2o2', [3.010000e+12, 0.0, 11920.0])
 
 # Reaction 411
 reaction('CH3CO3 + HO2 => CH3CO3H + O2', [1.750000e+10, 0.0, -3275.0])
@@ -9175,8 +9419,10 @@ reaction('C2H6 + CH3CO3 => C2H5 + CH3CO3H', [1.700000e+13, 0.0, 20460.0])
 # Reaction 420
 reaction('C2H5 + CH3CO3H => C2H6 + CH3CO3', [1.450000e+12, 0.04, 9460.0])
 
+# ref:analogy with ch3cho + ho2
+
 # Reaction 421
-reaction('CH3CO3H => CH3CO2 + OH', [5.010000e+14, 0.0, 40150.0])
+reaction('c2h5cho + ho2 <=> c2h5co + h2o2', [2.800000e+12, 0.0, 13600.0])
 
 # Reaction 422
 reaction('CH3CO2 + OH => CH3CO3H', [3.618000e+07, 1.761, 1338.0])
@@ -9224,8 +9470,10 @@ reaction('CH2CO + O => CH2 + CO2', [1.750000e+12, 0.0, 1350.0])
 # Reaction 434
 reaction('CH2 + CO2 => CH2CO + O', [2.854000e+09, 0.809, 49440.0])
 
+# wkm 01/11/10
+
 # Reaction 435
-reaction('CH2CO + O => HCCO + OH', [1.000000e+13, 0.0, 8000.0])
+reaction('ch3och3 + ho2 <=> ch3och2 + h2o2', [1.680000e+13, 0.0, 17690.0])
 
 # Reaction 436
 reaction('HCCO + OH => CH2CO + O', [3.723000e+09, 0.452, 3108.0])
@@ -9352,11 +9600,17 @@ reaction('C2H3 + CH3O2H => C2H4 + CH3O2', [7.929000e+12, -0.634, -8167.0])
 # Reaction 472
 reaction('C2H4 + C2H5O2 => C2H3 + C2H5O2H', [2.230000e+12, 0.0, 17190.0])
 
+# ref:Curran estimate Tsang '88 primary H
+# Tsang, W. J. Phys. Chem. Ref. Data 17, 887 (1988)
+
 # Reaction 473
-reaction('C2H3 + C2H5O2H => C2H4 + C2H5O2', [7.943000e+12, -0.634, -8163.0])
+reaction('ch3ocho + ho2 <=> ch3oco + h2o2', [4.820000e+03, 2.6, 13910.0])
+
+# ref:Curran estimate Tsang '88 secondary H
+# Tsang, W. J. Phys. Chem. Ref. Data 17, 887 (1988)
 
 # Reaction 474
-reaction('C2H4 + CH3CO3 => C2H3 + CH3CO3H', [1.130000e+13, 0.0, 30430.0])
+reaction('ch3ocho + ho2 <=> ch2ocho + h2o2', [2.380000e+04, 2.55, 16490.0])
 
 # Reaction 475
 reaction('C2H3 + CH3CO3H => C2H4 + CH3CO3', [3.295000e+12, -0.136, 9440.0])
@@ -9453,11 +9707,13 @@ reaction('C2H2 + O2 => HCCO + OH', [2.000000e+08, 1.5, 30100.0])
 # Reaction 501
 reaction('HCCO + OH => C2H2 + O2', [2.039000e+06, 1.541, 32270.0])
 
+# ref:J. Aguilera-Iparraguirre et al. J Phys Chem A (2008) 112(30): 7047-7054.
+
 # Reaction 502
-reaction('O + C2H2 => C2H + OH', [4.600000e+19, -1.4, 28950.0])
+reaction('c3h8 + ho2 <=> ic3h7 + h2o2', [6.320000e+01, 3.37, 13720.0])
 
 # Reaction 503
-reaction('C2H + OH => O + C2H2', [3.023000e+15, -0.604, -1782.0])
+reaction('c3h8 + ho2 <=> nc3h7 + h2o2', [4.080000e+01, 3.59, 17160.0])
 
 # Reaction 504
 reaction('C2H2 + O => CH2 + CO', [6.940000e+06, 2.0, 1900.0])
@@ -9631,8 +9887,10 @@ reaction('C2H5OH + O => PC2H4OH + OH', [9.690000e+02, 3.23, 4658.0])
 # Reaction 551
 reaction('PC2H4OH + OH => C2H5OH + O', [1.052000e-01, 3.837, 5580.0])
 
+# ref:Scott and Walker C&F 129(4) 365--377 2002
+
 # Reaction 552
-reaction('C2H5OH + O => SC2H4OH + OH', [1.450000e+05, 2.47, 876.0])
+reaction('c3h6 + ho2 <=> c3h5-a + h2o2', [2.700000e+04, 2.5, 12340.0])
 
 # Reaction 553
 reaction('SC2H4OH + OH => C2H5OH + O', [1.862000e+02, 2.888, 8884.0])
@@ -10361,11 +10619,13 @@ reaction('H2 + NC3H7 => H + C3H8', [1.418000e+02, 3.173, 9096.0])
 # Reaction 786
 reaction('C3H8 + O => IC3H7 + OH', [5.490000e+05, 2.5, 3140.0])
 
+# ref:J. Aguilera-Iparraguirre et al. J Phys Chem A (2008) 112(30): 7047-7054.
+
 # Reaction 787
-reaction('IC3H7 + OH => C3H8 + O', [4.793000e+00, 3.428, 6608.0])
+reaction('c4h10 + ho2 <=> pc4h9 + h2o2', [4.080000e+01, 3.59, 17160.0])
 
 # Reaction 788
-reaction('C3H8 + O => NC3H7 + OH', [3.710000e+06, 2.4, 5505.0])
+reaction('c4h10 + ho2 <=> sc4h9 + h2o2', [1.264000e+02, 3.37, 13720.0])
 
 # Reaction 789
 reaction('NC3H7 + OH => C3H8 + O', [2.053000e+02, 3.014, 6433.0])
@@ -10517,8 +10777,10 @@ reaction('IC3H7 + CH3CO3H => C3H8 + CH3CO3', [3.104000e+10, 0.305, 8650.0])
 # Reaction 838
 reaction('C3H8 + CH3CO3 => NC3H7 + CH3CO3H', [1.700000e+13, 0.0, 20460.0])
 
+# Estimate
+
 # Reaction 839
-reaction('NC3H7 + CH3CO3H => C3H8 + CH3CO3', [1.673000e+12, -0.009, 9570.0])
+reaction('c4h8-1 + ho2 <=> c4h71-4 + h2o2', [2.380000e+03, 2.55, 16490.0])
 
 # Reaction 840
 reaction('C3H8 + O2CHO => NC3H7 + HO2CHO', [5.520000e+04, 2.55, 16480.0])
@@ -11244,7 +11506,7 @@ reaction('CH3O2 + IC3H7 => CH3O + IC3H7O', [7.000000e+12, 0.0, -1000.0])
 reaction('CH3O + IC3H7O => CH3O2 + IC3H7', [6.573000e+14, -0.258, 31560.0])
 
 # Reaction 1081
-reaction('NC3H7O2 => NC3H7 + O2', [2.400000e+20, -1.616, 35960.0])
+reaction('h2o2 + sc4h9o2 <=> ho2 + sc4h9o2h', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 1082
 reaction('NC3H7 + O2 => NC3H7O2', [4.520000e+12, 0.0, 0.0])
@@ -11444,14 +11706,16 @@ reaction('NC3H7O2 + C2H5 => NC3H7O + C2H5O', [7.000000e+12, 0.0, -1000.0])
 # Reaction 1147
 reaction('NC3H7O + C2H5O => NC3H7O2 + C2H5', [7.540000e+14, -0.592, 29330.0])
 
+# ref:analogy to c3h8 + x = pc3h7 + hx x 0.5 tsang 88; curran 1995
+
 # Reaction 1148
-reaction('NC3H7O2 + IC3H7 => NC3H7O + IC3H7O', [7.000000e+12, 0.0, -1000.0])
+reaction('c2h5coch3 + ho2 <=> ch2ch2coch3 + h2o2', [2.380000e+04, 2.55, 16490.0])
 
 # Reaction 1149
 reaction('NC3H7O + IC3H7O => NC3H7O2 + IC3H7', [1.286000e+15, -0.425, 30000.0])
 
 # Reaction 1150
-reaction('NC3H7O2 + NC3H7 => NC3H7O + NC3H7O', [7.000000e+12, 0.0, -1000.0])
+reaction('c2h5coch3 + ho2 <=> c2h5coch2 + h2o2', [2.380000e+04, 2.55, 14690.0])
 
 # Reaction 1151
 reaction('NC3H7O + NC3H7O => NC3H7O2 + NC3H7', [7.612000e+14, -0.561, 28000.0])
@@ -11561,8 +11825,10 @@ reaction('C3H6 + HO2 => C3H6OOH2-1', [1.000000e+11, 0.0, 11750.0])
 # Reaction 1186
 reaction('C3H6OOH1-3 => OH + CH2O + C2H4', [3.035000e+15, -0.79, 27400.0])
 
+# ref:half of ch2o+ho2
+
 # Reaction 1187
-reaction('C3H6OOH2-1 => C2H3OOH + CH3', [6.540000e+27, -5.14, 38320.0])
+reaction('nc3h7cho + ho2 <=> nc3h7co + h2o2', [4.090000e+04, 2.5, 10200.0])
 
 # Reaction 1188
 reaction('C2H3OOH + CH3 => C3H6OOH2-1', [4.460000e+22, -4.24, 10630.0])
@@ -11583,13 +11849,13 @@ reaction('C3H6OOH1-2O2 => C3H6OOH1-2 + O2', [2.391000e+25, -2.945, 40100.0])
 reaction('C3H6OOH1-2 + O2 => C3H6OOH1-2O2', [5.000000e+12, 0.0, 0.0])
 
 # Reaction 1194
-reaction('C3H6OOH1-3O2 => C3H6OOH1-3 + O2', [2.853000e+20, -1.626, 35690.0])
+reaction('nc3h7cho + ho2 <=> c3h6cho-1 + h2o2', [2.379000e+04, 2.55, 16490.0])
 
 # Reaction 1195
-reaction('C3H6OOH1-3 + O2 => C3H6OOH1-3O2', [4.520000e+12, 0.0, 0.0])
+reaction('nc3h7cho + ho2 <=> c3h6cho-2 + h2o2', [9.640000e+03, 2.6, 13910.0])
 
 # Reaction 1196
-reaction('C3H6OOH2-1O2 => C3H6OOH2-1 + O2', [5.227000e+22, -2.244, 37820.0])
+reaction('nc3h7cho + ho2 <=> c3h6cho-3 + h2o2', [3.440000e+12, 0.05, 17880.0])
 
 # Reaction 1197
 reaction('C3H6OOH2-1 + O2 => C3H6OOH2-1O2', [4.520000e+12, 0.0, 0.0])
@@ -11633,8 +11899,10 @@ reaction('AC3H5OOH + HO2 => C3H51-2,3OOH', [3.180000e+15, -1.16, 12040.0])
 # Reaction 1210
 reaction('C3H52-1,3OOH => C3H6OOH1-3O2', [1.255000e+12, -0.36, 13940.0])
 
+# ref:analogy with ic3h5cho + x --> ic3h5co + hx
+
 # Reaction 1211
-reaction('C3H6OOH1-3O2 => C3H52-1,3OOH', [6.000000e+11, 0.0, 26850.0])
+reaction('sc3h5cho + ho2 <=> sc3h5co + h2o2', [1.000000e+12, 0.0, 11920.0])
 
 # Reaction 1212
 reaction('C3H52-1,3OOH => AC3H5OOH + HO2', [1.150000e+14, -0.63, 17250.0])
@@ -11699,8 +11967,10 @@ reaction('C3H6O1-2 + O => CH2O + C2H3 + OH', [8.430000e+13, 0.0, 5200.0])
 # Reaction 1232
 reaction('C3H6O1-2 + HO2 => CH2O + C2H3 + H2O2', [1.000000e+13, 0.0, 15000.0])
 
+# ref:J. Aguilera-Iparraguirre et al. J Phys Chem A (2008) 112(30): 7047-7054.
+
 # Reaction 1233
-reaction('C3H6O1-2 + CH3O2 => CH2O + C2H3 + CH3O2H', [1.000000e+13, 0.0, 19000.0])
+reaction('ic4h10 + ho2 <=> ic4h9 + h2o2', [6.120000e+01, 3.59, 17160.0])
 
 # Reaction 1234
 reaction('C3H6O1-2 + CH3 => CH2O + C2H3 + CH4', [2.000000e+11, 0.0, 10000.0])
@@ -11987,11 +12257,13 @@ reaction('PC4H9O2 + C3H8 => PC4H9O2H + NC3H7', [1.700000e+13, 0.0, 20460.0])
 # Reaction 1324
 reaction('PC4H9O2H + NC3H7 => PC4H9O2 + C3H8', [5.000000e+11, 0.0, 6500.0])
 
+# ref:westbrook estimate
+
 # Reaction 1325
-reaction('PC4H9O2 + C3H8 => PC4H9O2H + IC3H7', [2.000000e+12, 0.0, 17000.0])
+reaction('ic4h9o2 + h2o2 <=> ic4h9o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 1326
-reaction('PC4H9O2H + IC3H7 => PC4H9O2 + C3H8', [5.000000e+11, 0.0, 6500.0])
+reaction('tc4h9o2 + h2o2 <=> tc4h9o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 1327
 reaction('PC4H9O2 + C4H10 => PC4H9O2H + PC4H9', [1.700000e+13, 0.0, 20460.0])
@@ -12212,11 +12484,17 @@ reaction('C4H71-3 + C3H6 => C4H8-1 + C3H5-A', [1.000000e+11, 0.0, 17500.0])
 # Reaction 1399
 reaction('C4H8-1 + C4H6 => C4H71-3 + C4H71-3', [2.350000e+12, 0.0, 46720.0])
 
+# HENRY?
+# ref:
+
 # Reaction 1400
-reaction('C4H71-3 + C4H71-3 => C4H8-1 + C4H6', [1.600000e+12, 0.0, 0.0])
+reaction('ic3h7cho + ho2 <=> ic3h7co + h2o2', [3.000000e+12, 0.0, 11920.0])
+
+# ref:Baldwin, R.R.; Walker, R.W.
+# ref:Symp. Intl. Comb. Proc. 1979, 17, 525.
 
 # Reaction 1401
-reaction('C4H8-1 + C2H5O2 => C4H71-3 + C2H5O2H', [1.400000e+12, 0.0, 14900.0])
+reaction('ic3h7cho + ho2 <=> tc3h6cho + h2o2', [8.000000e+10, 0.0, 11920.0])
 
 # Reaction 1402
 reaction('C4H71-3 + C2H5O2H => C4H8-1 + C2H5O2', [3.160000e+11, 0.0, 13000.0])
@@ -12431,8 +12709,11 @@ reaction('C3H5-A + C4H71-3 => C3H6 + C4H6', [6.310000e+12, 0.0, 0.0])
 # Reaction 1472
 reaction('C3H6 + C4H6 => C3H5-A + C4H71-3', [1.000000e+10, 0.0, 50000.0])
 
+# HENRY?
+# REF?
+
 # Reaction 1473
-reaction('C4H71-3 + O2 => C4H6 + HO2', [1.000000e+09, 0.0, 0.0])
+reaction('ic4h6oh + h2o2 <=> ic4h7oh + ho2', [7.830000e+05, 2.05, 13580.0])
 
 # Reaction 1474
 reaction('C4H6 + HO2 => C4H71-3 + O2', [1.000000e+11, 0.0, 17000.0])
@@ -12458,8 +12739,10 @@ reaction('C2H4 + C4H6 => C2H3 + C4H71-3', [1.157000e+13, 0.0, 57710.0])
 # Reaction 1481
 reaction('C4H71-3 + C2H5O2 => C4H7O + C2H5O', [3.800000e+12, 0.0, -1200.0])
 
+# ref:analogous to isobuteraldehyde + x
+
 # Reaction 1482
-reaction('C4H7O + C2H5O => C4H71-3 + C2H5O2', [2.000000e+10, 0.0, 0.0])
+reaction('ic3h5cho + ho2 <=> ic3h5co + h2o2', [1.000000e+12, 0.0, 11920.0])
 
 # Reaction 1483
 reaction('IC3H7O2 + C4H71-3 => IC3H7O + C4H7O', [3.800000e+12, 0.0, -1200.0])
@@ -12705,19 +12988,19 @@ reaction('C2H5 + SC4H9O2H => C2H6 + SC4H9O2', [5.000000e+11, 0.0, 6500.0])
 reaction('PC4H9O2 + C2H5CHO => PC4H9O2H + C2H5CO', [2.000000e+11, 0.0, 9500.0])
 
 # Reaction 1564
-reaction('PC4H9O2H + C2H5CO => PC4H9O2 + C2H5CHO', [5.000000e+09, 0.0, 10000.0])
+reaction('nc4h9oh + ho2 <=> c4h8oh-4 + h2o2', [8.800000e-02, 4.31, 17270.0])
 
 # Reaction 1565
-reaction('SC4H9O2 + C2H5CHO => SC4H9O2H + C2H5CO', [2.000000e+11, 0.0, 9500.0])
+reaction('nc4h9oh + ho2 <=> c4h8oh-3 + h2o2', [2.760000e-04, 4.76, 11850.0])
 
 # Reaction 1566
-reaction('SC4H9O2H + C2H5CO => SC4H9O2 + C2H5CHO', [5.000000e+09, 0.0, 10000.0])
+reaction('nc4h9oh + ho2 <=> c4h8oh-2 + h2o2', [7.510000e-03, 4.52, 14710.0])
 
 # Reaction 1567
-reaction('SC4H9O2 + CH3 => SC4H9O + CH3O', [7.000000e+12, 0.0, -1000.0])
+reaction('nc4h9oh + ho2 <=> c4h8oh-1 + h2o2', [3.500000e-05, 5.26, 8268.0])
 
 # Reaction 1568
-reaction('SC4H9O + CH3O => SC4H9O2 + CH3', [1.176000e+13, 0.067, 26110.0])
+reaction('nc4h9oh + ho2 <=> pc4h9o + h2o2', [6.470000e-07, 5.3, 10530.0])
 
 # Reaction 1569
 reaction('SC4H9O2 + C2H5 => SC4H9O + C2H5O', [7.000000e+12, 0.0, -1000.0])
@@ -12948,7 +13231,7 @@ reaction('CH3O + SC4H9O => CH3O2 + SC4H9', [9.329000e+16, -0.936, 30950.0])
 reaction('PC4H9O2H => PC4H9O + OH', [1.500000e+16, 0.0, 42500.0])
 
 # Reaction 1645
-reaction('PC4H9O + OH => PC4H9O2H', [1.178000e+08, 1.712, -4342.0])
+reaction('c4h7oh1-2 + ho2 <=> c4h6oh1-32 + h2o2', [2.700000e+04, 2.5, 12340.0])
 
 # Reaction 1646
 reaction('SC4H9O2H => SC4H9O + OH', [9.450000e+15, 0.0, 41600.0])
@@ -13287,7 +13570,7 @@ reaction('C2H5COCH3 + CH3O => CH2CH2COCH3 + CH3OH', [2.170000e+11, 0.0, 6460.0])
 reaction('CH2CH2COCH3 + CH3OH => C2H5COCH3 + CH3O', [4.887000e+09, 0.02, 9007.0])
 
 # Reaction 1758
-reaction('C2H5COCH3 + CH3O => CH3CHCOCH3 + CH3OH', [1.450000e+11, 0.0, 2771.0])
+reaction('tc4h9oh + ho2 <=> tc4h8oh + h2o2', [7.140000e+04, 2.55, 16490.0])
 
 # Reaction 1759
 reaction('CH3CHCOCH3 + CH3OH => C2H5COCH3 + CH3O', [3.031000e+11, -0.2, 14730.0])
@@ -13380,13 +13663,13 @@ reaction('C2H4 + HCO => CH2CH2CHO', [1.500000e+11, 0.0, 8300.0])
 reaction('CH2CH2COCH3 => C2H4 + CH3CO', [1.000000e+14, 0.0, 18000.0])
 
 # Reaction 1789
-reaction('C2H4 + CH3CO => CH2CH2COCH3', [1.000000e+11, 0.0, 0.0])
+reaction('sc4h9oh + ho2 <=> sc4h8ohm + h2o2', [1.130000e-02, 4.52, 13850.0])
 
 # Reaction 1790
-reaction('C2H5COCH2 => CH2CO + C2H5', [1.000000e+14, 0.0, 35000.0])
+reaction('sc4h9oh + ho2 <=> sc4h8oh-3 + h2o2', [4.140000e-04, 4.76, 15050.0])
 
 # Reaction 1791
-reaction('CH2CO + C2H5 => C2H5COCH2', [1.000000e+11, 0.0, 0.0])
+reaction('sc4h9oh + ho2 <=> sc4h8oh-2 + h2o2', [7.510000e-03, 4.52, 14710.0])
 
 # Reaction 1792
 reaction('CH3CHCOCH3 => C2H3COCH3 + H', [3.417000e+16, -0.82, 41770.0])
@@ -13878,13 +14161,13 @@ reaction('CH3O + TC4H9O => CH3O2 + TC4H9', [2.554000e+17, -1.03, 32890.0])
 reaction('IC4H9 => IC4H8 + H', [3.371000e+13, 0.124, 33660.0])
 
 # Reaction 1953
-reaction('IC4H8 + H => IC4H9', [6.250000e+11, 0.51, 2620.0])
+reaction('c4h8oh-2o2 + h2o2 <=> c4h8oh-2o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 1954
 reaction('IC4H9 => C3H6 + CH3', [9.504000e+11, 0.773, 30700.0])
 
 # Reaction 1955
-reaction('C3H6 + CH3 => IC4H9', [1.890000e+03, 2.67, 6850.0])
+reaction('c4h8oh-4o2 + h2o2 <=> c4h8oh-4o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 1956
 reaction('TC4H9 => H + IC4H8', [1.128000e+12, 0.703, 36560.0])
@@ -14333,14 +14616,16 @@ reaction('IC4H9O2 + TC4H9 => IC4H9O + TC4H9O', [7.000000e+12, 0.0, -1000.0])
 # Reaction 2104
 reaction('IC4H9O + TC4H9O => IC4H9O2 + TC4H9', [5.390000e+17, -1.204, 32430.0])
 
+# Class 18
+
 # Reaction 2105
-reaction('IC4H9O2 + C3H5-A => IC4H9O + C3H5O', [7.000000e+12, 0.0, -1000.0])
+reaction('ic4h8oh-1o2 + h2o2 <=> ic4h8oh-1o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 2106
-reaction('IC4H9O + C3H5O => IC4H9O2 + C3H5-A', [2.119000e+11, 0.184, 15440.0])
+reaction('ic4h8oh-2o2 + h2o2 <=> ic4h8oh-2o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 2107
-reaction('IC4H9O2 + C4H71-3 => IC4H9O + C4H7O', [7.000000e+12, 0.0, -1000.0])
+reaction('ic4h8oh-3o2 + h2o2 <=> ic4h8oh-3o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 2108
 reaction('IC4H9O + C4H7O => IC4H9O2 + C4H71-3', [1.095000e+14, -0.745, 17490.0])
@@ -14549,8 +14834,10 @@ reaction('IC4H8O => IC3H7CHO', [4.180000e+13, 0.0, 52720.0])
 # Reaction 2176
 reaction('IC3H7CHO => IC4H8O', [1.392000e+10, 0.55, 72050.0])
 
+# Class 18
+
 # Reaction 2177
-reaction('IC4H8O + OH => IC3H6CHO + H2O', [1.250000e+12, 0.0, 0.0])
+reaction('tc4h8oh-o2 + h2o2 <=> tc4h8oh-o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 2178
 reaction('IC3H6CHO + H2O => IC4H8O + OH', [9.609000e+05, 1.069, 36560.0])
@@ -14753,17 +15040,19 @@ reaction('IC4KETII + OH => IC4H8OOH-IO2', [1.986000e+03, 1.455, 44420.0])
 # Reaction 2244
 reaction('IC4H8OOH-TO2 => IC4KETIT + OH', [4.000000e+11, 0.0, 31500.0])
 
+# Class 18
+
 # Reaction 2245
-reaction('IC4KETIT + OH => IC4H8OOH-TO2', [1.910000e+05, 1.24, 53830.0])
+reaction('sc4h8oh-1o2 + h2o2 <=> sc4h8oh-1o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 2246
-reaction('TC4H8OOH-IO2 => TIC4H7Q2-I', [7.500000e+10, 0.0, 24400.0])
+reaction('sc4h8oh-2o2 + h2o2 <=> sc4h8oh-2o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 2247
-reaction('TIC4H7Q2-I => TC4H8OOH-IO2', [6.360000e+08, 0.091, 11720.0])
+reaction('sc4h8oh-3o2 + h2o2 <=> sc4h8oh-3o2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 2248
-reaction('TIC4H7Q2-I => IC4H7OOH + HO2', [1.940000e+20, -2.19, 22590.0])
+reaction('sc4h8oh-mo2 + h2o2 <=> sc4h8oh-mo2h + ho2', [2.400000e+12, 0.0, 10000.0])
 
 # Reaction 2249
 reaction('IC4H7OOH + HO2 => TIC4H7Q2-I', [1.000000e+11, 0.0, 10600.0])
@@ -21209,8 +21498,13 @@ reaction('C5H11-1 + CO => NC5H11CO', [1.000000e+11, 0.0, 0.0])
 # Reaction 4345
 reaction('NC5H11CHO + HO2 => C5H10CHO-1 + H2O2', [2.760000e+04, 2.55, 16480.0])
 
+#  
+# SUBSTITUTION: The following reaction was originally
+# reaction('C5H10CHO-1 + H2O2 => NC5H11CHO + HO2', [3.330000e+04, 2.22, 4442.0])
+# But has been replaced with the following as seen in AutoTST
+
 # Reaction 4346
-reaction('C5H10CHO-1 + H2O2 => NC5H11CHO + HO2', [3.330000e+04, 2.22, 4442.0])
+reaction('C5H10CHO-1 + H2O2 <=> HO2 + NC5H11CHO', [3.367000e-04, 3.891, (-0.666, 'kcal/mol')])
 
 # Reaction 4347
 reaction('NC5H11CHO + HO2 => C5H10CHO-2 + H2O2', [1.475000e+04, 2.6, 13910.0])
