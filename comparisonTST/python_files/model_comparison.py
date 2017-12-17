@@ -1,6 +1,6 @@
 import os
-RMG_PY_PATH = os.path.expanduser('~/Code/RMG-Py/')
-RMG_MODELS_PATH = os.path.expanduser('~/Code/RMG-models/')
+RMG_PY_PATH = os.path.expanduser('/gss_gpfs_scratch/westgroup/Importer/RMG-Py/')
+RMG_MODELS_PATH = os.path.expanduser('/gss_gpfs_scratch/westgroup/Importer/RMG-models')
 
 import sys
 import re
@@ -20,6 +20,25 @@ import ck2cti
 import cantera as ct
 import itertools
 import random
+import numpy as np
+import itertools
+
+
+# Getting the OOH reactions
+f = open("../../autotst_kinetics.pkl","r")
+autotst_kinetics = pickle.load(f)
+ooh_reactions = []
+for rxn in autotst_kinetics:
+    reactants, products = rxn.label.split("_")
+    r1, r2 = reactants.split('+')
+    p1, p2 = products.split('+')
+    if "OO" in [r1, r2, p1, p2] and "[O]O" in [r1, r2, p1, p2]:
+        #print [r1, r2, p1, p2]
+        ooh_reactions.append(rxn)
+
+# Looking at sarathy models
+"""
+### We don't need this for the time being, so skipping it for now
 
 master = 'CombFlame2012/2028-Sarathy'
 
@@ -51,29 +70,18 @@ species_dict = rmgpy.data.kinetics.KineticsLibrary().getSpecies(dict_path)
 
 smiles_to_nickname_dict = {}
 for species in species_dict.itervalues():
-    #print len(species.molecule[0].toSMILES())
     for mol in species.molecule:
         smiles_to_nickname_dict[mol.toSMILES()] = species.label
-
-f = open("../../autotst_kinetics.pkl","r")
-autotst_kinetics = pickle.load(f)
-ooh_reactions = []
-for rxn in autotst_kinetics:
-    reactants, products = rxn.label.split("_")
-    r1, r2 = reactants.split('+')
-    p1, p2 = products.split('+')
-    if "OO" in [r1, r2, p1, p2] and "[O]O" in [r1, r2, p1, p2]:
-        #print [r1, r2, p1, p2]
-        ooh_reactions.append(rxn)
 
 sarathy_rxns = []
 for r in parser.reactions:
     split_string = str(r).split()
-    if not ('ho2' in split_string and 'h2o2' in split_string):
+    if not (smiles_to_nickname_dict["OO"] in split_string and smiles_to_nickname_dict["[O]O"] in split_string):
         continue
+
+    # Creating a list of possible reaction labels
     reactants = [species_dict[n].molecule[0].toSMILES() for n in r.reactantString.split(' + ')]
     products = [species_dict[n].molecule[0].toSMILES() for n in r.productString.split(' + ')]
-    import itertools
     joined_reactant_orders = ['+'.join(order) for order in itertools.permutations(reactants)]
     joined_product_orders = ['+'.join(order) for order in itertools.permutations(products)]
     possible_labels = ['_'.join((joined_r, joined_p)) for joined_r in joined_reactant_orders for joined_p in joined_product_orders]
@@ -84,10 +92,12 @@ for r in parser.reactions:
         p1, p2 = ooh_products.split("+")
         ooh_smiles = [r1, r2, p1, p2]
 
+        # Creating a dictionary to decode inchikeys into smiles
         inchikey_to_smiles_dict = {}
         for smiles in ooh_smiles:
             inchikey_to_smiles_dict[Molecule(SMILES=smiles).toInChIKey()] = smiles
 
+        # Setting the reactant and product labels as the nickname given in the model
         if reaction.label in possible_labels:
             for reactant in reaction.reactants:
                 inchi_key = reactant.label.split("-u")[0]
@@ -101,15 +111,16 @@ for r in parser.reactions:
                     product.molecule = [Molecule(SMILES=inchikey_to_smiles_dict[inchi_key])]
                     product.label = smiles_to_nickname_dict[inchikey_to_smiles_dict[inchi_key]]
 
+            # Then append the reaction to our reaction list
             sarathy_rxns.append([r, reaction, reaction.toChemkin(), reaction.toCantera()])
 
-df = pd.DataFrame(sarathy_rxns)
-
-df.columns = ["Sarathy Reaction", "AutoTST Reaction", "AutoTST Reaction - Chemkin" , "AutoTST - Cantera"]
+# Creating a DF of the results
+sarathy_df = pd.DataFrame(sarathy_rxns)
+sarathy_df.columns = ["Sarathy Reaction", "AutoTST Reaction", "AutoTST Reaction - Chemkin" , "AutoTST - Cantera"]
 
 parser.energy_units = 'kcal/mol'
 reactions_by_cti_string = {}
-for entry in zip(df.iloc[:,1], df.iloc[:,2]):
+for entry in zip(sarathy_df.iloc[:,1], sarathy_df.iloc[:,2]):
     reaction, chemkin_string = entry
     kinetics = reaction.kinetics
     chemkin_string = '\n'.join([l for l in chemkin_string.splitlines() if not l.startswith('!')])
@@ -128,14 +139,10 @@ for i, r in enumerate(parser.reactions):
     original_reactions.append(r)
     assert original_reactions[i] == parser.reactions[i]
 
-    if r in list(df.iloc[:,0]):
-        #print df[r == df.iloc[:,0]]
-        #print r
-        #print reactions_by_cti_string[str(r)]
-        _, rmg_reaction, kinetics_options, ct_version_of_rmg_kinetics = df[r == df.iloc[:,0]].values[0]
+    if r in list(sarathy_df.iloc[:,0]):
+        _, rmg_reaction, kinetics_options, ct_version_of_rmg_kinetics = sarathy_df[r == sarathy_df.iloc[:,0]].values[0]
         # we just want the rmg_reaction
 
-        #rmg_reaction.kinetics = k
         chemkin_string = rmg_reaction.toChemkin()
         chemkin_string = '\n'.join([l for l in chemkin_string.splitlines() if not l.startswith('!')])
         r2, reverse_reaction = parser.readKineticsEntry(chemkin_string, False)
@@ -143,7 +150,6 @@ for i, r in enumerate(parser.reactions):
 
         r2.comment = r.comment
         r2.comment += '\n \nSUBSTITUTION: The following reaction was originally\n{}\n'.format(r.to_cti())
-        #model_list = textwrap.fill(', '.join(models), break_on_hyphens=False, break_long_words=False)
         r2.comment += 'But has been replaced with the following as seen in AutoTST'
 
         alternatives_rates[i].append(r2)
@@ -177,17 +183,14 @@ for i, options in alternatives_rates.iteritems():
         # restore original
         parser.reactions[i] = original_reactions[i]
 
-def get_ignition_delay(cantera_file_path, temperature , pressure, stoichiometry=1.0, plot=False, isomer='n'):
-    """
-    Get the ignition delay at temperature (K) and pressure (bar) and stochiometry (phi),
-    for the butanol isomer (n,s,t,i)
-    """
+def get_ignition_delay(cantera_file_path, temperature , pressure, stoichiometry=1.0, isomer='n'):
+
     try:
         ct.suppress_thermo_warnings(True)
     except AttributeError:
         print("Sorry about the warnings...")
     gas = ct.Solution(cantera_file_path)
-    assert isomer in ['n','s','t','i'], "Expecting isomer n,s,t, or i not {}".format(isomer)
+    assert isomer in ['n','s','t','i'], "Expecting isomer n, s, t, or i not {}".format(isomer)
     oxygen_mole = 1.0
     argon_mole = 96./4.*oxygen_mole
     butanol_mole = stoichiometry * oxygen_mole/6.
@@ -241,8 +244,7 @@ if not os.path.exists("./ignition_delay_sarathy.pkl"):
             delay = get_ignition_delay(os.path.join("./cantera_sub_models/sarathy/", cantera_file),
                        temperature=ignition_temp,
                        pressure=1,
-                       stoichiometry=1.0,
-                       plot=False)
+                       stoichiometry=1.0)
 
             delays.append(delay)
         test = pd.DataFrame(delays)
@@ -256,7 +258,7 @@ else:
     dff = pickle.load(f)
 
 ### Now for Heptane
-
+"""
 master = 'n-Heptane' # this should be what was used for '--names=' when generating the .pkl files
 
 # Find and read the chemkin file
@@ -270,20 +272,7 @@ print(reactions_filepath)
 print(thermo_filepath)
 with open(reactions_filepath) as infile:
     chemkin = infile.readlines()
-#for i,line in enumerate(chemkin):
-    #print i, line.strip()             # uncomment to print the chemkin model
-
 print "".join(chemkin[:4]) # print first 4 lines only
-
-dict_path = os.path.join(RMG_MODELS_PATH, master, 'RMG-Py-kinetics-library', 'dictionary.txt')
-print "Loading species_dict from",dict_path
-species_dict = rmgpy.data.kinetics.KineticsLibrary().getSpecies(dict_path)
-
-smiles_to_nickname_dict = {}
-for species in species_dict.itervalues():
-    #print len(species.molecule[0].toSMILES())
-    for mol in species.molecule:
-        smiles_to_nickname_dict[mol.toSMILES()] = species.label
 
 parser = ck2cti.Parser()
 surfaces = parser.convertMech(inputFile=reactions_filepath,
@@ -294,14 +283,24 @@ surfaces = parser.convertMech(inputFile=reactions_filepath,
                               outName='master_heptane.cti',
                               permissive=True)
 
+dict_path = os.path.join(RMG_MODELS_PATH, master, 'RMG-Py-kinetics-library', 'dictionary.txt')
+print "Loading species_dict from",dict_path
+species_dict = rmgpy.data.kinetics.KineticsLibrary().getSpecies(dict_path)
+
+smiles_to_nickname_dict = {}
+for species in species_dict.itervalues():
+    for mol in species.molecule:
+        smiles_to_nickname_dict[mol.toSMILES()] = species.label
+
 heptane_rxns = []
 for r in parser.reactions:
     split_string = str(r).split()
     if not (smiles_to_nickname_dict["OO"] in split_string and smiles_to_nickname_dict["[O]O"] in split_string):
         continue
+
+    # Creating a list of possible reaction labels
     reactants = [species_dict[n].molecule[0].toSMILES() for n in r.reactantString.split(' + ')]
     products = [species_dict[n].molecule[0].toSMILES() for n in r.productString.split(' + ')]
-    import itertools
     joined_reactant_orders = ['+'.join(order) for order in itertools.permutations(reactants)]
     joined_product_orders = ['+'.join(order) for order in itertools.permutations(products)]
     possible_labels = ['_'.join((joined_r, joined_p)) for joined_r in joined_reactant_orders for joined_p in joined_product_orders]
@@ -312,10 +311,12 @@ for r in parser.reactions:
         p1, p2 = ooh_products.split("+")
         ooh_smiles = [r1, r2, p1, p2]
 
+        # Creating a dictionary to decode inchikeys into smiles
         inchikey_to_smiles_dict = {}
         for smiles in ooh_smiles:
             inchikey_to_smiles_dict[Molecule(SMILES=smiles).toInChIKey()] = smiles
 
+        # Setting the reactant and product labels as the nickname given in the model
         if reaction.label in possible_labels:
             for reactant in reaction.reactants:
                 inchi_key = reactant.label.split("-u")[0]
@@ -329,15 +330,15 @@ for r in parser.reactions:
                     product.molecule = [Molecule(SMILES=inchikey_to_smiles_dict[inchi_key])]
                     product.label = smiles_to_nickname_dict[inchikey_to_smiles_dict[inchi_key]]
 
+            # Then append the reaction to our reaction list
             heptane_rxns.append([r, reaction, reaction.toChemkin(), reaction.toCantera()])
 
-df = pd.DataFrame(heptane_rxns)
-
-df.columns = ["Heptane Reaction", "AutoTST Reaction", "AutoTST Reaction - Chemkin" , "AutoTST - Cantera"]
+heptane_df = pd.DataFrame(heptane_rxns)
+heptane_df.columns = ["Heptane Reaction", "AutoTST Reaction", "AutoTST Reaction - Chemkin" , "AutoTST - Cantera"]
 
 parser.energy_units = 'kcal/mol'
 reactions_by_cti_string = {}
-for entry in zip(df.iloc[:,1], df.iloc[:,2]):
+for entry in zip(heptane_df.iloc[:,1], heptane_df.iloc[:,2]):
     reaction, chemkin_string = entry
     kinetics = reaction.kinetics
     chemkin_string = '\n'.join([l for l in chemkin_string.splitlines() if not l.startswith('!')])
@@ -356,14 +357,10 @@ for i, r in enumerate(parser.reactions):
     original_reactions.append(r)
     assert original_reactions[i] == parser.reactions[i]
 
-    if r in list(df.iloc[:,0]):
-        #print df[r == df.iloc[:,0]]
-        #print r
-        #print reactions_by_cti_string[str(r)]
-        _, rmg_reaction, kinetics_options, ct_version_of_rmg_kinetics = df[r == df.iloc[:,0]].values[0]
+    if r in list(heptane_df.iloc[:,0]):
+        _, rmg_reaction, kinetics_options, ct_version_of_rmg_kinetics = heptane_df[r == heptane_df.iloc[:,0]].values[0]
         # we just want the rmg_reaction
 
-        #rmg_reaction.kinetics = k
         chemkin_string = rmg_reaction.toChemkin()
         chemkin_string = '\n'.join([l for l in chemkin_string.splitlines() if not l.startswith('!')])
         r2, reverse_reaction = parser.readKineticsEntry(chemkin_string, False)
@@ -371,7 +368,6 @@ for i, r in enumerate(parser.reactions):
 
         r2.comment = r.comment
         r2.comment += '\n \nSUBSTITUTION: The following reaction was originally\n{}\n'.format(r.to_cti())
-        #model_list = textwrap.fill(', '.join(models), break_on_hyphens=False, break_long_words=False)
         r2.comment += 'But has been replaced with the following as seen in AutoTST'
 
         alternatives_rates[i].append(r2)
@@ -386,7 +382,6 @@ c = Counter(map(len,alternatives_rates.values()))
 print "substitutions", sorted(c.items())
 print "total variations", sum(map(len,alternatives_rates.values()))
 
-# this creates ~1281 cantera files, each with a single variation
 outdir = './cantera_sub_models/heptane/'
 os.path.exists(outdir) or os.mkdir(outdir)
 for f in os.listdir(outdir):
@@ -406,7 +401,7 @@ for i, options in alternatives_rates.iteritems():
         # restore original
         parser.reactions[i] = original_reactions[i]
 
-def get_ignition_delay(cantera_file_path, temperature , pressure, stoichiometry=1.0, plot=False, isomer='N'):
+def get_ignition_delay(cantera_file_path, temperature , pressure, stoichiometry=1.0, isomer='N'):
     """
     Get the ignition delay at temperature (K) and pressure (bar) and stochiometry (phi),
     for the butanol isomer (n,s,t,i)
@@ -416,9 +411,8 @@ def get_ignition_delay(cantera_file_path, temperature , pressure, stoichiometry=
     except AttributeError:
         print("Sorry about the warnings...")
     gas = ct.Solution(cantera_file_path)
-    assert isomer in ['N','S','T','I'], "Expecting isomer n,s,t, or i not {}".format(isomer)
+    assert isomer in ['N','S','T','I'], "Expecting isomer N, S, T, or I not {}".format(isomer)
     oxygen_mole = 1.0
-    argon_mole = 96./4.*oxygen_mole
     butanol_mole = stoichiometry * oxygen_mole/6.
     X_string = isomer + 'C7H16:{0}, O2:{1}'.format(butanol_mole, oxygen_mole)
     gas.TPX = temperature, pressure*1e5, X_string
@@ -464,15 +458,14 @@ dff.index = ignition_temps
 if not os.path.exists("./ignition_delay_heptane.pkl"):
     for cantera_file in os.listdir("./cantera_sub_models/heptane/"):
         identifier = cantera_file.split(".")[1]
+        print
         print cantera_file
         delays = []
         for ignition_temp in ignition_temps:
             delay = get_ignition_delay(os.path.join("./cantera_sub_models/heptane/", cantera_file),
                        temperature=ignition_temp,
                        pressure=1,
-                       stoichiometry=1.0,
-                       plot=False)
-
+                       stoichiometry=1.0,)
             delays.append(delay)
         test = pd.DataFrame(delays)
         test.columns = [identifier]
