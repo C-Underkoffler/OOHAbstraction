@@ -3,10 +3,10 @@
 #SBATCH --job-name=model_comparison
 
 #a file for job output, you can check job progress
-#SBATCH --output=model_comparison.%a.slurm.log
+#SBATCH --output=model_comparison_heptane.%a.slurm.log
 
 # a file for errors from the job
-#SBATCH --error=model_comparison.%a.slurm.log
+#SBATCH --error=model_comparison_heptane.%a.slurm.log
 
 #time you think you need; default is one day
 # d-hh:mm:ss
@@ -37,5 +37,7 @@
 echo $SLURM_ARRAY_TASK_ID
 # the "stdbuf -o0 -e0"  and the "-u" are to disable buffering,
 # so that you see output from the script in the log files immediately.
+
+cd ~/Code/OOHabstraction/comparisonTST/python_files
 
 python ~/Code/OOHabstraction/comparisonTST/python_files/model_comparison.py
