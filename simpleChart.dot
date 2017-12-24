@@ -1,38 +1,40 @@
 digraph G {
-  node  [ color = cornflowerblue,
-          fontcolor = white,
+  node  [ color = white,
+          fontcolor = black,
           shape = rectangle,
           style = filled];
 
   start [ color = darkgoldenrod2,
           fontcolor = navy,
-          label = "Log File Exists",
+          label = "1046   842   476\n\nLog File Exists",
           shape = box];
 
-  matchH  [ label = "A: Check H Abstraction\ncomparisonTST.py:215\n'generated a H_Abstraction reaction'",
+  matchH  [ label = "1044   842   476\n\nA: Check H Abstraction\ncomparisonTST.py:215\n'generated a H_Abstraction reaction'",
             color = goldenrod2,
             fontcolor = black];
 
   checkKin  [ label = "B: Check if Kinetics File Exists\ncomparisonTST.py:129\n'Calculating Kinetic Data'",
               shape = ellipse,
-              color = goldenrod2,
-              fontcolor = black];
+              color = black,
+              style = solid];
 
-  checkKin_Exists [ label = "C1: Kinetics File Already Exists\nreaction.py:96\n'Reading existing kinetics file'",
+  checkKin_Exists [ label = "306   306   306\n\nC1: Kinetics File Already Exists\nreaction.py:96\n'Reading existing kinetics file'",
                     color = goldenrod2,
                     fontcolor = black];
 
-  TSdirect  [ label = "C2: TS Geometry Direct Guess - Estimate\nreaction.py:522\n'Generating a TS geometry via the direct guess method'",
+  TSdirect  [ label = "738   536   170\n\nC2: TS Geometry Direct Guess - Estimate\nreaction.py:522\n'Generating a TS geometry via the direct guess method'",
               shape = ellipse,
               color = goldenrod2,
               fontcolor = black];
   TSdirect_exists [ label = "D1: Found Existing TS File\nreaction.py:539\n'exists. Loading it to save time'",
-                    fontcolor = black];
-  loadTSData  [ label = "E1:\nloadTSData()\nreaction.py:54\n'Reading existing ts file'",
+                    color = black,
+                    style = solid];
+  loadTSData  [ label = "51   26   5\n\nE1:\nloadTSData()\nreaction.py:54\n'Reading existing ts file'",
                 color = goldenrod2,
                 fontcolor = black];
 
-  TSdirect_generated  [ label = "D2: Direct Guess Generated\nreaction.py:561\n'TS estimate made. About to try the search'",
+  TSdirect_generated  [ label = "684   510   165\n\nD2: Direct Guess Generated\nreaction.py:561\n'TS estimate made. About to try the search'",
+                        color = goldenrod2,
                         fontcolor = black];
 
   tsSearch  [ label = "Begin TS Search\n'tsSearch()'"];
@@ -42,7 +44,7 @@ digraph G {
   validateTS  [ label = "Validate TS\n'validateTS()'"];
   validateTS_valid  [ label = "Valid TS"];
   validateTS_invalid  [ label = "Invalid TS"];
-  validateTS_valid_writeAndSave [ label = "J1: Writes and Saves Valid TS\nreaction.py:572\n'Saving TS result file'",
+  validateTS_valid_writeAndSave [ label = "323   184   165\n\nJ1: Writes and Saves Valid TS\nreaction.py:572\n'Saving TS result file'",
                                   color = goldenrod2,
                                   fontcolor = black];
 #####
@@ -50,23 +52,27 @@ digraph G {
   TSdirect_overallTrue  [ label = "TS Direct Guess Overall True"];
 
   Updates_TSdist_training_database [ label = "Should Update TS Dist. Training Database\nNo examples of it doing so",
-                                      color = red];
+                                      color = red,
+                                      fontcolor = white];
 #####
-  optimizeTS  [ label = "E2: Starts TS Optimization Search\nreaction.py:426\n'Starting optimization steps of the TS search'",
+  optimizeTS  [ label = "684   510   165\n\nE2: Starts TS Optimization Search\nreaction.py:426\n'Starting optimization steps of the TS search'",
                 shape = ellipse,
+                color = goldenrod2,
                 fontcolor = black];
 
-  optimizeTS_outputAlreadyExists_complete [ label = "F2: Output File Exists and is Complete\nreaction.py:438\n'exists and looks complete. Trying that'",
+  optimizeTS_outputAlreadyExists_complete [ label = "216   216   0\n\nF2: Output File Exists and is Complete\nreaction.py:438\n'exists and looks complete. Trying that'",
                                             color = goldenrod2,
                                             fontcolor = black];
   optimizeTS_outputAlreadyExists_complete_verify  [ label = "Verify Output File\n'verifyOutputFile()'"];
-  optimizeTS_outputDNE_newInput [ label = "F1: Create and Run New Input\nTS Attempt 1\nreaction.py:444\n'Optimizing TS attempt 1'\n'createInputFile()' & 'self.run()'",
+  optimizeTS_outputDNE_newInput [ label = "437   294   165\n\nF1: Create and Run New Input\nTS Attempt 1\nreaction.py:444\n'Optimizing TS attempt 1'\n'createInputFile()' & 'self.run()'",
+                                  color = goldenrod2,
                                   fontcolor = black];
   optimizeTS_outputDNE_newInput_VOF [ label = "Verify Output File\n'verifyOutputFile()'"];
   optimizeTS_checkIntCoord  [ label = "Check Internal Coordinates && Convergence",
                               shape = ellipse];
   optimizeTS_checkIntCoord_Conv [ label ="Internal Coordinates Failed or TS Converged"];
-  optimizeTS_checkIntCoord_DNC  [ label = "G: Internal Coord. Success but Diverged\nTS Attempt 2\nreaction.py:453\n'Optimizing TS attempt 2'\n'createInputFile()' & 'self.run()'",
+  optimizeTS_checkIntCoord_DNC  [ label = "21   15   1\n\nG: Internal Coord. Success but Diverged\nTS Attempt 2\nreaction.py:453\n'Optimizing TS attempt 2'\n'createInputFile()' & 'self.run()'",
+                                  color = goldenrod2,
                                   fontcolor = black];
   optimizeTS_checkIntCoord_DNC_VOF  [ label = "Verify Output File\n'verifyOutputFile()'"];
   optimizeTS_checkConv  [ label = "Check Convergence",
@@ -75,13 +81,15 @@ digraph G {
   optimizeTS_checkConv_DNC  [ label = "Not Converged. Check for Convergence Failures\n'checkComplete()'",
                               shape = ellipse];
   optimizeTS_checkConv_DNC_convFailure  [ label = "H: Convergence Failure\nreaction.py:464\n'Optimizing TS attempt 1 but with Quadratic SCF'\n'createInputFile()' & 'self.run()'",
-                                          fontcolor = black];
+                                          color = black,
+                                          style = solid];
   optimizeTS_checkConv_DNC_convFailure_VOF  [ label = "Verify Output File\n'verifyOutputFile()'"];
   optimizeTS_checkConv_DNC_convFailure_checkIntCoord  [ label = "Checks Internal Coordinates",
                                                         shape = ellipse];
   optimizeTS_checkConv_DNC_convSuccess  [ label = "No Convergence Failures"];
   optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICsucc [ label = "I: Internal Coordinates Success\nreaction.py.468\n'Optimizing TS attempt 2 but with Quadratic SCF'\n'createInputFile()' & 'self.run()'",
-                                                              fontcolor = black];
+                                                              color = black,
+                                                              style = solid];
   optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICsucc_VOF [ label = "Verify Output File\n'verifyOutputFile()'"];
   optimizeTS_checkConv_DNC_convFailure_checkIntCoord_ICfail [ label = "Internal Coordinates Failure"];
 
@@ -93,14 +101,16 @@ digraph G {
               shape = ellipse];
   canTherm_fail [ label = "CanTherm Fail"];
   canTherm_success  [ label = "K: CanTherm Success\nreaction.py:879\n'Succesful kinetics calculation in CanTherm'",
-                      fontcolor = black];
+                      color = black,
+                      style = solid];
 
-  TSoverallFail [ label = "J2: TS Fail\nreaction.py:844\n'Couldn't find transition state. Not using TST'",
+  TSoverallFail [ label = "326   326   0\n\nJ2: TS Fail\nreaction.py:844\n'Couldn't find transition state. Not using TST'",
+                  color = goldenrod2,
                   fontcolor = black];
-  overallFail [ label = "Z2: Overall Fail\ncomparisonTST.py:142\n'Boo, reaction kinetics not calculated'",
+  overallFail [ label = "366\n\nZ2: Overall Fail\ncomparisonTST.py:142\n'Boo, reaction kinetics not calculated'",
                 color = goldenrod2,
                 fontcolor = black];
-  overallSuccess   [ label = "Z1: Yay! Kinetics Succesful\ncomparisonTST.py:139\n'Yay, reaction kinetics calculated'"
+  overallSuccess   [ label = "476\n\nZ1: Yay! Kinetics Succesful\ncomparisonTST.py:139\n'Yay, reaction kinetics calculated'"
                     color = goldenrod2,
                     fontcolor = black];
 
@@ -142,9 +152,8 @@ digraph G {
 
   validateTS -> validateTS_valid
   validateTS -> validateTS_invalid
-  validateTS_valid -> validateTS_valid_writeAndSave -> tsSearch_overallSuccess -> TSdirect_overallTrue -> canTherm
+  validateTS_valid -> validateTS_valid_writeAndSave -> Updates_TSdist_training_database -> tsSearch_overallSuccess -> TSdirect_overallTrue -> canTherm
   validateTS_invalid -> tsSearch_overallFail -> TSdirect_overallFalse -> TSoverallFail -> overallFail
-  validateTS_valid_writeAndSave -> Updates_TSdist_training_database -> tsSearch_overallSuccess
 
   canTherm -> canTherm_success -> overallSuccess
   canTherm -> canTherm_fail -> overallFail
