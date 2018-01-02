@@ -40,4 +40,5 @@ echo $SLURM_ARRAY_TASK_ID
 
 cd ~/Code/OOHabstraction/comparisonTST/python_files
 
-python ~/Code/OOHabstraction/comparisonTST/python_files/model_comparison.py
+python ~/Code/OOHabstraction/comparisonTST/python_files/sarathy_comparison.py
+python ~/Code/OOHabstraction/comparisonTST/python_files/heptane_comparison.py
