@@ -530,4 +530,66 @@ master.502.1.cti:
     H2O: "h2o" 
     n-butanol: "nc4h9oh" 
     
-master.503.1.c
+master.503.1.cti: 
+    O2: "o2" 
+    N2: "n2" 
+    Ar: "ar" 
+    He: "he" 
+    CO2: "co2" 
+    H2O: "h2o" 
+    n-butanol: "nc4h9oh" 
+    
+master.552.1.cti: 
+    O2: "o2" 
+    N2: "n2" 
+    Ar: "ar" 
+    He: "he" 
+    CO2: "co2" 
+    H2O: "h2o" 
+    n-butanol: "nc4h9oh" 
+    
+master.577.1.cti: 
+    O2: "o2" 
+    N2: "n2" 
+    Ar: "ar" 
+    He: "he" 
+    CO2: "co2" 
+    H2O: "h2o" 
+    n-butanol: "nc4h9oh" 
+    
+master.77.1.cti: 
+    O2: "o2" 
+    N2: "n2" 
+    Ar: "ar" 
+    He: "he" 
+    CO2: "co2" 
+    H2O: "h2o" 
+    n-butanol: "nc4h9oh" 
+    
+master.787.1.cti: 
+    O2: "o2" 
+    N2: "n2" 
+    Ar: "ar" 
+    He: "he" 
+    CO2: "co2" 
+    H2O: "h2o" 
+    n-butanol: "nc4h9oh" 
+    
+master.788.1.cti: 
+    O2: "o2" 
+    N2: "n2" 
+    Ar: "ar" 
+    He: "he" 
+    CO2: "co2" 
+    H2O: "h2o" 
+    n-butanol: "nc4h9oh" 
+    
+master.839.1.cti: 
+    O2: "o2" 
+    N2: "n2" 
+    Ar: "ar" 
+    He: "he" 
+    CO2: "co2" 
+    H2O: "h2o" 
+    n-butanol: "nc4h9oh" 
+    
