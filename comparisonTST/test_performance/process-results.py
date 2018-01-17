@@ -7,7 +7,7 @@ import imageio
 
 plt.ion()
 
-model_list = list_of_models = [f for f in listdir("~/OOHabstraction/comparisonTST/test_performance/models") if f.endswith(".cti")]
+model_list = list_of_models = [f for f in os.listdir("/Users/nathan/Code/OOHabstraction/comparisonTST/test_performance/models") if f.endswith(".cti")]
 
 models = []
 error_functions = []
