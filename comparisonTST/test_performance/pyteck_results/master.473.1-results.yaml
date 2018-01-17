@@ -1,0 +1,1595 @@
+average deviation function: 2.604268846757894
+average error function: 18.977793041232736
+datasets:
+- absolute deviation: 7.018931451567845
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.284', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.6822', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0020859999999999997 second
+    pressure: 1752922.5 pascal
+    simulated ignition delay: 0.00500539030055534 second
+    temperature: 879 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.284', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.6822', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0026089999999999998 second
+    pressure: 1783320.0000000002 pascal
+    simulated ignition delay: 0.005139241338422218 second
+    temperature: 874 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.284', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.6822', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0037689999999999998 second
+    pressure: 1773187.5 pascal
+    simulated ignition delay: 0.006548811950473368 second
+    temperature: 851 kelvin
+  dataset: Bec_phi_0.71_n-b_0.0338_xO2_0.284.yaml
+  dataset_id: 0
+  error function: 51.030679796924595
+  standard deviation: 0.1
+- absolute deviation: 5.34942233465218
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.144', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8388', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.004238 second
+    pressure: 1763054.9999999998 pascal
+    simulated ignition delay: 0.007472082527700954 second
+    temperature: 922 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.144', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8388', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.004954 second
+    pressure: 1732657.5000000002 pascal
+    simulated ignition delay: 0.009032367481853152 second
+    temperature: 908 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.144', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8388', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.004756 second
+    pressure: 1732657.5000000002 pascal
+    simulated ignition delay: 0.009688970727816822 second
+    temperature: 902 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.144', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8388', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.006888999999999999 second
+    pressure: 1752922.5 pascal
+    simulated ignition delay: 0.011863953935155156 second
+    temperature: 883 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.144', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8388', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0054139999999999995 second
+    pressure: 2178487.5 pascal
+    simulated ignition delay: 0.009011839134447478 second
+    temperature: 882 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.144', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8388', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.005843999999999999 second
+    pressure: 2168355.0 pascal
+    simulated ignition delay: 0.009272716445132178 second
+    temperature: 880 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.144', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8388', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.006619 second
+    pressure: 2269680.0 pascal
+    simulated ignition delay: 0.009346488930248937 second
+    temperature: 874 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.144', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8388', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.009267 second
+    pressure: 1773187.5 pascal
+    simulated ignition delay: 0.015908726255227504 second
+    temperature: 856 kelvin
+  dataset: Bec_phi_0.72_n-b_0.0172_xO2_0.144.yaml
+  dataset_id: 1
+  error function: 29.60036585286149
+  standard deviation: 0.1
+- absolute deviation: 5.73401456616727
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.244', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7222', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00389 second
+    pressure: 1661729.9999999998 pascal
+    simulated ignition delay: 0.009206315351292963 second
+    temperature: 833 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.244', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7222', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00496 second
+    pressure: 1925175.0 pascal
+    simulated ignition delay: 0.008587530820227288 second
+    temperature: 822 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.244', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7222', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.006259 second
+    pressure: 2016367.4999999998 pascal
+    simulated ignition delay: 0.010560220158821455 second
+    temperature: 800 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.244', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7222', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.01023 second
+    pressure: 1985970.0000000002 pascal
+    simulated ignition delay: 0.014665102033386373 second
+    temperature: 777 kelvin
+  dataset: Bec_phi_0.83_n-b_0.0338_xO2_0.244.yaml
+  dataset_id: 2
+  error function: 36.16893179506083
+  standard deviation: 0.1
+- absolute deviation: 5.273044909974214
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.162', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8042', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000504 second
+    pressure: 1641465.0 pascal
+    simulated ignition delay: 0.0009512764964616583 second
+    temperature: 1043 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.162', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8042', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000672 second
+    pressure: 2310210.0 pascal
+    simulated ignition delay: 0.0010221247495359178 second
+    temperature: 1012 kelvin
+  dataset: Bec_phi_1.25_n-b_0.0338_xO2_0.162.yaml
+  dataset_id: 3
+  error function: 28.96976168829202
+  standard deviation: 0.1
+- absolute deviation: 2.602593125475499
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.142', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8242', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0015509999999999999 second
+    pressure: 2300000.0 pascal
+    simulated ignition delay: 0.002103305285101466 second
+    temperature: 959 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.142', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8242', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0028469999999999997 second
+    pressure: 2280000.0 pascal
+    simulated ignition delay: 0.0035056255087051406 second
+    temperature: 913 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.142', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8242', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.005272 second
+    pressure: 1750000.0 pascal
+    simulated ignition delay: 0.006807602922799542 second
+    temperature: 882 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.142', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8242', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.005702 second
+    pressure: 1739999.9999999998 pascal
+    simulated ignition delay: 0.007774240590878161 second
+    temperature: 869 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.142', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8242', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.007025999999999999 second
+    pressure: 1720000.0 pascal
+    simulated ignition delay: 0.008780836997640581 second
+    temperature: 858 kelvin
+  dataset: Bec_phi_1.43_n-b_0.0338_xO2_0.142.yaml
+  dataset_id: 4
+  error function: 6.944978566246464
+  standard deviation: 0.1
+- absolute deviation: 1.098994044537399
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.122', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8442', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.008 second
+    pressure: 1752922.5 pascal
+    simulated ignition delay: 0.010007495571505803 second
+    temperature: 850 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.122', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8442', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.008038 second
+    pressure: 1833982.5000000002 pascal
+    simulated ignition delay: 0.009569643579042322 second
+    temperature: 848 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.122', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8442', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.008204 second
+    pressure: 1935307.5000000002 pascal
+    simulated ignition delay: 0.00949733007507808 second
+    temperature: 841 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.122', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8442', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.009901 second
+    pressure: 1925175.0 pascal
+    simulated ignition delay: 0.009757168440361045 second
+    temperature: 839 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.122', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8442', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.011594 second
+    pressure: 1925175.0 pascal
+    simulated ignition delay: 0.011821511742308515 second
+    temperature: 820 kelvin
+  dataset: Bec_phi_1.67_n-b_0.0338_xO2_0.122.yaml
+  dataset_id: 5
+  error function: 2.0514062682873333
+  standard deviation: 0.1
+- absolute deviation: 3.915459078094594
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.0714', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8948', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0021709999999999998 second
+    pressure: 1489477.5 pascal
+    simulated ignition delay: 0.0028421869543072014 second
+    temperature: 990 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.0714', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8948', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0020659999999999997 second
+    pressure: 1702260.0 pascal
+    simulated ignition delay: 0.0028544887185333262 second
+    temperature: 980 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.0714', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8948', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0047279999999999996 second
+    pressure: 1671862.5 pascal
+    simulated ignition delay: 0.00813592248758577 second
+    temperature: 905 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.0714', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8948', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.005382 second
+    pressure: 1671862.5 pascal
+    simulated ignition delay: 0.009679024748602492 second
+    temperature: 890 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.0714', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8948', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00581 second
+    pressure: 1752922.5 pascal
+    simulated ignition delay: 0.009683385984123095 second
+    temperature: 884 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.0714', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8948', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.007925 second
+    pressure: 1763054.9999999998 pascal
+    simulated ignition delay: 0.01202196691057685 second
+    temperature: 862 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.0714', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8948', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.011047999999999999 second
+    pressure: 1722525.0 pascal
+    simulated ignition delay: 0.013311153778598957 second
+    temperature: 855 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.0714', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8948', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.009167999999999999 second
+    pressure: 1864379.9999999998 pascal
+    simulated ignition delay: 0.012327554895953847 second
+    temperature: 851 kelvin
+  dataset: Bec_phi_2.84_n-b_0.0338_xO2_0.0714.yaml
+  dataset_id: 6
+  error function: 17.16449506968921
+  standard deviation: 0.1
+- absolute deviation: 3.070083778931325
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.0612', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.905', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.012277999999999999 second
+    pressure: 1854247.5 pascal
+    simulated ignition delay: 0.016690128233512756 second
+    temperature: 829 kelvin
+  dataset: Bec_phi_3.31_n-b_0.0338_xO2_0.0612.yaml
+  dataset_id: 7
+  error function: 9.425414409657245
+  standard deviation: 0.1
+- absolute deviation: -1.5815935334049258
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0654', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.118', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8166', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.003405 second
+    pressure: 2269680.0 pascal
+    simulated ignition delay: 0.0038684495119029622 second
+    temperature: 847 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0654', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.118', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8166', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.005521 second
+    pressure: 2431800.0 pascal
+    simulated ignition delay: 0.004062581854108923 second
+    temperature: 830 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0654', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.118', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8166', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.006692999999999999 second
+    pressure: 1813717.4999999998 pascal
+    simulated ignition delay: 0.006289442971547208 second
+    temperature: 827 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0654', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.118', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8166', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.007679 second
+    pressure: 2411535.0 pascal
+    simulated ignition delay: 0.005192280871941437 second
+    temperature: 806 kelvin
+  dataset: Bec_phi_3.34_n-b_0.0654_xO2_0.118.yaml
+  dataset_id: 8
+  error function: 6.6842400758613465
+  standard deviation: 0.1
+- absolute deviation: -2.9735885240877806
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.12', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.875', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.0017549999999999998 second
+    pressure: 108000.0 pascal
+    simulated ignition delay: 0.0019014558230715916 second
+    temperature: 1196 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.12', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.875', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.0007469999999999999 second
+    pressure: 115999.99999999999 pascal
+    simulated ignition delay: 0.0005161525337043446 second
+    temperature: 1284 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.12', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.875', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000491 second
+    pressure: 111000.00000000001 pascal
+    simulated ignition delay: 0.0003080026564346981 second
+    temperature: 1330 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.12', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.875', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000327 second
+    pressure: 103000.0 pascal
+    simulated ignition delay: 0.00022436585314276528 second
+    temperature: 1365 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.12', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.875', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000116 second
+    pressure: 104000.0 pascal
+    simulated ignition delay: 8.139596684410401e-05 second
+    temperature: 1479 kelvin
+  dataset: Moss2008_nbutanol_phi=0.25_x=0.005.yaml
+  dataset_id: 9
+  error function: 12.558731650366834
+  standard deviation: 0.1
+- absolute deviation: -3.0772151146465436
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.24', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.75', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00089 second
+    pressure: 142000.0 pascal
+    simulated ignition delay: 0.0006994089584505792 second
+    temperature: 1225 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.24', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.75', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.0006789999999999999 second
+    pressure: 122000.0 pascal
+    simulated ignition delay: 0.0005323440351369346 second
+    temperature: 1250 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.24', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.75', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000401 second
+    pressure: 137000.0 pascal
+    simulated ignition delay: 0.0003068280769209172 second
+    temperature: 1284 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.24', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.75', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000256 second
+    pressure: 134000.0 pascal
+    simulated ignition delay: 0.00016916582089519848 second
+    temperature: 1333 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.24', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.75', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000153 second
+    pressure: 129000.0 pascal
+    simulated ignition delay: 0.00010543759134117919 second
+    temperature: 1379 kelvin
+  dataset: Moss2008_nbutanol_phi=0.25_x=0.01.yaml
+  dataset_id: 10
+  error function: 9.983951504762564
+  standard deviation: 0.1
+- absolute deviation: -0.84539305852398
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.935', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000763 second
+    pressure: 103000.0 pascal
+    simulated ignition delay: 0.0007712008901170927 second
+    temperature: 1301 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.935', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.0005059999999999999 second
+    pressure: 121000.0 pascal
+    simulated ignition delay: 0.00040273261178814076 second
+    temperature: 1349 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.935', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00027 second
+    pressure: 131000.0 pascal
+    simulated ignition delay: 0.0002444740868778135 second
+    temperature: 1393 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.935', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00015199999999999998 second
+    pressure: 133000.0 pascal
+    simulated ignition delay: 0.00012565072293320504 second
+    temperature: 1467 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.935', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00013099999999999999 second
+    pressure: 122000.0 pascal
+    simulated ignition delay: 0.000125168100576663 second
+    temperature: 1476 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.935', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 8.3e-05 second
+    pressure: 112000.00000000001 pascal
+    simulated ignition delay: 8.180522836709979e-05 second
+    temperature: 1541 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.935', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 5.9999999999999995e-05 second
+    pressure: 128000.0 pascal
+    simulated ignition delay: 5.8549271907720526e-05 second
+    temperature: 1573 kelvin
+  dataset: Moss2008_nbutanol_phi=0.5_x=0.005.yaml
+  dataset_id: 11
+  error function: 1.445818370406022
+  standard deviation: 0.1
+- absolute deviation: -3.5472319478782084
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.12', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.87', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00112 second
+    pressure: 141000.0 pascal
+    simulated ignition delay: 0.0008421924469974719 second
+    temperature: 1235 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.12', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.87', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000472 second
+    pressure: 143000.0 pascal
+    simulated ignition delay: 0.0003311781555141167 second
+    temperature: 1307 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.12', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.87', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000306 second
+    pressure: 139000.0 pascal
+    simulated ignition delay: 0.00019244971017239672 second
+    temperature: 1358 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.12', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.87', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000192 second
+    pressure: 132000.0 pascal
+    simulated ignition delay: 0.00013019253438962755 second
+    temperature: 1402 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.12', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.87', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 8.999999999999999e-05 second
+    pressure: 130000.0 pascal
+    simulated ignition delay: 6.788552601659799e-05 second
+    temperature: 1481 kelvin
+  dataset: Moss2008_nbutanol_phi=0.5_x=0.01.yaml
+  dataset_id: 12
+  error function: 13.046215199494444
+  standard deviation: 0.1
+- absolute deviation: 7.620814028815369
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0025', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.015', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9825', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.0006929999999999999 second
+    pressure: 407000.0 pascal
+    simulated ignition delay: 0.001581756258558381 second
+    temperature: 1279 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0025', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.015', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9825', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.0005369999999999999 second
+    pressure: 385000.0 pascal
+    simulated ignition delay: 0.0013220343226350512 second
+    temperature: 1298 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0025', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.015', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9825', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000233 second
+    pressure: 394000.0 pascal
+    simulated ignition delay: 0.00048666079979719156 second
+    temperature: 1388 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0025', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.015', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9825', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000155 second
+    pressure: 381000.0 pascal
+    simulated ignition delay: 0.0003080903658796383 second
+    temperature: 1435 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0025', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.015', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9825', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000143 second
+    pressure: 353000.0 pascal
+    simulated ignition delay: 0.0002768746162968849 second
+    temperature: 1451 kelvin
+  dataset: Moss2008_nbutanol_phi=1.0_x=0.0025.yaml
+  dataset_id: 13
+  error function: 58.873593515375696
+  standard deviation: 0.1
+- absolute deviation: 1.572311912503442
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000565 second
+    pressure: 132000.0 pascal
+    simulated ignition delay: 0.0006943935996603339 second
+    temperature: 1367 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000455 second
+    pressure: 123000.0 pascal
+    simulated ignition delay: 0.0006172522123071239 second
+    temperature: 1385 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000346 second
+    pressure: 132000.0 pascal
+    simulated ignition delay: 0.00043387877558687864 second
+    temperature: 1417 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000281 second
+    pressure: 130000.0 pascal
+    simulated ignition delay: 0.0003210808640015573 second
+    temperature: 1452 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00016199999999999998 second
+    pressure: 110000.00000000001 pascal
+    simulated ignition delay: 0.00022194294280621595 second
+    temperature: 1511 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00013099999999999999 second
+    pressure: 135000.0 pascal
+    simulated ignition delay: 0.0001489978597343665 second
+    temperature: 1541 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 8.7e-05 second
+    pressure: 131000.0 pascal
+    simulated ignition delay: 0.00010114677015111813 second
+    temperature: 1595 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 6.7e-05 second
+    pressure: 121000.0 pascal
+    simulated ignition delay: 6.959373862217365e-05 second
+    temperature: 1656 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 5.1e-05 second
+    pressure: 126000.0 pascal
+    simulated ignition delay: 4.670461570404052e-05 second
+    temperature: 1711 kelvin
+  dataset: Moss2008_nbutanol_phi=1.0_x=0.005.yaml
+  dataset_id: 14
+  error function: 3.912330487791513
+  standard deviation: 0.1
+- absolute deviation: 0.8365894313281508
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.93', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000905 second
+    pressure: 112999.99999999999 pascal
+    simulated ignition delay: 0.0009896685972857582 second
+    temperature: 1274 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.93', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000375 second
+    pressure: 96000.0 pascal
+    simulated ignition delay: 0.00042481735169361165 second
+    temperature: 1369 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.93', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000144 second
+    pressure: 132000.0 pascal
+    simulated ignition delay: 0.00013994564659743574 second
+    temperature: 1472 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.93', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000106 second
+    pressure: 113999.99999999999 pascal
+    simulated ignition delay: 0.0001153926172706663 second
+    temperature: 1514 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.93', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000102 second
+    pressure: 96000.0 pascal
+    simulated ignition delay: 0.00011917635808010598 second
+    temperature: 1529 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.93', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 9.3e-05 second
+    pressure: 127000.0 pascal
+    simulated ignition delay: 9.514420800550085e-05 second
+    temperature: 1529 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.93', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 6.4e-05 second
+    pressure: 118000.0 pascal
+    simulated ignition delay: 7.141755496537161e-05 second
+    temperature: 1580 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.01', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.06', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.93', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 5.9e-05 second
+    pressure: 111000.00000000001 pascal
+    simulated ignition delay: 6.59048464011159e-05 second
+    temperature: 1600 kelvin
+  dataset: Moss2008_nbutanol_phi=1.0_x=0.01.yaml
+  dataset_id: 15
+  error function: 1.0074496817363667
+  standard deviation: 0.1
+- absolute deviation: 4.433470440154788
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.0013239999999999999 second
+    pressure: 102338.25 pascal
+    simulated ignition delay: 0.0016487864073160571 second
+    temperature: 1301 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000326 second
+    pressure: 98285.25 pascal
+    simulated ignition delay: 0.0005332546957206854 second
+    temperature: 1418 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000628 second
+    pressure: 100311.75 pascal
+    simulated ignition delay: 0.0009595042697574282 second
+    temperature: 1355 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00015099999999999998 second
+    pressure: 94232.25 pascal
+    simulated ignition delay: 0.00025566796877535356 second
+    temperature: 1505 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000401 second
+    pressure: 118550.25 pascal
+    simulated ignition delay: 0.0006532573372577841 second
+    temperature: 1381 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.005', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.03', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.965', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00014099999999999998 second
+    pressure: 117536.99999999999 pascal
+    simulated ignition delay: 0.0002348324419467528 second
+    temperature: 1495 kelvin
+  dataset: Stranic2012_1atm_nbutanol_xO2=0.03_phi=1.0.yaml
+  dataset_id: 16
+  error function: 20.76065711761614
+  standard deviation: 0.1
+- absolute deviation: -1.2163684812077198
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.006666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.953333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000118 second
+    pressure: 1817770.5000000002 pascal
+    simulated ignition delay: 0.00011881807166815314 second
+    temperature: 1317 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.006666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.953333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000283 second
+    pressure: 1796492.25 pascal
+    simulated ignition delay: 0.0002604725057548011 second
+    temperature: 1245 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.006666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.953333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000341 second
+    pressure: 1875525.7500000002 pascal
+    simulated ignition delay: 0.0003207458977875409 second
+    temperature: 1224 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.006666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.953333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000235 second
+    pressure: 1895790.75 pascal
+    simulated ignition delay: 0.00020488036767511415 second
+    temperature: 1263 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.006666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.953333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000723 second
+    pressure: 1901870.25 pascal
+    simulated ignition delay: 0.0005138687426703306 second
+    temperature: 1183 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.006666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.953333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000113 second
+    pressure: 1880591.9999999998 pascal
+    simulated ignition delay: 0.00011721037934910425 second
+    temperature: 1316 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.006666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.953333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000434 second
+    pressure: 1916055.75 pascal
+    simulated ignition delay: 0.0003305898798073967 second
+    temperature: 1220 kelvin
+  dataset: Stranic2012_20atm_nbutanol.yaml
+  dataset_id: 17
+  error function: 3.164076322925589
+  standard deviation: 0.1
+- absolute deviation: -0.3996977806646207
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.006666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.953333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000113 second
+    pressure: 4166483.9999999995 pascal
+    simulated ignition delay: 0.00010974161666690858 second
+    temperature: 1268 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.006666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.953333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000196 second
+    pressure: 4554558.75 pascal
+    simulated ignition delay: 0.00018842567663294763 second
+    temperature: 1211 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.006666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.953333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000314 second
+    pressure: 4571784.0 pascal
+    simulated ignition delay: 0.00029831614863901323 second
+    temperature: 1169 kelvin
+  dataset: Stranic2012_40atm_nbutanol.yaml
+  dataset_id: 18
+  error function: 0.16782593672979096
+  standard deviation: 0.1
+- absolute deviation: 4.743954186088666
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0075', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.045', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9475', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00156 second
+    pressure: 96258.75 pascal
+    simulated ignition delay: 0.0025101669786542708 second
+    temperature: 1230 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0075', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.045', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9475', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00029299999999999997 second
+    pressure: 94232.25 pascal
+    simulated ignition delay: 0.0004853605857884092 second
+    temperature: 1388 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0075', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.045', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9475', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.0006529999999999999 second
+    pressure: 97272.0 pascal
+    simulated ignition delay: 0.0009840287739447827 second
+    temperature: 1312 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0075', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.045', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9475', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 8.999999999999999e-05 second
+    pressure: 92205.75 pascal
+    simulated ignition delay: 0.0001494452939402769 second
+    temperature: 1534 kelvin
+  dataset: Stranic2012_nbutanol_xO2=0.045_phi=1.0.yaml
+  dataset_id: 19
+  error function: 22.65832211440306
+  standard deviation: 0.1
+- absolute deviation: 3.6542458799527147
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0033333', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9566667', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000153 second
+    pressure: 170226.0 pascal
+    simulated ignition delay: 0.00023758062292434057 second
+    temperature: 1405 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0033333', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9566667', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000328 second
+    pressure: 178332.0 pascal
+    simulated ignition delay: 0.0004557363883001217 second
+    temperature: 1339 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0033333', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9566667', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000574 second
+    pressure: 180358.5 pascal
+    simulated ignition delay: 0.0008059838430434948 second
+    temperature: 1289 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0033333', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9566667', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.001057 second
+    pressure: 188464.5 pascal
+    simulated ignition delay: 0.001363408102273866 second
+    temperature: 1245 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0033333', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.9566667', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000134 second
+    pressure: 177318.75 pascal
+    simulated ignition delay: 0.00021315201071445307 second
+    temperature: 1413 kelvin
+  dataset: Stranic2012_nbutanol_xO2=0.04_phi=0.5.yaml
+  dataset_id: 20
+  error function: 13.9459859279728
+  standard deviation: 0.1
+- absolute deviation: 2.6548717048060024
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.001013 second
+    pressure: 153000.75 pascal
+    simulated ignition delay: 0.001184149644197555 second
+    temperature: 1274 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000207 second
+    pressure: 139828.5 pascal
+    simulated ignition delay: 0.00030152473307360985 second
+    temperature: 1420 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000993 second
+    pressure: 139828.5 pascal
+    simulated ignition delay: 0.0012551934274716058 second
+    temperature: 1275 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000468 second
+    pressure: 143881.5 pascal
+    simulated ignition delay: 0.0005957989604373112 second
+    temperature: 1344 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000158 second
+    pressure: 137802.0 pascal
+    simulated ignition delay: 0.00023577101169442073 second
+    temperature: 1450 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000575 second
+    pressure: 148947.75 pascal
+    simulated ignition delay: 0.0007379382083132275 second
+    temperature: 1320 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00017199999999999998 second
+    pressure: 148947.75 pascal
+    simulated ignition delay: 0.00025853244805198306 second
+    temperature: 1432 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000296 second
+    pressure: 153000.75 pascal
+    simulated ignition delay: 0.00040281948023233627 second
+    temperature: 1380 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000148 second
+    pressure: 135775.5 pascal
+    simulated ignition delay: 0.00022302970706430096 second
+    temperature: 1458 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.00043 second
+    pressure: 175292.25 pascal
+    simulated ignition delay: 0.0005758189062894224 second
+    temperature: 1332 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000259 second
+    pressure: 173265.75 pascal
+    simulated ignition delay: 0.00035230353662693266 second
+    temperature: 1384 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.00666667', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.04', species-name: O2}
+    - {InChI: 1S/Ar, amount: '0.95333333', species-name: Ar}
+    composition type: mole fraction
+    experimental ignition delay: 0.000312 second
+    pressure: 281683.5 pascal
+    simulated ignition delay: 0.0003847321105877147 second
+    temperature: 1336 kelvin
+  dataset: Stranic2012_nbutanol_xO2=0.04_phi=1.0.yaml
+  dataset_id: 21
+  error function: 7.565348385917301
+  standard deviation: 0.11277107921151648
+- absolute deviation: 3.053746741350931
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.206', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7768', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00041799999999999997 second
+    pressure: 2006235.0 pascal
+    simulated ignition delay: 0.0005733220057485213 second
+    temperature: 1093 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.206', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7768', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001103 second
+    pressure: 2097427.5 pascal
+    simulated ignition delay: 0.001408727430113147 second
+    temperature: 1025 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0172', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.206', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7768', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002079 second
+    pressure: 2158222.5 pascal
+    simulated ignition delay: 0.002966527021388726 second
+    temperature: 966 kelvin
+  dataset: Yangye_n-b_0.0172_xO2=0.206_phi=0.5.yaml
+  dataset_id: 22
+  error function: 9.535780394508391
+  standard deviation: 0.1
+- absolute deviation: 2.080913695971154
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.102', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8642', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000566 second
+    pressure: 2158222.5 pascal
+    simulated ignition delay: 0.0006285066175340222 second
+    temperature: 1063 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.102', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8642', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000633 second
+    pressure: 2208885.0 pascal
+    simulated ignition delay: 0.0008365306725591165 second
+    temperature: 1040 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.102', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8642', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0009699999999999999 second
+    pressure: 2249415.0 pascal
+    simulated ignition delay: 0.0012940470821124045 second
+    temperature: 1007 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.102', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.8642', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001485 second
+    pressure: 2340607.5 pascal
+    simulated ignition delay: 0.0017436859218642852 second
+    temperature: 982 kelvin
+  dataset: Yangye_n-b_0.0338_xO2=0.102_phi=2.0.yaml
+  dataset_id: 23
+  error function: 4.939130275941048
+  standard deviation: 0.1
+- absolute deviation: 3.7927022023241426
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000825 second
+    pressure: 3455182.5 pascal
+    simulated ignition delay: 0.0012683131197317623 second
+    temperature: 945 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0016699999999999998 second
+    pressure: 3475447.4999999995 pascal
+    simulated ignition delay: 0.0022872687439813104 second
+    temperature: 883 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.003113 second
+    pressure: 3526109.9999999995 pascal
+    simulated ignition delay: 0.0047901143413918885 second
+    temperature: 815 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.004841 second
+    pressure: 3880747.4999999995 pascal
+    simulated ignition delay: 0.005433005042405975 second
+    temperature: 798 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.008704 second
+    pressure: 4215120.0 pascal
+    simulated ignition delay: 0.009085066729826917 second
+    temperature: 762 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.008570999999999999 second
+    pressure: 4154325.0 pascal
+    simulated ignition delay: 0.01909209376679893 second
+    temperature: 728 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.009385 second
+    pressure: 4559625.0 pascal
+    simulated ignition delay: 0.024249271693597026 second
+    temperature: 716 kelvin
+  dataset: Yangye_n-b_0.0338_xO2=0.203_phi=1.0.yaml
+  dataset_id: 24
+  error function: 21.46356259235472
+  standard deviation: 0.11616090695077595
+- absolute deviation: 9.679762939105485
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.406', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.5602', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000424 second
+    pressure: 2340607.5 pascal
+    simulated ignition delay: 0.0011423490024948973 second
+    temperature: 976 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.406', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.5602', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000677 second
+    pressure: 2350740.0 pascal
+    simulated ignition delay: 0.0017415231207317287 second
+    temperature: 933 kelvin
+  dataset: Yangye_n-b_0.0338_xO2=0.406_phi=0.5.yaml
+  dataset_id: 25
+  error function: 93.75132042854102
+  standard deviation: 0.1
+- absolute deviation: 5.681409811041899
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00014 second
+    pressure: 2198752.5 pascal
+    simulated ignition delay: 0.00023713432001467287 second
+    temperature: 1121 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000514 second
+    pressure: 1651597.5 pascal
+    simulated ignition delay: 0.0008512894735963557 second
+    temperature: 1047 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000379 second
+    pressure: 2148090.0 pascal
+    simulated ignition delay: 0.000696844783128041 second
+    temperature: 1042 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000572 second
+    pressure: 2249415.0 pascal
+    simulated ignition delay: 0.0009618582731063408 second
+    temperature: 1014 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000851 second
+    pressure: 2269680.0 pascal
+    simulated ignition delay: 0.0014214408289961542 second
+    temperature: 982 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0014889999999999999 second
+    pressure: 2178487.5 pascal
+    simulated ignition delay: 0.0024198377504916105 second
+    temperature: 939 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002134 second
+    pressure: 2208885.0 pascal
+    simulated ignition delay: 0.002964986686958649 second
+    temperature: 917 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00274 second
+    pressure: 1580670.0 pascal
+    simulated ignition delay: 0.00693410538024575 second
+    temperature: 876 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0031439999999999997 second
+    pressure: 1641465.0 pascal
+    simulated ignition delay: 0.007181350115858556 second
+    temperature: 867 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0038439999999999998 second
+    pressure: 1661729.9999999998 pascal
+    simulated ignition delay: 0.010173604299212324 second
+    temperature: 831 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.003722 second
+    pressure: 1793452.5 pascal
+    simulated ignition delay: 0.009381734055005411 second
+    temperature: 829 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.004044 second
+    pressure: 2289945.0 pascal
+    simulated ignition delay: 0.008297394961687292 second
+    temperature: 812 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0047469999999999995 second
+    pressure: 1813717.4999999998 pascal
+    simulated ignition delay: 0.011569900955978756 second
+    temperature: 809 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.006212 second
+    pressure: 1874512.5 pascal
+    simulated ignition delay: 0.013635339811234883 second
+    temperature: 792 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0338', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.203', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7632', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.008183 second
+    pressure: 2421667.5 pascal
+    simulated ignition delay: 0.012499212861156295 second
+    temperature: 776 kelvin
+  dataset: Yangye_n-b_0.038_xO2=0.203_phi=1.yaml
+  dataset_id: 26
+  error function: 35.31401426502152
+  standard deviation: 0.11686553168907382
+- absolute deviation: 2.6932798867917493
+  datapoints:
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0654', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.196', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7386', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0015049999999999998 second
+    pressure: 1530007.5 pascal
+    simulated ignition delay: 0.0025541926737105937 second
+    temperature: 931 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0654', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.196', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7386', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0018089999999999998 second
+    pressure: 2056897.5 pascal
+    simulated ignition delay: 0.002180102565939303 second
+    temperature: 902 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0654', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.196', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7386', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002373 second
+    pressure: 2137957.5 pascal
+    simulated ignition delay: 0.002568664182448612 second
+    temperature: 875 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0654', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.196', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7386', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0054399999999999995 second
+    pressure: 1752922.5 pascal
+    simulated ignition delay: 0.006620872449823009 second
+    temperature: 802 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0654', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.196', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7386', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.006196 second
+    pressure: 1833982.5000000002 pascal
+    simulated ignition delay: 0.00848126883646387 second
+    temperature: 778 kelvin
+  - composition:
+    - {InChI: '1S/C4H10O/c1-2-3-4-5/h5H,2-4H2,1H3', amount: '0.0654', species-name: n-butanol}
+    - {InChI: 1S/O2/c1-2, amount: '0.196', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7386', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.009703999999999999 second
+    pressure: 1884645.0000000002 pascal
+    simulated ignition delay: 0.013241155802208726 second
+    temperature: 749 kelvin
+  dataset: Yangye_n-b_0.0654_xO2=0.196_phi=2.0.yaml
+  dataset_id: 27
+  error function: 9.243817459771224
+  standard deviation: 0.1
+error function standard deviation: 20.563557729450263
+model: master.473.1.cti

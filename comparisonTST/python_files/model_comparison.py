@@ -37,7 +37,7 @@ for rxn in autotst_kinetics:
         ooh_reactions.append(rxn)
 
 # Looking at sarathy models
-"""
+
 ### We don't need this for the time being, so skipping it for now
 
 master = 'CombFlame2012/2028-Sarathy'
@@ -258,7 +258,7 @@ else:
     dff = pickle.load(f)
 
 ### Now for Heptane
-"""
+
 master = 'n-Heptane' # this should be what was used for '--names=' when generating the .pkl files
 
 # Find and read the chemkin file
