@@ -58,11 +58,11 @@ logging.info('RMG Database Loaded')
 
 
 
-f = open("/home/harms.n/Code/OOHabstraction/comparisonTST/reference_files/symmetry_start_DNF.txt", "rb")
-reactions = f.readlines()
+f = open("/home/harms.n/Code/OOHabstraction/comparisonTST/reference_files/gaus_exe_error.txt", "rb")
+reactions = eval(f.readlines()[0])
 
 #oohReaction = eval(lines[i].split('\n')[0])
-oohReaction = eval(reactions[i-1][1:-3])
+oohReaction = reactions[i-1]
 rxnFamily = "H_Abstraction"
 rSpecies1, rSpecies2 = oohReaction.reactants
 pSpecies1, pSpecies2 = oohReaction.products
@@ -299,4 +299,5 @@ def performCalcs(chemkinRxn):
 
 
 
-performCalcs(reaction)
+rxn = reactionList[0]
+performCalcs(rxn)
