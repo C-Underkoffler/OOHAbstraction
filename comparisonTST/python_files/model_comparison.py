@@ -23,7 +23,7 @@ import random
 import numpy as np
 import itertools
 
-
+"""
 # Getting the OOH reactions
 f = open("../../autotst_kinetics.pkl","r")
 autotst_kinetics = pickle.load(f)
@@ -182,7 +182,7 @@ for i, options in alternatives_rates.iteritems():
         parser.writeCTI(header=header, outName=os.path.join(outdir,output_filename))
         # restore original
         parser.reactions[i] = original_reactions[i]
-
+"""
 def get_ignition_delay(cantera_file_path, temperature , pressure, stoichiometry=1.0, isomer='n'):
 
     try:
@@ -236,12 +236,12 @@ dff = pd.DataFrame(index=ignition_temps)
 dff.index = ignition_temps
 
 if not os.path.exists("./ignition_delay_sarathy.pkl"):
-    for cantera_file in os.listdir("./cantera_sub_models/sarathy/"):
+    for cantera_file in os.listdir("../reference_files/cantera_sub_models/sarathy/"):
         identifier = cantera_file.split(".")[1]
         print cantera_file
         delays = []
         for ignition_temp in ignition_temps:
-            delay = get_ignition_delay(os.path.join("./cantera_sub_models/sarathy/", cantera_file),
+            delay = get_ignition_delay(os.path.join("../reference_files/cantera_sub_models/sarathy/", cantera_file),
                        temperature=ignition_temp,
                        pressure=1,
                        stoichiometry=1.0)

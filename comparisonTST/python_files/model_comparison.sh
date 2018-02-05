@@ -38,4 +38,4 @@ echo $SLURM_ARRAY_TASK_ID
 # the "stdbuf -o0 -e0"  and the "-u" are to disable buffering,
 # so that you see output from the script in the log files immediately.
 
-python ~/Code/OOHabstraction/comparisonTST/python_files/model_comparison.py
+python ~/Code/OOHabstraction/comparisonTST/python_files/wang_comparison.py
