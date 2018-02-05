@@ -7,9 +7,9 @@ from os.path import isfile, join
 
 # List of models to be tested
 
-model_list = list_of_models = [f for f in listdir("~/OOHabstraction/comparisonTST/test_performance/models") if f.endswith(".cti")]
+model_list = list_of_models = [f for f in listdir("~/OOHabstraction/comparisonTST/reference_files/cantera_sub_models/wang") if f.endswith(".cti")]
 
-species_key = 'species_keys.yaml'
+species_key = '~/OOHabstraction/comparisonTST/reference_files/wang_species_keys.yaml'
 data_path = 'data'
 data_list = 'nbutanol-datalist.txt'
 model_path = 'models'
@@ -24,7 +24,7 @@ else:
 
 for model in models_to_run:
 
-    output = evaluate_model(model, spec_keys_file='species_keys.yaml',
+    output = evaluate_model(model, spec_keys_file='~/OOHabstraction/comparisonTST/reference_files/wang_species_keys.yaml',
                             dataset_file=data_list, data_path=data_path,
                             model_path=model_path,
                             skip_validation=True
