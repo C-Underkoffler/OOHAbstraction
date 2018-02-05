@@ -25,7 +25,7 @@
 #SBATCH -N 1
 
 #an array job
-#SBATCH --array=1-48
+#SBATCH --array=1-1000%14
 
 
 #####################################################
@@ -37,7 +37,7 @@ export PYTHONPATH=$RMGpy:$PYTHONPATH
 #python $RMGpy/scripts/filterReactions.py /scratch/westgroup/Importer/RMG-models/
 ## that creates the kineticsDict files, and doesn't need repeating until the imported models change significantly
 echo $SLURM_ARRAY_TASK_ID
-cd /home/harms.n/Code/OOHabstraction/comparisonTST
+cd /gss_gpfs_scratch/harms.n/
 # the "stdbuf -o0 -e0"  and the "-u" are to disable buffering,
 # so that you see output from the script in the log files immediately.
-stdbuf -o0 -e0 python -u ~/Code/OOHabstraction/comparisonTST/python_files/comparisonTST.py > /gss_gpfs_scratch/harms.n/comparerTST/AutoTST-comparer.updated.1.$SLURM_ARRAY_TASK_ID.combined.log 2>&1
+stdbuf -o0 -e0 python -u ~/Code/OOHabstraction/comparisonTST/python_files/comparisonTST.py > /gss_gpfs_scratch/harms.n/comparerTST/AutoTST-comparer.again.$SLURM_ARRAY_TASK_ID.combined.log 2>&1

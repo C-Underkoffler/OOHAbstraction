@@ -23,7 +23,7 @@ import random
 import numpy as np
 import itertools
 
-
+"""
 # Getting the OOH reactions
 f = open("../../autotst_kinetics.pkl","r")
 autotst_kinetics = pickle.load(f)
@@ -73,46 +73,88 @@ for species in species_dict.itervalues():
     for mol in species.molecule:
         smiles_to_nickname_dict[mol.toSMILES()] = species.label
 
-sarathy_rxns = []
+
+inchikey_to_smiles_dict = {}
+for smiles in smiles_to_nickname_dict.iterkeys():
+    inchikey_to_smiles_dict[Molecule(SMILES=smiles).toInChIKey()] = smiles
+
+stored_r = []
 for r in parser.reactions:
     split_string = str(r).split()
+    split_string
     if not (smiles_to_nickname_dict["OO"] in split_string and smiles_to_nickname_dict["[O]O"] in split_string):
+        #print "boo"
         continue
 
-    # Creating a list of possible reaction labels
-    reactants = [species_dict[n].molecule[0].toSMILES() for n in r.reactantString.split(' + ')]
-    products = [species_dict[n].molecule[0].toSMILES() for n in r.productString.split(' + ')]
-    joined_reactant_orders = ['+'.join(order) for order in itertools.permutations(reactants)]
-    joined_product_orders = ['+'.join(order) for order in itertools.permutations(products)]
-    possible_labels = ['_'.join((joined_r, joined_p)) for joined_r in joined_reactant_orders for joined_p in joined_product_orders]
+    elif (len(split_string) == 7 and
+        split_string[0] in species_dict.iterkeys() and
+        split_string[2] in species_dict.iterkeys() and
+        split_string[4] in species_dict.iterkeys() and
+        split_string[6] in species_dict.iterkeys()):
+        print str(r)
 
-    for reaction in ooh_reactions:
-        ooh_reactants, ooh_products = reaction.label.split("_")
-        r1, r2 = ooh_reactants.split("+")
-        p1, p2 = ooh_products.split("+")
-        ooh_smiles = [r1, r2, p1, p2]
+        stored_r.append(r)
 
-        # Creating a dictionary to decode inchikeys into smiles
-        inchikey_to_smiles_dict = {}
-        for smiles in ooh_smiles:
-            inchikey_to_smiles_dict[Molecule(SMILES=smiles).toInChIKey()] = smiles
+sarathy_rxns = []
+for r in parser.reactions:
 
-        # Setting the reactant and product labels as the nickname given in the model
-        if reaction.label in possible_labels:
-            for reactant in reaction.reactants:
-                inchi_key = reactant.label.split("-u")[0]
-                if not reactant.label in smiles_to_nickname_dict.itervalues():
-                    reactant.molecule = [Molecule(SMILES=inchikey_to_smiles_dict[inchi_key])]
+    split_string = str(r).split()
+    split_string
+    if not (smiles_to_nickname_dict["OO"] in split_string and smiles_to_nickname_dict["[O]O"] in split_string):
+        #print "boo"
+        continue
+
+    elif (len(split_string) == 7 and
+        split_string[0] in species_dict.iterkeys() and
+        split_string[2] in species_dict.iterkeys() and
+        split_string[4] in species_dict.iterkeys() and
+        split_string[6] in species_dict.iterkeys()):
+        print str(r)
+
+        # Creating a list of possible reaction labels
+        reactants = [species_dict[n].molecule[0].toSMILES() for n in r.reactantString.split(' + ')]
+        products = [species_dict[n].molecule[0].toSMILES() for n in r.productString.split(' + ')]
+        joined_reactant_orders = ['+'.join(order) for order in itertools.permutations(reactants)]
+        joined_product_orders = ['+'.join(order) for order in itertools.permutations(products)]
+        possible_labels = ['_'.join((joined_r, joined_p)) for joined_r in joined_reactant_orders for joined_p in joined_product_orders]
+
+        for reaction in ooh_reactions:
+            got_r = False
+            got_p = False
+
+            try:
+                for reactant in reaction.reactants:
+                    inchi_key = reactant.label.split("-u")[0]
+
                     reactant.label = smiles_to_nickname_dict[inchikey_to_smiles_dict[inchi_key]]
+                    reactant.molecule = [Molecule(SMILES=inchikey_to_smiles_dict[inchi_key])]
+                got_r = True
 
-            for product in reaction.products:
-                inchi_key = product.label.split("-u")[0]
-                if not product.label in smiles_to_nickname_dict.itervalues():
-                    product.molecule = [Molecule(SMILES=inchikey_to_smiles_dict[inchi_key])]
+            except KeyError:
+                print "Key Error with reactants... skipping"
+                continue
+
+            try:
+                for product in reaction.products:
+                    inchi_key = product.label.split("-u")[0]
+
+
                     product.label = smiles_to_nickname_dict[inchikey_to_smiles_dict[inchi_key]]
+                    product.molecule = [Molecule(SMILES=inchikey_to_smiles_dict[inchi_key])]
+                got_p = True
+            except KeyError:
+                print "Key Error with products... skipping"
+                continue
+
+
+
 
             # Then append the reaction to our reaction list
-            sarathy_rxns.append([r, reaction, reaction.toChemkin(), reaction.toCantera()])
+            if got_p == True and got_r == True:
+
+                sarathy_rxns.append([r, reaction, reaction.toChemkin(), reaction.toCantera()])
+print sarathy_rxns
+
 
 # Creating a DF of the results
 wang_df = pd.DataFrame(sarathy_rxns)
@@ -138,10 +180,13 @@ alternatives_rates = defaultdict(list)
 for i, r in enumerate(parser.reactions):
     original_reactions.append(r)
     assert original_reactions[i] == parser.reactions[i]
+    print list(wang_df.iloc[:,0])
+
 
     if r in list(wang_df.iloc[:,0]):
         _, rmg_reaction, kinetics_options, ct_version_of_rmg_kinetics = wang_df[r == wang_df.iloc[:,0]].values[0]
         # we just want the rmg_reaction
+
 
         chemkin_string = rmg_reaction.toChemkin()
         chemkin_string = '\n'.join([l for l in chemkin_string.splitlines() if not l.startswith('!')])
@@ -154,9 +199,9 @@ for i, r in enumerate(parser.reactions):
 
         alternatives_rates[i].append(r2)
 
-        print
-        print '\n'.join(['# '+c for c in r2.comment.split('\n') if c])
-        print r2.to_cti()
+        #print
+        #print '\n'.join(['# '+c for c in r2.comment.split('\n') if c])
+        #print r2.to_cti()
 
 print "original reactions", len(parser.reactions)
 print "reactions to change", len(alternatives_rates)
@@ -182,7 +227,7 @@ for i, options in alternatives_rates.iteritems():
         parser.writeCTI(header=header, outName=os.path.join(outdir,output_filename))
         # restore original
         parser.reactions[i] = original_reactions[i]
-
+"""
 def get_ignition_delay(cantera_file_path, temperature , pressure, stoichiometry=1.0, isomer='n'):
 
     try:
@@ -235,13 +280,13 @@ ignition_temps = np.arange(500, 2050, 100)
 dff = pd.DataFrame(index=ignition_temps)
 dff.index = ignition_temps
 
-if not os.path.exists("./ignition_delay_wang.pkl"):
-    for cantera_file in os.listdir("./cantera_sub_models/wang/"):
+if not os.path.exists("../reference_files/ignition_delay_wang.pkl"):
+    for cantera_file in os.listdir("../reference_files/cantera_sub_models/wang/"):
         identifier = cantera_file.split(".")[1]
         print cantera_file
         delays = []
         for ignition_temp in ignition_temps:
-            delay = get_ignition_delay(os.path.join("./cantera_sub_models/wang/", cantera_file),
+            delay = get_ignition_delay(os.path.join("../reference_files/cantera_sub_models/wang/", cantera_file),
                        temperature=ignition_temp,
                        pressure=1,
                        stoichiometry=1.0)
@@ -251,8 +296,8 @@ if not os.path.exists("./ignition_delay_wang.pkl"):
         test.columns = [identifier]
         test.index = ignition_temps
         dff = pd.concat([dff, test], axis=1)
-    f=open("ignition_delay_wang.pkl", "w")
+    f=open("../reference_files/ignition_delay_wang.pkl", "w")
     pickle.dump(dff, f)
 else:
-    f=open("ignition_delay_wang.pkl", "r")
+    f=open("../reference_files/ignition_delay_wang.pkl", "r")
     dff = pickle.load(f)

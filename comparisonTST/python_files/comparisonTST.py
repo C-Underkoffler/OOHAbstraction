@@ -35,10 +35,10 @@ elif os.getenv('SLURM_ARRAY_TASK_ID'):
 elif os.getenv('LSB_JOBINDEX'):
     i = int(os.getenv('LSB_JOBINDEX'))
 else:
-    #raise Exception("Specify a TS number!")
+    #raise Exception("Specif y a TS number!")
     logging.warning("Number not specified as script argument or via environment variable, so using default")
     i = 1
-i = i + 999 #### ADDED THIS LINE TO GET ARRAY OVER 1000 FOR SLURM
+#i = i + 999 #### ADDED THIS LINE TO GET ARRAY OVER 1000 FOR SLURM
 logging.info("RUNNING WITH JOB NUMBER i = {}".format(i))
 
 rxnFamilies = ['H_Abstraction']  # Only looking at H_abstraction via OOH
@@ -59,7 +59,7 @@ logging.info('RMG Database Loaded')
 
 
 
-with open("../reference_files/comparisonOOHRxns.py", "r") as f:
+with open("/home/harms.n/Code/OOHabstraction/comparisonTST/reference_files/comparisonOOHRxns.py", "r") as f:
     lines = f.readlines()
 
 #oohReaction = eval(lines[i].split('\n')[0])
@@ -306,5 +306,5 @@ def performCalcs(chemkinRxn):
 
 
 
-rxn = reactionList[0]
-performCalcs(rxn)
+
+performCalcs(reaction)
