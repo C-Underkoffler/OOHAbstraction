@@ -1,0 +1,121 @@
+---
+file-author:
+    name: Nathan Harms
+    ORCID: 0000-0003-2680-371X
+file-version: 0
+chemked-version: 0.0.1
+reference:
+    doi: 10.1016/j.proci.2012.06.001
+    authors:
+        - name: Weijing Wang et al.
+    journal: Proceedings of the Combustion Institute
+    year: 2013
+    volume: 34
+    pages: 335-343
+    detail: m-h_0.0471_xO2=0.2002_phi=2.0
+experiment-type: ignition delay
+apparatus:
+    kind: shock tube
+    institution: NUIG
+    facility: stainless steel shock tube
+common-properties:
+    composition: &comp
+      kind: mole fraction
+      species:
+        - species-name: 3-methyl-heptane
+          InChI: 1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3
+          amount:
+            - 0.0471 
+        - species-name: O2
+          InChI:  1S/O2/c1-2
+          amount:
+            - 0.2002 
+        - species-name: N2
+          InChI: 1S/N2/c1-2
+          amount:
+            - 0.7527 
+    ignition-type:  &ign 
+        target: OH*
+        type: d/dt max
+datapoints:
+    - temperature:
+        - 7.28 kelvin
+      ignition-delay:
+        - 1311.0 us
+      pressure:
+        - 1077.0 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 2.0
+    - temperature:
+        - 6.84 kelvin
+      ignition-delay:
+        - 735.0 us
+      pressure:
+        - 1135.0 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 2.0
+    - temperature:
+        - 5.51 kelvin
+      ignition-delay:
+        - 483.0 us
+      pressure:
+        - 1148.0 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 2.0
+    - temperature:
+        - 4.56 kelvin
+      ignition-delay:
+        - 222.0 us
+      pressure:
+        - 1225.0 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 2.0
+    - temperature:
+        - 10.19 kelvin
+      ignition-delay:
+        - 1146.0 us
+      pressure:
+        - 1001.0 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 2.0
+    - temperature:
+        - 10.03 kelvin
+      ignition-delay:
+        - 823.0 us
+      pressure:
+        - 1054.0 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 2.0
+    - temperature:
+        - 9.32 kelvin
+      ignition-delay:
+        - 497.0 us
+      pressure:
+        - 1089.0 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 2.0
+    - temperature:
+        - 9.24 kelvin
+      ignition-delay:
+        - 152.0 us
+      pressure:
+        - 1237.0 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 2.0
+    - temperature:
+        - 7.57 kelvin
+      ignition-delay:
+        - 47.0 us
+      pressure:
+        - 1351.0 atm
+      composition: *comp
+      ignition-type: *ign
+      equivalence-ratio: 2.0
