@@ -1,1306 +1,1305 @@
 ---
-master.8101.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6109.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.7208.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4346.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.105.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.735.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6798.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.86.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2488.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6112.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4379.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3278.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4344.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3099.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1607.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4104.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4318.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.633.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1377.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.7622.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2631.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4098.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.536.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4100.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.792.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2754.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4415.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4338.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.733.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4340.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3615.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2281.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4342.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3617.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.285.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.611.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4382.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.534.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.790.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4102.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2347.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.886.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3497.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2633.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4861.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1814.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3098.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4345.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4410.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.87.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2489.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2058.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6113.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.413.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2490.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2634.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6108.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.7209.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.5027.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4859.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1724.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4412.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6111.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.7210.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1816.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2187.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4416.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3616.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4343.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1812.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4860.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.887.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1798.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1720.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.793.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4862.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4510.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3614.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3280.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4341.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4509.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.366.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4381.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4339.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.286.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2629.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3856.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4505.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3618.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2329.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2585.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1880.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6102.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2330.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1378.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3854.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4507.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.0.0.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.660.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3567.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.170.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1278.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2056.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2487.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4317.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.585.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6104.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.169.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2583.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.7207.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6106.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2760.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.5029.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3621.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3565.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.33.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3478.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.393.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2485.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.4501.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2189.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6101.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2951.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3503.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1843.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1280.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3619.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3525.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3499.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.1881.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2953.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.5314.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6107.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3444.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3479.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.392.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3620.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.8116.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2486.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.8114.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3276.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.3097.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2747.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.2955.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
-master.6105.1.cti: 
-    O2: "o2" 
-    N2: "n2" 
-    Ar: "ar" 
-    He: "he" 
-    CO2: "co2" 
-    H2O: "h2o" 
-    3-methyl-heptane: "c8h18-3" 
-    
+master.8101.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6109.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.7208.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4346.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.105.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.735.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6798.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.86.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2488.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6112.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4379.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3278.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4344.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3099.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1607.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4104.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4318.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.633.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1377.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.7622.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2631.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4098.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.536.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4100.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.792.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2754.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4415.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4338.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.733.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4340.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3615.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2281.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4342.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3617.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.285.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.611.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4382.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.534.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.790.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4102.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2347.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.886.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3497.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2633.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4861.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1814.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3098.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4345.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4410.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.87.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2489.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2058.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6113.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.413.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2490.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2634.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6108.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.7209.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.5027.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4859.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1724.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4412.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6111.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.7210.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1816.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2187.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4416.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3616.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4343.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1812.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4860.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.887.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1798.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1720.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.793.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4862.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4510.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3614.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3280.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4341.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4509.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.366.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4381.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4339.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.286.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2629.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3856.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4505.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3618.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2329.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2585.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1880.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6102.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2330.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1378.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3854.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4507.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.0.0.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.660.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3567.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.170.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1278.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2056.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2487.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4317.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.585.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6104.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.169.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2583.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.7207.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6106.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2760.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.5029.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3621.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3565.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.33.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3478.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.393.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2485.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.4501.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2189.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6101.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2951.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3503.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1843.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1280.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3619.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3525.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3499.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.1881.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2953.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.5314.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6107.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3444.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3479.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.392.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3620.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.8116.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2486.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.8114.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3276.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.3097.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2747.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.2955.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"
+
+master.6105.1.cti:
+    O2: "o2"
+    N2: "n2"
+    Ar: "ar"
+    He: "he"
+    CO2: "co2"
+    H2O: "h2o"
+    3-methyl-heptane: "c8h18-3"

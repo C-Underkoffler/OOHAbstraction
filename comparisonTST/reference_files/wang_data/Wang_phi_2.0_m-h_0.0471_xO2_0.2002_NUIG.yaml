@@ -39,83 +39,83 @@ common-properties:
         type: d/dt max
 datapoints:
     - temperature:
-        - 7.28 kelvin
+        - 1077.0 kelvin
       ignition-delay:
         - 1311.0 us
       pressure:
-        - 1077.0 atm
+        - 7.28 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 2.0
     - temperature:
-        - 6.84 kelvin
+        - 1135.0 kelvin
       ignition-delay:
         - 735.0 us
       pressure:
-        - 1135.0 atm
+        - 6.84 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 2.0
     - temperature:
-        - 5.51 kelvin
+        - 1148.0 kelvin
       ignition-delay:
         - 483.0 us
       pressure:
-        - 1148.0 atm
+        - 5.51 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 2.0
     - temperature:
-        - 4.56 kelvin
+        - 1225.0 kelvin
       ignition-delay:
         - 222.0 us
       pressure:
-        - 1225.0 atm
+        - 4.56 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 2.0
     - temperature:
-        - 10.19 kelvin
+        - 1001.0 kelvin
       ignition-delay:
         - 1146.0 us
       pressure:
-        - 1001.0 atm
+        - 10.19 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 2.0
     - temperature:
-        - 10.03 kelvin
+        - 1054.0 kelvin
       ignition-delay:
         - 823.0 us
       pressure:
-        - 1054.0 atm
+        - 10.03 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 2.0
     - temperature:
-        - 9.32 kelvin
+        - 1089.0 kelvin
       ignition-delay:
         - 497.0 us
       pressure:
-        - 1089.0 atm
+        - 9.32 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 2.0
     - temperature:
-        - 9.24 kelvin
+        - 1237.0 kelvin
       ignition-delay:
         - 152.0 us
       pressure:
-        - 1237.0 atm
+        - 9.24 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 2.0
     - temperature:
-        - 7.57 kelvin
+        - 1351.0 kelvin
       ignition-delay:
         - 47.0 us
       pressure:
-        - 1351.0 atm
+        - 7.57 atm
       composition: *comp
       ignition-type: *ign
       equivalence-ratio: 2.0
