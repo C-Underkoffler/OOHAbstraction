@@ -1,0 +1,1058 @@
+average deviation function: 2.7483581175623573
+average error function: 12.960398185701855
+datasets:
+- absolute deviation: 4.947517252804684
+  datapoints:
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0009839999999999998 second
+    pressure: 674824.5 pascal
+    simulated ignition delay: 0.002980148168347722 second
+    temperature: 1086.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001072 second
+    pressure: 720420.75 pascal
+    simulated ignition delay: 0.002683085730640509 second
+    temperature: 1089.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00056 second
+    pressure: 709275.0 pascal
+    simulated ignition delay: 0.0009920232003258632 second
+    temperature: 1169.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00015099999999999998 second
+    pressure: 664692.0 pascal
+    simulated ignition delay: 0.00034360908629507177 second
+    temperature: 1253.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000116 second
+    pressure: 612003.0 pascal
+    simulated ignition delay: 0.0003285407600969914 second
+    temperature: 1261.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001625 second
+    pressure: 1093296.75 pascal
+    simulated ignition delay: 0.0023988523207514557 second
+    temperature: 1058.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0007 second
+    pressure: 959547.7500000001 pascal
+    simulated ignition delay: 0.0018001612125124384 second
+    temperature: 1097.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000192 second
+    pressure: 950428.5000000001 pascal
+    simulated ignition delay: 0.00045256778811269085 second
+    temperature: 1211.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 5.4e-05 second
+    pressure: 834918.0 pascal
+    simulated ignition delay: 0.00014396293603220002 second
+    temperature: 1311.0 kelvin
+  dataset: Wang_phi_0.5_m-h_0.0122_xO2_0.2075_NUIG.yaml
+  dataset_id: 0
+  error function: 26.080976338317193
+  standard deviation: 0.17141474971159013
+- absolute deviation: 3.4899707733008696
+  datapoints:
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001176 second
+    pressure: 743725.5 pascal
+    simulated ignition delay: 0.0019760579200985323 second
+    temperature: 1091.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0008799999999999999 second
+    pressure: 711301.5 pascal
+    simulated ignition delay: 0.0020165559334052023 second
+    temperature: 1094.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000562 second
+    pressure: 715354.5 pascal
+    simulated ignition delay: 0.0014803399121679796 second
+    temperature: 1123.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000184 second
+    pressure: 661652.25 pascal
+    simulated ignition delay: 0.0003979962960320933 second
+    temperature: 1246.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0025499999999999997 second
+    pressure: 1130787.0 pascal
+    simulated ignition delay: 0.005509791083311449 second
+    temperature: 955.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001029 second
+    pressure: 1135853.25 pascal
+    simulated ignition delay: 0.0020064414955863886 second
+    temperature: 1039.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0011149999999999999 second
+    pressure: 1123694.25 pascal
+    simulated ignition delay: 0.0020113042179434877 second
+    temperature: 1040.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00039099999999999996 second
+    pressure: 1035541.5000000001 pascal
+    simulated ignition delay: 0.001036992958358901 second
+    temperature: 1118.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00037 second
+    pressure: 966640.4999999999 pascal
+    simulated ignition delay: 0.0010457711956005872 second
+    temperature: 1125.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000193 second
+    pressure: 1025408.9999999999 pascal
+    simulated ignition delay: 0.00043081997953710983 second
+    temperature: 1204.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 6.8e-05 second
+    pressure: 898752.7499999999 pascal
+    simulated ignition delay: 0.00018327456244791475 second
+    temperature: 1294.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 3.9999999999999996e-05 second
+    pressure: 838970.9999999999 pascal
+    simulated ignition delay: 0.00010405860229887599 second
+    temperature: 1356.0 kelvin
+  dataset: Wang_phi_1.0_m-h_0.0241_xO2_0.205_NUIG.yaml
+  dataset_id: 1
+  error function: 12.649687259027502
+  standard deviation: 0.23594542195301701
+- absolute deviation: 3.3144265412988982
+  datapoints:
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0013109999999999999 second
+    pressure: 737646.0 pascal
+    simulated ignition delay: 0.0018606869916531997 second
+    temperature: 1077.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000735 second
+    pressure: 693063.0 pascal
+    simulated ignition delay: 0.0012040780681805228 second
+    temperature: 1135.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000483 second
+    pressure: 558300.75 pascal
+    simulated ignition delay: 0.0013444038209451247 second
+    temperature: 1148.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000222 second
+    pressure: 462041.99999999994 pascal
+    simulated ignition delay: 0.0007536552454195906 second
+    temperature: 1225.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0011459999999999999 second
+    pressure: 1032501.75 pascal
+    simulated ignition delay: 0.0024429591242556945 second
+    temperature: 1001.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000823 second
+    pressure: 1016289.7499999999 pascal
+    simulated ignition delay: 0.0015151252868486793 second
+    temperature: 1054.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0004969999999999999 second
+    pressure: 944349.0 pascal
+    simulated ignition delay: 0.0012406232133791693 second
+    temperature: 1089.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00015199999999999998 second
+    pressure: 936243.0 pascal
+    simulated ignition delay: 0.0003420614808487579 second
+    temperature: 1237.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 4.7e-05 second
+    pressure: 767030.25 pascal
+    simulated ignition delay: 0.00015007849118121318 second
+    temperature: 1351.0 kelvin
+  dataset: Wang_phi_2.0_m-h_0.0471_xO2_0.2002_NUIG.yaml
+  dataset_id: 2
+  error function: 12.275549789097386
+  standard deviation: 0.24619077037221263
+- absolute deviation: 0.9378799877627024
+  datapoints:
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.006971 second
+    pressure: 1985970.0000000002 pascal
+    simulated ignition delay: 0.009779122729894344 second
+    temperature: 678.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.006219 second
+    pressure: 2067029.9999999998 pascal
+    simulated ignition delay: 0.005283435427347094 second
+    temperature: 703.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.005077 second
+    pressure: 2087295.0000000002 pascal
+    simulated ignition delay: 0.004650922944440142 second
+    temperature: 709.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.005821 second
+    pressure: 2148090.0 pascal
+    simulated ignition delay: 0.004339675054647804 second
+    temperature: 712.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.004771 second
+    pressure: 1915042.4999999998 pascal
+    simulated ignition delay: 0.0035512215088063905 second
+    temperature: 727.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.004719 second
+    pressure: 2036632.5000000002 pascal
+    simulated ignition delay: 0.0025135830963859233 second
+    temperature: 758.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.003947 second
+    pressure: 1874512.5 pascal
+    simulated ignition delay: 0.0026839090827395547 second
+    temperature: 775.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.004523999999999999 second
+    pressure: 1904910.0 pascal
+    simulated ignition delay: 0.002719466969373312 second
+    temperature: 788.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.005823999999999999 second
+    pressure: 2006235.0 pascal
+    simulated ignition delay: 0.0031532250219598115 second
+    temperature: 822.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.004059 second
+    pressure: 1915042.4999999998 pascal
+    simulated ignition delay: 0.005503224827616408 second
+    temperature: 869.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002928 second
+    pressure: 2087295.0000000002 pascal
+    simulated ignition delay: 0.00542173277545474 second
+    temperature: 891.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002116 second
+    pressure: 2107560.0 pascal
+    simulated ignition delay: 0.00557147489199196 second
+    temperature: 907.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001517 second
+    pressure: 2006235.0 pascal
+    simulated ignition delay: 0.00480125823394464 second
+    temperature: 948.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000877 second
+    pressure: 2036632.5000000002 pascal
+    simulated ignition delay: 0.002485963175693161 second
+    temperature: 1000.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000727 second
+    pressure: 1985970.0000000002 pascal
+    simulated ignition delay: 0.0018453581585509216 second
+    temperature: 1025.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0005 second
+    pressure: 2077162.5 pascal
+    simulated ignition delay: 0.000998534310926011 second
+    temperature: 1073.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000319 second
+    pressure: 1996102.5 pascal
+    simulated ignition delay: 0.0006568027919352375 second
+    temperature: 1117.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000224 second
+    pressure: 2077162.5 pascal
+    simulated ignition delay: 0.00035711463484135023 second
+    temperature: 1172.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00014099999999999998 second
+    pressure: 2097427.5 pascal
+    simulated ignition delay: 0.00021212298220730561 second
+    temperature: 1219.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 8.599999999999999e-05 second
+    pressure: 2046765.0 pascal
+    simulated ignition delay: 0.00013324237969323984 second
+    temperature: 1262.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001473 second
+    pressure: 5076382.5 pascal
+    simulated ignition delay: 0.0010474118323098624 second
+    temperature: 905.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000703 second
+    pressure: 5380357.5 pascal
+    simulated ignition delay: 0.0011213162864094157 second
+    temperature: 952.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000426 second
+    pressure: 5390490.0 pascal
+    simulated ignition delay: 0.000729157225095758 second
+    temperature: 1017.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000396 second
+    pressure: 5157442.5 pascal
+    simulated ignition delay: 0.0005935911581086657 second
+    temperature: 1039.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00036199999999999996 second
+    pressure: 4742010.0 pascal
+    simulated ignition delay: 0.0006223476180742927 second
+    temperature: 1042.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000148 second
+    pressure: 5096647.5 pascal
+    simulated ignition delay: 0.000237404231896504 second
+    temperature: 1121.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000133 second
+    pressure: 5056117.5 pascal
+    simulated ignition delay: 0.00019006333580826179 second
+    temperature: 1144.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000124 second
+    pressure: 5127045.0 pascal
+    simulated ignition delay: 0.000182036815674934 second
+    temperature: 1147.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000139 second
+    pressure: 4883865.0 pascal
+    simulated ignition delay: 0.00015939276398470317 second
+    temperature: 1166.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0122', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2075', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7803', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 3.9e-05 second
+    pressure: 4721745.0 pascal
+    simulated ignition delay: 5.435785476556868e-05 second
+    temperature: 1282.0 kelvin
+  dataset: Wang_phi_0.5_m-h_0.0122_xO2_0.2075_RPI.yaml
+  dataset_id: 3
+  error function: 3.549523847373831
+  standard deviation: 0.29832830706338737
+- absolute deviation: 0.9035711119032963
+  datapoints:
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0046879999999999995 second
+    pressure: 2067029.9999999998 pascal
+    simulated ignition delay: 0.008880200467231331 second
+    temperature: 678.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.003849 second
+    pressure: 2056897.5 pascal
+    simulated ignition delay: 0.0031975812740721796 second
+    temperature: 719.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002874 second
+    pressure: 1935307.5000000002 pascal
+    simulated ignition delay: 0.002008830092500849 second
+    temperature: 747.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002789 second
+    pressure: 2016367.4999999998 pascal
+    simulated ignition delay: 0.0014832777727293762 second
+    temperature: 777.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0032749999999999997 second
+    pressure: 1935307.5000000002 pascal
+    simulated ignition delay: 0.0015204714950478515 second
+    temperature: 783.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0030789999999999997 second
+    pressure: 1874512.5 pascal
+    simulated ignition delay: 0.0015936629262277267 second
+    temperature: 795.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0034349999999999997 second
+    pressure: 1894777.5 pascal
+    simulated ignition delay: 0.0016939938352212335 second
+    temperature: 811.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002689 second
+    pressure: 2036632.5000000002 pascal
+    simulated ignition delay: 0.002005572190548078 second
+    temperature: 844.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0024709999999999997 second
+    pressure: 1833982.5000000002 pascal
+    simulated ignition delay: 0.0034402909685452465 second
+    temperature: 874.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001973 second
+    pressure: 1884645.0000000002 pascal
+    simulated ignition delay: 0.0035825439792932018 second
+    temperature: 887.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00188 second
+    pressure: 2046765.0 pascal
+    simulated ignition delay: 0.0032256243073727417 second
+    temperature: 899.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002373 second
+    pressure: 1833982.5000000002 pascal
+    simulated ignition delay: 0.0040181519752063724 second
+    temperature: 908.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001977 second
+    pressure: 2067029.9999999998 pascal
+    simulated ignition delay: 0.0032385249748463317 second
+    temperature: 908.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001488 second
+    pressure: 1874512.5 pascal
+    simulated ignition delay: 0.0036804401446784815 second
+    temperature: 927.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001016 second
+    pressure: 2087295.0000000002 pascal
+    simulated ignition delay: 0.002036039854995314 second
+    temperature: 977.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000846 second
+    pressure: 2289945.0 pascal
+    simulated ignition delay: 0.001628652528116389 second
+    temperature: 987.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000883 second
+    pressure: 2036632.5000000002 pascal
+    simulated ignition delay: 0.0017560099432790404 second
+    temperature: 992.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000767 second
+    pressure: 2046765.0 pascal
+    simulated ignition delay: 0.0016644494371167381 second
+    temperature: 996.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000558 second
+    pressure: 2056897.5 pascal
+    simulated ignition delay: 0.001202389544486603 second
+    temperature: 1023.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000512 second
+    pressure: 2006235.0 pascal
+    simulated ignition delay: 0.0009571088636027232 second
+    temperature: 1046.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000466 second
+    pressure: 2056897.5 pascal
+    simulated ignition delay: 0.0008371584895042611 second
+    temperature: 1056.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000408 second
+    pressure: 2107560.0 pascal
+    simulated ignition delay: 0.0007205926936054592 second
+    temperature: 1068.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000247 second
+    pressure: 2137957.5 pascal
+    simulated ignition delay: 0.0003910318252024853 second
+    temperature: 1133.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00022099999999999998 second
+    pressure: 1935307.5000000002 pascal
+    simulated ignition delay: 0.00043920843773954157 second
+    temperature: 1133.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00022799999999999999 second
+    pressure: 2087295.0000000002 pascal
+    simulated ignition delay: 0.0003622428619022092 second
+    temperature: 1145.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00015099999999999998 second
+    pressure: 2097427.5 pascal
+    simulated ignition delay: 0.00030763073655269696 second
+    temperature: 1163.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 8.099999999999999e-05 second
+    pressure: 2198752.5 pascal
+    simulated ignition delay: 0.00015781924344884915 second
+    temperature: 1230.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000932 second
+    pressure: 5116912.5 pascal
+    simulated ignition delay: 0.0005717803053800709 second
+    temperature: 907.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0008529999999999999 second
+    pressure: 5015587.5 pascal
+    simulated ignition delay: 0.00061139194068071 second
+    temperature: 912.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000534 second
+    pressure: 4914262.5 pascal
+    simulated ignition delay: 0.0006920688601553422 second
+    temperature: 973.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000386 second
+    pressure: 4985190.0 pascal
+    simulated ignition delay: 0.0005900470305323526 second
+    temperature: 995.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00018199999999999998 second
+    pressure: 5116912.5 pascal
+    simulated ignition delay: 0.0003163464082683689 second
+    temperature: 1054.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000155 second
+    pressure: 4792672.5 pascal
+    simulated ignition delay: 0.00028231324878773945 second
+    temperature: 1071.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000136 second
+    pressure: 5491815.0 pascal
+    simulated ignition delay: 0.00021137189127156295 second
+    temperature: 1085.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0241', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.205', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7709', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000108 second
+    pressure: 4843335.0 pascal
+    simulated ignition delay: 0.00017670360792894978 second
+    temperature: 1117.0 kelvin
+  dataset: Wang_phi_1.0_m-h_0.0241_xO2_0.205_RPI.yaml
+  dataset_id: 4
+  error function: 2.9442178552670546
+  standard deviation: 0.33918667239482264
+- absolute deviation: 2.896783038303692
+  datapoints:
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002567 second
+    pressure: 1975837.5 pascal
+    simulated ignition delay: 0.005757415007822185 second
+    temperature: 692.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002267 second
+    pressure: 1985970.0000000002 pascal
+    simulated ignition delay: 0.004336209791277062 second
+    temperature: 703.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00188 second
+    pressure: 1833982.5000000002 pascal
+    simulated ignition delay: 0.00418624740793592 second
+    temperature: 705.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002029 second
+    pressure: 2229150.0 pascal
+    simulated ignition delay: 0.004050719983870235 second
+    temperature: 705.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0019199999999999998 second
+    pressure: 2310210.0 pascal
+    simulated ignition delay: 0.001828822057099335 second
+    temperature: 741.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0016719999999999999 second
+    pressure: 2178487.5 pascal
+    simulated ignition delay: 0.0013649709677389247 second
+    temperature: 760.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001622 second
+    pressure: 2006235.0 pascal
+    simulated ignition delay: 0.001150738268604603 second
+    temperature: 780.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001622 second
+    pressure: 2046765.0 pascal
+    simulated ignition delay: 0.0010245003402750506 second
+    temperature: 799.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.002156 second
+    pressure: 2178487.5 pascal
+    simulated ignition delay: 0.0010134679539128646 second
+    temperature: 835.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.001562 second
+    pressure: 1894777.5 pascal
+    simulated ignition delay: 0.002022810870112101 second
+    temperature: 885.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.0008799999999999999 second
+    pressure: 1955572.5 pascal
+    simulated ignition delay: 0.0018775859939563183 second
+    temperature: 945.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000632 second
+    pressure: 2097427.5 pascal
+    simulated ignition delay: 0.001555955186859497 second
+    temperature: 957.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000556 second
+    pressure: 1904910.0 pascal
+    simulated ignition delay: 0.00151321261530511 second
+    temperature: 974.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.00035299999999999996 second
+    pressure: 2208885.0 pascal
+    simulated ignition delay: 0.0007818414945643407 second
+    temperature: 1021.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000283 second
+    pressure: 2148090.0 pascal
+    simulated ignition delay: 0.0007263119338218284 second
+    temperature: 1032.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000247 second
+    pressure: 2208885.0 pascal
+    simulated ignition delay: 0.0004672530001575615 second
+    temperature: 1078.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 0.000163 second
+    pressure: 1904910.0 pascal
+    simulated ignition delay: 0.00041061691661251315 second
+    temperature: 1119.0 kelvin
+  - composition:
+    - {InChI: '1S/C8H18/c1-4-6-7-8(3)5-2/h8H,4-7H2,1-3H3', amount: '0.0471', species-name: 3-methyl-heptane}
+    - {InChI: 1S/O2/c1-2, amount: '0.2002', species-name: O2}
+    - {InChI: 1S/N2/c1-2, amount: '0.7527', species-name: N2}
+    composition type: mole fraction
+    experimental ignition delay: 7.2e-05 second
+    pressure: 1915042.4999999998 pascal
+    simulated ignition delay: 0.000197380089918037 second
+    temperature: 1215.0 kelvin
+  dataset: Wang_phi_2.0_m-h_0.0471_xO2_0.2002_RPI.yaml
+  dataset_id: 5
+  error function: 20.26243402512816
+  standard deviation: 0.16042976166603334
+error function standard deviation: 8.315881204949855
+model: master.3616.1.cti
